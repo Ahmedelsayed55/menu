@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
-import logo from '../assets/hero.jpg'
+import logo from '../../assets/hero.jpg'
 import 'swiper/css';
 const Hero = () => {
   return (
@@ -17,8 +17,8 @@ const Hero = () => {
     }}
     
   >
-    <SwiperSlide className='flex justify-center'><img className=' w-full object-cover' src={logo} alt="" /></SwiperSlide>
-    <SwiperSlide className='flex justify-center'><img className=' w-full object-cover' src={logo} alt="" /></SwiperSlide>
+    <SwiperSlide className='flex justify-center'><img className='w-full object-cover' src={logo} alt="" /></SwiperSlide>
+    <SwiperSlide className='flex justify-center'><img className='w-full object-cover' src={logo} alt="" /></SwiperSlide>
   </Swiper>
 </div>
   )
