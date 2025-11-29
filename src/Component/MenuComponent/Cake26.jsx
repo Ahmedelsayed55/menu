@@ -29,7 +29,7 @@ const Cake26 = ({id}) => {
       return(
         <div key={item.id} className="rounded-2xl shadow-yellow-500 shadow-sm p-5 flex flex-col gap-3 items-center transition hover:scale-110">
           <img className="w-3/4" src={item.img} alt="Cake" />
-          <h2>{item.name}</h2>
+          <h2 className="text-center">{item.name}</h2>
           <h2>{item.price} ج.م</h2>
         </div>
       )
