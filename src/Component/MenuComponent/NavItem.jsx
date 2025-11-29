@@ -44,12 +44,12 @@ const NavItem = ({ id26, id20, id18, idMixed }) => {
 
   return (
     <div className="sticky top-0 container mx-auto p-2 bg-amber-900 rounded-b-2xl my-3 z-50">
-      <Swiper spaceBetween={10} slidesPerView="auto" freeMode={true}>
+      <Swiper spaceBetween={0} slidesPerView="auto" freeMode={true}>
         {sizes.map((item) => (
           <SwiperSlide key={item.id} className="!w-auto py-1">
             <a
               href={`#${item.id}`}
-              className={`px-3 py-1 rounded-md transition whitespace-nowrap ${
+              className={`px-3 py-1 rounded-md transition whitespace-nowrap text-[12px] md:text-[14px] lg:text-[16px] ${
                 active === item.id
                   ? "bg-yellow-300 text-yellow-800"
                   : "text-gray-300"

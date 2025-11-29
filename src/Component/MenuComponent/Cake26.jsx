@@ -22,7 +22,7 @@ const Cake26 = ({id}) => {
   ]
   return (
     <div>
-      <h1 className="text-2xl mb-5">تورته مقاس (26)</h1>
+      <h1 className="text-[16px] md:text-2xl mb-5">تورته مقاس (26)</h1>
  <div className='container mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5' id={id}>
       
      {prduct.map((item)=>{

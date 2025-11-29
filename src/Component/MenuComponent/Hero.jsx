@@ -4,7 +4,7 @@ import logo from '../../assets/hero.jpg'
 import 'swiper/css';
 const Hero = () => {
   return (
-<div className="container mx-auto mt-10">
+<div className="container mx-auto mt-2 md:mt-10">
   <Swiper
     modules={[ Pagination, Scrollbar, A11y, Autoplay]}
     slidesPerView={1}
