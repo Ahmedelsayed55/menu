@@ -44,7 +44,7 @@ const NavItem = ({ id26, id20, id18, idMixed, idGato }) => {
   ];
 
   return (
-    <div className="sticky top-0 container mx-auto p-2 bg-amber-900 rounded-b-2xl my-3 z-50">
+    <div className="sticky top-0 container mx-auto p-2 bg-amber-900 rounded-b my-3 z-50">
       <Swiper spaceBetween={0} slidesPerView="auto" freeMode={true}>
         {sizes.map((item) => (
           <SwiperSlide key={item.id} className="!w-auto py-1">
