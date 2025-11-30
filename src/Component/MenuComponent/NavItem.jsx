@@ -65,7 +65,7 @@ const NavItem = ({ id26, id20, id18, idMixed, idGato, idChocolate }) => {
     }
   }, [active]);
   return (
-    <div className="sticky top-3   bg-gray-200 rounded-b my-3 z-50">
+    <div className="sticky top-3  shadow bg-gray-200 rounded-b my-3 z-50">
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         className="h-13 md:h-16"
