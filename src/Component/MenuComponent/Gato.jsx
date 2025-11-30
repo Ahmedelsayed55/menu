@@ -21,20 +21,31 @@ export const Gato = ({id}) => {
     
       ]
   return (
-      <div>
-      <h1 className="text-[16px] md:text-2xl mb-5">تورته مقاس (26)</h1>
- <div className='container mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5' id={id}>
-      
-     {prduct.map((item)=>{
-      return(
-        <div key={item.id} className="rounded-2xl shadow-blue-200 shadow-sm p-5 flex flex-col gap-3 items-center transition hover:scale-110 bg-gray-100">
-          <img className="w-3/4 mb-3" src={item.img} alt="Cake" />
-          <h2 className="text-center">{item.name}</h2>
-          <h2 className="text-center text-yellow-700">{item.price} ج.م</h2>
-        </div>
-      )
-     })}
-    </div>
+     <div>
+      <h1 className="text-[16px] font-bold md:text-2xl mb-5">تورته مقاس (26)</h1>
+      <div
+        className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-5"
+        id={id}
+      >
+        {prduct.map((item) => {
+          return (
+            <div
+              key={item.id}
+              className="rounded-sm shadow-2xl shadow-gray-400 pt-15 px-5 flex flex-col gap-5 items-center transition hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
+            >
+              <img className="w-[85%] mb-10 transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)] " src={item.img} alt="Cake" />
+              <div className="w-full flex flex-col gap-7 py-3">
+                <h2 className="text-start text-[20px] font-bold">
+                  {item.name}
+                </h2>
+                <h2 className="text-start text-[18px] font-bold text-yellow-700">
+                  {item.price} ج.م
+                </h2>
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </div>
    
   )

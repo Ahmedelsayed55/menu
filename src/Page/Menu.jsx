@@ -26,22 +26,22 @@ const Menu = () => {
         idGato={idGato}
       />
 
-      <section id={idCake26} className="container mx-auto py-12 scroll-mt-24">
+      <section id={idCake26} className=" py-12 scroll-mt-24">
         <Cake26 />
       </section>
 
-      <section id={idCake20} className="container mx-auto py-12 scroll-mt-24">
+      <section id={idCake20} className=" py-12 scroll-mt-24">
         <Cake20 />
       </section>
 
-      <section id={idCake18} className="container mx-auto py-12 scroll-mt-24">
+      <section id={idCake18} className=" py-12 scroll-mt-24">
         <Cake18 />
       </section>
 
-      <section id={idMixed} className="container mx-auto py-12 scroll-mt-24">
+      <section id={idMixed} className=" py-12 scroll-mt-24">
         <AssortedCakes />
       </section>
-      <section id={idGato} className="container mx-auto py-12 scroll-mt-24">
+      <section id={idGato} className=" py-12 scroll-mt-24">
         <Gato />
       </section>
     </div>

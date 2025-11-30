@@ -10,7 +10,7 @@ import Footer from "./Component/Footer";
 
 const App = () => {
   return (
-    <div className="bg-white text-black">
+    <div className="bg-gray-200 text-black">
       <BrowserRouter>
       <NavBar />
         <Routes>
