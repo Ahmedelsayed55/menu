@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
+
+@theme{
+    --font-retaj:"Amiri", serif;
+}
+
 html {
   scroll-behavior: smooth;
   background-color: white;
+  font-family: "Amiri", serif;
 }
+
