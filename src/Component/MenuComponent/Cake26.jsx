@@ -10,7 +10,6 @@ import Cake9 from "../../assets/assets26/a9.png";
 import Cake10 from "../../assets/assets26/a10.png";
 import Cake11 from "../../assets/assets26/a11.png";
 import Cake12 from "../../assets/assets26/a12.png";
-
 import Cake14 from "../../assets/assets26/a14.png";
 import Cake15 from "../../assets/assets26/a15.png";
 import Cake16 from "../../assets/assets26/a16.png";
@@ -30,7 +29,6 @@ const Cake26 = ({ id }) => {
     { id: 10, name: "تورته سنيكرز ", price: 350, img: Cake10 },
     { id: 11, name: "تورته ايت سيزون ", price: 350, img: Cake11 },
     { id: 12, name: "تورته سنيكرز ", price: 350, img: Cake12 },
-    
     { id: 14, name: "تورته سنيكرز ", price: 350, img: Cake14 },
     { id: 15, name: "تورته سنيكرز ", price: 350, img: Cake15 },
     { id: 16, name: "تورته هاف جلاكسي & فاكهة ", price: 350, img: Cake16 },
@@ -48,10 +46,10 @@ const Cake26 = ({ id }) => {
           return (
             <div
               key={item.id}
-              className="rounded-sm h-70 md:h-120 shadow-2xl shadow-gray-400 pt-10 md:pt-15 px-1 flex flex-col items-center justify-between transition hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
+              className="rounded h-70 md:h-120 shadow-2xl shadow-gray-400 pt-10 md:pt-15 px-1 flex flex-col items-center justify-between transition hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
             >
               <img className=" w-full md:w-60  md:mb-7 transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]" src={item.img} alt="Cake" />
-              <div className="w-full flex flex-col gap-7 md:gap-15 py-3 px-3">
+              <div className="w-full flex flex-col gap-7 md:gap-12 py-3 px-3">
                 <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950">
                   {item.name}
                 </h2>

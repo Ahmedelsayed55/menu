@@ -48,25 +48,25 @@ const Menu = () => {
         idChocolate={idChocolate}
       />
 
-      <section id={idCake26} className=" px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
+      <section id={idCake26} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
         <Cake26 />
       </section>
 
-      <section id={idCake20} className=" px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
+      <section id={idCake20} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
         <Cake20 />
       </section>
 
-      <section id={idCake18} className=" px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
+      <section id={idCake18} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
         <Cake18 />
       </section>
 
-      <section id={idMixed} className=" px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
+      <section id={idMixed} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
         <AssortedCakes />
       </section>
-      <section id={idGato} className=" px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
+      <section id={idGato} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
         <Gato />
       </section>
-      <section id={idChocolate} className=" px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
+      <section id={idChocolate} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
         <Chocolate />
       </section>
 
@@ -80,7 +80,7 @@ const Menu = () => {
        {show && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 text-2xl md:text-3xl bg-gray-600 text-white hover:bg-gray-700 p-3 rounded-full shadow-xl transition z-50"
+          className="fixed bottom-6 right-6 text-2xl md:text-3xl bg-cyan-600 text-white hover:bg-cyan-700 cursor-pointer p-3 rounded-full shadow-xl transition z-50"
         >
            <IoArrowUp />
         </button>

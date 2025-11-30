@@ -6,8 +6,8 @@ const NavBar = () => {
     <div className='container px-2  fixed top-3 left-1/2 -translate-x-1/2 z-50 '>
         <header className="flex justify-between items-center  md:px-5" >
           <nav className="flex gap-1 md:gap-3">
-            <Link className='text-[14px] text-orange-400 md:text-[17px] p-3 border-b-2 border-yellow-900/0 hover:border-b-2 hover:border-b-yellow-700' to="/">الرئيسية</Link>
-            <Link className='text-[14px] text-orange-400 md:text-[17px] p-3 border-b-2 border-yellow-900/0 hover:border-b-2 hover:border-b-yellow-700' to="/contact">تواصل معنا</Link>
+            <Link className='text-[14px] text-cyan-500 md:text-[20px] p-3 border-b-2 border-yellow-900/0 hover:border-b-2 hover:border-b-cyan-700' to="/">الرئيسية</Link>
+            <Link className='text-[14px] text-cyan-500 md:text-[20px] p-3 border-b-2 border-yellow-900/0 hover:border-b-2 hover:border-b-cyan-700' to="/contact">تواصل معنا</Link>
           </nav>
           <img className="w-12 h-10 md:w-19 md:h-12" src={logo} alt="Logo" />
         </header>

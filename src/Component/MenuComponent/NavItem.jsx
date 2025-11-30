@@ -42,7 +42,7 @@ const NavItem = ({ id26, id20, id18, idMixed, idGato, idChocolate }) => {
     { id: id20, label: "تورته مقاس (20)" },
     { id: id18, label: "تورته مقاس (18)" },
     { id: idMixed, label: "تورت مقاسات متنوعة" },
-    { id: idGato, label: "جاتو" },
+    { id: idGato, label: "جاتوة" },
     { id: idChocolate, label: "شيكولاتة" },
   ];
   useEffect(() => {
