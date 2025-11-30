@@ -59,7 +59,7 @@ const Contact = () => {
         {/* محل 1  */}
         <div className="collapse collapse-arrow  border border-gray-300  text-black">
           <input type="radio" name="my-accordion-2" />
-          <div className="collapse-title font-semibold text-3xl text-cyan-900 mb-2">
+          <div className="collapse-title font-semibold text-2xl md:text-3xl text-cyan-900 mb-2">
             محل (1) شارع جمال عبدالناصر
           </div>
           <div className="collapse-content text-sm">
@@ -113,7 +113,7 @@ const Contact = () => {
         {/* محل 2 */}
         <div className="collapse collapse-arrow  border border-gray-300 text-black">
           <input type="radio" name="my-accordion-2" />
-          <div className="collapse-title font-semibold text-3xl text-cyan-900 mb-2">
+          <div className="collapse-title font-semibold text-2xl md:text-3xl text-cyan-900 mb-2">
             محل (2) شارع بورسعيد
           </div>
           <div className="collapse-content text-sm">
@@ -167,7 +167,7 @@ const Contact = () => {
 
         <div className="collapse collapse-arrow  border border-gray-300  text-black">
           <input type="radio" name="my-accordion-2" />
-          <div className="collapse-title font-semibold text-3xl text-cyan-900 mb-2">
+          <div className="collapse-title font-semibold text-2xl md:text-3xl text-cyan-900 mb-2">
             محل (7) الرياض
           </div>
           <div className="collapse-content text-sm">
@@ -222,7 +222,7 @@ const Contact = () => {
 
         <div className="collapse collapse-arrow  border border-gray-300  text-black">
           <input type="radio" name="my-accordion-2" />
-          <div className="collapse-title font-semibold text-3xl text-cyan-900 mb-2">
+          <div className="collapse-title font-semibold text-2xl md:text-3xl text-cyan-900 mb-2">
             محل (3) البرج
           </div>
           <div className="collapse-content text-sm">
