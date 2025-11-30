@@ -7,12 +7,14 @@ import { Cake18 } from "../Component/MenuComponent/Cake18";
 import { AssortedCakes } from "../Component/MenuComponent/AssortedCakes";
 import { Gato } from "../Component/MenuComponent/Gato";
 import { IoArrowUp } from "react-icons/io5";
+import Chocolate from "../Component/MenuComponent/Chocolate";
 const Menu = () => {
   let idCake26 = "idCake26";
   let idCake20 = "idCake20";
   let idCake18 = "idCake18";
   let idMixed = "idMixed";
   let idGato = "idGato";
+  let idChocolate = "idChocolate";
 
 
     const [show, setShow] = useState(false);
@@ -43,6 +45,7 @@ const Menu = () => {
         id18={idCake18}
         idMixed={idMixed}
         idGato={idGato}
+        idChocolate={idChocolate}
       />
 
       <section id={idCake26} className=" px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
@@ -63,6 +66,17 @@ const Menu = () => {
       <section id={idGato} className=" px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
         <Gato />
       </section>
+      <section id={idChocolate} className=" px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
+        <Chocolate />
+      </section>
+
+
+
+
+      {/* Button Scroll */}
+      {/* Button Scroll */}
+      {/* Button Scroll */}
+      {/* Button Scroll */}
        {show && (
         <button
           onClick={scrollToTop}

@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { useRef } from "react";
 
-const NavItem = ({ id26, id20, id18, idMixed, idGato }) => {
+const NavItem = ({ id26, id20, id18, idMixed, idGato, idChocolate }) => {
+  const swiperRef = useRef(null);
   const [active, setActive] = useState(id26);
 
   useEffect(() => {
@@ -41,33 +43,55 @@ const NavItem = ({ id26, id20, id18, idMixed, idGato }) => {
     { id: id18, label: "تورته مقاس (18)" },
     { id: idMixed, label: "تورت مقاسات متنوعة" },
     { id: idGato, label: "جاتو" },
+    { id: idChocolate, label: "شيكولاتة" },
   ];
+  useEffect(() => {
+    if (!swiperRef.current) return;
 
+    // هات كل السلايدز
+    const slides = swiperRef.current.slides;
+
+    // دور على السلايد اللي ليه نفس الـ id
+    let targetIndex = -1;
+    slides.forEach((slide, i) => {
+      if (slide.dataset.id === active) {
+        targetIndex = i;
+      }
+    });
+
+    // لو لقيناه… اسحب عليه
+    if (targetIndex !== -1) {
+      swiperRef.current.slideTo(targetIndex, 400);
+    }
+  }, [active]);
   return (
-   <div className="sticky top-3   bg-gray-200 rounded-b my-3 z-50">
-  <Swiper
-    className="h-13 md:h-16"   // <<< ثبّت الارتفاع هنا
-    spaceBetween={10}
-    slidesPerView="auto"
-    freeMode={true}
-  >
-    {sizes.map((item) => (
-      <SwiperSlide key={item.id} className="!w-auto flex items-stretch">
-        <a
-          href={`#${item.id}`}
-          className={`h-full flex items-center px-5 rounded-b-md transition whitespace-nowrap text-[12px] md:text-[14px] lg:text-[16px] ${
-            active === item.id
-              ? "bg-gray-600 text-white"
-              : "text-black"
-          }`}
-        >
-          {item.label}
-        </a>
-      </SwiperSlide>
-    ))}
-  </Swiper>
-</div>
-
+    <div className="sticky top-3   bg-gray-200 rounded-b my-3 z-50">
+      <Swiper
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
+        className="h-13 md:h-16"
+        spaceBetween={10}
+        slidesPerView="auto"
+        freeMode={true}
+      >
+        {sizes.map((item, index) => (
+          <SwiperSlide
+            key={item.id}
+            data-id={item.id} 
+            data-index={index} 
+            className="!w-auto flex items-stretch"
+          >
+            <a
+              href={`#${item.id}`}
+              className={`h-full flex items-center px-5 rounded-md transition whitespace-nowrap text-[12px] md:text-[14px] lg:text-[16px] ${
+                active === item.id ? "bg-gray-600 text-white" : "text-black"
+              }`}
+            >
+              {item.label}
+            </a>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 };
 
