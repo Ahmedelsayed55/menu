@@ -1,7 +1,7 @@
 import Cake from "../../assets/snecars26.png";
 const Cake26 = ({ id }) => {
   const prduct = [
-    { id: 1, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
+    { id: 1, name: "تورته سنيكرز مقاس (26)", price: 350, img: Cake },
     { id: 2, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
     { id: 3, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
     { id: 4, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
@@ -29,14 +29,14 @@ const Cake26 = ({ id }) => {
           return (
             <div
               key={item.id}
-              className="rounded-sm shadow-2xl shadow-gray-400 pt-15 px-5 flex flex-col gap-5 items-center transition hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
+              className="rounded-sm shadow-2xl shadow-gray-400 pt-15 px-1 flex flex-col gap-5 items-center transition hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
             >
               <img className=" w-full md:w-[85%]  md:mb-10 transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]" src={item.img} alt="Cake" />
               <div className="w-full flex flex-col gap-7 py-3">
-                <h2 className="text-start text-[20px] font-bold">
+                <h2 className="text-start text-[14px] me:text-[20px] font-bold">
                   {item.name}
                 </h2>
-                <h2 className="text-start text-[18px] font-bold text-yellow-700">
+                <h2 className="text-start text-[12px] md:text-[18px] font-bold text-gray-800">
                   {item.price} ج.م
                 </h2>
               </div>
