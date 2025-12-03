@@ -3,10 +3,10 @@ import { FaWhatsapp, FaPhone, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 const Contact = () => {
   return (
     <div className="bg-gray-100">
-      <div className="container mx-auto pt-20 shadow-xl shadow-cyan-100 ">
+      <div className="container mx-auto pt-20 shadow-xl shadow-cyan-100 bg-gray-50 ">
         {/*  المصنع  */}
         <div className="collapse collapse-arrow  border border-gray-300 text-black">
-          <input type="radio" name="my-accordion-2" defaultChecked />
+          <input type="radio" name="my-accordion-2"  />
           <div className="collapse-title font-semibold text-[24px] md:text-3xl text-cyan-900 mb-2">
             الإدارة والمصنع
           </div>
@@ -112,7 +112,7 @@ const Contact = () => {
         {/* محل 2 */}
         {/* محل 2 */}
         <div className="collapse collapse-arrow  border border-gray-300 text-black">
-          <input type="radio" name="my-accordion-2" />
+          <input type="radio" name="my-accordion-2" defaultChecked/>
           <div className="collapse-title font-semibold text-[24px] md:text-3xl text-cyan-900 mb-2">
             محل (2) شارع بورسعيد
           </div>
@@ -220,7 +220,7 @@ const Contact = () => {
         {/* محل 3 */}
         {/* محل 3 */}
 
-        <div className="collapse collapse-arrow  border border-gray-300  text-black">
+        <div className="collapse collapse-arrow  border border-gray-300   text-black">
           <input type="radio" name="my-accordion-2" />
           <div className="collapse-title font-semibold text-[24px] md:text-3xl text-cyan-900 mb-2">
             محل (3) البرج
