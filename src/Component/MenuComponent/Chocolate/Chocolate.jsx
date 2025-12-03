@@ -76,7 +76,7 @@ const Chocolate = ({ id }) => {
             className="bg-gray-100 rounded px-5 h-[80%] pt-20 pb-5 w-sm  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
           >
             <button
-              className="absolute px-5 py-4 top-2 right-4 text-red-600 text-2xl transition duration-300 cursor-pointer hover:bg-red-500 hover:text-white  rounded-full"
+              className="absolute btn px-3 py-2  flex items-center justify-center top-2 right-2 text-2xl cursor-pointer bg-cyan-800 text-white  rounded-box"
               onClick={() => setOpen(false)}
             >
               ✖

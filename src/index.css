@@ -14,7 +14,7 @@ html {
 
 * {
   scrollbar-width: thin;              /* للفايرفوكس */
-  scrollbar-color: #474747 #e5e7eb;   /* للفايرفوكس (thumb, track) */
+  scrollbar-color: #153963 #6c768a85;   /* للفايرفوكس (thumb, track) */
 }
 
 /* للكروم / إيدج / سفاري */
@@ -23,14 +23,14 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #e5e7eb; /* gray-200 */
+  background: #464e5e59; /* gray-200 */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0ea5e9; /* sky-500 */
+  background: #153949; /* sky-500 */
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0369a1; /* sky-700 */
+  background: #305264; /* sky-700 */
 }
