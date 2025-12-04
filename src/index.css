@@ -4,9 +4,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-@theme{
-    --font-retaj:"Aref Ruqaa", serif;
-}
+
 
 html {
   scroll-behavior: smooth;

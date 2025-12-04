@@ -21,7 +21,7 @@ const NavBar = () => {
         </nav>
         {/* <img className="w-12 h-10 md:w-19 md:h-12" src={logo} alt="Logo" />
          */}
-         <h1 className="font-retaj -mt-4  text-3xl md:text-4xl text-yellow-700 md:px-10">ريتاج</h1>
+         <h1 className="-mt-4  text-3xl md:text-4xl text-yellow-700 md:px-10">ريتاج</h1>
       </header>
     </div>
   );
