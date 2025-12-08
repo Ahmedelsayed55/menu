@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Cake from "../../../assets/chocolate.png";
+import Cake from "../../../assets/cakeLayers/cak1.png";
+import Cake1 from "../../../assets/cakeLayers/cak2.png";
 export const CakeLayers = ({ id }) => {
   const prduct = [
-    { id: 1, name: "شيكولاته", price: 35, img: Cake },
-    { id: 2, name: "شيكولاته", price: 35, img: Cake },
-    { id: 3, name: "شيكولاته", price: 35, img: Cake },
-    { id: 4, name: "شيكولاته", price: 35, img: Cake },
+    { id: 1, name: "تورته 2 دور", price: 35, img: Cake },
+    { id: 2, name: "تورته 3 دور", price: 35, img: Cake1 },
+
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -37,7 +37,7 @@ export const CakeLayers = ({ id }) => {
                 setSelectedItem(item);
                 setOpen(true);
               }}
-              className="rounded  shadow-2xl shadow-gray-400 pt-10 md:pt-15 px-1 flex flex-col items-center justify-between transition hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
+              className="rounded  shadow-2xl shadow-gray-400 pt-5 md:pt-7 px-1 flex flex-col items-center justify-between transition hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
             >
               <img
                 className=" w-full md:w-60  md:mb-7 transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]"

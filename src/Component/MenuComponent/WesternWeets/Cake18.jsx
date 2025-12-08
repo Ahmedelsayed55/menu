@@ -1,15 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Cake from "../../../assets/hafelots.png";
+import Cake1 from "../../../assets/cake18/cake1.png";
 export const Cake18 = ({ id }) => {
   const prduct = [
-    { id: 1, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 2, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 3, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 4, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 5, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 6, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 7, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 8, name: "تورته فلاور (20)", price: 350, img: Cake },
+    { id: 1, name: "تورته (18)", price: 350, img: Cake1 },
+
 
   ];
   const [selectedItem, setSelectedItem] = useState(null);
@@ -42,7 +36,7 @@ export const Cake18 = ({ id }) => {
                 setSelectedItem(item);
                 setOpen(true);
               }}
-              className="rounded  shadow-2xl shadow-gray-400 pt-10 md:pt-15 px-1 flex flex-col items-center justify-between transition hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
+              className="rounded  shadow-2xl shadow-gray-400 pt-5 md:pt-7 px-1 flex flex-col items-center justify-between transition hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
             >
               <img
                 className=" w-full md:w-60  md:mb-7 transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]"
