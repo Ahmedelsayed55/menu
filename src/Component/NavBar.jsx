@@ -4,7 +4,7 @@ import logo from "../assets/logo.png";
 const NavBar = () => {
   return (
     <div className="container px-2  absolute top-0 left-1/2 -translate-x-1/2 z-50 ">
-      <header className="flex justify-between items-center  md:px-5 py-5 backdrop-blur-2xl bg-gray-400/10 rounded-b-2xl">
+      <header className="flex justify-between items-center px-1.5  md:px-5 py-2 md:py-5 backdrop-blur-2xl bg-gray-400/10 rounded-b-2xl">
         <nav className="flex gap-1 md:gap-3">
           <Link
             className="text-[14px] text-yellow-600 md:text-[20px] p-3 border-b-2 border-yellow-900/0 hover:border-b-2 hover:border-b-yellow-600"
