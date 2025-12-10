@@ -5,9 +5,11 @@ const Contact = () => {
     <div className="bg-gray-100 py-10">
       <div className="container mx-auto pt-20 shadow-xl shadow-cyan-100 bg-gray-50 ">
         {/*  المصنع  */}
+        {/*  المصنع  */}
+        {/*  المصنع  */}
         <div className="collapse collapse-arrow  border border-gray-300 text-black">
-          <input type="radio" name="my-accordion-2"  />
-          <div className="collapse-title font-semibold text-[24px] md:text-3xl text-cyan-900 mb-2">
+          <input type="radio" name="my-accordion-2" />
+          <div className="collapse-title font-semibold pb-10 text-center text-[24px] md:text-3xl text-cyan-900 mb-2">
             الإدارة والمصنع
           </div>
           <div className="collapse-content text-sm">
@@ -59,7 +61,7 @@ const Contact = () => {
         {/* محل 1  */}
         <div className="collapse collapse-arrow  border border-gray-300  text-black">
           <input type="radio" name="my-accordion-2" />
-          <div className="collapse-title font-semibold text-[24px] md:text-3xl text-cyan-900 mb-2">
+          <div className="collapse-title font-semibold pb-10 text-center text-[24px] md:text-3xl text-cyan-900 mb-2">
             محل (1) شارع جمال عبدالناصر
           </div>
           <div className="collapse-content text-sm">
@@ -112,8 +114,8 @@ const Contact = () => {
         {/* محل 2 */}
         {/* محل 2 */}
         <div className="collapse collapse-arrow  border border-gray-300 text-black">
-          <input type="radio" name="my-accordion-2" defaultChecked/>
-          <div className="collapse-title font-semibold text-[24px] md:text-3xl text-cyan-900 mb-2">
+          <input type="radio" name="my-accordion-2" defaultChecked />
+          <div className="collapse-title font-semibold text-[24px] text-center md:text-3xl text-cyan-900 mb-2 pb-10">
             محل (2) شارع بورسعيد
           </div>
           <div className="collapse-content text-sm">
@@ -167,7 +169,7 @@ const Contact = () => {
 
         <div className="collapse collapse-arrow  border border-gray-300  text-black">
           <input type="radio" name="my-accordion-2" />
-          <div className="collapse-title font-semibold text-[24px] md:text-3xl text-cyan-900 mb-2">
+          <div className="collapse-title font-semibold text-[24px] pb-10 text-center md:text-3xl text-cyan-900 mb-2">
             محل (7) الرياض
           </div>
           <div className="collapse-content text-sm">
@@ -222,7 +224,7 @@ const Contact = () => {
 
         <div className="collapse collapse-arrow  border border-gray-300   text-black">
           <input type="radio" name="my-accordion-2" />
-          <div className="collapse-title font-semibold text-[24px] md:text-3xl text-cyan-900 mb-2">
+          <div className="collapse-title font-semibold text-[24px] pb-10 text-center md:text-3xl text-cyan-900 mb-2">
             محل (3) البرج
           </div>
           <div className="collapse-content text-sm">
@@ -260,7 +262,7 @@ const Contact = () => {
               <div>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d714.5297098105715!2d30.98698648545377!3d31.581920014098234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f72174cb0e07f5%3A0x82d0da19c197102c!2z2K3ZhNmI2KfZhtmKINix2YrYqtin2KwgLSBSZXRhaiBQYXN0cnk!5e0!3m2!1sen!2seg!4v1764509599891!5m2!1sen!2seg"
-                 width="100%"
+                  width="100%"
                   height="450"
                   style={{ border: 0 }}
                   loading="lazy"

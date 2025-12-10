@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="h-[30vh] md:h-auto">
       <Swiper
-      className="h-full"
+        className="h-full"
         modules={[Pagination, Scrollbar, A11y, Autoplay]}
         slidesPerView={1}
         pagination={{ clickable: true }}
