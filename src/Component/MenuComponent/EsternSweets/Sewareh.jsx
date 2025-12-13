@@ -92,7 +92,7 @@ export const Sewareh = ({ id }) => {
               <h2 className="text-start text-[20px] md:text-[24px] font-bold text-cyan-950">
                 {selectedItem.name}
               </h2>
-              <h2 className="text-start text-[20px] md:text-[20px] font-bold text-cyan-700">
+              <h2 className="text-start text-[20px] md:text-2xl font-black  text-cyan-700">
                 {selectedItem.price} ج.م
               </h2>
             </div>

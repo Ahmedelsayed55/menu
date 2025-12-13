@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
-import glashmx from "../../../assets/assetsRmadan/glashmx.png";
-import mdl3amanga from "../../../assets/assetsRmadan/mdl3amanga.png";
-import asawer from "../../../assets/assetsRmadan/asawer.png";
+import konafa3othmanly from "../../../assets/konafa/konafa3othmanly.png";
+import konafaKrema from "../../../assets/konafa/konafaKrema.png";
+import konafaN from "../../../assets/konafa/konafaN.png";
 import forma from "../../../assets/assetsRmadan/forma.png";
 import kornehkrema from "../../../assets/assetsRmadan/kornehkrema.png";
 import kornehnotela from "../../../assets/assetsRmadan/kornehnotela.png";
 import lotes from "../../../assets/assetsRmadan/lotes.png";
 export const Konafa = ({ id }) => {
   const prduct = [
-    { id: 1, name: "جلاش مكسرت", price: 35, img: glashmx },
-    { id: 2, name: "مدلعه مانجا", price: 35, img: mdl3amanga },
-    { id: 3, name: " أساور", price: 35, img: asawer },
+    { id: 1, name: " كنافة عثمانلي", price: 35, img: konafa3othmanly },
+    { id: 2, name: "كنافة كريمة", price: 35, img: konafaKrema },
+    { id: 3, name: " كنافة نوتيلا", price: 35, img: konafaN },
     { id: 4, name: " أساور", price: 35, img: forma },
     { id: 5, name: " كورنيه كريما ", price: 35, img: kornehkrema },
     { id: 6, name: " كورنيه نوتيلا ", price: 35, img: kornehnotela },
@@ -32,9 +32,7 @@ export const Konafa = ({ id }) => {
   }, [open]);
   return (
     <div>
-      <h1 className="text-[16px] font-bold md:text-2xl mb-5">
-       كنافات
-      </h1>
+      <h1 className="text-[16px] font-bold md:text-2xl mb-5">كنافات</h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-2 md:gap-5"
         id={id}

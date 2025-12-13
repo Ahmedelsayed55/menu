@@ -1,20 +1,17 @@
 import React, { useEffect, useState } from "react";
-import glashmx from "../../../assets/assetsRmadan/glashmx.png";
-import mdl3amanga from "../../../assets/assetsRmadan/mdl3amanga.png";
-import asawer from "../../../assets/assetsRmadan/asawer.png";
-import forma from "../../../assets/assetsRmadan/forma.png";
-import kornehkrema from "../../../assets/assetsRmadan/kornehkrema.png";
-import kornehnotela from "../../../assets/assetsRmadan/kornehnotela.png";
-import lotes from "../../../assets/assetsRmadan/lotes.png";
+import baklawaGambry from "../../../assets/baklawa/baklawaGambry.png";
+import baklawakolwashkor from "../../../assets/baklawa/baklawakolwashkor.png";
+import krema from "../../../assets/baklawa/krema-removebg-preview.png";
+import meksrat from "../../../assets/baklawa/meksrat-removebg-preview.png";
+import sadf from "../../../assets/baklawa/sadf-removebg-preview.png";
+
 export const Bogasha = ({ id }) => {
   const prduct = [
-    { id: 1, name: "جلاش مكسرت", price: 35, img: glashmx },
-    { id: 2, name: "مدلعه مانجا", price: 35, img: mdl3amanga },
-    { id: 3, name: " أساور", price: 35, img: asawer },
-    { id: 4, name: " أساور", price: 35, img: forma },
-    { id: 5, name: " كورنيه كريما ", price: 35, img: kornehkrema },
-    { id: 6, name: " كورنيه نوتيلا ", price: 35, img: kornehnotela },
-    { id: 7, name: " مدلعه لوتس ", price: 35, img: lotes },
+    { id: 1, name: "بقلاوة جمبري", price: 35, img: baklawaGambry },
+    { id: 2, name: " بقلاوة كل واشكر", price: 35, img: baklawakolwashkor },
+    { id: 3, name: "جلاش كريمه", price: 35, img: krema },
+    { id: 4, name: "جلاش مكسرات", price: 35, img: meksrat },
+    { id: 5, name: "جلاش صدف", price: 35, img: sadf },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -32,9 +29,7 @@ export const Bogasha = ({ id }) => {
   }, [open]);
   return (
     <div>
-      <h1 className="text-[16px] font-bold md:text-2xl mb-5">
-       البغاشة
-      </h1>
+      <h1 className="text-[16px] font-bold md:text-2xl mb-5">البغاشة</h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-2 md:gap-5"
         id={id}

@@ -13,6 +13,8 @@ import Cake16 from "../../../assets/assets26/a16.png";
 import Cake17 from "../../../assets/assets26/a17.png";
 import snecars from "../../../assets/assets26/a18.png";
 import flower from "../../../assets/assets26/flowe.png";
+import karamilBlack from "../../../assets/assets26/karamilBlack-removebg-preview.png";
+import whiteMillk from "../../../assets/assets26/whiteMillk-removebg-preview.png";
 import { useEffect, useState } from "react";
 const Cake26 = ({ id }) => {
   const prduct = [
@@ -23,7 +25,7 @@ const Cake26 = ({ id }) => {
       img: havGlaxyChocolata,
     },
     { id: 2, name: "تورته فلاور ", price: 350, img: Cake1 },
-    { id: 3, name: "تورته لوتس شيكولاته ", price: 350, img: Cake2 },
+    { id: 3, name: "تورته هاف لوتس & شيكولاته ", price: 350, img: Cake2 },
     { id: 4, name: "تورته جلاكسي ", price: 350, img: Cake3 },
     { id: 5, name: "تورته نوتيلا فراوله ", price: 350, img: Cake4 },
     { id: 6, name: "تورته هاف كارميل & شيكولاته ", price: 350, img: Cake7 },
@@ -36,6 +38,13 @@ const Cake26 = ({ id }) => {
     { id: 9, name: "تورته ايت سيزون فادج ", price: 350, img: Cake17 },
     { id: 9, name: "تورته سنيكرز ", price: 350, img: snecars },
     { id: 10, name: "تورته فلاور", price: 350, img: flower },
+    {
+      id: 11,
+      name: "تورته هاف كارميل & بلاك فورست",
+      price: 350,
+      img: karamilBlack,
+    },
+    { id: 12, name: "تورته وايت فورست & حليب", price: 350, img: whiteMillk },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

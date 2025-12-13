@@ -2,6 +2,8 @@ import chocolate from "../../../assets/assetsHart/a5.png";
 import blackForst from "../../../assets/assetsHart/a6.png";
 import frot from "../../../assets/assetsHart/a8.png";
 import redvalved from "../../../assets/assetsHart/a9.png";
+import karamilBlackHart from "../../../assets/assetsHart/karamilBlackHart-removebg-preview.png";
+import havTagHart from "../../../assets/assetsHart/havTagHart-removebg-preview.png";
 
 import { useEffect, useState } from "react";
 const HartCake = ({ id }) => {
@@ -10,7 +12,13 @@ const HartCake = ({ id }) => {
     { id: 2, name: "تورته قلب بلاك فورست ", price: 350, img: blackForst },
     { id: 3, name: "تورته قلب فاكهه ", price: 350, img: frot },
     { id: 4, name: "تورته قلب شيكولاتة ", price: 350, img: chocolate },
-
+    {
+      id: 5,
+      name: "تورته قلب كارميل & بلاك فورست ",
+      price: 350,
+      img: karamilBlackHart,
+    },
+    { id: 6, name: "تورته قلب هاف تاج ", price: 350, img: havTagHart },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -27,9 +35,7 @@ const HartCake = ({ id }) => {
   }, [open]);
   return (
     <div>
-      <h1 className="text-[16px] font-bold md:text-2xl mb-5">
-       تورت قلب
-      </h1>
+      <h1 className="text-[16px] font-bold md:text-2xl mb-5">تورت قلب</h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-2 md:gap-5"
         id={id}

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import glashmx from "../../../assets/assetsRmadan/glashmx.png";
+import lenza from "../../../assets/tary/lenza.png";
 import mdl3amanga from "../../../assets/assetsRmadan/mdl3amanga.png";
 import asawer from "../../../assets/assetsRmadan/asawer.png";
 import forma from "../../../assets/assetsRmadan/forma.png";
@@ -8,7 +8,7 @@ import kornehnotela from "../../../assets/assetsRmadan/kornehnotela.png";
 import lotes from "../../../assets/assetsRmadan/lotes.png";
 export const Tary = ({ id }) => {
   const prduct = [
-    { id: 1, name: "جلاش مكسرت", price: 35, img: glashmx },
+    { id: 1, name: "لينزا", price: 35, img: lenza },
     { id: 2, name: "مدلعه مانجا", price: 35, img: mdl3amanga },
     { id: 3, name: " أساور", price: 35, img: asawer },
     { id: 4, name: " أساور", price: 35, img: forma },
@@ -32,9 +32,7 @@ export const Tary = ({ id }) => {
   }, [open]);
   return (
     <div>
-      <h1 className="text-[16px] font-bold md:text-2xl mb-5">
-       الطري
-      </h1>
+      <h1 className="text-[16px] font-bold md:text-2xl mb-5">الطري</h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-2 md:gap-5"
         id={id}
