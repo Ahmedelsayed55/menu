@@ -13,7 +13,6 @@ const Cake20 = ({ id }) => {
     { id: 8, name: "تورته فلاور (20)", price: 350, img: Cake },
     { id: 9, name: "تورته فلاور (20)", price: 350, img: Cake },
     { id: 10, name: "تورته فلاور (20)", price: 350, img: Cake },
- 
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -56,7 +55,7 @@ const Cake20 = ({ id }) => {
                 <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950">
                   {item.name}
                 </h2>
-                <h2 className="text-start text-[12px] md:text-[20px] font-bold text-cyan-700">
+                <h2 className="text-start text-[12px] md:text-2xl font-bold text-cyan-700">
                   {item.price} ج.م
                 </h2>
               </div>

@@ -9,7 +9,6 @@ const DollMillk = ({ id }) => {
     { id: 2, name: "ملبن جيلي", price: 90, img: mlbnGele },
     { id: 3, name: "ملبن رش سوداني", price: 35, img: mlbndsodany },
     { id: 4, name: "ملبن سادة", price: 35, img: mlbnsada },
-    
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -53,7 +52,7 @@ const DollMillk = ({ id }) => {
                 <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950">
                   {item.name}
                 </h2>
-                <h2 className="text-start text-[12px] md:text-[20px] font-bold text-cyan-700">
+                <h2 className="text-start text-[12px] md:text-2xl font-bold text-cyan-700">
                   {item.price} ج.م
                 </h2>
               </div>

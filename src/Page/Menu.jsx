@@ -44,8 +44,7 @@ const Menu = () => {
   let idHartCake = "idHartCake";
   let idNawaem = "idNawaem";
 
-
-    const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -89,84 +88,141 @@ const Menu = () => {
         idHartCake={idHartCake}
         idNawaem={idNawaem}
       />
+      <section
+        id={idGato}
+        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
+      >
+        <Gato />
+      </section>
 
-      <section id={idCake26} className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24">
+      <section
+        id={idCake26}
+        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
+      >
         <Cake26 />
       </section>
 
-      <section id={idCake20} className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24">
+      <section
+        id={idCake20}
+        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
+      >
         <Cake20 />
       </section>
 
-      <section id={idCake18} className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24">
+      <section
+        id={idCake18}
+        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
+      >
         <Cake18 />
       </section>
-      <section id={idHartCake} className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24">
+      <section
+        id={idHartCake}
+        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
+      >
         <HartCake />
       </section>
 
-      <section id={idMixed} className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24">
+      <section
+        id={idMixed}
+        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
+      >
         <AssortedCakes />
       </section>
-      <section id={idLayers} className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24">
+      <section
+        id={idLayers}
+        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
+      >
         <CakeLayers />
       </section>
-      <section id={idGato} className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24">
-        <Gato />
-      </section>
-      <section id={idRamadan} className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24">
+      <section
+        id={idRamadan}
+        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
+      >
         <RamadanSweets />
       </section>
-      <section id={idKonafa} className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24">
+      <section
+        id={idKonafa}
+        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
+      >
         <Konafa />
       </section>
-      <section id={idTary} className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24">
+      <section
+        id={idTary}
+        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
+      >
         <Tary />
       </section>
-      <section id={idBogasha} className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24">
+      <section
+        id={idBogasha}
+        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
+      >
         <Bogasha />
       </section>
-      <section id={idZyout} className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24">
+      <section
+        id={idZyout}
+        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
+      >
         <Zyout />
       </section>
-      <section id={idForam} className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24">
+      <section
+        id={idForam}
+        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
+      >
         <Foram />
       </section>
-      <section id={idٍSewareh} className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24">
+      <section
+        id={idٍSewareh}
+        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
+      >
         <Sewareh />
       </section>
-      <section id={idٍDryNuts} className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24">
+      <section
+        id={idٍDryNuts}
+        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
+      >
         <DryNuts />
       </section>
-      <section id={idDollMillk} className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24">
+      <section
+        id={idDollMillk}
+        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
+      >
         <DollMillk />
       </section>
-      <section id={idCoconut} className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24">
+      <section
+        id={idCoconut}
+        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
+      >
         <Coconut />
       </section>
-      <section id={idReadyPack} className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24">
+      <section
+        id={idReadyPack}
+        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
+      >
         <ReadyPackages />
       </section>
-      <section id={idNawaem} className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24">
+      <section
+        id={idNawaem}
+        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
+      >
         <Nawaem />
       </section>
-      <section id={idChocolate} className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24">
+      <section
+        id={idChocolate}
+        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
+      >
         <Chocolate />
       </section>
 
-
-
-
       {/* Button Scroll */}
       {/* Button Scroll */}
       {/* Button Scroll */}
       {/* Button Scroll */}
-       {show && (
+      {show && (
         <button
           onClick={scrollToTop}
           className="fixed bottom-6 right-6 text-2xl md:text-3xl bg-cyan-600 text-white hover:bg-cyan-700 cursor-pointer p-3 rounded-full shadow-xl transition z-2"
         >
-           <IoArrowUp />
+          <IoArrowUp />
         </button>
       )}
     </div>

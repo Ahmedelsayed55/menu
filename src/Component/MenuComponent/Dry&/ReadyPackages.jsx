@@ -12,7 +12,6 @@ const ReadyPackages = ({ id }) => {
     { id: 8, name: "شيكولاته", price: 35, img: Cake },
     { id: 9, name: "شيكولاته", price: 35, img: Cake },
     { id: 10, name: "شيكولاته", price: 35, img: Cake },
-
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -31,7 +30,7 @@ const ReadyPackages = ({ id }) => {
   return (
     <div>
       <h1 className="text-[16px] font-bold md:text-2xl mb-5">
-  العبوات الجاهزة
+        العبوات الجاهزة
       </h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-2 md:gap-5"
@@ -56,7 +55,7 @@ const ReadyPackages = ({ id }) => {
                 <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950">
                   {item.name}
                 </h2>
-                <h2 className="text-start text-[12px] md:text-[20px] font-bold text-cyan-700">
+                <h2 className="text-start text-[12px] md:text-2xl font-bold text-cyan-700">
                   {item.price} ج.م
                 </h2>
               </div>

@@ -8,7 +8,6 @@ export const AssortedCakes = ({ id }) => {
     { id: 4, name: "تورته فلاور (20)", price: 350, img: Cake },
     { id: 5, name: "تورته فلاور (20)", price: 350, img: Cake },
     { id: 6, name: "تورته فلاور (20)", price: 350, img: Cake },
-
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -26,7 +25,7 @@ export const AssortedCakes = ({ id }) => {
   return (
     <div>
       <h1 className="text-[16px] font-bold md:text-2xl mb-5">
-     تورت مقاسات متنوعه
+        تورت مقاسات متنوعه
       </h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-2 md:gap-5"
@@ -51,7 +50,7 @@ export const AssortedCakes = ({ id }) => {
                 <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950">
                   {item.name}
                 </h2>
-                <h2 className="text-start text-[12px] md:text-[20px] font-bold text-cyan-700">
+                <h2 className="text-start text-[12px] md:text-2xl font-bold text-cyan-700">
                   {item.price} ج.م
                 </h2>
               </div>

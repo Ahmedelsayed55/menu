@@ -12,7 +12,6 @@ export const Nawaem = ({ id }) => {
     { id: 3, name: " غريبة", price: 190, img: betefor },
     { id: 4, name: " بسكويت", price: 180, img: bskwet },
     { id: 5, name: "سابلية", price: 190, img: sableh },
-
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -30,9 +29,7 @@ export const Nawaem = ({ id }) => {
   }, [open]);
   return (
     <div>
-      <h1 className="text-[16px] font-bold md:text-2xl mb-5">
-      النواعم
-      </h1>
+      <h1 className="text-[16px] font-bold md:text-2xl mb-5">النواعم</h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-2 md:gap-5"
         id={id}
@@ -56,7 +53,7 @@ export const Nawaem = ({ id }) => {
                 <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950">
                   {item.name}
                 </h2>
-                <h2 className="text-start text-[12px] md:text-[20px] font-bold text-cyan-700">
+                <h2 className="text-start text-[12px] md:text-2xl font-bold text-cyan-700">
                   {item.price} ج.م
                 </h2>
               </div>

@@ -26,7 +26,7 @@ const NavItem = ({
   idNawaem,
 }) => {
   const swiperRef = useRef(null);
-  const [active, setActive] = useState(id26);
+  const [active, setActive] = useState(idGato);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
@@ -46,7 +46,7 @@ const NavItem = ({
 
     const onScroll = () => {
       if (window.scrollY === 0) {
-        setActive(id26); // ترجع لأول section لما تكون في أول الصفحة
+        setActive(idGato); // ترجع لأول section لما تكون في أول الصفحة
       }
     };
 
@@ -59,13 +59,13 @@ const NavItem = ({
   }, []);
 
   const sizes = [
+    { id: idGato, label: "جاتوة" },
     { id: id26, label: "تورته مقاس (26)" },
     { id: id20, label: "تورته مقاس (20)" },
     { id: id18, label: "تورته مقاس (18)" },
     { id: idHartCake, label: "تورت قلب" },
     { id: idMixed, label: "تورت مقاسات متنوعة" },
     { id: idLayers, label: "تورت أدوار" },
-    { id: idGato, label: "جاتوة" },
     { id: idRamadan, label: "رمضانيات" },
     { id: idKonafa, label: "كنافات" },
     { id: idTary, label: "الطري" },
