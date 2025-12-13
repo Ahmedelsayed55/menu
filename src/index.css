@@ -1,10 +1,7 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Harmattan:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Harmattan:wght@400;500;600;700&display=swap");
 
 @import "tailwindcss";
 @plugin "daisyui";
-
-
 
 html {
   scroll-behavior: smooth;
@@ -13,8 +10,8 @@ html {
 }
 
 * {
-  scrollbar-width: thin;              /* للفايرفوكس */
-  scrollbar-color: #153963 #6c768a85;   /* للفايرفوكس (thumb, track) */
+  scrollbar-width: thin; /* للفايرفوكس */
+  scrollbar-color: #153963 #6c768a85; /* للفايرفوكس (thumb, track) */
 }
 
 /* للكروم / إيدج / سفاري */

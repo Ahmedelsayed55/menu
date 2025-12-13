@@ -14,18 +14,17 @@ const Home = () => {
             </h1>
             <div className="flex flex-col gap-5">
               <Link
-                className="btn text-white bg-cyan-800 px-20 md:px-40  py-6 rounded-3xl text-2xl"
+                className="btn text-white bg-cyan-800 px-20 md:px-40  py-6 rounded-3xl text-2xl hover:bg-transparent hover:text-black"
                 to="/menu"
               >
                 قائمة الاسعار
               </Link>
               <Link
-                className="btn text-white bg-cyan-800 px-20 md:px-40  py-6 rounded-3xl text-2xl"
+                className="btn hover:text-white px-20 md:px-40  py-6 rounded-3xl text-2xl bg-transparent hover:bg-cyan-800 text-black "
                 to="/contact"
               >
                 للتواصل معنا
               </Link>
-
             </div>
             <div className="flex gap-5 ">
               <a
