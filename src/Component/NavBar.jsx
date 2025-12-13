@@ -5,25 +5,26 @@ import { ImHome } from "react-icons/im";
 import { FiPhoneCall } from "react-icons/fi";
 const NavBar = () => {
   return (
-    <div className="container mx-auto ">
-      <header className="flex justify-between items-center px-3  md:px-7 py-2 md:py-5 ">
+    <div className="  ">
+      <header className="flex justify-between items-center px-3  md:px-10 py-2 md:py-5 ">
         <nav className="flex gap-10 md:gap-20">
           <Link
-            className="text-2xl md:text-4xl text-yellow-600 transition-all hover:text-white"
+            className="text-2xl md:text-4xl text-white transition duration-500 hover:bg-white hover:text-yellow-600 rounded-2xl p-3 bg-yellow-600"
             to="/"
           >
             <ImHome />
           </Link>
           <Link
-            className="text-2xl md:text-4xl text-yellow-600 transition-all hover:text-white"
+            className="text-2xl md:text-4xl text-white transition duration-500 hover:bg-white hover:text-yellow-600 rounded-2xl p-3 bg-yellow-600"
             to="/contact"
           >
             <FiPhoneCall />
           </Link>
         </nav>
-        <img className="w-12 h-10 md:w-19 md:h-15" src={logo} alt="Logo" />
 
-        {/* <Link to={"/menu"} className="-mt-4  text-3xl md:text-4xl text-yellow-700 md:px-10 cursor-pointer">ريتاج</Link> */}
+        <Link to={"/menu"}>
+          <img className="w-12 h-10 md:w-19 md:h-15" src={logo} alt="Logo" />
+        </Link>
       </header>
     </div>
   );
