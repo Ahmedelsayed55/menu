@@ -1,20 +1,24 @@
 import React, { useEffect, useState } from "react";
-import glashmx from "../../../assets/assetsRmadan/glashmx.png";
-import mdl3amanga from "../../../assets/assetsRmadan/mdl3amanga.png";
-import asawer from "../../../assets/assetsRmadan/asawer.png";
-import forma from "../../../assets/assetsRmadan/forma.png";
-import kornehkrema from "../../../assets/assetsRmadan/kornehkrema.png";
-import kornehnotela from "../../../assets/assetsRmadan/kornehnotela.png";
-import lotes from "../../../assets/assetsRmadan/lotes.png";
+import assawerMeksrat from "../../../assets/sewarehat/assawerMeksrat.png";
+import bassma3gwa from "../../../assets/sewarehat/bassma3gwa.png";
+import bassmaChocolata from "../../../assets/sewarehat/bassmaChocolata.png";
+import bormaMeksrat from "../../../assets/sewarehat/bormaMeksrat.png";
+import habeba from "../../../assets/sewarehat/habeba.png";
+import hamamBorma from "../../../assets/sewarehat/hamamBorma.png";
+import hamamSharky from "../../../assets/sewarehat/hamamSharky.png";
+import segarSada from "../../../assets/sewarehat/segarSada.png";
+import shaklma from "../../../assets/sewarehat/shaklma.png";
 export const Sewareh = ({ id }) => {
   const prduct = [
-    { id: 1, name: "جلاش مكسرت", price: 35, img: glashmx },
-    { id: 2, name: "مدلعه مانجا", price: 35, img: mdl3amanga },
-    { id: 3, name: " أساور", price: 35, img: asawer },
-    { id: 4, name: " أساور", price: 35, img: forma },
-    { id: 5, name: " كورنيه كريما ", price: 35, img: kornehkrema },
-    { id: 6, name: " كورنيه نوتيلا ", price: 35, img: kornehnotela },
-    { id: 7, name: " مدلعه لوتس ", price: 35, img: lotes },
+    { id: 1, name: " اساور مكسرات", price: 35, img: assawerMeksrat },
+    { id: 2, name: " بصمة عجوة", price: 35, img: bassma3gwa },
+    { id: 3, name: " بصمة شيكولاتة ", price: 35, img: bassmaChocolata },
+    { id: 4, name: " بورمة مكسرات", price: 35, img: bormaMeksrat },
+    { id: 5, name: "حبيبة", price: 35, img: habeba },
+    { id: 6, name: "حمام بوررمة ", price: 35, img: hamamBorma },
+    { id: 7, name: "حمام شرقي", price: 35, img: hamamSharky },
+    { id: 8, name: "سيجار سادة", price: 35, img: segarSada },
+    { id: 9, name: "شكلمة", price: 35, img: shaklma },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -32,9 +36,7 @@ export const Sewareh = ({ id }) => {
   }, [open]);
   return (
     <div>
-      <h1 className="text-[16px] font-bold md:text-2xl mb-5">
-     سيواريهات
-      </h1>
+      <h1 className="text-[16px] font-bold md:text-2xl mb-5">سيواريهات</h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-2 md:gap-5"
         id={id}
@@ -58,7 +60,7 @@ export const Sewareh = ({ id }) => {
                 <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950">
                   {item.name}
                 </h2>
-                <h2 className="text-start text-[12px] md:text-[20px] font-bold text-cyan-700">
+                <h2 className="text-start text-[12px] md:text-2xl font-black text-cyan-700">
                   {item.price} ج.م
                 </h2>
               </div>

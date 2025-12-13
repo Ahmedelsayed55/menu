@@ -6,6 +6,7 @@ import forma from "../../../assets/assetsRmadan/forma.png";
 import kornehkrema from "../../../assets/assetsRmadan/kornehkrema.png";
 import kornehnotela from "../../../assets/assetsRmadan/kornehnotela.png";
 import lotes from "../../../assets/assetsRmadan/lotes.png";
+import basma from "../../../assets/assetsRmadan/basmaagwa.png";
 export const RamadanSweets = ({ id }) => {
   const prduct = [
     { id: 1, name: "جلاش مكسرت", price: 35, img: glashmx },
@@ -15,6 +16,7 @@ export const RamadanSweets = ({ id }) => {
     { id: 5, name: " كورنيه قشطة ", price: 35, img: kornehkrema },
     { id: 6, name: " كورنيه نوتيلا ", price: 35, img: kornehnotela },
     { id: 7, name: " مدلعه لوتس ", price: 35, img: lotes },
+    { id: 7, name: "بصمة عجوة  ", price: 35, img: basma },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -32,9 +34,7 @@ export const RamadanSweets = ({ id }) => {
   }, [open]);
   return (
     <div>
-      <h1 className="text-[16px] font-bold md:text-2xl mb-5">
-      رمضانيات
-      </h1>
+      <h1 className="text-[16px] font-bold md:text-2xl mb-5">رمضانيات</h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-2 md:gap-5"
         id={id}
