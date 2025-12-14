@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import assawerMeksrat from "../../../assets/sewarehat/assawerMeksrat.png";
+import asawersewareh from "../../../assets/sewarehat/asawersewareh-removebg-preview.png";
 import bassma3gwa from "../../../assets/sewarehat/bassma3gwa.png";
 import bassmaChocolata from "../../../assets/sewarehat/bassmaChocolata.png";
 import bormaMeksrat from "../../../assets/sewarehat/bormaMeksrat.png";
@@ -10,7 +11,7 @@ import segarSada from "../../../assets/sewarehat/segarSada.png";
 import shaklma from "../../../assets/sewarehat/shaklma.png";
 export const Sewareh = ({ id }) => {
   const prduct = [
-    { id: 1, name: " اساور مكسرات", price: 35, img: assawerMeksrat },
+    { id: 1, name: " اساور لوز", price: 35, img: assawerMeksrat },
     { id: 2, name: " بصمة عجوة", price: 35, img: bassma3gwa },
     { id: 3, name: " بصمة شيكولاتة ", price: 35, img: bassmaChocolata },
     { id: 4, name: " بورمة مكسرات", price: 35, img: bormaMeksrat },
@@ -19,6 +20,7 @@ export const Sewareh = ({ id }) => {
     { id: 7, name: "حمام شرقي", price: 35, img: hamamSharky },
     { id: 8, name: "سيجار سادة", price: 35, img: segarSada },
     { id: 9, name: "شكلمة", price: 35, img: shaklma },
+    { id: 10, name: "اساور سيوارية", price: 35, img: asawersewareh },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -60,7 +62,7 @@ export const Sewareh = ({ id }) => {
                 <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950">
                   {item.name}
                 </h2>
-                <h2 className="text-start text-[12px] md:text-2xl font-black text-cyan-700">
+                <h2 className="text-start text-[16px] md:text-2xl font-bold text-cyan-700">
                   {item.price} ج.م
                 </h2>
               </div>
