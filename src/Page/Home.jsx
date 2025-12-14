@@ -20,7 +20,7 @@ const Home = () => {
                 قائمة الاسعار
               </Link>
               <Link
-                className="btn hover:text-white px-20 md:px-40  py-6 rounded-3xl text-2xl bg-transparent hover:bg-cyan-800 text-black "
+                className="btn hover:text-white px-20 md:px-40 border  py-6 rounded-3xl text-2xl bg-transparent hover:bg-cyan-800 text-black "
                 to="/contact"
               >
                 للتواصل معنا
