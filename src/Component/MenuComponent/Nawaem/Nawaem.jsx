@@ -64,7 +64,10 @@ export const Nawaem = ({ id }) => {
       {/* model for details */}
       {/* model for details */}
       {open && selectedItem && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 px-4 ">
+        <div
+          onClick={() => setOpen(false)}
+          className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 px-4 "
+        >
           <div
             onClick={(e) => e.stopPropagation()}
             className="bg-gray-100 rounded px-5 h-[80%] pt-20 pb-5 w-sm  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
