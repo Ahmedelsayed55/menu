@@ -9,6 +9,8 @@ import hamamBorma from "../../../assets/sewarehat/hamamBorma.png";
 import hamamSharky from "../../../assets/sewarehat/hamamSharky.png";
 import segarSada from "../../../assets/sewarehat/segarSada.png";
 import shaklma from "../../../assets/sewarehat/shaklma.png";
+import konafaTorkyMex from "../../../assets/sewarehat/konafaTorkyMex-removebg-preview.png";
+import segarmexrat from "../../../assets/sewarehat/segarmexrat-removebg-preview.png";
 export const Sewareh = ({ id }) => {
   const prduct = [
     { id: 1, name: " اساور لوز", price: 35, img: assawerMeksrat },
@@ -21,6 +23,8 @@ export const Sewareh = ({ id }) => {
     { id: 8, name: "سيجار سادة", price: 35, img: segarSada },
     { id: 9, name: "شكلمة", price: 35, img: shaklma },
     { id: 10, name: "اساور سيوارية", price: 35, img: asawersewareh },
+    { id: 11, name: "كنافه تركي مكسرات", price: 35, img: konafaTorkyMex },
+    { id: 12, name: "سيجار مكسرات", price: 35, img: segarmexrat },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

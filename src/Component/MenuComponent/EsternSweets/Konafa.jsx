@@ -2,19 +2,17 @@ import React, { useEffect, useState } from "react";
 import konafa3othmanly from "../../../assets/konafa/konafa3othmanly.png";
 import konafaKrema from "../../../assets/konafa/konafaKrema.png";
 import konafaN from "../../../assets/konafa/konafaN.png";
-import forma from "../../../assets/assetsRmadan/forma.png";
-import kornehkrema from "../../../assets/assetsRmadan/kornehkrema.png";
-import kornehnotela from "../../../assets/assetsRmadan/kornehnotela.png";
-import lotes from "../../../assets/assetsRmadan/lotes.png";
+import medl3a1 from "../../../assets/konafa/medl3a1-removebg-preview.png";
+import medl3a2 from "../../../assets/konafa/medl3a2-removebg-preview.png";
+import medl3a3 from "../../../assets/konafa/medl3a3-removebg-preview.png";
 export const Konafa = ({ id }) => {
   const prduct = [
     { id: 1, name: " كنافة عثمانلي", price: 35, img: konafa3othmanly },
     { id: 2, name: "كنافة كريمة", price: 35, img: konafaKrema },
     { id: 3, name: " كنافة نوتيلا", price: 35, img: konafaN },
-    { id: 4, name: " أساور", price: 35, img: forma },
-    { id: 5, name: " كورنيه كريما ", price: 35, img: kornehkrema },
-    { id: 6, name: " كورنيه نوتيلا ", price: 35, img: kornehnotela },
-    { id: 7, name: " مدلعه لوتس ", price: 35, img: lotes },
+    { id: 4, name: " مدلعه", price: 35, img: medl3a1 },
+    { id: 5, name: "مدلعة", price: 35, img: medl3a2 },
+    { id: 6, name: "مدلعه", price: 35, img: medl3a3 },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

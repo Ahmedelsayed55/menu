@@ -1,20 +1,13 @@
 import React, { useEffect, useState } from "react";
 import lenza from "../../../assets/tary/lenza.png";
-import mdl3amanga from "../../../assets/assetsRmadan/mdl3amanga.png";
-import asawer from "../../../assets/assetsRmadan/asawer.png";
-import forma from "../../../assets/assetsRmadan/forma.png";
-import kornehkrema from "../../../assets/assetsRmadan/kornehkrema.png";
-import kornehnotela from "../../../assets/assetsRmadan/kornehnotela.png";
-import lotes from "../../../assets/assetsRmadan/lotes.png";
+import lokma from "../../../assets/tary/lokma-removebg-preview.png";
+import basbosaN from "../../../assets/tary/basbosaN-removebg-preview.png";
+
 export const Tary = ({ id }) => {
   const prduct = [
     { id: 1, name: "لينزا", price: 35, img: lenza },
-    { id: 2, name: "مدلعه مانجا", price: 35, img: mdl3amanga },
-    { id: 3, name: " أساور", price: 35, img: asawer },
-    { id: 4, name: " أساور", price: 35, img: forma },
-    { id: 5, name: " كورنيه كريما ", price: 35, img: kornehkrema },
-    { id: 6, name: " كورنيه نوتيلا ", price: 35, img: kornehnotela },
-    { id: 7, name: " مدلعه لوتس ", price: 35, img: lotes },
+    { id: 2, name: "لقمة الباشا", price: 35, img: lokma },
+    { id: 3, name: "بسبوسة نوتيلا ", price: 35, img: basbosaN },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

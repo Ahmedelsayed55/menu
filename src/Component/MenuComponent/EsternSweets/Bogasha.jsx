@@ -4,6 +4,9 @@ import baklawakolwashkor from "../../../assets/baklawa/baklawakolwashkor.png";
 import krema from "../../../assets/baklawa/krema-removebg-preview.png";
 import meksrat from "../../../assets/baklawa/meksrat-removebg-preview.png";
 import sadf from "../../../assets/baklawa/sadf-removebg-preview.png";
+import bklawamstra from "../../../assets/baklawa/bklawamstra.png";
+import bklawanegma from "../../../assets/baklawa/bklawanegma.png";
+import glashB from "../../../assets/baklawa/glashB-removebg-preview.png";
 
 export const Bogasha = ({ id }) => {
   const prduct = [
@@ -12,6 +15,9 @@ export const Bogasha = ({ id }) => {
     { id: 3, name: "جلاش كريمه", price: 35, img: krema },
     { id: 4, name: "جلاش مكسرات", price: 35, img: meksrat },
     { id: 5, name: "جلاش صدف", price: 35, img: sadf },
+    { id: 6, name: "بقلاوة مسطره", price: 35, img: bklawamstra },
+    { id: 7, name: "بقلاوة نجمة", price: 35, img: bklawanegma },
+    { id: 8, name: "جلاش بستاشيو", price: 35, img: glashB },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

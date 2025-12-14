@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import glashmx from "../../../assets/assetsRmadan/glashmx.png";
-import mdl3amanga from "../../../assets/assetsRmadan/mdl3amanga.png";
+import zenab from "../../../assets/zeyot/zenab-removebg-preview.png";
+import bla7M from "../../../assets/zeyot/bla7M-removebg-preview.png";
 import asawer from "../../../assets/assetsRmadan/asawer.png";
 import forma from "../../../assets/assetsRmadan/forma.png";
 import kornehkrema from "../../../assets/assetsRmadan/kornehkrema.png";
@@ -8,8 +8,8 @@ import kornehnotela from "../../../assets/assetsRmadan/kornehnotela.png";
 import lotes from "../../../assets/assetsRmadan/lotes.png";
 export const Zyout = ({ id }) => {
   const prduct = [
-    { id: 1, name: "جلاش مكسرت", price: 35, img: glashmx },
-    { id: 2, name: "مدلعه مانجا", price: 35, img: mdl3amanga },
+    { id: 1, name: "اصابع زينب", price: 35, img: zenab },
+    { id: 2, name: "بلح محشي سيواريه", price: 35, img: bla7M },
     { id: 3, name: " أساور", price: 35, img: asawer },
     { id: 4, name: " أساور", price: 35, img: forma },
     { id: 5, name: " كورنيه كريما ", price: 35, img: kornehkrema },
