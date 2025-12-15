@@ -1,18 +1,17 @@
 import { useEffect, useState } from "react";
-import Cake from "../../../assets/flower20.png";
+import blackForst from "../../../assets/cake20/blackForst-removebg-preview.png";
+import chocolate from "../../../assets/cake20/chocolate-removebg-preview.png";
+import hacFrot from "../../../assets/cake20/hacFrot-removebg-preview.png";
+import havTap from "../../../assets/cake20/havTap-removebg-preview.png";
+import vadg from "../../../assets/cake20/vadg-removebg-preview.png";
 
 const Cake20 = ({ id }) => {
   const prduct = [
-    { id: 1, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 2, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 3, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 4, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 5, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 6, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 7, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 8, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 9, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 10, name: "تورته فلاور (20)", price: 350, img: Cake },
+    { id: 1, name: "تورته بلاك فورست (20)", price: 350, img: blackForst },
+    { id: 2, name: "تورته شيكولاتة (20)", price: 350, img: chocolate },
+    { id: 3, name: "تورته هاف فاكهة (20)", price: 350, img: hacFrot },
+    { id: 4, name: "تورته هاف تاج (20)", price: 350, img: havTap },
+    { id: 5, name: "تورته 4*4 فادجات   (20)", price: 350, img: vadg },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -68,14 +67,14 @@ const Cake20 = ({ id }) => {
       {open && selectedItem && (
         <div
           onClick={() => setOpen(false)}
-          className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 px-4 "
+          className="fixed inset-0 bg-black/50 flex flex-col gap-5 items-center justify-center z-50 px-4 "
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="bg-gray-100 rounded px-5 h-[80%] pt-20 pb-5 w-sm  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
+            className="bg-gray-100 rounded px-5 pt-20 pb-5 w-sm  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
           >
             <button
-              className="absolute px-3 py-2 btn flex items-center justify-center top-2 right-2 text-2xl cursor-pointer bg-cyan-800 text-white  rounded-box"
+              className="absolute px-3 py-2 btn flex items-center justify-center top-2 right-2 text-2xl cursor-pointer bg-cyan-800 text-white  rounded-box shadow shadow-cyan-500"
               onClick={() => setOpen(false)}
             >
               ✖
@@ -91,10 +90,16 @@ const Cake20 = ({ id }) => {
                 {selectedItem.name}
               </h2>
               <h2 className="text-start text-[20px] md:text-[20px] font-bold text-cyan-700">
-                {selectedItem.price} ج.م
+                {selectedItem.price} ﻡ.ﺝ
               </h2>
             </div>
           </div>
+          <button
+            onClick={() => setOpen(false)}
+            className="btn bg-cyan-800 rounded-4xl border-0 shadow-lg p-7 cursor-pointer text-2xl shadow-cyan-700"
+          >
+            إغلاق
+          </button>
         </div>
       )}
     </div>
