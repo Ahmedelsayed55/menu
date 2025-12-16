@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 
 import React, { useEffect, useState } from "react";
 import Hero from "../Component/MenuComponent/Hero";
+const Gato = lazy(() => import("../Component/MenuComponent/WesternWeets/Gato"));
 const Cake26 = lazy(() =>
   import("../Component/MenuComponent/WesternWeets/Cake26")
 );
@@ -16,7 +17,7 @@ const Cake18 = lazy(() =>
 const AssortedCakes = lazy(() =>
   import("../Component/MenuComponent/WesternWeets/AssortedCakes")
 );
-const Gato = lazy(() => import("../Component/MenuComponent/WesternWeets/Gato"));
+
 const Chocolate = lazy(() =>
   import("../Component/MenuComponent/Chocolate/Chocolate")
 );
@@ -127,125 +128,285 @@ const Menu = () => {
         id={idGato}
         className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
       >
-        <Gato />
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center">
+              <span className="loading loading-ring loading-xl text-center"></span>
+            </div>
+          }
+        >
+          <Gato />
+        </Suspense>
       </section>
 
       <section
         id={idCake26}
         className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
       >
-        <Cake26 />
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center">
+              <span className="loading loading-ring loading-xl text-center"></span>
+            </div>
+          }
+        >
+          <Cake26 />
+        </Suspense>
       </section>
 
       <section
         id={idCake20}
         className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
       >
-        <Cake20 />
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center">
+              <span className="loading loading-ring loading-xl text-center"></span>
+            </div>
+          }
+        >
+          <Cake20 />
+        </Suspense>
       </section>
 
       <section
         id={idCake18}
         className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
       >
-        <Cake18 />
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center">
+              <span className="loading loading-ring loading-xl text-center"></span>
+            </div>
+          }
+        >
+          <Cake18 />
+        </Suspense>
       </section>
       <section
         id={idHartCake}
         className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
       >
-        <HartCake />
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center">
+              <span className="loading loading-ring loading-xl text-center"></span>
+            </div>
+          }
+        >
+          <HartCake />
+        </Suspense>
       </section>
 
       <section
         id={idMixed}
         className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
       >
-        <AssortedCakes />
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center">
+              <span className="loading loading-ring loading-xl text-center"></span>
+            </div>
+          }
+        >
+          <AssortedCakes />
+        </Suspense>
       </section>
       <section
         id={idLayers}
         className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
       >
-        <CakeLayers />
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center">
+              <span className="loading loading-ring loading-xl text-center"></span>
+            </div>
+          }
+        >
+          <CakeLayers />
+        </Suspense>
       </section>
       <section
         id={idRamadan}
         className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
       >
-        <RamadanSweets />
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center">
+              <span className="loading loading-ring loading-xl text-center"></span>
+            </div>
+          }
+        >
+          <RamadanSweets />
+        </Suspense>
       </section>
       <section
         id={idKonafa}
         className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
       >
-        <Konafa />
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center">
+              <span className="loading loading-ring loading-xl text-center"></span>
+            </div>
+          }
+        >
+          <Konafa />
+        </Suspense>
       </section>
       <section
         id={idTary}
         className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
       >
-        <Tary />
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center">
+              <span className="loading loading-ring loading-xl text-center"></span>
+            </div>
+          }
+        >
+          <Tary />
+        </Suspense>
       </section>
       <section
         id={idBogasha}
         className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
       >
-        <Bogasha />
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center">
+              <span className="loading loading-ring loading-xl text-center"></span>
+            </div>
+          }
+        >
+          <Bogasha />
+        </Suspense>
       </section>
       <section
         id={idZyout}
         className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
       >
-        <Zyout />
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center">
+              <span className="loading loading-ring loading-xl text-center"></span>
+            </div>
+          }
+        >
+          <Zyout />
+        </Suspense>
       </section>
       <section
         id={idForam}
         className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
       >
-        <Foram />
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center">
+              <span className="loading loading-ring loading-xl text-center"></span>
+            </div>
+          }
+        >
+          <Foram />
+        </Suspense>
       </section>
       <section
         id={idٍSewareh}
         className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
       >
-        <Sewareh />
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center">
+              <span className="loading loading-ring loading-xl text-center"></span>
+            </div>
+          }
+        >
+          <Sewareh />
+        </Suspense>
       </section>
       <section
         id={idٍDryNuts}
         className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
       >
-        <DryNuts />
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center">
+              <span className="loading loading-ring loading-xl text-center"></span>
+            </div>
+          }
+        >
+          <DryNuts />
+        </Suspense>
       </section>
       <section
         id={idDollMillk}
         className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
       >
-        <DollMillk />
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center">
+              <span className="loading loading-ring loading-xl text-center"></span>
+            </div>
+          }
+        >
+          <DollMillk />
+        </Suspense>
       </section>
       <section
         id={idCoconut}
         className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
       >
-        <Coconut />
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center">
+              <span className="loading loading-ring loading-xl text-center"></span>
+            </div>
+          }
+        >
+          <Coconut />
+        </Suspense>
       </section>
       <section
         id={idReadyPack}
         className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
       >
-        <ReadyPackages />
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center">
+              <span className="loading loading-ring loading-xl text-center"></span>
+            </div>
+          }
+        >
+          <ReadyPackages />
+        </Suspense>
       </section>
       <section
         id={idNawaem}
         className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
       >
-        <Nawaem />
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center">
+              <span className="loading loading-ring loading-xl text-center"></span>
+            </div>
+          }
+        >
+          <Nawaem />
+        </Suspense>
       </section>
       <section
         id={idChocolate}
         className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
       >
-        <Chocolate />
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center">
+              <span className="loading loading-ring loading-xl text-center"></span>
+            </div>
+          }
+        >
+          <Chocolate />
+        </Suspense>
       </section>
 
       {/* Button Scroll */}
