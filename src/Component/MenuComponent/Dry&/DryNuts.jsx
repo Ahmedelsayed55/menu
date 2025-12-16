@@ -6,9 +6,9 @@ import semsem from "../../../assets/assetsDryNuts/semsem.png";
 const DryNuts = ({ id }) => {
   const prduct = [
     { id: 1, name: "سودانية", price: 150, img: sodani },
-    { id: 1, name: "حمصية", price: 150, img: homs },
-    { id: 1, name: "نوجا", price: 150, img: noga },
-    { id: 1, name: "سمسمية", price: 160, img: semsem },
+    { id: 2, name: "حمصية", price: 150, img: homs },
+    { id: 3, name: "نوجا", price: 150, img: noga },
+    { id: 4, name: "سمسمية", price: 160, img: semsem },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -67,7 +67,7 @@ const DryNuts = ({ id }) => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="bg-gray-100 rounded px-5 pt-20 pb-5 w-sm  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
+            className="bg-gray-100 rounded px-5 pt-20 pb-5 lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
           >
             <button
               className="absolute px-3 py-2 btn flex items-center justify-center top-2 right-2 text-2xl cursor-pointer bg-cyan-800 text-white  rounded-box shadow shadow-cyan-500"

@@ -11,7 +11,7 @@ import segarSada from "../../../assets/sewarehat/segarSada.png";
 import shaklma from "../../../assets/sewarehat/shaklma.png";
 import konafaTorkyMex from "../../../assets/sewarehat/konafaTorkyMex-removebg-preview.png";
 import segarmexrat from "../../../assets/sewarehat/segarmexrat-removebg-preview.png";
-export const Sewareh = ({ id }) => {
+const Sewareh = ({ id }) => {
   const prduct = [
     { id: 1, name: " اساور لوز", price: 35, img: assawerMeksrat },
     { id: 2, name: " بصمة عجوة", price: 35, img: bassma3gwa },
@@ -83,7 +83,7 @@ export const Sewareh = ({ id }) => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="bg-gray-100 rounded px-5 pt-20 pb-5 w-sm  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
+            className="bg-gray-100 rounded px-5 pt-20 pb-5 lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
           >
             <button
               className="absolute px-3 py-2 btn flex items-center justify-center top-2 right-2 text-2xl cursor-pointer bg-cyan-800 text-white  rounded-box shadow shadow-cyan-500"
@@ -117,3 +117,4 @@ export const Sewareh = ({ id }) => {
     </div>
   );
 };
+export default Sewareh;

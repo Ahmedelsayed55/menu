@@ -8,7 +8,7 @@ import bklawamstra from "../../../assets/baklawa/bklawamstra.png";
 import bklawanegma from "../../../assets/baklawa/bklawanegma.png";
 import glashB from "../../../assets/baklawa/glashB-removebg-preview.png";
 
-export const Bogasha = ({ id }) => {
+const Bogasha = ({ id }) => {
   const prduct = [
     { id: 1, name: "بقلاوة جمبري", price: 35, img: baklawaGambry },
     { id: 2, name: " بقلاوة كل واشكر", price: 35, img: baklawakolwashkor },
@@ -76,7 +76,7 @@ export const Bogasha = ({ id }) => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="bg-gray-100 rounded px-5 pt-20 pb-5 w-sm  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
+            className="bg-gray-100 rounded px-5 pt-20 pb-5 lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
           >
             <button
               className="absolute px-3 py-2 btn flex items-center justify-center top-2 right-2 text-2xl cursor-pointer bg-cyan-800 text-white  rounded-box shadow shadow-cyan-500"
@@ -110,3 +110,4 @@ export const Bogasha = ({ id }) => {
     </div>
   );
 };
+export default Bogasha;

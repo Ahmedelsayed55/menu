@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Cake from "../../../assets/cakeLayers/cak1.png";
 import Cake1 from "../../../assets/cakeLayers/cak2.png";
-export const CakeLayers = ({ id }) => {
+const CakeLayers = ({ id }) => {
   const prduct = [
     { id: 1, name: "تورته 2 دور", price: 35, img: Cake },
     { id: 2, name: "تورته 3 دور", price: 35, img: Cake1 },
@@ -62,7 +62,7 @@ export const CakeLayers = ({ id }) => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="bg-gray-100 rounded px-5 pt-10 pb-5 w-sm  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
+            className="bg-gray-100 rounded px-5 pt-10 pb-5 lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
           >
             <button
               className="absolute px-3 py-2 btn flex items-center justify-center top-2 right-2 text-2xl cursor-pointer bg-cyan-800 text-white  rounded-box shadow shadow-cyan-500"
@@ -96,3 +96,4 @@ export const CakeLayers = ({ id }) => {
     </div>
   );
 };
+export default CakeLayers;

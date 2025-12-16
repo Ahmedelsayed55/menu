@@ -1,27 +1,62 @@
+import { lazy, Suspense } from "react";
+
 import React, { useEffect, useState } from "react";
 import Hero from "../Component/MenuComponent/Hero";
-import Cake26 from "../Component/MenuComponent/WesternWeets/Cake26";
-import Cake20 from "../Component/MenuComponent/WesternWeets/Cake20";
+const Cake26 = lazy(() =>
+  import("../Component/MenuComponent/WesternWeets/Cake26")
+);
+const Cake20 = lazy(() =>
+  import("../Component/MenuComponent/WesternWeets/Cake20")
+);
 import NavItem from "../Component/MenuComponent/NavItem";
-import { Cake18 } from "../Component/MenuComponent/WesternWeets/Cake18";
-import { AssortedCakes } from "../Component/MenuComponent/WesternWeets/AssortedCakes";
-import { Gato } from "../Component/MenuComponent/WesternWeets/Gato";
+const Cake18 = lazy(() =>
+  import("../Component/MenuComponent/WesternWeets/Cake18")
+);
+
+const AssortedCakes = lazy(() =>
+  import("../Component/MenuComponent/WesternWeets/AssortedCakes")
+);
+const Gato = lazy(() => import("../Component/MenuComponent/WesternWeets/Gato"));
+const Chocolate = lazy(() =>
+  import("../Component/MenuComponent/Chocolate/Chocolate")
+);
+const CakeLayers = lazy(() =>
+  import("../Component/MenuComponent/WesternWeets/CakeLayers")
+);
+const RamadanSweets = lazy(() =>
+  import("../Component/MenuComponent/EsternSweets/RamadanSweets")
+);
+const Konafa = lazy(() =>
+  import("../Component/MenuComponent/EsternSweets/Konafa")
+);
+const Tary = lazy(() => import("../Component/MenuComponent/EsternSweets/Tary"));
+const Bogasha = lazy(() =>
+  import("../Component/MenuComponent/EsternSweets/Bogasha")
+);
+const Zyout = lazy(() =>
+  import("../Component/MenuComponent/EsternSweets/Zyout")
+);
+const Foram = lazy(() =>
+  import("../Component/MenuComponent/EsternSweets/Foram")
+);
+const Sewareh = lazy(() =>
+  import("../Component/MenuComponent/EsternSweets/Sewareh")
+);
+const DryNuts = lazy(() => import("../Component/MenuComponent/Dry&/DryNuts"));
+const DollMillk = lazy(() =>
+  import("../Component/MenuComponent/Dry&/DollMillk")
+);
+const Coconut = lazy(() => import("../Component/MenuComponent/Dry&/Coconut"));
+const ReadyPackages = lazy(() =>
+  import("../Component/MenuComponent/Dry&/ReadyPackages")
+);
+const HartCake = lazy(() =>
+  import("../Component/MenuComponent/WesternWeets/HartCake")
+);
+const Nawaem = lazy(() => import("../Component/MenuComponent/Nawaem/Nawaem"));
+
+// react icon
 import { IoArrowUp } from "react-icons/io5";
-import Chocolate from "../Component/MenuComponent/Chocolate/Chocolate";
-import { CakeLayers } from "../Component/MenuComponent/WesternWeets/CakeLayers";
-import { RamadanSweets } from "../Component/MenuComponent/EsternSweets/RamadanSweets";
-import { Konafa } from "../Component/MenuComponent/EsternSweets/Konafa";
-import { Tary } from "../Component/MenuComponent/EsternSweets/Tary";
-import { Bogasha } from "../Component/MenuComponent/EsternSweets/Bogasha";
-import { Zyout } from "../Component/MenuComponent/EsternSweets/Zyout";
-import { Foram } from "../Component/MenuComponent/EsternSweets/Foram";
-import { Sewareh } from "../Component/MenuComponent/EsternSweets/Sewareh";
-import DryNuts from "../Component/MenuComponent/Dry&/DryNuts";
-import DollMillk from "../Component/MenuComponent/Dry&/DollMillk";
-import Coconut from "../Component/MenuComponent/Dry&/Coconut";
-import ReadyPackages from "../Component/MenuComponent/Dry&/ReadyPackages";
-import HartCake from "../Component/MenuComponent/WesternWeets/HartCake";
-import { Nawaem } from "../Component/MenuComponent/Nawaem/Nawaem";
 const Menu = () => {
   let idCake26 = "idCake26";
   let idCake20 = "idCake20";

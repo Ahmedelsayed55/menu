@@ -5,7 +5,7 @@ import konafaN from "../../../assets/konafa/konafaN.png";
 import medl3a1 from "../../../assets/konafa/medl3a1-removebg-preview.png";
 import medl3a2 from "../../../assets/konafa/medl3a2-removebg-preview.png";
 import medl3a3 from "../../../assets/konafa/medl3a3-removebg-preview.png";
-export const Konafa = ({ id }) => {
+const Konafa = ({ id }) => {
   const prduct = [
     { id: 1, name: " كنافة عثمانلي", price: 35, img: konafa3othmanly },
     { id: 2, name: "كنافة كريمة", price: 35, img: konafaKrema },
@@ -71,7 +71,7 @@ export const Konafa = ({ id }) => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="bg-gray-100 rounded px-5 pt-20 pb-5 w-sm  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
+            className="bg-gray-100 rounded px-5 pt-20 pb-5 lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
           >
             <button
               className="absolute px-3 py-2 btn flex items-center justify-center top-2 right-2 text-2xl cursor-pointer bg-cyan-800 text-white  rounded-box shadow shadow-cyan-500"
@@ -105,3 +105,4 @@ export const Konafa = ({ id }) => {
     </div>
   );
 };
+export default Konafa;

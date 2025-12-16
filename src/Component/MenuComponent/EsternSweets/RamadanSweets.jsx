@@ -7,7 +7,7 @@ import kornehkrema from "../../../assets/assetsRmadan/kornehkrema.png";
 import kornehnotela from "../../../assets/assetsRmadan/kornehnotela.png";
 import lotes from "../../../assets/assetsRmadan/lotes.png";
 import basma from "../../../assets/assetsRmadan/basmaagwa.png";
-export const RamadanSweets = ({ id }) => {
+const RamadanSweets = ({ id }) => {
   const prduct = [
     { id: 1, name: "جلاش مكسرت", price: 35, img: glashmx },
     { id: 2, name: "مدلعه مانجا", price: 35, img: mdl3amanga },
@@ -16,7 +16,7 @@ export const RamadanSweets = ({ id }) => {
     { id: 5, name: " كورنيه قشطة ", price: 35, img: kornehkrema },
     { id: 6, name: " كورنيه نوتيلا ", price: 35, img: kornehnotela },
     { id: 7, name: " مدلعه لوتس ", price: 35, img: lotes },
-    { id: 7, name: "بصمة عجوة  ", price: 35, img: basma },
+    { id: 8, name: "بصمة عجوة  ", price: 35, img: basma },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -75,7 +75,7 @@ export const RamadanSweets = ({ id }) => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="bg-gray-100 rounded px-5 pt-20 pb-5 w-sm  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
+            className="bg-gray-100 rounded px-5 pt-20 pb-5 lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
           >
             <button
               className="absolute px-3 py-2 btn flex items-center justify-center top-2 right-2 text-2xl cursor-pointer bg-cyan-800 text-white  rounded-box shadow shadow-cyan-500"
@@ -109,3 +109,4 @@ export const RamadanSweets = ({ id }) => {
     </div>
   );
 };
+export default RamadanSweets;

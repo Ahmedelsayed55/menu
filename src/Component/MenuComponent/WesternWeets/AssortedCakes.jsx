@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Cake from "../../../assets/cake.png";
-export const AssortedCakes = ({ id }) => {
+const AssortedCakes = ({ id }) => {
   const prduct = [
     { id: 1, name: "تورته فلاور (20)", price: 350, img: Cake },
     { id: 2, name: "تورته فلاور (20)", price: 350, img: Cake },
@@ -67,7 +67,7 @@ export const AssortedCakes = ({ id }) => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="bg-gray-100 rounded px-5 pt-20 pb-5 w-sm  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
+            className="bg-gray-100 rounded px-5 pt-20 pb-5  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
           >
             <button
               className="absolute px-3 py-2 btn flex items-center justify-center top-2 right-2 text-2xl cursor-pointer bg-cyan-800 text-white  rounded-box shadow shadow-cyan-500"
@@ -101,3 +101,4 @@ export const AssortedCakes = ({ id }) => {
     </div>
   );
 };
+export default AssortedCakes;

@@ -3,7 +3,7 @@ import lenza from "../../../assets/tary/lenza.png";
 import lokma from "../../../assets/tary/lokma-removebg-preview.png";
 import basbosaN from "../../../assets/tary/basbosaN-removebg-preview.png";
 
-export const Tary = ({ id }) => {
+const Tary = ({ id }) => {
   const prduct = [
     { id: 1, name: "لينزا", price: 35, img: lenza },
     { id: 2, name: "لقمة الباشا", price: 35, img: lokma },
@@ -66,7 +66,7 @@ export const Tary = ({ id }) => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="bg-gray-100 rounded px-5 pt-20 pb-5 w-sm  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
+            className="bg-gray-100 rounded px-5 pt-20 pb-5 lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
           >
             <button
               className="absolute px-3 py-2 btn flex items-center justify-center top-2 right-2 text-2xl cursor-pointer bg-cyan-800 text-white  rounded-box shadow shadow-cyan-500"
@@ -100,3 +100,4 @@ export const Tary = ({ id }) => {
     </div>
   );
 };
+export default Tary;

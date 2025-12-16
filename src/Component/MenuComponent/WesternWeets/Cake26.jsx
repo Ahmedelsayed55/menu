@@ -29,22 +29,22 @@ const Cake26 = ({ id }) => {
     { id: 4, name: "تورته جلاكسي ", price: 350, img: Cake3 },
     { id: 5, name: "تورته نوتيلا فراوله ", price: 350, img: Cake4 },
     { id: 6, name: "تورته هاف كارميل & شيكولاته ", price: 350, img: Cake7 },
-    { id: 6, name: "تورته نوتيلا اوريو ", price: 350, img: notelaOrio },
-    { id: 7, name: "تورته ايت سيزون اسبونج ", price: 350, img: Cake11 },
-    { id: 7, name: "تورته شيكولاته ", price: 350, img: chocolate },
-    { id: 7, name: "تورته هاف تاج ", price: 350, img: havTag },
-    { id: 7, name: "تورته فلوتس ", price: 350, img: Cake15 },
-    { id: 8, name: "تورته هاف جلاكسي & فاكهة ", price: 350, img: Cake16 },
-    { id: 9, name: "تورته ايت سيزون فادج ", price: 350, img: Cake17 },
-    { id: 9, name: "تورته سنيكرز ", price: 350, img: snecars },
-    { id: 10, name: "تورته فلاور", price: 350, img: flower },
+    { id: 7, name: "تورته نوتيلا اوريو ", price: 350, img: notelaOrio },
+    { id: 8, name: "تورته ايت سيزون اسبونج ", price: 350, img: Cake11 },
+    { id: 9, name: "تورته شيكولاته ", price: 350, img: chocolate },
+    { id: 10, name: "تورته هاف تاج ", price: 350, img: havTag },
+    { id: 11, name: "تورته فلوتس ", price: 350, img: Cake15 },
+    { id: 12, name: "تورته هاف جلاكسي & فاكهة ", price: 350, img: Cake16 },
+    { id: 13, name: "تورته ايت سيزون فادج ", price: 350, img: Cake17 },
+    { id: 14, name: "تورته سنيكرز ", price: 350, img: snecars },
+    { id: 15, name: "تورته فلاور", price: 350, img: flower },
     {
-      id: 11,
+      id: 16,
       name: "تورته هاف كارميل & بلاك فورست",
       price: 350,
       img: karamilBlack,
     },
-    { id: 12, name: "تورته وايت فورست & حليب", price: 350, img: whiteMillk },
+    { id: 17, name: "تورته وايت فورست & حليب", price: 350, img: whiteMillk },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -105,7 +105,7 @@ const Cake26 = ({ id }) => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="bg-gray-100 rounded px-5 pt-20 pb-5 w-sm  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
+            className="bg-gray-100 rounded px-5 pt-20 pb-5 lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
           >
             <button
               className="absolute px-3 py-2 btn flex items-center justify-center top-2 right-2 text-2xl cursor-pointer bg-cyan-800 text-white  rounded-box shadow shadow-cyan-500"

@@ -6,7 +6,7 @@ import melfay from "../../../assets/assetsGato/melfay.png";
 import melfaych from "../../../assets/assetsGato/melfaych.png";
 import swesrol from "../../../assets/assetsGato/swesrol.png";
 import swesroul from "../../../assets/assetsGato/swesroul.png";
-export const Gato = ({ id }) => {
+const Gato = ({ id }) => {
   const prduct = [
     { id: 1, name: "اكلير", price: 35, img: Cake },
     { id: 2, name: "هولز", price: 17, img: Cake2 },
@@ -72,7 +72,7 @@ export const Gato = ({ id }) => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="bg-gray-100 rounded px-5 pt-20 pb-5 w-sm  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
+            className="bg-gray-100 rounded px-5 pt-20 pb-5   lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
           >
             <button
               className="absolute px-3 py-2 btn flex items-center justify-center top-2 right-2 text-2xl cursor-pointer bg-cyan-800 text-white  rounded-box shadow shadow-cyan-500"
@@ -103,3 +103,4 @@ export const Gato = ({ id }) => {
     </div>
   );
 };
+export default Gato;
