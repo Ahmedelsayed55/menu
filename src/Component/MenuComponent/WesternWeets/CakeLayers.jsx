@@ -40,6 +40,8 @@ const CakeLayers = ({ id }) => {
                 className=" w-full md:w-60  md:mb-7 transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]"
                 src={item.img}
                 alt="Cake"
+                loading="lazy"
+                decoding="async"
               />
               <div className="w-full flex flex-col gap-4 md:gap-7 py-3 px-3">
                 <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950">
@@ -75,6 +77,8 @@ const CakeLayers = ({ id }) => {
               className=" w-60 lg:w-[80%] md:mb-7 transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]"
               src={selectedItem.img}
               alt="Cake"
+              loading="lazy"
+              decoding="async"
             />
             <div className="w-full flex flex-col gap-7 md:gap-12 py-3 px-3">
               <h2 className="text-start text-[20px] md:text-[24px] font-bold text-cyan-950">
