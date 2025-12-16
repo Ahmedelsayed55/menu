@@ -1,7 +1,11 @@
 import { lazy, Suspense } from "react";
-
 import React, { useEffect, useState } from "react";
 import Hero from "../Component/MenuComponent/Hero";
+import NavItem from "../Component/MenuComponent/NavItem";
+import { IoArrowUp } from "react-icons/io5";
+import LazySection from "../Component/LazySection";
+
+// Lazy Components
 const Gato = lazy(() => import("../Component/MenuComponent/WesternWeets/Gato"));
 const Cake26 = lazy(() =>
   import("../Component/MenuComponent/WesternWeets/Cake26")
@@ -9,15 +13,12 @@ const Cake26 = lazy(() =>
 const Cake20 = lazy(() =>
   import("../Component/MenuComponent/WesternWeets/Cake20")
 );
-import NavItem from "../Component/MenuComponent/NavItem";
 const Cake18 = lazy(() =>
   import("../Component/MenuComponent/WesternWeets/Cake18")
 );
-
 const AssortedCakes = lazy(() =>
   import("../Component/MenuComponent/WesternWeets/AssortedCakes")
 );
-
 const Chocolate = lazy(() =>
   import("../Component/MenuComponent/Chocolate/Chocolate")
 );
@@ -56,8 +57,6 @@ const HartCake = lazy(() =>
 );
 const Nawaem = lazy(() => import("../Component/MenuComponent/Nawaem/Nawaem"));
 
-// react icon
-import { IoArrowUp } from "react-icons/io5";
 const Menu = () => {
   let idCake26 = "idCake26";
   let idCake20 = "idCake20";
@@ -72,8 +71,8 @@ const Menu = () => {
   let idBogasha = "idBogasha";
   let idZyout = "idZyout";
   let idForam = "idForam";
-  let idٍSewareh = "idٍSewareh";
-  let idٍDryNuts = "idٍDryNuts";
+  let idSewareh = "idSewareh";
+  let idDryNuts = "idDryNuts";
   let idDollMillk = "idDollMillk";
   let idCoconut = "idCoconut";
   let idReadyPack = "idReadyPack";
@@ -84,13 +83,8 @@ const Menu = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 200) {
-        setShow(true);
-      } else {
-        setShow(false);
-      }
+      setShow(window.scrollY > 200);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -98,6 +92,7 @@ const Menu = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
   return (
     <div>
       <Hero />
@@ -116,303 +111,95 @@ const Menu = () => {
         idBogasha={idBogasha}
         idZyout={idZyout}
         idForam={idForam}
-        idٍSewareh={idٍSewareh}
-        idٍDryNuts={idٍDryNuts}
+        idSewareh={idSewareh}
+        idDryNuts={idDryNuts}
         idDollMillk={idDollMillk}
         idCoconut={idCoconut}
         idReadyPack={idReadyPack}
         idHartCake={idHartCake}
         idNawaem={idNawaem}
       />
-      <section
-        id={idGato}
-        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
-      >
-        <Suspense
-          fallback={
-            <div className="flex items-center justify-center">
-              <span className="loading loading-ring loading-xl text-center"></span>
-            </div>
-          }
-        >
-          <Gato />
-        </Suspense>
-      </section>
 
-      <section
-        id={idCake26}
-        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
-      >
-        <Suspense
-          fallback={
-            <div className="flex items-center justify-center">
-              <span className="loading loading-ring loading-xl text-center"></span>
-            </div>
-          }
-        >
-          <Cake26 />
-        </Suspense>
-      </section>
+      <LazySection id={idGato}>
+        <Gato />
+      </LazySection>
 
-      <section
-        id={idCake20}
-        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
-      >
-        <Suspense
-          fallback={
-            <div className="flex items-center justify-center">
-              <span className="loading loading-ring loading-xl text-center"></span>
-            </div>
-          }
-        >
-          <Cake20 />
-        </Suspense>
-      </section>
+      <LazySection id={idCake26}>
+        <Cake26 />
+      </LazySection>
 
-      <section
-        id={idCake18}
-        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
-      >
-        <Suspense
-          fallback={
-            <div className="flex items-center justify-center">
-              <span className="loading loading-ring loading-xl text-center"></span>
-            </div>
-          }
-        >
-          <Cake18 />
-        </Suspense>
-      </section>
-      <section
-        id={idHartCake}
-        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
-      >
-        <Suspense
-          fallback={
-            <div className="flex items-center justify-center">
-              <span className="loading loading-ring loading-xl text-center"></span>
-            </div>
-          }
-        >
-          <HartCake />
-        </Suspense>
-      </section>
+      <LazySection id={idCake20}>
+        <Cake20 />
+      </LazySection>
 
-      <section
-        id={idMixed}
-        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
-      >
-        <Suspense
-          fallback={
-            <div className="flex items-center justify-center">
-              <span className="loading loading-ring loading-xl text-center"></span>
-            </div>
-          }
-        >
-          <AssortedCakes />
-        </Suspense>
-      </section>
-      <section
-        id={idLayers}
-        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
-      >
-        <Suspense
-          fallback={
-            <div className="flex items-center justify-center">
-              <span className="loading loading-ring loading-xl text-center"></span>
-            </div>
-          }
-        >
-          <CakeLayers />
-        </Suspense>
-      </section>
-      <section
-        id={idRamadan}
-        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
-      >
-        <Suspense
-          fallback={
-            <div className="flex items-center justify-center">
-              <span className="loading loading-ring loading-xl text-center"></span>
-            </div>
-          }
-        >
-          <RamadanSweets />
-        </Suspense>
-      </section>
-      <section
-        id={idKonafa}
-        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
-      >
-        <Suspense
-          fallback={
-            <div className="flex items-center justify-center">
-              <span className="loading loading-ring loading-xl text-center"></span>
-            </div>
-          }
-        >
-          <Konafa />
-        </Suspense>
-      </section>
-      <section
-        id={idTary}
-        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
-      >
-        <Suspense
-          fallback={
-            <div className="flex items-center justify-center">
-              <span className="loading loading-ring loading-xl text-center"></span>
-            </div>
-          }
-        >
-          <Tary />
-        </Suspense>
-      </section>
-      <section
-        id={idBogasha}
-        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
-      >
-        <Suspense
-          fallback={
-            <div className="flex items-center justify-center">
-              <span className="loading loading-ring loading-xl text-center"></span>
-            </div>
-          }
-        >
-          <Bogasha />
-        </Suspense>
-      </section>
-      <section
-        id={idZyout}
-        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
-      >
-        <Suspense
-          fallback={
-            <div className="flex items-center justify-center">
-              <span className="loading loading-ring loading-xl text-center"></span>
-            </div>
-          }
-        >
-          <Zyout />
-        </Suspense>
-      </section>
-      <section
-        id={idForam}
-        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
-      >
-        <Suspense
-          fallback={
-            <div className="flex items-center justify-center">
-              <span className="loading loading-ring loading-xl text-center"></span>
-            </div>
-          }
-        >
-          <Foram />
-        </Suspense>
-      </section>
-      <section
-        id={idٍSewareh}
-        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
-      >
-        <Suspense
-          fallback={
-            <div className="flex items-center justify-center">
-              <span className="loading loading-ring loading-xl text-center"></span>
-            </div>
-          }
-        >
-          <Sewareh />
-        </Suspense>
-      </section>
-      <section
-        id={idٍDryNuts}
-        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
-      >
-        <Suspense
-          fallback={
-            <div className="flex items-center justify-center">
-              <span className="loading loading-ring loading-xl text-center"></span>
-            </div>
-          }
-        >
-          <DryNuts />
-        </Suspense>
-      </section>
-      <section
-        id={idDollMillk}
-        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
-      >
-        <Suspense
-          fallback={
-            <div className="flex items-center justify-center">
-              <span className="loading loading-ring loading-xl text-center"></span>
-            </div>
-          }
-        >
-          <DollMillk />
-        </Suspense>
-      </section>
-      <section
-        id={idCoconut}
-        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
-      >
-        <Suspense
-          fallback={
-            <div className="flex items-center justify-center">
-              <span className="loading loading-ring loading-xl text-center"></span>
-            </div>
-          }
-        >
-          <Coconut />
-        </Suspense>
-      </section>
-      <section
-        id={idReadyPack}
-        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
-      >
-        <Suspense
-          fallback={
-            <div className="flex items-center justify-center">
-              <span className="loading loading-ring loading-xl text-center"></span>
-            </div>
-          }
-        >
-          <ReadyPackages />
-        </Suspense>
-      </section>
-      <section
-        id={idNawaem}
-        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
-      >
-        <Suspense
-          fallback={
-            <div className="flex items-center justify-center">
-              <span className="loading loading-ring loading-xl text-center"></span>
-            </div>
-          }
-        >
-          <Nawaem />
-        </Suspense>
-      </section>
-      <section
-        id={idChocolate}
-        className=" max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24"
-      >
-        <Suspense
-          fallback={
-            <div className="flex items-center justify-center">
-              <span className="loading loading-ring loading-xl text-center"></span>
-            </div>
-          }
-        >
-          <Chocolate />
-        </Suspense>
-      </section>
+      <LazySection id={idCake18}>
+        <Cake18 />
+      </LazySection>
 
-      {/* Button Scroll */}
-      {/* Button Scroll */}
-      {/* Button Scroll */}
-      {/* Button Scroll */}
+      <LazySection id={idHartCake}>
+        <HartCake />
+      </LazySection>
+
+      <LazySection id={idMixed}>
+        <AssortedCakes />
+      </LazySection>
+
+      <LazySection id={idLayers}>
+        <CakeLayers />
+      </LazySection>
+
+      <LazySection id={idRamadan}>
+        <RamadanSweets />
+      </LazySection>
+
+      <LazySection id={idKonafa}>
+        <Konafa />
+      </LazySection>
+
+      <LazySection id={idTary}>
+        <Tary />
+      </LazySection>
+
+      <LazySection id={idBogasha}>
+        <Bogasha />
+      </LazySection>
+
+      <LazySection id={idZyout}>
+        <Zyout />
+      </LazySection>
+
+      <LazySection id={idForam}>
+        <Foram />
+      </LazySection>
+
+      <LazySection id={idSewareh}>
+        <Sewareh />
+      </LazySection>
+
+      <LazySection id={idDryNuts}>
+        <DryNuts />
+      </LazySection>
+
+      <LazySection id={idDollMillk}>
+        <DollMillk />
+      </LazySection>
+
+      <LazySection id={idCoconut}>
+        <Coconut />
+      </LazySection>
+
+      <LazySection id={idReadyPack}>
+        <ReadyPackages />
+      </LazySection>
+
+      <LazySection id={idNawaem}>
+        <Nawaem />
+      </LazySection>
+
+      <LazySection id={idChocolate}>
+        <Chocolate />
+      </LazySection>
+
       {show && (
         <button
           onClick={scrollToTop}
