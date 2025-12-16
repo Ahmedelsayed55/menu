@@ -9,6 +9,15 @@ const DryNuts = ({ id }) => {
     { id: 2, name: "حمصية", price: 150, img: homs },
     { id: 3, name: "نوجا", price: 150, img: noga },
     { id: 4, name: "سمسمية", price: 160, img: semsem },
+    { id: 5, name: "سمسمية", price: 160, img: semsem },
+    { id: 6, name: "سمسمية", price: 160, img: semsem },
+    { id: 7, name: "سمسمية", price: 160, img: semsem },
+    { id: 8, name: "سمسمية", price: 160, img: semsem },
+    { id: 9, name: "سمسمية", price: 160, img: semsem },
+    { id: 10, name: "سمسمية", price: 160, img: semsem },
+    { id: 11, name: "سمسمية", price: 160, img: semsem },
+    { id: 12, name: "سمسمية", price: 160, img: semsem },
+    { id: 13  , name: "سمسمية", price: 160, img: semsem },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -45,8 +54,7 @@ const DryNuts = ({ id }) => {
                 className=" w-full md:w-60  md:mb-7 transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]"
                 src={item.img}
                 alt="Cake"
-                loading="lazy"
-                decoding="async"
+   
               />
               <div className="w-full flex flex-col gap-4 md:gap-7 py-3 px-3">
                 <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950">

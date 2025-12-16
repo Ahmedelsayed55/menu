@@ -1,7 +1,20 @@
 import React, { useEffect, useState } from "react";
 import Cake1 from "../../../assets/cake18/cake1.png";
 const Cake18 = ({ id }) => {
-  const prduct = [{ id: 1, name: "تورته (18)", price: 350, img: Cake1 }];
+  const prduct = [
+    { id: 1, name: "تورته (18)", price: 350, img: Cake1 },
+    { id: 2, name: "تورته (18)", price: 350, img: Cake1 },
+    { id: 3, name: "تورته (18)", price: 350, img: Cake1 },
+    { id: 4, name: "تورته (18)", price: 350, img: Cake1 },
+    { id: 5, name: "تورته (18)", price: 350, img: Cake1 },
+    { id: 6, name: "تورته (18)", price: 350, img: Cake1 },
+    { id: 7, name: "تورته (18)", price: 350, img: Cake1 },
+    { id: 8, name: "تورته (18)", price: 350, img: Cake1 },
+    { id: 9, name: "تورته (18)", price: 350, img: Cake1 },
+    { id: 10, name: "تورته (18)", price: 350, img: Cake1 },
+    { id: 11, name: "تورته (18)", price: 350, img: Cake1 },
+
+  ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
   useEffect(() => {
@@ -38,8 +51,7 @@ const Cake18 = ({ id }) => {
                 className=" w-full md:w-60  md:mb-7 transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]"
                 src={item.img}
                 alt="Cake"
-                loading="lazy"
-                decoding="async"
+           
               />
               <div className="w-full flex flex-col gap-4 md:gap-7 py-3 px-3">
                 <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950">

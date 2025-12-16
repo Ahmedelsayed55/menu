@@ -1,61 +1,29 @@
-import { lazy, Suspense } from "react";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Hero from "../Component/MenuComponent/Hero";
 import NavItem from "../Component/MenuComponent/NavItem";
 import { IoArrowUp } from "react-icons/io5";
-import LazySection from "../Component/LazySection";
 
-// Lazy Components
-const Gato = lazy(() => import("../Component/MenuComponent/WesternWeets/Gato"));
-const Cake26 = lazy(() =>
-  import("../Component/MenuComponent/WesternWeets/Cake26")
-);
-const Cake20 = lazy(() =>
-  import("../Component/MenuComponent/WesternWeets/Cake20")
-);
-const Cake18 = lazy(() =>
-  import("../Component/MenuComponent/WesternWeets/Cake18")
-);
-const AssortedCakes = lazy(() =>
-  import("../Component/MenuComponent/WesternWeets/AssortedCakes")
-);
-const Chocolate = lazy(() =>
-  import("../Component/MenuComponent/Chocolate/Chocolate")
-);
-const CakeLayers = lazy(() =>
-  import("../Component/MenuComponent/WesternWeets/CakeLayers")
-);
-const RamadanSweets = lazy(() =>
-  import("../Component/MenuComponent/EsternSweets/RamadanSweets")
-);
-const Konafa = lazy(() =>
-  import("../Component/MenuComponent/EsternSweets/Konafa")
-);
-const Tary = lazy(() => import("../Component/MenuComponent/EsternSweets/Tary"));
-const Bogasha = lazy(() =>
-  import("../Component/MenuComponent/EsternSweets/Bogasha")
-);
-const Zyout = lazy(() =>
-  import("../Component/MenuComponent/EsternSweets/Zyout")
-);
-const Foram = lazy(() =>
-  import("../Component/MenuComponent/EsternSweets/Foram")
-);
-const Sewareh = lazy(() =>
-  import("../Component/MenuComponent/EsternSweets/Sewareh")
-);
-const DryNuts = lazy(() => import("../Component/MenuComponent/Dry&/DryNuts"));
-const DollMillk = lazy(() =>
-  import("../Component/MenuComponent/Dry&/DollMillk")
-);
-const Coconut = lazy(() => import("../Component/MenuComponent/Dry&/Coconut"));
-const ReadyPackages = lazy(() =>
-  import("../Component/MenuComponent/Dry&/ReadyPackages")
-);
-const HartCake = lazy(() =>
-  import("../Component/MenuComponent/WesternWeets/HartCake")
-);
-const Nawaem = lazy(() => import("../Component/MenuComponent/Nawaem/Nawaem"));
+// components normal import
+import Gato from "../Component/MenuComponent/WesternWeets/Gato";
+import Cake26 from "../Component/MenuComponent/WesternWeets/Cake26";
+import Cake20 from "../Component/MenuComponent/WesternWeets/Cake20";
+import Cake18 from "../Component/MenuComponent/WesternWeets/Cake18";
+import AssortedCakes from "../Component/MenuComponent/WesternWeets/AssortedCakes";
+import Chocolate from "../Component/MenuComponent/Chocolate/Chocolate";
+import CakeLayers from "../Component/MenuComponent/WesternWeets/CakeLayers";
+import RamadanSweets from "../Component/MenuComponent/EsternSweets/RamadanSweets";
+import Konafa from "../Component/MenuComponent/EsternSweets/Konafa";
+import Tary from "../Component/MenuComponent/EsternSweets/Tary";
+import Bogasha from "../Component/MenuComponent/EsternSweets/Bogasha";
+import Zyout from "../Component/MenuComponent/EsternSweets/Zyout";
+import Foram from "../Component/MenuComponent/EsternSweets/Foram";
+import Sewareh from "../Component/MenuComponent/EsternSweets/Sewareh";
+import DryNuts from "../Component/MenuComponent/Dry&/DryNuts";
+import DollMillk from "../Component/MenuComponent/Dry&/DollMillk";
+import Coconut from "../Component/MenuComponent/Dry&/Coconut";
+import ReadyPackages from "../Component/MenuComponent/Dry&/ReadyPackages";
+import HartCake from "../Component/MenuComponent/WesternWeets/HartCake";
+import Nawaem from "../Component/MenuComponent/Nawaem/Nawaem";
 
 const Menu = () => {
   let idCake26 = "idCake26";
@@ -82,16 +50,10 @@ const Menu = () => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setShow(window.scrollY > 200);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const onScroll = () => setShow(window.scrollY > 200);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
 
   return (
     <div>
@@ -120,90 +82,31 @@ const Menu = () => {
         idNawaem={idNawaem}
       />
 
-      <LazySection id={idGato}>
-        <Gato />
-      </LazySection>
-
-      <LazySection id={idCake26}>
-        <Cake26 />
-      </LazySection>
-
-      <LazySection id={idCake20}>
-        <Cake20 />
-      </LazySection>
-
-      <LazySection id={idCake18}>
-        <Cake18 />
-      </LazySection>
-
-      <LazySection id={idHartCake}>
-        <HartCake />
-      </LazySection>
-
-      <LazySection id={idMixed}>
-        <AssortedCakes />
-      </LazySection>
-
-      <LazySection id={idLayers}>
-        <CakeLayers />
-      </LazySection>
-
-      <LazySection id={idRamadan}>
-        <RamadanSweets />
-      </LazySection>
-
-      <LazySection id={idKonafa}>
-        <Konafa />
-      </LazySection>
-
-      <LazySection id={idTary}>
-        <Tary />
-      </LazySection>
-
-      <LazySection id={idBogasha}>
-        <Bogasha />
-      </LazySection>
-
-      <LazySection id={idZyout}>
-        <Zyout />
-      </LazySection>
-
-      <LazySection id={idForam}>
-        <Foram />
-      </LazySection>
-
-      <LazySection id={idSewareh}>
-        <Sewareh />
-      </LazySection>
-
-      <LazySection id={idDryNuts}>
-        <DryNuts />
-      </LazySection>
-
-      <LazySection id={idDollMillk}>
-        <DollMillk />
-      </LazySection>
-
-      <LazySection id={idCoconut}>
-        <Coconut />
-      </LazySection>
-
-      <LazySection id={idReadyPack}>
-        <ReadyPackages />
-      </LazySection>
-
-      <LazySection id={idNawaem}>
-        <Nawaem />
-      </LazySection>
-
-      <LazySection id={idChocolate}>
-        <Chocolate />
-      </LazySection>
+      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idGato}><Gato /></section>
+      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idCake26}><Cake26 /></section>
+      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idCake20}><Cake20 /></section>
+      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idCake18}><Cake18 /></section>
+      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idHartCake}><HartCake /></section>
+      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idMixed}><AssortedCakes /></section>
+      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idLayers}><CakeLayers /></section>
+      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idRamadan}><RamadanSweets /></section>
+      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idKonafa}><Konafa /></section>
+      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idTary}><Tary /></section>
+      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idBogasha}><Bogasha /></section>
+      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idZyout}><Zyout /></section>
+      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idForam}><Foram /></section>
+      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idSewareh}><Sewareh /></section>
+      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idDryNuts}><DryNuts /></section>
+      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idDollMillk}><DollMillk /></section>
+      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idCoconut}><Coconut /></section>
+      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idReadyPack}><ReadyPackages /></section>
+      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idNawaem}><Nawaem /></section>
+      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idChocolate}><Chocolate /></section>
 
       {show && (
         <button
-          onClick={scrollToTop}
-          className="fixed bottom-6 right-6 text-2xl md:text-3xl bg-cyan-600 text-white hover:bg-cyan-700 cursor-pointer p-3 rounded-full shadow-xl transition z-2"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="fixed bottom-6 right-6 bg-cyan-600 text-white p-5 rounded-full"
         >
           <IoArrowUp />
         </button>
