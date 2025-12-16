@@ -30,10 +30,10 @@ const Gato = ({ id }) => {
     };
   }, [open]);
   return (
-    <div>
-      <h1 className="text-[16px] font-bold md:text-2xl mb-5">جاتوة</h1>
+    <div className="border-b border-gray-300 pb-20 mb-10 shadow-lg shadow-gray-300">
+      <h1 className="text-[16px] font-bold md:text-3xl mb-5">جاتوة</h1>
       <div
-        className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-2 md:gap-5"
+        className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-2 md:gap-10"
         id={id}
       >
         {prduct.map((item) => {
@@ -44,12 +44,13 @@ const Gato = ({ id }) => {
                 setSelectedItem(item);
                 setOpen(true);
               }}
-              className="rounded  shadow-2xl shadow-gray-400 pt-5 md:pt-7 px-1 flex flex-col items-center justify-between transition hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
+              className="rounded-2xl  shadow-xl shadow-gray-400 pt-5 md:pt-7 px-1 flex flex-col items-center justify-between transition hover:shadow-lg hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
             >
               <img
-                className=" w-full md:w-60  md:mb-7 transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]"
+                className=" w-[70%]  object-cover rounded-xl transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]"
                 src={item.img}
                 alt="Cake"
+                loading="lazy" 
         
               />
               <div className="w-full flex flex-col gap-4 md:gap-7 py-3 px-3">

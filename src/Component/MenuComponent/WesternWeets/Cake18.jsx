@@ -29,12 +29,10 @@ const Cake18 = ({ id }) => {
     };
   }, [open]);
   return (
-    <div>
-      <h1 className="text-[16px] font-bold md:text-2xl mb-5">
-        تورته مقاس (18)
-      </h1>
+    <div className="border-b border-gray-300 pb-20 mb-10 shadow-lg shadow-gray-300">
+      <h1 className="text-[16px] font-bold md:text-3xl mb-5">تورته (18)</h1>
       <div
-        className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-2 md:gap-5"
+        className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-2 md:gap-10"
         id={id}
       >
         {prduct.map((item) => {
@@ -45,13 +43,14 @@ const Cake18 = ({ id }) => {
                 setSelectedItem(item);
                 setOpen(true);
               }}
-              className="rounded  shadow-2xl shadow-gray-400 pt-5 md:pt-7 px-1 flex flex-col items-center justify-between transition hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
+              className="rounded-2xl  shadow-xl shadow-gray-400 pt-5 md:pt-7 px-1 flex flex-col items-center justify-between transition hover:shadow-lg hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
             >
               <img
-                className=" w-full md:w-60  md:mb-7 transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]"
+                className=" w-[70%]  object-cover rounded-xl transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]"
                 src={item.img}
                 alt="Cake"
-           
+                loading="lazy" 
+        
               />
               <div className="w-full flex flex-col gap-4 md:gap-7 py-3 px-3">
                 <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950">
@@ -74,7 +73,7 @@ const Cake18 = ({ id }) => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="bg-gray-100 rounded px-5 pt-20 pb-5  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
+            className="bg-gray-100 rounded px-5 pt-20 pb-5   lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
           >
             <button
               className="absolute px-3 py-2 btn flex items-center justify-center top-2 right-2 text-2xl cursor-pointer bg-cyan-800 text-white  rounded-box shadow shadow-cyan-500"
@@ -95,14 +94,11 @@ const Cake18 = ({ id }) => {
                 {selectedItem.name}
               </h2>
               <h2 className="text-start text-[20px] md:text-[20px] font-bold text-cyan-700">
-                {selectedItem.price} ﻡ.ﺝ
+                {selectedItem.price} ج.م
               </h2>
             </div>
           </div>
-          <button
-            onClick={() => setOpen(false)}
-            className="btn bg-cyan-800 rounded-4xl border-0 shadow-lg p-7 cursor-pointer text-2xl shadow-cyan-700"
-          >
+          <button className="btn bg-cyan-800 rounded-4xl border-0 shadow-lg p-7 cursor-pointer text-2xl shadow-cyan-700">
             إغلاق
           </button>
         </div>

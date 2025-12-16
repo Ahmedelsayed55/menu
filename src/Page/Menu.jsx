@@ -82,7 +82,7 @@ const Menu = () => {
         idNawaem={idNawaem}
       />
 
-      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idGato}><Gato /></section>
+      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24 " id={idGato}><Gato /></section>
       <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idCake26}><Cake26 /></section>
       <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idCake20}><Cake20 /></section>
       <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idCake18}><Cake18 /></section>
