@@ -82,26 +82,66 @@ const Menu = () => {
         idNawaem={idNawaem}
       />
 
-      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24 " id={idGato}><Gato /></section>
-      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idCake26}><Cake26 /></section>
-      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idCake20}><Cake20 /></section>
-      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idCake18}><Cake18 /></section>
-      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idHartCake}><HartCake /></section>
-      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idMixed}><AssortedCakes /></section>
-      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idLayers}><CakeLayers /></section>
-      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idRamadan}><RamadanSweets /></section>
-      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idKonafa}><Konafa /></section>
-      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idTary}><Tary /></section>
-      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idBogasha}><Bogasha /></section>
-      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idZyout}><Zyout /></section>
-      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idForam}><Foram /></section>
-      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idSewareh}><Sewareh /></section>
-      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idDryNuts}><DryNuts /></section>
-      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idDollMillk}><DollMillk /></section>
-      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idCoconut}><Coconut /></section>
-      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idReadyPack}><ReadyPackages /></section>
-      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idNawaem}><Nawaem /></section>
-      <section className="max-w-[1920px] mx-auto px-1 py-12 md:px-5 md:py-12 scroll-mt-24" id={idChocolate}><Chocolate /></section>
+      <section className="max-w-[1920px] mx-auto scroll-mt-24 " id={idGato}>
+        <Gato />
+      </section>
+      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idCake26}>
+        <Cake26 />
+      </section>
+      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idCake20}>
+        <Cake20 />
+      </section>
+      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idCake18}>
+        <Cake18 />
+      </section>
+      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idHartCake}>
+        <HartCake />
+      </section>
+      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idMixed}>
+        <AssortedCakes />
+      </section>
+      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idLayers}>
+        <CakeLayers />
+      </section>
+      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idRamadan}>
+        <RamadanSweets />
+      </section>
+      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idKonafa}>
+        <Konafa />
+      </section>
+      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idTary}>
+        <Tary />
+      </section>
+      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idBogasha}>
+        <Bogasha />
+      </section>
+      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idZyout}>
+        <Zyout />
+      </section>
+      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idForam}>
+        <Foram />
+      </section>
+      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idSewareh}>
+        <Sewareh />
+      </section>
+      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idDryNuts}>
+        <DryNuts />
+      </section>
+      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idDollMillk}>
+        <DollMillk />
+      </section>
+      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idCoconut}>
+        <Coconut />
+      </section>
+      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idReadyPack}>
+        <ReadyPackages />
+      </section>
+      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idNawaem}>
+        <Nawaem />
+      </section>
+      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idChocolate}>
+        <Chocolate />
+      </section>
 
       {show && (
         <button

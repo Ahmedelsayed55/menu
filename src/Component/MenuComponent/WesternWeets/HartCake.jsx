@@ -34,7 +34,7 @@ const HartCake = ({ id }) => {
     };
   }, [open]);
   return (
-    <div className="border-b border-gray-300 pb-20 mb-10 shadow-lg shadow-gray-300">
+    <div className="border-b border-gray-300 py-20 md:py-30 mb-10 shadow-lg shadow-gray-300">
       <h1 className="text-[16px] font-bold md:text-3xl mb-5">تورت قلب</h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-2 md:gap-10"
@@ -54,8 +54,7 @@ const HartCake = ({ id }) => {
                 className=" w-[70%]  object-cover rounded-xl transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]"
                 src={item.img}
                 alt="Cake"
-                loading="lazy" 
-        
+                loading="lazy"
               />
               <div className="w-full flex flex-col gap-4 md:gap-7 py-3 px-3">
                 <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950">
