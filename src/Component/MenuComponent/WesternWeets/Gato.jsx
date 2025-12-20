@@ -101,7 +101,7 @@ const Gato = ({ id }) => {
               </h2>
             </div>
           </div>
-          <button className="btn bg-cyan-800 rounded-4xl border-0 shadow-lg p-7 cursor-pointer text-2xl shadow-cyan-700">
+          <button className="btn bg-cyan-800 rounded-4xl border-0 shadow-lg p-7 cursor-pointer text-2xl text-white shadow-cyan-700">
             إغلاق
           </button>
         </div>

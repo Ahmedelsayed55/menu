@@ -42,7 +42,7 @@ const Coconut = ({ id }) => {
             >
               <div className="relative group-hover:shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
                 <img
-                  className=" w-full md:w-[90%] md:h-[90%] object-cover md:object-contain rounded-xl transition-transform  duration-300  group-hover:scale-120"
+                  className=" w-full md:w-[90%] md:h-[90%] object-cover md:object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120"
                   src={item.img}
                   alt="Cake"
                   loading="lazy"
@@ -70,7 +70,7 @@ const Coconut = ({ id }) => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="bg-gray-100 rounded px-5 pt-20 pb-5   lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
+            className="bg-gray-100 rounded px-5 pt-20 pb-5 group overflow-hidden  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
           >
             <button
               className="absolute px-3 py-2 btn flex items-center justify-center top-2 right-2 text-2xl cursor-pointer bg-cyan-800 text-white  rounded-box shadow shadow-cyan-500"
@@ -80,7 +80,7 @@ const Coconut = ({ id }) => {
             </button>
 
             <img
-              className=" w-60 lg:w-[90%] md:mb-7 transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]"
+              className=" w-60 lg:w-[90%] md:mb-7 filter transition-transform duration-30 group-hover:scale-120"
               src={selectedItem.img}
               alt="Cake"
               loading="lazy"
@@ -95,7 +95,7 @@ const Coconut = ({ id }) => {
               </h2>
             </div>
           </div>
-          <button className="btn bg-cyan-800 rounded-4xl border-0 shadow-lg p-7 cursor-pointer text-2xl shadow-cyan-700">
+          <button className="btn bg-cyan-800 rounded-4xl border-0 shadow-lg p-7 cursor-pointer text-2xl text-white shadow-cyan-700">
             إغلاق
           </button>
         </div>
