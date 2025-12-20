@@ -47,9 +47,9 @@ const Zyout = ({ id }) => {
               }}
               className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between gap-10 transition hover:shadow-lg bg-gray-100 active:scale-110  "
             >
-              <div className="relative group-hover:shadow group w-full h-100  flex justify-center overflow-hidden rounded-2xl">
+              <div className="relative group-hover:shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
                 <img
-                  className=" w-[90%] h-[90%]  object-contain rounded-xl transition-transform  duration-300  group-hover:scale-120"
+                  className=" w-full md:w-[90%] md:h-[90%] object-cover md:object-contain rounded-xl transition-transform  duration-300  group-hover:scale-120"
                   src={item.img}
                   alt="Cake"
                   loading="lazy"
