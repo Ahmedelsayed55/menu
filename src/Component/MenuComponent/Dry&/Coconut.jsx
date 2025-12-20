@@ -38,19 +38,22 @@ const Coconut = ({ id }) => {
                 setSelectedItem(item);
                 setOpen(true);
               }}
-              className="rounded-2xl  shadow-lg shadow-gray-400 pt-5 md:pt-7 px-1 flex flex-col items-center gap-5 justify-between transition hover:shadow-lg hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
+              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between gap-10 transition hover:shadow-lg bg-gray-100 active:scale-110  "
             >
-              <img
-                className=" w-[70%]  object-cover rounded-xl transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]"
-                src={item.img}
-                alt="Cake"
-                loading="lazy"
-              />
+              <div className="relative group-hover:shadow group w-full h-100  flex justify-center overflow-hidden rounded-2xl">
+                <img
+                  className=" w-[90%] h-[90%]  object-contain rounded-xl transition-transform  duration-300  group-hover:scale-120"
+                  src={item.img}
+                  alt="Cake"
+                  loading="lazy"
+                />
+              </div>
+
               <div className="w-full flex flex-col gap-4 md:gap-7 py-3 px-3">
-                <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950">
+                <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950 transition duration-500 cursor-default group-hover:-translate-y-5">
                   {item.name}
                 </h2>
-                <h2 className="text-start text-[16px] md:text-2xl font-bold text-cyan-700">
+                <h2 className="text-start text-[16px] md:text-2xl font-bold text-cyan-700 transition duration-500 cursor-default group-hover:-translate-y-5">
                   {item.price} ج.م
                 </h2>
               </div>

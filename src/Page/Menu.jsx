@@ -146,7 +146,7 @@ const Menu = () => {
       {show && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="fixed bottom-6 right-6 bg-cyan-600 text-white p-5 rounded-full"
+          className="fixed bottom-6 cursor-pointer right-6 bg-cyan-600 text-white p-5 rounded-full"
         >
           <IoArrowUp />
         </button>

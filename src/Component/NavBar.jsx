@@ -9,13 +9,13 @@ const NavBar = () => {
       <header className="flex justify-between items-center px-3 border-b border-gray-300 md:px-10 py-2 md:py-5 ">
         <nav className="flex gap-10 md:gap-20">
           <Link
-            className="text-2xl md:text-4xl text-white transition duration-500 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 bg-yellow-600"
+            className="text-2xl md:text-4xl text-white transition duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 bg-yellow-600"
             to="/"
           >
             <ImHome />
           </Link>
           <Link
-            className="text-2xl md:text-4xl text-white transition duration-500 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 bg-yellow-600"
+            className="text-2xl md:text-4xl text-white transition duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 bg-yellow-600"
             to="/contact"
           >
             <FiPhoneCall />
