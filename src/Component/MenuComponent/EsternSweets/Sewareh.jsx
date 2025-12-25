@@ -11,6 +11,7 @@ import segarSada from "../../../assets/sewarehat/segarSada.png";
 import shaklma from "../../../assets/sewarehat/shaklma.png";
 import konafaTorkyMex from "../../../assets/sewarehat/konafaTorkyMex-removebg-preview.png";
 import segarmexrat from "../../../assets/sewarehat/segarmexrat-removebg-preview.png";
+import egazea from "../../../assets/sewarehat/egazea.png";
 const Sewareh = ({ id }) => {
   const prduct = [
     { id: 1, name: " اساور لوز", price: 35, img: assawerMeksrat },
@@ -25,19 +26,20 @@ const Sewareh = ({ id }) => {
     { id: 10, name: "اساور سيوارية", price: 35, img: asawersewareh },
     { id: 11, name: "كنافه تركي مكسرات", price: 35, img: konafaTorkyMex },
     { id: 12, name: "سيجار مكسرات", price: 35, img: segarmexrat },
+    { id: 13, name: " حجازيه", price: 35, img: egazea },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
     if (open) {
-      document.body.style.overflow = "hidden"; // يمنع الاسكرول
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "auto"; // يرجع الاسكرول
+      document.body.style.overflow = "auto";
     }
 
     return () => {
-      document.body.style.overflow = "auto"; // احتياطي عند الخروج من الكمبوننت
+      document.body.style.overflow = "auto";
     };
   }, [open]);
   return (
@@ -78,7 +80,6 @@ const Sewareh = ({ id }) => {
           );
         })}
       </div>
-      {/* model for details */}
       {/* model for details */}
       {open && selectedItem && (
         <div

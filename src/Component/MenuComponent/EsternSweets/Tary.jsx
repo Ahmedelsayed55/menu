@@ -2,12 +2,28 @@ import React, { useEffect, useState } from "react";
 import lenza from "../../../assets/tary/lenza.png";
 import lokma from "../../../assets/tary/lokma-removebg-preview.png";
 import basbosaN from "../../../assets/tary/basbosaN-removebg-preview.png";
+import zeza from "../../../assets/tary/3zeza.png";
+import basbosaloz from "../../../assets/tary/basbosaloz.png";
+import basbosamx from "../../../assets/tary/basbosamx.png";
+import basbosatorkykeshta from "../../../assets/tary/basbosatorkykeshta.png";
+import bsemamx from "../../../assets/tary/bsemamx.png";
+import defr from "../../../assets/tary/defr.png";
+import hresasada from "../../../assets/tary/hresasada.png";
+import swarehtakte3 from "../../../assets/tary/swarehtakte3.png";
 
 const Tary = ({ id }) => {
   const prduct = [
     { id: 1, name: "لينزا", price: 35, img: lenza },
     { id: 2, name: "لقمة الباشا", price: 35, img: lokma },
     { id: 3, name: "بسبوسة نوتيلا ", price: 35, img: basbosaN },
+    { id: 4, name: " عزيزه ", price: 35, img: zeza },
+    { id: 5, name: " بسبوسه لوز ", price: 35, img: basbosaloz },
+    { id: 6, name: " بسبوسه مكسرات ", price: 35, img: basbosamx },
+    { id: 7, name: " بسبوسه تركي قشطة ", price: 35, img: basbosatorkykeshta },
+    { id: 8, name: "بسيمة مكسرات", price: 35, img: bsemamx },
+    { id: 9, name: "بسيمة دفر", price: 35, img: defr },
+    { id: 10, name: "هريسه ريتاج ساده", price: 35, img: hresasada },
+    { id: 11, name: "بسبوسه سيواريه تقطيع", price: 35, img: swarehtakte3 },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

@@ -5,6 +5,12 @@ import konafaN from "../../../assets/konafa/konafaN.png";
 import medl3a1 from "../../../assets/konafa/medl3a1-removebg-preview.png";
 import medl3a2 from "../../../assets/konafa/medl3a2-removebg-preview.png";
 import medl3a3 from "../../../assets/konafa/medl3a3-removebg-preview.png";
+import konafa3osmanle from "../../../assets/konafa/konafa3osmanle.png";
+import konafamanga from "../../../assets/konafa/konafamanga.png";
+import makhsos from "../../../assets/konafa/makhsos.png";
+import rafaielo from "../../../assets/konafa/rafaielo.png";
+import shhrzad from "../../../assets/konafa/shhrzad.png";
+import tamrea from "../../../assets/konafa/tamrea.png";
 const Konafa = ({ id }) => {
   const prduct = [
     { id: 1, name: " كنافة عثمانلي", price: 35, img: konafa3othmanly },
@@ -13,6 +19,12 @@ const Konafa = ({ id }) => {
     { id: 4, name: " مدلعه", price: 35, img: medl3a1 },
     { id: 5, name: "مدلعة", price: 35, img: medl3a2 },
     { id: 6, name: "مدلعه", price: 35, img: medl3a3 },
+    { id: 7, name: "كنافه عثمانلي", price: 35, img: konafa3osmanle },
+    { id: 8, name: "كنافه مانجو", price: 35, img: konafamanga },
+    { id: 9, name: "كنافه مخصوص", price: 35, img: makhsos },
+    { id: 10, name: "كنافه رافيلو", price: 35, img: rafaielo },
+    { id: 11, name: "كنافه شهرزاد", price: 35, img: shhrzad },
+    { id: 12, name: "كنافه تمريه ", price: 35, img: tamrea },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
