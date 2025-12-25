@@ -90,7 +90,7 @@ const HartCake = ({ id }) => {
             </button>
 
             <img
-              className=" w-60 lg:w-[90%] md:mb-7 filter transition-transform duration-30 group-hover:scale-120"
+              className=" w-60 lg:w-[90%] md:mb-7 filter transition-transform duration-300 group-hover:scale-120"
               src={selectedItem.img}
               alt="Cake"
               loading="lazy"
