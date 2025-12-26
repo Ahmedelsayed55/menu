@@ -6,13 +6,6 @@ const Cake18 = ({ id }) => {
     { id: 2, name: "تورته (18)", price: 350, img: Cake1 },
     { id: 3, name: "تورته (18)", price: 350, img: Cake1 },
     { id: 4, name: "تورته (18)", price: 350, img: Cake1 },
-    { id: 5, name: "تورته (18)", price: 350, img: Cake1 },
-    { id: 6, name: "تورته (18)", price: 350, img: Cake1 },
-    { id: 7, name: "تورته (18)", price: 350, img: Cake1 },
-    { id: 8, name: "تورته (18)", price: 350, img: Cake1 },
-    { id: 9, name: "تورته (18)", price: 350, img: Cake1 },
-    { id: 10, name: "تورته (18)", price: 350, img: Cake1 },
-    { id: 11, name: "تورته (18)", price: 350, img: Cake1 },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
