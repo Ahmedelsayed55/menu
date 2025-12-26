@@ -10,13 +10,13 @@ const CakeLayers = ({ id }) => {
   const [open, setOpen] = useState(false);
   useEffect(() => {
     if (open) {
-      document.body.style.overflow = "hidden"; // يمنع الاسكرول
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "auto"; // يرجع الاسكرول
+      document.body.style.overflow = "auto";
     }
 
     return () => {
-      document.body.style.overflow = "auto"; // احتياطي عند الخروج من الكمبوننت
+      document.body.style.overflow = "auto";
     };
   }, [open]);
   return (
@@ -57,7 +57,6 @@ const CakeLayers = ({ id }) => {
           );
         })}
       </div>
-      {/* model for details */}
       {/* model for details */}
       {open && selectedItem && (
         <div
