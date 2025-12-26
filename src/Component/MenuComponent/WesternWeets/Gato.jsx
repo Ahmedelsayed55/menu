@@ -6,6 +6,16 @@ import melfay from "../../../assets/assetsGato/melfay.png";
 import melfaych from "../../../assets/assetsGato/melfaych.png";
 import swesrol from "../../../assets/assetsGato/swesrol.png";
 import swesroul from "../../../assets/assetsGato/swesroul.png";
+import andeal from "../../../assets/assetsGato/andeal.png";
+import despaseto from "../../../assets/assetsGato/despaseto.png";
+import cheascake from "../../../assets/assetsGato/cheascake.png";
+import fnwar from "../../../assets/assetsGato/fnwar.png";
+import kopmos from "../../../assets/assetsGato/kopmos.png";
+import molton from "../../../assets/assetsGato/molton.png";
+import roya2 from "../../../assets/assetsGato/roya2.png";
+import royal from "../../../assets/assetsGato/royal.png";
+import spsheal from "../../../assets/assetsGato/spsheal.png";
+import traiovl from "../../../assets/assetsGato/traiovl.png";
 const Gato = ({ id }) => {
   const prduct = [
     { id: 1, name: "اكلير", price: 35, img: Cake },
@@ -15,6 +25,16 @@ const Gato = ({ id }) => {
     { id: 5, name: "ملفاي", price: 20, img: melfay },
     { id: 6, name: "ملفاي شيكولاته", price: 20, img: melfaych },
     { id: 7, name: "سويسرول ", price: 15, img: swesroul },
+    { id: 8, name: "انديال ", price: 15, img: andeal },
+    { id: 9, name: "ديسباسيتو ", price: 15, img: despaseto },
+    { id: 10, name: "تشيز كيك ", price: 15, img: cheascake },
+    { id: 11, name: "فنوار ", price: 15, img: fnwar },
+    { id: 12, name: "كوب موس ", price: 15, img: kopmos },
+    { id: 13, name: "مولتون كيك ", price: 15, img: molton },
+    { id: 14, name: " رويال", price: 15, img: roya2 },
+    { id: 15, name: "رويال ", price: 15, img: royal },
+    { id: 16, name: "سبشيال", price: 15, img: spsheal },
+    { id: 17, name: "ترايفول", price: 15, img: traiovl },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -46,9 +66,9 @@ const Gato = ({ id }) => {
               }}
               className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between gap-10 transition hover:shadow-lg bg-gray-100 active:scale-110  "
             >
-              <div className="relative group-hover:shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
+              <div className="relative group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
                 <img
-                  className=" w-full md:w-[90%] md:h-[90%] object-cover md:object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120"
+                  className=" w-full md:w-[80%] md:h-[90%] object-contain md:object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120 filter drop-shadow-2xl drop-shadow-gray-500"
                   src={item.img}
                   alt="Cake"
                   loading="lazy"
