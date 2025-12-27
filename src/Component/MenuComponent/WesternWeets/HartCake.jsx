@@ -6,6 +6,7 @@ import karamilBlackHart from "../../../assets/assetsHart/karamilBlackHart-remove
 import havTagHart from "../../../assets/assetsHart/havTagHart-removebg-preview.png";
 
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 const HartCake = ({ id }) => {
   const prduct = [
     { id: 1, name: "تورته قلب ريد فلفيد ", price: 350, img: redvalved },
@@ -48,7 +49,7 @@ const HartCake = ({ id }) => {
                 setSelectedItem(item);
                 setOpen(true);
               }}
-              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between gap-10 transition hover:shadow-lg bg-gray-100 active:scale-110  "
+              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between md:gap-10 transition hover:shadow-lg bg-gray-100 active:scale-110  "
             >
               <div className="relative group-hover:shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
                 <img
@@ -66,6 +67,12 @@ const HartCake = ({ id }) => {
                 <h2 className="text-start text-[16px] md:text-2xl font-bold text-cyan-700 transition duration-500 cursor-default group-hover:-translate-y-5">
                   {item.price} ج.م
                 </h2>
+                <Link
+                  to={"/contact"}
+                  className="w-full text-center p-3 md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer transition duration-500 group-hover:-translate-y-5"
+                >
+                  للطلب والاستفسار
+                </Link>
               </div>
             </div>
           );
@@ -103,6 +110,12 @@ const HartCake = ({ id }) => {
               <h2 className="text-start text-[20px] md:text-[20px] font-bold text-cyan-700">
                 {selectedItem.price} ج.م
               </h2>
+              <Link
+                to={"/contact"}
+                className="w-full text-center p-3 md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer transition duration-500 group-hover:-translate-y-5"
+              >
+                للطلب والاستفسار
+              </Link>
             </div>
           </div>
           <button className="btn bg-cyan-800 rounded-4xl border-0 shadow-lg p-7 cursor-pointer text-2xl text-white shadow-cyan-700">

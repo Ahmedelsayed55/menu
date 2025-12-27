@@ -118,7 +118,7 @@ const NavItem = ({
             <a
               href={`#${item.id}`}
               className={`h-full flex items-center px-5 rounded-md transition whitespace-nowrap text-[12px] md:text-[14px] lg:text-[16px] ${
-                active === item.id ? "bg-gray-600 text-white" : "text-black"
+                active === item.id ? "bg-cyan-950 text-white" : "text-black"
               }`}
             >
               {item.label}
