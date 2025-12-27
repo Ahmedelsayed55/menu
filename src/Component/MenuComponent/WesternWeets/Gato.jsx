@@ -32,7 +32,7 @@ const Gato = ({ id }) => {
     { id: 12, name: "كوب موس ", price: 15, img: kopmos },
     { id: 13, name: "مولتون كيك ", price: 15, img: molton },
     { id: 14, name: " رويال", price: 15, img: roya2 },
-    { id: 15, name: "رويال ", price: 15, img: royal },
+    { id: 15, name: "لوكس ", price: 15, img: royal },
     { id: 16, name: "سبشيال", price: 15, img: spsheal },
     { id: 17, name: "ترايفول", price: 15, img: traiovl },
   ];
