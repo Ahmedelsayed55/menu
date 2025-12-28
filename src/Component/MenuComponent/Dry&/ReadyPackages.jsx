@@ -57,10 +57,7 @@ const ReadyPackages = ({ id }) => {
                 />
               </div>
 
-              <div
-                onClick={(e) => e.stopPropagation()}
-                className="w-full flex flex-col gap-4 md:gap-7 py-3 px-3"
-              >
+              <div className="w-full flex flex-col gap-4 md:gap-7 py-3 px-3">
                 <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950 transition duration-500 cursor-default group-hover:-translate-y-5">
                   {item.name}
                 </h2>
@@ -68,6 +65,7 @@ const ReadyPackages = ({ id }) => {
                   {item.price} ج.م
                 </h2>
                 <Link
+                  onClick={(e) => e.stopPropagation()}
                   to={"/contact"}
                   className="w-full text-center p-3 md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer transition duration-500 group-hover:-translate-y-5"
                 >

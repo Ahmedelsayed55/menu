@@ -65,6 +65,7 @@ const Nawaem = ({ id }) => {
                   {item.price} ج.م
                 </h2>
                 <Link
+                  onClick={(e) => e.stopPropagation()}
                   to={"/contact"}
                   className="w-full text-center p-3 md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer transition duration-500 group-hover:-translate-y-5"
                 >
