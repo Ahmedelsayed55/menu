@@ -76,7 +76,10 @@ const Gato = ({ id }) => {
                 />
               </div>
 
-              <div className="w-full flex flex-col gap-4 md:gap-7 py-3 px-3">
+              <div
+                onClick={(e) => e.stopPropagation()}
+                className="w-full flex flex-col gap-4 md:gap-7 py-3 px-3"
+              >
                 <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950 transition duration-500 cursor-default group-hover:-translate-y-5">
                   {item.name}
                 </h2>

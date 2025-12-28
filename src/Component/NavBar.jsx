@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { ImHome } from "react-icons/im";
 import { FiPhoneCall } from "react-icons/fi";
+import { MdOutlineMenuBook } from "react-icons/md";
 const NavBar = () => {
   return (
     <div className="">
@@ -25,6 +26,15 @@ const NavBar = () => {
             to="/contact"
           >
             <FiPhoneCall />
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              "text-2xl md:text-4xl text-white transition duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 " +
+              (isActive ? " bg-white  text-yellow-600" : "bg-yellow-600")
+            }
+            to="/menu"
+          >
+            <MdOutlineMenuBook />
           </NavLink>
         </nav>
 
