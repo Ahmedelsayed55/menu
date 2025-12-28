@@ -38,19 +38,6 @@ const Contact = () => {
             <BorSaed />
           </div>
         </div>
-
-        {/* محل 7 */}
-
-        <div className="collapse collapse-arrow  border border-gray-300  text-black">
-          <input type="radio" name="my-accordion-2" />
-          <div className="collapse-title font-semibold text-[24px] pb-10 text-center md:text-3xl text-cyan-900 mb-2">
-            محل (7) الرياض
-          </div>
-          <div className="collapse-content text-sm">
-            <Elryad />
-          </div>
-        </div>
-
         {/* محل 3 */}
 
         <div className="collapse collapse-arrow  border border-gray-300   text-black">
@@ -60,6 +47,18 @@ const Contact = () => {
           </div>
           <div className="collapse-content text-sm">
             <Borg3 />
+          </div>
+        </div>
+
+        {/* محل 7 */}
+
+        <div className="collapse collapse-arrow  border border-gray-300  text-black">
+          <input type="radio" name="my-accordion-2" />
+          <div className="collapse-title font-semibold text-[24px] pb-10 text-center md:text-3xl text-cyan-900 mb-2">
+            الرياض بجوار مركز الشرطة
+          </div>
+          <div className="collapse-content text-sm">
+            <Elryad />
           </div>
         </div>
       </div>

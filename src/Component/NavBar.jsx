@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { ImHome } from "react-icons/im";
 import { FiPhoneCall } from "react-icons/fi";
@@ -8,23 +8,29 @@ const NavBar = () => {
     <div className="">
       <header className="max-w-[1920px] mx-auto flex justify-between items-center px-3 border-b border-gray-300 md:px-10 py-2 md:py-5 ">
         <nav className="flex gap-10 md:gap-20">
-          <Link
-            className="text-2xl md:text-4xl text-white transition duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 bg-yellow-600"
+          <NavLink
+            className={({ isActive }) =>
+              "text-2xl md:text-4xl text-white transition duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 " +
+              (isActive ? " bg-white  text-yellow-600" : "bg-yellow-600")
+            }
             to="/"
           >
             <ImHome />
-          </Link>
-          <Link
-            className="text-2xl md:text-4xl text-white transition duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 bg-yellow-600"
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              "text-2xl md:text-4xl text-white transition duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 " +
+              (isActive ? " bg-white  text-yellow-600" : "bg-yellow-600")
+            }
             to="/contact"
           >
             <FiPhoneCall />
-          </Link>
+          </NavLink>
         </nav>
 
-        <Link to={"/"}>
+        <NavLink to={"/"}>
           <img className="w-12 h-10 md:w-19 md:h-15" src={logo} alt="Logo" />
-        </Link>
+        </NavLink>
       </header>
     </div>
   );
