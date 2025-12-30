@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Cake1 from "../../../assets/cake18/cake1.png";
+import Cake2 from "../../../assets/cake18/cake2.png";
 import { Link } from "react-router-dom";
 const Cake18 = ({ id }) => {
   const prduct = [
     { id: 1, name: "تورته (18)", price: 350, img: Cake1 },
-    { id: 2, name: "تورته (18)", price: 350, img: Cake1 },
+    { id: 2, name: "تورته (18)", price: 350, img: Cake2 },
     { id: 3, name: "تورته (18)", price: 350, img: Cake1 },
     { id: 4, name: "تورته (18)", price: 350, img: Cake1 },
   ];

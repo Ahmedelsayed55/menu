@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Cake from "../../../assets/cake.png";
+import Cake from "../../../assets/rndomimg/cake.png";
+import forsesson from "../../../assets/rndomimg/forsesson.png";
 import { Link } from "react-router-dom";
 const AssortedCakes = ({ id }) => {
   const prduct = [
-    { id: 1, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 2, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 3, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 4, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 5, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 6, name: "تورته فلاور (20)", price: 350, img: Cake },
+    { id: 1, name: "30*30  هاف فاكهه", price: 350, img: Cake },
+    { id: 2, name: "25*25 فور سيزون ", price: 350, img: forsesson },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

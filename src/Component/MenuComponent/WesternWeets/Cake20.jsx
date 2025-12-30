@@ -4,6 +4,9 @@ import chocolate from "../../../assets/cake20/chocolate-removebg-preview.png";
 import hacFrot from "../../../assets/cake20/hacFrot-removebg-preview.png";
 import havTap from "../../../assets/cake20/havTap-removebg-preview.png";
 import vadg from "../../../assets/cake20/vadg-removebg-preview.png";
+import flower from "../../../assets/cake20/flower.png";
+import notela from "../../../assets/cake20/notela.png";
+import whitefourest from "../../../assets/cake20/whitefourest.png";
 import { Link } from "react-router-dom";
 
 const Cake20 = ({ id }) => {
@@ -13,6 +16,9 @@ const Cake20 = ({ id }) => {
     { id: 3, name: "تورته هاف فاكهة (20)", price: 350, img: hacFrot },
     { id: 4, name: "تورته هاف تاج (20)", price: 350, img: havTap },
     { id: 5, name: "تورته 4*4 فادجات   (20)", price: 350, img: vadg },
+    { id: 6, name: "تورته 20سم فلاور", price: 350, img: flower },
+    { id: 7, name: "تورته 20سم نوتيلا", price: 350, img: notela },
+    { id: 8, name: "تورته 20سم وايت فورست", price: 350, img: whitefourest },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -46,7 +52,7 @@ const Cake20 = ({ id }) => {
             >
               <div className="relative h-1/2 group-hover:shadow shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
                 <img
-                  className=" w-full md:w-[90%] md:h-[90%] object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120"
+                  className=" w-full md:w-[90%] md:h-[90%] object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-110"
                   src={item.img}
                   alt="Cake"
                   loading="lazy"

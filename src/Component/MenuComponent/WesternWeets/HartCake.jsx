@@ -4,6 +4,8 @@ import frot from "../../../assets/assetsHart/a8.png";
 import redvalved from "../../../assets/assetsHart/a9.png";
 import karamilBlackHart from "../../../assets/assetsHart/karamilBlackHart-removebg-preview.png";
 import havTagHart from "../../../assets/assetsHart/havTagHart-removebg-preview.png";
+import havFrout from "../../../assets/assetsHart/havFrout.png";
+import karamelchocolate from "../../../assets/assetsHart/karamelchocolate.png";
 
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -13,13 +15,15 @@ const HartCake = ({ id }) => {
     { id: 2, name: "تورته قلب بلاك فورست ", price: 350, img: blackForst },
     { id: 3, name: "تورته قلب فاكهه ", price: 350, img: frot },
     { id: 4, name: "تورته قلب شيكولاتة ", price: 350, img: chocolate },
+    { id: 5, name: "قلب هاف فاكهه", price: 350, img: havFrout },
+    { id: 6, name: "قلب كراميل & شيكولاته", price: 350, img: karamelchocolate },
     {
-      id: 5,
+      id: 7,
       name: "تورته قلب كارميل & بلاك فورست ",
       price: 350,
       img: karamilBlackHart,
     },
-    { id: 6, name: "تورته قلب هاف تاج ", price: 350, img: havTagHart },
+    { id: 8, name: "تورته قلب هاف تاج ", price: 350, img: havTagHart },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
