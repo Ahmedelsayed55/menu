@@ -17,7 +17,10 @@ import royal from "../../../assets/assetsGato/royal.png";
 import spsheal from "../../../assets/assetsGato/spsheal.png";
 import traiovl from "../../../assets/assetsGato/traiovl.png";
 import { Link } from "react-router-dom";
+import { MdOutlineFavoriteBorder } from "react-icons/md";
+import { favorites } from "../../../store/Favorites";
 const Gato = ({ id }) => {
+  const { addToFavorite } = favorites();
   const prduct = [
     { id: 1, name: "اكلير", price: 35, img: Cake },
     { id: 2, name: "هولز", price: 17, img: Cake2 },
@@ -83,13 +86,24 @@ const Gato = ({ id }) => {
                 <h2 className="text-start text-[16px] md:text-2xl font-bold text-cyan-700 transition duration-500 cursor-default group-hover:-translate-y-5">
                   {item.price} ج.م
                 </h2>
-                <Link
-                  onClick={(e) => e.stopPropagation()}
-                  to={"/contact"}
-                  className="w-full text-center p-3 md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer transition duration-500 group-hover:-translate-y-5"
-                >
-                  للطلب والاستفسار
-                </Link>
+                <div className="flex gap-2 transition duration-500 group-hover:-translate-y-5">
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation(), addToFavorite(item);
+                    }}
+                    className="text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-3 rounded"
+                  >
+                    {" "}
+                    <MdOutlineFavoriteBorder />
+                  </button>
+                  <Link
+                    onClick={(e) => e.stopPropagation()}
+                    to={"/contact"}
+                    className="w-full text-center p-3 md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
+                  >
+                    للطلب والاستفسار
+                  </Link>
+                </div>
               </div>
             </div>
           );

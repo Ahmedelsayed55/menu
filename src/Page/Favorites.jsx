@@ -1,0 +1,90 @@
+import { FaStar } from "react-icons/fa6";
+import { MdFavorite } from "react-icons/md";
+import { favorites } from "../store/Favorites";
+const Favorites = () => {
+  const { favoritsItem, removeFromFavorites } = favorites();
+  return (
+    <div className="w-full  py-5 bg-white">
+      <div className="container mx-auto ">
+        <div className="flex items-center justify-between">
+          <div className="flex gap-5 items-center ">
+            <FaStar className="text-yellow-500 text-4xl" />
+            <h1 className="text-2xl md:text-5xl font-bold">المفضله</h1>
+          </div>
+          <div className="w-1/2">
+            <input
+              type="text"
+              placeholder="بحث"
+              className=" w-full p-2 border focus:border-blue-200 outline-0 shadow-2xl rounded-2xl"
+            />
+          </div>
+        </div>
+
+        {favoritsItem.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-7 py-40">
+            {favoritsItem.map((item) => (
+              <div key={item.id} className="shadow-md rounded p-4 ">
+                <button
+                  onClick={() => removeFromFavorites(item)}
+                  className="px-3 py-1 text-red-800 cursor-pointer rounded text-4xl"
+                >
+                  <MdFavorite />
+                </button>
+
+                <div className="rating flex justify-center">
+                  <input
+                    type="radio"
+                    name={`rating-${item.id}`}
+                    className="mask mask-star-2 bg-orange-400 "
+                    aria-label="1 star"
+                  />
+                  <input
+                    type="radio"
+                    name={`rating-${item.id}`}
+                    className="mask mask-star-2 bg-orange-400 "
+                    aria-label="2 star"
+                  />
+                  <input
+                    type="radio"
+                    name={`rating-${item.id}`}
+                    className="mask mask-star-2 bg-orange-400 "
+                    aria-label="3 star"
+                  />
+                  <input
+                    type="radio"
+                    name={`rating-${item.id}`}
+                    className="mask mask-star-2 bg-orange-400 "
+                    aria-label="4 star"
+                    defaultChecked
+                  />
+                  <input
+                    type="radio"
+                    name={`rating-${item.id}`}
+                    className="mask mask-star-2 bg-orange-400 "
+                    aria-label="5 star"
+                  />
+                </div>
+                <div className=" flex flex-col gap-5 mt-3">
+                  <h3 className="font-semibold">{item.name}</h3>
+                </div>
+                <div className="w-full h-44 overflow-hidden rounded-md">
+                  <img
+                    src={item.img}
+                    alt="product"
+                    className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="h-[60vh] flex justify-center items-center">
+            <p className="  text-3xl ">Your Favorites is Empty :(</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default Favorites;

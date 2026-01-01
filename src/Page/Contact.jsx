@@ -5,8 +5,8 @@ import GamalNaser from "../Component/contactComponent/GamalNaser";
 import Masna3 from "../Component/contactComponent/Masna3";
 const Contact = () => {
   return (
-    <div className="bg-gray-100 py-10">
-      <div className="container mx-auto pt-20 shadow-xl shadow-cyan-100 bg-gray-50 ">
+    <div className="bg-gray-100 py-10 md:py-20">
+      <div className="container mx-auto  shadow-xl shadow-cyan-100 bg-gray-50 ">
         {/*  المصنع  */}
         <div className="collapse collapse-arrow border border-gray-300 text-black">
           <input type="checkbox" name="my-accordion-2" />
