@@ -9,7 +9,7 @@ const Contact = () => {
       <div className="container mx-auto pt-20 shadow-xl shadow-cyan-100 bg-gray-50 ">
         {/*  المصنع  */}
         <div className="collapse collapse-arrow border border-gray-300 text-black">
-          <input type="radio" name="my-accordion-2" />
+          <input type="checkbox" name="my-accordion-2" />
           <div className="collapse-title font-semibold pb-10 text-center text-[24px] md:text-3xl text-cyan-900 mb-2">
             {" "}
             الإدارة والمصنع
@@ -20,7 +20,7 @@ const Contact = () => {
         </div>
         {/* محل 1  */}
         <div className="collapse collapse-arrow  border border-gray-300  text-black">
-          <input type="radio" name="my-accordion-2" />
+          <input type="checkbox" name="my-accordion-2" />
           <div className="collapse-title font-semibold pb-10 text-center text-[24px] md:text-3xl text-cyan-900 mb-2">
             بلطيم شارع جمال عبد الناصر
           </div>
@@ -30,7 +30,7 @@ const Contact = () => {
         </div>
         {/* محل 2 */}
         <div className="collapse collapse-arrow  border border-gray-300 text-black">
-          <input type="radio" name="my-accordion-2" defaultChecked />
+          <input type="checkbox" name="my-accordion-2" />
           <div className="collapse-title font-semibold text-[24px] text-center md:text-3xl text-cyan-900 mb-2 pb-10">
             بلطيم شارع بورسعيد
           </div>
@@ -41,7 +41,7 @@ const Contact = () => {
         {/* محل 3 */}
 
         <div className="collapse collapse-arrow  border border-gray-300   text-black">
-          <input type="radio" name="my-accordion-2" />
+          <input type="checkbox" name="my-accordion-2" />
           <div className="collapse-title font-semibold text-[24px] pb-10 text-center md:text-3xl text-cyan-900 mb-2">
             البرج بجوار مسجد سيدي عيسي
           </div>
@@ -53,7 +53,7 @@ const Contact = () => {
         {/* محل 7 */}
 
         <div className="collapse collapse-arrow  border border-gray-300  text-black">
-          <input type="radio" name="my-accordion-2" />
+          <input type="checkbox" name="my-accordion-2" />
           <div className="collapse-title font-semibold text-[24px] pb-10 text-center md:text-3xl text-cyan-900 mb-2">
             الرياض بجوار مركز الشرطة
           </div>
