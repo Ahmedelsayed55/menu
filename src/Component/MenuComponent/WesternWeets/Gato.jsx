@@ -141,12 +141,24 @@ const Gato = ({ id }) => {
               <h2 className="text-start text-[20px] md:text-[20px] font-bold text-cyan-700">
                 {selectedItem.price} ج.م
               </h2>
-              <Link
-                to={"/contact"}
-                className="w-full text-center p-3 md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer transition duration-500 group-hover:-translate-y-5"
-              >
-                للطلب والاستفسار
-              </Link>
+              <div className="flex gap-2 transition duration-500 group-hover:-translate-y-5">
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation(), addToFavorite(selectedItem);
+                  }}
+                  className="text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-3 rounded"
+                >
+                  {" "}
+                  <MdOutlineFavoriteBorder />
+                </button>
+                <Link
+                  onClick={(e) => e.stopPropagation()}
+                  to={"/contact"}
+                  className="w-full text-center p-3 md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
+                >
+                  للطلب والاستفسار
+                </Link>
+              </div>
             </div>
           </div>
           <button className="btn bg-cyan-800 rounded-4xl border-0 shadow-lg p-7 cursor-pointer text-2xl text-white shadow-cyan-700">

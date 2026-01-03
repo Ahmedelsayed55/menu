@@ -5,17 +5,16 @@ import asawer from "../../../assets/assetsRmadan/asawer.png";
 import forma from "../../../assets/assetsRmadan/forma.png";
 import kornehkrema from "../../../assets/assetsRmadan/kornehkrema.png";
 import kornehnotela from "../../../assets/assetsRmadan/kornehnotela.png";
-import lotes from "../../../assets/assetsRmadan/lotes.png";
+
 import { Link } from "react-router-dom";
 const Zyout = ({ id }) => {
   const prduct = [
     { id: 1, name: "اصابع زينب", price: 35, img: zenab },
     { id: 2, name: "بلح محشي سيواريه", price: 35, img: bla7M },
     { id: 3, name: " أساور", price: 35, img: asawer },
-    { id: 4, name: " أساور", price: 35, img: forma },
+    { id: 4, name: " فطيرة سوري", price: 35, img: forma },
     { id: 5, name: " كورنيه كريما ", price: 35, img: kornehkrema },
     { id: 6, name: " كورنيه نوتيلا ", price: 35, img: kornehnotela },
-    { id: 7, name: " مدلعه لوتس ", price: 35, img: lotes },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

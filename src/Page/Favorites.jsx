@@ -79,7 +79,7 @@ const Favorites = () => {
           </div>
         ) : (
           <div className="h-[60vh] flex justify-center items-center">
-            <p className="  text-3xl ">Your Favorites is Empty :(</p>
+            <p className="  text-3xl ">صفحه المفضله لديك فارغهه :(</p>
           </div>
         )}
       </div>
