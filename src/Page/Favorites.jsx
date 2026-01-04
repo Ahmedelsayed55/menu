@@ -1,8 +1,16 @@
 import { FaStar } from "react-icons/fa6";
 import { MdFavorite } from "react-icons/md";
 import { favorites } from "../store/Favorites";
+import { useState } from "react";
 const Favorites = () => {
+  const [search, setSearch] = useState("");
   const { favoritsItem, removeFromFavorites } = favorites();
+  const filteredFavorites = favoritsItem.filter((item) => {
+    return (
+      item.name?.toLowerCase().includes(search.toLowerCase()) ||
+      item.price?.toString().includes(search)
+    );
+  });
   return (
     <div className="w-full  py-5 bg-white">
       <div className="container mx-auto ">
@@ -15,14 +23,16 @@ const Favorites = () => {
             <input
               type="text"
               placeholder="بحث"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
               className=" w-full p-2 border focus:border-blue-200 outline-0 shadow-2xl rounded-2xl"
             />
           </div>
         </div>
 
-        {favoritsItem.length > 0 ? (
+        {filteredFavorites.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-7 py-40">
-            {favoritsItem.map((item) => (
+            {filteredFavorites.map((item) => (
               <div key={item.id} className="shadow-md rounded p-4 ">
                 <button
                   onClick={() => removeFromFavorites(item)}
