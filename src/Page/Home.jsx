@@ -2,9 +2,11 @@ import React from "react";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
+import { MdOutlineMenuBook } from "react-icons/md";
+import { FiPhoneCall } from "react-icons/fi";
 const Home = () => {
   return (
-    <div className="bg-gray-200 h-dvh text-white flex items-center justify-center ">
+    <div className="bg-gray-200  py-10 text-white flex items-center justify-center ">
       <div className="container mx-auto ">
         <div className=" flex items-center justify-center rounded-2xl">
           <div className="flex flex-col items-center  gap-10">
@@ -17,13 +19,13 @@ const Home = () => {
                 className="btn text-white bg-cyan-800 px-20 md:px-40  py-6 rounded-3xl text-2xl hover:bg-transparent hover:text-black"
                 to="/menu"
               >
-                قائمة الاسعار
+                قائمة الاسعار <MdOutlineMenuBook className="mr-2" />
               </Link>
               <Link
                 className="btn hover:text-white px-20 md:px-40 py-6 rounded-3xl text-2xl bg-transparent hover:bg-cyan-800 text-black "
                 to="/contact"
               >
-                للتواصل معنا
+                للتواصل معنا <FiPhoneCall className="mr-2" />
               </Link>
             </div>
             <div className="flex gap-5 ">

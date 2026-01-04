@@ -9,7 +9,7 @@ export const favorites = create(
       addToFavorite: (products) =>
         set((state) => {
           let product = state.favoritsItem;
-          let final = product.findIndex((el) => el.id == products.id);
+          let final = product.findIndex((el) => el.name == products.name);
           if (final == -1) {
             product.push({ ...products, qty: 1 });
             toast.success(`${products.name} تم اضافته بنجاح`);
@@ -21,7 +21,7 @@ export const favorites = create(
       removeFromFavorites: (products) =>
         set((state) => {
           let product = state.favoritsItem;
-          let final = product.findIndex((el) => el.id == products.id);
+          let final = product.findIndex((el) => el.name == products.name);
           product.splice(final, 1);
           toast.success(`${products.name} تم حذفه بنجاح`);
           return { favoritsItem: product };

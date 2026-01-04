@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 import Cake1 from "../../../assets/cake18/cake1.png";
 import Cake2 from "../../../assets/cake18/cake2.png";
 import { Link } from "react-router-dom";
+import { MdOutlineFavoriteBorder } from "react-icons/md";
+import { favorites } from "../../../store/Favorites";
 const Cake18 = ({ id }) => {
+  const { addToFavorite } = favorites();
   const prduct = [
     { id: 1, name: "تورته (18)", price: 350, img: Cake1 },
-    { id: 2, name: "تورته (18)", price: 350, img: Cake2 },
-    { id: 3, name: "تورته (18)", price: 350, img: Cake1 },
-    { id: 4, name: "تورته (18)", price: 350, img: Cake1 },
+    { id: 2, name: " تورته (18) لوتس شيكولاته", price: 350, img: Cake2 },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -24,7 +25,7 @@ const Cake18 = ({ id }) => {
   }, [open]);
   return (
     <div className="border-b border-gray-300 py-20 md:py-30 mb-10 shadow-lg shadow-gray-300">
-      <h1 className="text-[16px] font-bold md:text-3xl mb-5">تورته (18)</h1>
+      <h1 className="text-[16px] font-bold md:text-3xl mb-5">تورته 18سم</h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-2 md:gap-10"
         id={id}
@@ -37,11 +38,11 @@ const Cake18 = ({ id }) => {
                 setSelectedItem(item);
                 setOpen(true);
               }}
-              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between md:gap-10 transition hover:shadow-lg bg-gray-100 active:scale-110  "
+              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between md:gap-10 transition hover:shadow-lg bg-gray-100   "
             >
-              <div className="relative h-1/2 group-hover:shadow shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
+              <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
                 <img
-                  className=" w-full md:w-[90%] md:h-[90%] object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120"
+                  className=" w-full md:w-[80%] md:h-[90%] object-cover md:object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120 filter md:drop-shadow-2xl drop-shadow-gray-400"
                   src={item.img}
                   alt="Cake"
                   loading="lazy"
@@ -55,13 +56,23 @@ const Cake18 = ({ id }) => {
                 <h2 className="text-start text-[16px] md:text-2xl font-bold text-cyan-700 transition duration-500 cursor-default group-hover:-translate-y-5">
                   {item.price} ج.م
                 </h2>
-                <Link
-                  onClick={(e) => e.stopPropagation()}
-                  to={"/contact"}
-                  className="w-full text-center p-3 md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer transition duration-500 group-hover:-translate-y-5"
-                >
-                  للطلب والاستفسار
-                </Link>
+                <div className="flex gap-2 transition duration-500 group-hover:-translate-y-5">
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation(), addToFavorite(item);
+                    }}
+                    className="text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-3 rounded border  focus:scale-120 focus:border-amber-700"
+                  >
+                    <MdOutlineFavoriteBorder />
+                  </button>
+                  <Link
+                    onClick={(e) => e.stopPropagation()}
+                    to={"/contact"}
+                    className="w-full text-center p-3 md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
+                  >
+                    للطلب والاستفسار
+                  </Link>
+                </div>
               </div>
             </div>
           );
@@ -99,12 +110,24 @@ const Cake18 = ({ id }) => {
               <h2 className="text-start text-[20px] md:text-[20px] font-bold text-cyan-700">
                 {selectedItem.price} ج.م
               </h2>
-              <Link
-                to={"/contact"}
-                className="w-full text-center p-3 md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer transition duration-500 group-hover:-translate-y-5"
-              >
-                للطلب والاستفسار
-              </Link>
+              <div className="flex gap-2 transition duration-500 group-hover:-translate-y-5">
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation(), addToFavorite(selectedItem);
+                  }}
+                  className="text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-3 rounded"
+                >
+                  {" "}
+                  <MdOutlineFavoriteBorder />
+                </button>
+                <Link
+                  onClick={(e) => e.stopPropagation()}
+                  to={"/contact"}
+                  className="w-full text-center p-3 md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
+                >
+                  للطلب والاستفسار
+                </Link>
+              </div>
             </div>
           </div>
           <button className="btn bg-cyan-800 rounded-4xl border-0 shadow-lg p-7 cursor-pointer text-2xl text-white shadow-cyan-700">

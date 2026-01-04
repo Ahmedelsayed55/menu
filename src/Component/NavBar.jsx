@@ -14,8 +14,8 @@ const NavBar = () => {
           <div className="relative flex justify-center items-center">
             <NavLink
               className={({ isActive }) =>
-                "text-2xl md:text-4xl text-white transition duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 " +
-                (isActive ? " bg-white  text-yellow-600" : "bg-yellow-600")
+                "text-2xl md:text-4xl transition duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 " +
+                (isActive ? "   text-yellow-600" : "text-black")
               }
               to="/favorites"
             >

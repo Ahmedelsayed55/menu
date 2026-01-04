@@ -34,38 +34,43 @@ const Favorites = () => {
                 <div className="rating flex justify-center">
                   <input
                     type="radio"
-                    name={`rating-${item.id}`}
+                    name={`rating-${item.name}`}
                     className="mask mask-star-2 bg-orange-400 "
                     aria-label="1 star"
                   />
                   <input
                     type="radio"
-                    name={`rating-${item.id}`}
+                    name={`rating-${item.name}`}
                     className="mask mask-star-2 bg-orange-400 "
                     aria-label="2 star"
                   />
                   <input
                     type="radio"
-                    name={`rating-${item.id}`}
+                    name={`rating-${item.name}`}
                     className="mask mask-star-2 bg-orange-400 "
                     aria-label="3 star"
                   />
                   <input
                     type="radio"
-                    name={`rating-${item.id}`}
+                    name={`rating-${item.name}`}
                     className="mask mask-star-2 bg-orange-400 "
                     aria-label="4 star"
                     defaultChecked
                   />
                   <input
                     type="radio"
-                    name={`rating-${item.id}`}
+                    name={`rating-${item.name}`}
                     className="mask mask-star-2 bg-orange-400 "
                     aria-label="5 star"
                   />
                 </div>
                 <div className=" flex flex-col gap-5 mt-3">
-                  <h3 className="font-semibold">{item.name}</h3>
+                  <h3 className="font-semibold text-2xl text-cyan-950 ">
+                    {item.name}
+                  </h3>
+                  <h3 className="font-semibold text-[20px] text-cyan-700">
+                    {item.price} ج.م{" "}
+                  </h3>
                 </div>
                 <div className="w-full h-44 overflow-hidden rounded-md">
                   <img
