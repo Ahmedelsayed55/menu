@@ -14,19 +14,19 @@ import { MdOutlineFavoriteBorder } from "react-icons/md";
 const HartCake = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "تورته قلب ريد فلفيد ", price: 350, img: redvalved },
-    { id: 2, name: "تورته قلب بلاك فورست ", price: 350, img: blackForst },
-    { id: 3, name: "تورته قلب فاكهه ", price: 350, img: frot },
-    { id: 4, name: "تورته قلب شيكولاتة ", price: 350, img: chocolate },
-    { id: 5, name: "قلب هاف فاكهه", price: 350, img: havFrout },
-    { id: 6, name: "قلب كراميل & شيكولاته", price: 350, img: karamelchocolate },
+    { id: 1, name: "تورته قلب ريد فلفيد ", price: 300, img: redvalved },
+    { id: 2, name: "تورته قلب بلاك فورست ", price: 300, img: blackForst },
+    { id: 3, name: "تورته قلب فاكهه ", price: 300, img: frot },
+    { id: 4, name: "تورته قلب شيكولاتة ", price: 275, img: chocolate },
+    { id: 5, name: "قلب هاف فاكهه", price: 275, img: havFrout },
+    { id: 6, name: "قلب كراميل & شيكولاته", price: 275, img: karamelchocolate },
     {
       id: 7,
       name: "تورته قلب كارميل & بلاك فورست ",
-      price: 350,
+      price: 275,
       img: karamilBlackHart,
     },
-    { id: 8, name: "تورته قلب هاف تاج ", price: 350, img: havTagHart },
+    { id: 8, name: "تورته قلب هاف تاج ", price: 275, img: havTagHart },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

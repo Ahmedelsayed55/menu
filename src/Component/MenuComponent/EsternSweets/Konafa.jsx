@@ -17,18 +17,18 @@ import { favorites } from "../../../store/Favorites";
 const Konafa = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: " كنافة عثمانلي", price: 35, img: konafa3othmanly },
-    { id: 2, name: "كنافة كريمة", price: 35, img: konafaKrema },
-    { id: 3, name: " كنافة نوتيلا", price: 35, img: konafaN },
-    { id: 4, name: " مدلعه", price: 35, img: medl3a1 },
-    { id: 5, name: "مدلعة", price: 35, img: medl3a2 },
-    { id: 6, name: "مدلعه", price: 35, img: medl3a3 },
-    { id: 7, name: "كنافه عثمانلي", price: 35, img: konafa3osmanle },
-    { id: 8, name: "كنافه مانجو", price: 35, img: konafamanga },
-    { id: 9, name: "كنافه مخصوص", price: 35, img: makhsos },
-    { id: 10, name: "كنافه رافيلو", price: 35, img: rafaielo },
-    { id: 11, name: "كنافه شهرزاد", price: 35, img: shhrzad },
-    { id: 12, name: "كنافه تمريه ", price: 35, img: tamrea },
+    { id: 1, name: " كنافة عثمانلي", price: 150, img: konafa3othmanly },
+    { id: 2, name: "كنافة كريمة", price: 125, img: konafaKrema },
+    { id: 3, name: " كنافة نوتيلا", price: 165, img: konafaN },
+    { id: 4, name: " مدلعه", price: 150, img: medl3a1 },
+    { id: 5, name: "مدلعة", price: 150, img: medl3a2 },
+    { id: 6, name: "مدلعه", price: 150, img: medl3a3 },
+    { id: 7, name: "كنافه عثمانلي", price: 150, img: konafa3osmanle },
+    { id: 8, name: "كنافه مانجو", price: 150, img: konafamanga },
+    { id: 9, name: "كنافه مخصوص", price: 125, img: makhsos },
+    { id: 10, name: "كنافه رافيلو", price: 150, img: rafaielo },
+    { id: 11, name: "كنافه شهرزاد", price: 180, img: shhrzad },
+    { id: 12, name: "كنافه تمريه ", price: 150, img: tamrea },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

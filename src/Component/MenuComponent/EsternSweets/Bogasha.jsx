@@ -15,15 +15,15 @@ import { favorites } from "../../../store/Favorites";
 const Bogasha = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "بقلاوة جمبري", price: 35, img: baklawaGambry },
-    { id: 2, name: " بقلاوة كل واشكر", price: 35, img: baklawakolwashkor },
-    { id: 3, name: "جلاش كريمه", price: 35, img: krema },
-    { id: 4, name: "جلاش مكسرات", price: 35, img: meksrat },
-    { id: 5, name: "جلاش صدف", price: 35, img: sadf },
-    { id: 6, name: "بقلاوة مسطره", price: 35, img: bklawamstra },
-    { id: 7, name: "بقلاوة نجمة", price: 35, img: bklawanegma },
-    { id: 8, name: "جلاش بستاشيو", price: 35, img: glashB },
-    { id: 9, name: "جلاش بستاشيو", price: 35, img: glashsada },
+    { id: 1, name: "بقلاوة جمبري", price: 250, img: baklawaGambry },
+    { id: 2, name: " بقلاوة كل واشكر", price: 300, img: baklawakolwashkor },
+    { id: 3, name: "جلاش كريمه", price: 150, img: krema },
+    { id: 4, name: "جلاش مكسرات", price: 160, img: meksrat },
+    { id: 5, name: "جلاش صدف", price: 130, img: sadf },
+    { id: 6, name: "بقلاوة مسطره", price: 200, img: bklawamstra },
+    { id: 7, name: "بقلاوة نجمة", price: 200, img: bklawanegma },
+    { id: 8, name: "جلاش بستاشيو", price: 175, img: glashB },
+    { id: 9, name: "جلاش ساده", price: 175, img: glashsada },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

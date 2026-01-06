@@ -1,24 +1,20 @@
 import React, { useEffect, useState } from "react";
 import glashmx from "../../../assets/assetsRmadan/glashmx.png";
-import mdl3amanga from "../../../assets/assetsRmadan/mdl3amanga.png";
 import asawer from "../../../assets/assetsRmadan/asawer.png";
 import forma from "../../../assets/assetsRmadan/forma.png";
 import kornehkrema from "../../../assets/assetsRmadan/kornehkrema.png";
 import kornehnotela from "../../../assets/assetsRmadan/kornehnotela.png";
-import lotes from "../../../assets/assetsRmadan/lotes.png";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { favorites } from "../../../store/Favorites";
 const Foram = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "جلاش مكسرت", price: 35, img: glashmx },
-    { id: 2, name: "مدلعه مانجا", price: 35, img: mdl3amanga },
-    { id: 3, name: " أساور", price: 35, img: asawer },
-    { id: 4, name: " أساور", price: 35, img: forma },
-    { id: 5, name: " كورنيه كريما ", price: 35, img: kornehkrema },
-    { id: 6, name: " كورنيه نوتيلا ", price: 35, img: kornehnotela },
-    { id: 7, name: " مدلعه لوتس ", price: 35, img: lotes },
+    { id: 1, name: "جلاش مكسرت", price: 160, img: glashmx },
+    { id: 2, name: " أساور", price: 175, img: asawer },
+    { id: 3, name: " فطيره سوري", price: 200, img: forma },
+    { id: 4, name: " كورنيه كريما ", price: 175, img: kornehkrema },
+    { id: 5, name: " كورنيه نوتيلا ", price: 175, img: kornehnotela },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

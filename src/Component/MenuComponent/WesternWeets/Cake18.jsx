@@ -1,14 +1,22 @@
 import React, { useEffect, useState } from "react";
 import Cake1 from "../../../assets/cake18/cake1.png";
 import Cake2 from "../../../assets/cake18/cake2.png";
+import Cake3 from "../../../assets/cake18/cake3.png";
+import chocolate from "../../../assets/cake18/chocolate.png";
+import hartmeni1 from "../../../assets/cake18/hartmeni1.png";
+import hartmenii from "../../../assets/cake18/hartmenii.png";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { favorites } from "../../../store/Favorites";
 const Cake18 = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "تورته (18)", price: 350, img: Cake1 },
-    { id: 2, name: " تورته (18) لوتس شيكولاته", price: 350, img: Cake2 },
+    { id: 1, name: "تورته(18)", price: 190, img: Cake1 },
+    { id: 2, name: " تورته  ( 18 )", price: 190, img: Cake2 },
+    { id: 3, name: " تورته ( 18 )", price: 190, img: Cake3 },
+    { id: 4, name: " تورته   (18)", price: 190, img: chocolate },
+    { id: 5, name: " تورته قلب ميني", price: 200, img: hartmenii },
+    { id: 6, name: " تورته قلب_ ميني", price: 200, img: hartmeni1 },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

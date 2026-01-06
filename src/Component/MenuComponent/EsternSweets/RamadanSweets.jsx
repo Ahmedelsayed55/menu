@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import glashmx from "../../../assets/assetsRmadan/glashmx.png";
 import mdl3amanga from "../../../assets/assetsRmadan/mdl3amanga.png";
 import asawer from "../../../assets/assetsRmadan/asawer.png";
 import forma from "../../../assets/assetsRmadan/forma.png";
@@ -13,10 +12,9 @@ import { favorites } from "../../../store/Favorites";
 const RamadanSweets = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "جلاش مكسرت", price: 35, img: glashmx },
-    { id: 2, name: "مدلعه مانجا", price: 35, img: mdl3amanga },
-    { id: 3, name: " أساور", price: 35, img: asawer },
-    { id: 4, name: " فطيرة سوري", price: 35, img: forma },
+    { id: 2, name: "بولة مانجو", price: 0, img: mdl3amanga },
+    { id: 3, name: " أساور", price: 0, img: asawer },
+    { id: 4, name: " فطيرة سوري", price: 0, img: forma },
     { id: 5, name: " كورنيه قشطة ", price: 35, img: kornehkrema },
     { id: 6, name: " كورنيه نوتيلا ", price: 35, img: kornehnotela },
     { id: 7, name: " مدلعه لوتس ", price: 35, img: lotes },

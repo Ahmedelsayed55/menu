@@ -11,11 +11,11 @@ import { favorites } from "../../../store/Favorites";
 const Nawaem = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: " كحك", price: 170, img: kahk },
-    { id: 2, name: " غريبه", price: 190, img: ghreba },
-    { id: 3, name: " غريبة", price: 190, img: betefor },
-    { id: 4, name: " بسكويت", price: 180, img: bskwet },
-    { id: 5, name: "سابلية", price: 190, img: sableh },
+    { id: 1, name: " كحك", price: 85, img: kahk },
+    { id: 2, name: " غريبه", price: 95, img: ghreba },
+    { id: 3, name: " بيتي فور", price: 95, img: betefor },
+    { id: 4, name: " بسكويت", price: 90, img: bskwet },
+    { id: 5, name: "سابلية", price: 95, img: sableh },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

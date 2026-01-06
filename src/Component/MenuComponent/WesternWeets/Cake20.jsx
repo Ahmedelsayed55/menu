@@ -14,14 +14,14 @@ import { MdOutlineFavoriteBorder } from "react-icons/md";
 const Cake20 = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "تورته بلاك فورست (20)", price: 350, img: blackForst },
-    { id: 2, name: "تورته شيكولاتة (20)", price: 350, img: chocolate },
-    { id: 3, name: "تورته هاف فاكهة (20)", price: 350, img: hacFrot },
-    { id: 4, name: "تورته هاف تاج (20)", price: 350, img: havTap },
-    { id: 5, name: "تورته 4*4 فادجات   (20)", price: 350, img: vadg },
-    { id: 6, name: "تورته 20سم فلاور", price: 350, img: flower },
-    { id: 7, name: "تورته 20سم نوتيلا", price: 350, img: notela },
-    { id: 8, name: "تورته 20سم وايت فورست", price: 350, img: whitefourest },
+    { id: 1, name: "تورته بلاك فورست (20)", price: 210, img: blackForst },
+    { id: 2, name: "تورته شيكولاتة (20)", price: 210, img: chocolate },
+    { id: 3, name: "تورته هاف فاكهة (20)", price: 210, img: hacFrot },
+    { id: 4, name: "تورته هاف تاج (20)", price: 210, img: havTap },
+    { id: 5, name: "تورته 4*4 فادجات   (20)", price: 230, img: vadg },
+    { id: 6, name: "تورته 20سم فلاور", price: 210, img: flower },
+    { id: 7, name: "تورته 20سم نوتيلا", price: 230, img: notela },
+    { id: 8, name: "تورته 20سم وايت فورست", price: 230, img: whitefourest },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

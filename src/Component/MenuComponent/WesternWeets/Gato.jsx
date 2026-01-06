@@ -22,23 +22,24 @@ import { favorites } from "../../../store/Favorites";
 const Gato = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "اكلير", price: 35, img: Cake },
-    { id: 2, name: "هولز", price: 17, img: Cake2 },
-    { id: 3, name: "تشيزكيك", price: 25, img: cheesCake },
+    { id: 1, name: "اكلير", price: 15, img: Cake },
+    { id: 2, name: "هولز", price: 16, img: Cake2 },
+    { id: 3, name: "تشيز كيك", price: 25, img: cheesCake },
     { id: 4, name: "سويسرول ", price: 15, img: swesrol },
-    { id: 5, name: "ملفاي", price: 20, img: melfay },
+    { id: 5, name: "ملفاي", price: 16, img: melfay },
     { id: 6, name: "ملفاي شيكولاته", price: 20, img: melfaych },
     { id: 7, name: "سويسرول ", price: 15, img: swesroul },
-    { id: 8, name: "انديال ", price: 15, img: andeal },
-    { id: 9, name: "ديسباسيتو ", price: 15, img: despaseto },
-    { id: 10, name: "تشيز كيك ", price: 15, img: cheascake },
-    { id: 11, name: "فنوار ", price: 15, img: fnwar },
-    { id: 12, name: "كوب موس ", price: 15, img: kopmos },
-    { id: 13, name: "مولتون كيك ", price: 15, img: molton },
-    { id: 14, name: " رويال", price: 15, img: roya2 },
-    { id: 15, name: "لوكس ", price: 15, img: royal },
-    { id: 16, name: "سبشيال", price: 15, img: spsheal },
-    { id: 17, name: "ترايفول", price: 15, img: traiovl },
+    { id: 8, name: "انديال ", price: 17.5, img: andeal },
+    { id: 9, name: "ديسباسيتو ", price: 60, img: despaseto },
+    { id: 10, name: "تشيز كيك ", price: 25, img: cheascake },
+    { id: 11, name: "فنوار ", price: 17.5, img: fnwar },
+    { id: 12, name: "كوب موس ", price: 16, img: kopmos },
+    { id: 13, name: "مولتون كيك ", price: 35, img: molton },
+    { id: 14, name: " رويال", price: 17.5, img: roya2 },
+    { id: 15, name: "لوكس ", price: 12.5, img: royal },
+    { id: 16, name: "سبشيال", price: 30, img: spsheal },
+    { id: 17, name: "ترايفول", price: 11, img: traiovl },
+    { id: 18, name: "ميني ديسباسيتو ", price: 25, img: despaseto },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

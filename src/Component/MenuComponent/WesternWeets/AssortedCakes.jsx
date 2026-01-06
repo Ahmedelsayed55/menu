@@ -7,8 +7,8 @@ import { favorites } from "../../../store/Favorites";
 const AssortedCakes = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "30*30  هاف فاكهه", price: 350, img: Cake },
-    { id: 2, name: "25*25 فور سيزون ", price: 350, img: forsesson },
+    { id: 1, name: "30*30  هاف فاكهه", price: 550, img: Cake },
+    { id: 2, name: "25*25 فور سيزون ", price: 450, img: forsesson },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
