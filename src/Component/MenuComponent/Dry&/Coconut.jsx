@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import keshta from "../../../assets/assetsCoconut/keshta.png";
 import ldeda from "../../../assets/assetsCoconut/ldeda.png";
+import logo from "../../../assets/logocart.png";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { favorites } from "../../../store/Favorites";
@@ -8,7 +9,9 @@ const Coconut = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
     { id: 1, name: "قشطة", price: 150, img: keshta },
-    { id: 2, name: "لديدة بيضاء", price: 275, img: ldeda },
+    { id: 2, name: "لديدة ", price: 275, img: ldeda },
+    { id: 3, name: "مسطرة جوز هند", price: 150, img: null },
+    { id: 4, name: "بسيمة مغلفة", price: 175, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -45,8 +48,8 @@ const Coconut = ({ id }) => {
             >
               <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
                 <img
-                  className=" w-full md:w-[80%] md:h-[90%] object-cover md:object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120 filter md:drop-shadow-2xl drop-shadow-gray-400"
-                  src={item.img}
+                  className=" w-full md:w-[80%] md:h-[90%] object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120 filter md:drop-shadow-2xl drop-shadow-gray-400"
+                  src={item.img ? item.img : logo}
                   alt="Cake"
                   loading="lazy"
                 />
@@ -59,19 +62,19 @@ const Coconut = ({ id }) => {
                 <h2 className="text-start text-[16px] md:text-2xl font-bold text-cyan-700 transition duration-500 cursor-default group-hover:-translate-y-5">
                   {item.price} ج.م
                 </h2>
-                <div className="flex gap-2 transition duration-500 group-hover:-translate-y-5">
+                <div className="flex gap-2 items-center transition duration-500 group-hover:-translate-y-5">
                   <button
                     onClick={(e) => {
                       e.stopPropagation(), addToFavorite(item);
                     }}
-                    className="text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-3 rounded border  focus:scale-120 focus:border-amber-700"
+                    className="text-2xl md:text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-2 md:p-3 rounded border  focus:scale-120 focus:border-amber-700"
                   >
                     <MdOutlineFavoriteBorder />
                   </button>
                   <Link
                     onClick={(e) => e.stopPropagation()}
                     to={"/contact"}
-                    className="w-full text-center p-3 md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
+                    className="w-full text-center py-3  text-[14px] md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
                   >
                     للطلب والاستفسار
                   </Link>
@@ -101,7 +104,7 @@ const Coconut = ({ id }) => {
 
             <img
               className=" w-60 lg:w-[90%] md:mb-7 filter transition-transform duration-300 group-hover:scale-120"
-              src={selectedItem.img}
+              src={selectedItem.img ? selectedItem.img : logo}
               alt="Cake"
               loading="lazy"
               decoding="async"

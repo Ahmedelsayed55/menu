@@ -10,6 +10,7 @@ import bsemamx from "../../../assets/tary/bsemamx.png";
 import defr from "../../../assets/tary/defr.png";
 import hresasada from "../../../assets/tary/hresasada.png";
 import swarehtakte3 from "../../../assets/tary/swarehtakte3.png";
+import logo from "../../../assets/logocart.png";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { favorites } from "../../../store/Favorites";
@@ -17,17 +18,18 @@ import { favorites } from "../../../store/Favorites";
 const Tary = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "لينزا", price: 35, img: lenza },
-    { id: 2, name: "لقمة الباشا", price: 35, img: lokma },
-    { id: 3, name: "بسبوسة نوتيلا ", price: 35, img: basbosaN },
-    { id: 4, name: " عزيزه ", price: 35, img: zeza },
-    { id: 5, name: " بسبوسه لوز ", price: 35, img: basbosaloz },
-    { id: 6, name: " بسبوسه مكسرات ", price: 35, img: basbosamx },
-    { id: 7, name: " بسبوسه تركي قشطة ", price: 35, img: basbosatorkykeshta },
-    { id: 8, name: "بسيمة مكسرات", price: 35, img: bsemamx },
-    { id: 9, name: "بسيمة دفر", price: 35, img: defr },
-    { id: 10, name: "هريسه ريتاج ساده", price: 35, img: hresasada },
-    { id: 11, name: "بسبوسه سيواريه تقطيع", price: 35, img: swarehtakte3 },
+    { id: 1, name: "لينزا", price: 150, img: lenza },
+    { id: 2, name: "لقمة الباشا", price: 130, img: lokma },
+    { id: 3, name: "بسبوسة نوتيلا ", price: 160, img: basbosaN },
+    { id: 4, name: " عزيزه ", price: 100, img: zeza },
+    { id: 5, name: " بسبوسه لوز ", price: 100, img: basbosaloz },
+    { id: 6, name: " بسبوسه مكسرات ", price: 125, img: basbosamx },
+    { id: 7, name: " بسبوسه تركي قشطة ", price: 125, img: basbosatorkykeshta },
+    { id: 8, name: "بسيمة مكسرات", price: 185, img: bsemamx },
+    { id: 9, name: "بسيمة دفر", price: 175, img: defr },
+    { id: 10, name: "هريسه ريتاج ساده", price: 80, img: hresasada },
+    { id: 11, name: "بسبوسه سيواريه تقطيع", price: 130, img: swarehtakte3 },
+    { id: 12, name: "هريسه ريتاج مكسرات", price: 100, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -62,8 +64,8 @@ const Tary = ({ id }) => {
             >
               <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
                 <img
-                  className=" w-full md:w-[80%] md:h-[90%] object-cover md:object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120 filter md:drop-shadow-2xl drop-shadow-gray-400"
-                  src={item.img}
+                  className=" w-full md:w-[80%] md:h-[90%] object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120 filter md:drop-shadow-2xl drop-shadow-gray-400"
+                  src={item.img ? item.img : logo}
                   alt="Cake"
                   loading="lazy"
                 />
@@ -76,19 +78,19 @@ const Tary = ({ id }) => {
                 <h2 className="text-start text-[16px] md:text-2xl font-bold text-cyan-700 transition duration-500 cursor-default group-hover:-translate-y-5">
                   {item.price} ج.م
                 </h2>
-                <div className="flex gap-2 transition duration-500 group-hover:-translate-y-5">
+                <div className="flex gap-2 items-center transition duration-500 group-hover:-translate-y-5">
                   <button
                     onClick={(e) => {
                       e.stopPropagation(), addToFavorite(item);
                     }}
-                    className="text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-3 rounded border  focus:scale-120 focus:border-amber-700"
+                    className="text-2xl md:text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-2 md:p-3 rounded border  focus:scale-120 focus:border-amber-700"
                   >
                     <MdOutlineFavoriteBorder />
                   </button>
                   <Link
                     onClick={(e) => e.stopPropagation()}
                     to={"/contact"}
-                    className="w-full text-center p-3 md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
+                    className="w-full text-center py-3  text-[14px] md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
                   >
                     للطلب والاستفسار
                   </Link>
@@ -118,7 +120,7 @@ const Tary = ({ id }) => {
 
             <img
               className=" w-60 lg:w-[90%] md:mb-7 filter transition-transform duration-300 group-hover:scale-120"
-              src={selectedItem.img}
+              src={selectedItem.img ? selectedItem.img : logo}
               alt="Cake"
               loading="lazy"
               decoding="async"

@@ -10,7 +10,7 @@ import Cake20 from "../Component/MenuComponent/WesternWeets/Cake20";
 import Cake18 from "../Component/MenuComponent/WesternWeets/Cake18";
 import AssortedCakes from "../Component/MenuComponent/WesternWeets/AssortedCakes";
 import Chocolate from "../Component/MenuComponent/Chocolate/Chocolate";
-// import CakeLayers from "../Component/MenuComponent/WesternWeets/CakeLayers";
+import CakeLayers from "../Component/MenuComponent/WesternWeets/CakeLayers";
 import RamadanSweets from "../Component/MenuComponent/EsternSweets/RamadanSweets";
 import Konafa from "../Component/MenuComponent/EsternSweets/Konafa";
 import Tary from "../Component/MenuComponent/EsternSweets/Tary";
@@ -32,7 +32,7 @@ const Menu = () => {
   let idMixed = "idMixed";
   let idGato = "idGato";
   let idChocolate = "idChocolate";
-  // let idLayers = "idLayers";
+  let idLayers = "idLayers";
   let idRamadan = "idRamadan";
   let idKonafa = "idKonafa";
   let idTary = "idTary";
@@ -66,7 +66,7 @@ const Menu = () => {
         idMixed={idMixed}
         idGato={idGato}
         idChocolate={idChocolate}
-        // idLayers={idLayers}
+        idLayers={idLayers}
         idRamadan={idRamadan}
         idKonafa={idKonafa}
         idTary={idTary}
@@ -100,9 +100,9 @@ const Menu = () => {
       <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idMixed}>
         <AssortedCakes />
       </section>
-      {/* <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idLayers}>
+      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idLayers}>
         <CakeLayers />
-      </section> */}
+      </section>
       <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idRamadan}>
         <RamadanSweets />
       </section>

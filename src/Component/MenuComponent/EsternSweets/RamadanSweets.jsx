@@ -1,24 +1,25 @@
 import React, { useEffect, useState } from "react";
-import mdl3amanga from "../../../assets/assetsRmadan/mdl3amanga.png";
-import asawer from "../../../assets/assetsRmadan/asawer.png";
-import forma from "../../../assets/assetsRmadan/forma.png";
-import kornehkrema from "../../../assets/assetsRmadan/kornehkrema.png";
-import kornehnotela from "../../../assets/assetsRmadan/kornehnotela.png";
-import lotes from "../../../assets/assetsRmadan/lotes.png";
-import basma from "../../../assets/assetsRmadan/basmaagwa.png";
+import logo from "../../../assets/logocart.png";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { favorites } from "../../../store/Favorites";
 const RamadanSweets = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 2, name: "بولة مانجو", price: 0, img: mdl3amanga },
-    { id: 3, name: " أساور", price: 0, img: asawer },
-    { id: 4, name: " فطيرة سوري", price: 0, img: forma },
-    { id: 5, name: " كورنيه قشطة ", price: 35, img: kornehkrema },
-    { id: 6, name: " كورنيه نوتيلا ", price: 35, img: kornehnotela },
-    { id: 7, name: " مدلعه لوتس ", price: 35, img: lotes },
-    { id: 8, name: "بصمة عجوة  ", price: 35, img: basma },
+    { id: 1, name: "بولة هاف مدورة", price: 0, img: null },
+    { id: 2, name: "بولة فورسيزون مدورة", price: 0, img: null },
+    { id: 3, name: "بولة كنافة بيضاوى كبيرة", price: 0, img: null },
+    { id: 4, name: "بولة هاف مربعة كبيرة", price: 0, img: null },
+    { id: 5, name: "بولة فورسيزون مربعة كبيرة", price: 0, img: null },
+    { id: 6, name: "بولة مضلعة بيضاوى صغيرة", price: 0, img: null },
+    { id: 7, name: "كوب كنافة ميك", price: 0, img: null },
+    { id: 8, name: "تورتة كنافة مشكل", price: 0, img: null },
+    { id: 9, name: "طبق كنافات مشكل", price: 0, img: null },
+    { id: 10, name: "بولة عميقة مانجو", price: 0, img: null },
+    { id: 11, name: "كوب موجة كنافة", price: 0, img: null },
+    { id: 12, name: "طواجن شرقي مشكل", price: 0, img: null },
+    { id: 13, name: "فانوس كنافة مشكل", price: 0, img: null },
+    { id: 14, name: "طبق كنافة مشكل مدور", price: 0, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -53,8 +54,8 @@ const RamadanSweets = ({ id }) => {
             >
               <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
                 <img
-                  className=" w-full md:w-[80%] md:h-[90%] object-cover md:object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120 filter md:drop-shadow-2xl drop-shadow-gray-400"
-                  src={item.img}
+                  className=" w-full md:w-[80%] md:h-[90%] object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120 filter md:drop-shadow-2xl drop-shadow-gray-400"
+                  src={item.img ? item.img : logo}
                   alt="Cake"
                   loading="lazy"
                 />
@@ -67,19 +68,19 @@ const RamadanSweets = ({ id }) => {
                 <h2 className="text-start text-[16px] md:text-2xl font-bold text-cyan-700 transition duration-500 cursor-default group-hover:-translate-y-5">
                   {item.price} ج.م
                 </h2>
-                <div className="flex gap-2 transition duration-500 group-hover:-translate-y-5">
+                <div className="flex gap-2 items-center transition duration-500 group-hover:-translate-y-5">
                   <button
                     onClick={(e) => {
                       e.stopPropagation(), addToFavorite(item);
                     }}
-                    className="text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-3 rounded border  focus:scale-120 focus:border-amber-700"
+                    className="text-2xl md:text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-2 md:p-3 rounded border  focus:scale-120 focus:border-amber-700"
                   >
                     <MdOutlineFavoriteBorder />
                   </button>
                   <Link
                     onClick={(e) => e.stopPropagation()}
                     to={"/contact"}
-                    className="w-full text-center p-3 md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
+                    className="w-full text-center py-3  text-[14px] md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
                   >
                     للطلب والاستفسار
                   </Link>
@@ -109,7 +110,7 @@ const RamadanSweets = ({ id }) => {
 
             <img
               className=" w-60 lg:w-[90%] md:mb-7 filter transition-transform duration-300 group-hover:scale-120"
-              src={selectedItem.img}
+              src={selectedItem.img ? selectedItem.img : logo}
               alt="Cake"
               loading="lazy"
               decoding="async"

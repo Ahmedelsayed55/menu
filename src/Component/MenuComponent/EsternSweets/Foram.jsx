@@ -1,20 +1,24 @@
 import React, { useEffect, useState } from "react";
-import glashmx from "../../../assets/assetsRmadan/glashmx.png";
-import asawer from "../../../assets/assetsRmadan/asawer.png";
+
 import forma from "../../../assets/assetsRmadan/forma.png";
-import kornehkrema from "../../../assets/assetsRmadan/kornehkrema.png";
-import kornehnotela from "../../../assets/assetsRmadan/kornehnotela.png";
+
+import logo from "../../../assets/logocart.png";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { favorites } from "../../../store/Favorites";
 const Foram = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "جلاش مكسرت", price: 160, img: glashmx },
-    { id: 2, name: " أساور", price: 175, img: asawer },
+    { id: 1, name: "فورمة كنافه رفايلو", price: 125, img: null },
+    { id: 2, name: " فورمة كنافه لوتس", price: 125, img: null },
     { id: 3, name: " فطيره سوري", price: 200, img: forma },
-    { id: 4, name: " كورنيه كريما ", price: 175, img: kornehkrema },
-    { id: 5, name: " كورنيه نوتيلا ", price: 175, img: kornehnotela },
+    { id: 4, name: " فورمه عزيزة صغير ", price: 100, img: null },
+    { id: 5, name: " فورمه عزيزة كبير ", price: 200, img: null },
+    { id: 6, name: " فورمه عزيزة وسط ", price: 150, img: null },
+    { id: 7, name: " فورمه كنافه مخصوص ", price: 180, img: null },
+    { id: 8, name: " فورمه مدلعة ", price: 160, img: null },
+    { id: 9, name: "فورمه بسبوسه شاميه ساده ", price: 140, img: null },
+    { id: 9, name: "فورمه بسبوسه شاميه مكسرات ", price: 190, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -49,8 +53,8 @@ const Foram = ({ id }) => {
             >
               <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
                 <img
-                  className=" w-full md:w-[80%] md:h-[90%] object-cover md:object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120 filter md:drop-shadow-2xl drop-shadow-gray-400"
-                  src={item.img}
+                  className=" w-full md:w-[80%] md:h-[90%] object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120 filter md:drop-shadow-2xl drop-shadow-gray-400"
+                  src={item.img ? item.img : logo}
                   alt="Cake"
                   loading="lazy"
                 />
@@ -63,19 +67,19 @@ const Foram = ({ id }) => {
                 <h2 className="text-start text-[16px] md:text-2xl font-bold text-cyan-700 transition duration-500 cursor-default group-hover:-translate-y-5">
                   {item.price} ج.م
                 </h2>
-                <div className="flex gap-2 transition duration-500 group-hover:-translate-y-5">
+                <div className="flex gap-2 items-center transition duration-500 group-hover:-translate-y-5">
                   <button
                     onClick={(e) => {
                       e.stopPropagation(), addToFavorite(item);
                     }}
-                    className="text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-3 rounded border  focus:scale-120 focus:border-amber-700"
+                    className="text-2xl md:text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-2 md:p-3 rounded border  focus:scale-120 focus:border-amber-700"
                   >
                     <MdOutlineFavoriteBorder />
                   </button>
                   <Link
                     onClick={(e) => e.stopPropagation()}
                     to={"/contact"}
-                    className="w-full text-center p-3 md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
+                    className="w-full text-center py-3  text-[14px] md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
                   >
                     للطلب والاستفسار
                   </Link>
@@ -105,7 +109,7 @@ const Foram = ({ id }) => {
 
             <img
               className=" w-60 lg:w-[90%] md:mb-7 filter transition-transform duration-300 group-hover:scale-120"
-              src={selectedItem.img}
+              src={selectedItem.img ? selectedItem.img : logo}
               alt="Cake"
               loading="lazy"
               decoding="async"

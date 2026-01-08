@@ -3,6 +3,7 @@ import sodani from "../../../assets/assetsDryNuts/sodani.png";
 import homs from "../../../assets/assetsDryNuts/homs.png";
 import noga from "../../../assets/assetsDryNuts/noga.png";
 import semsem from "../../../assets/assetsDryNuts/semsem.png";
+import logo from "../../../assets/logocart.png";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { favorites } from "../../../store/Favorites";
@@ -11,9 +12,15 @@ const DryNuts = ({ id }) => {
   const prduct = [
     { id: 1, name: "سودانية", price: 150, img: sodani },
     { id: 2, name: "حمصية", price: 150, img: homs },
-    { id: 3, name: "نوجا", price: 150, img: noga },
+    { id: 3, name: "نوجا", price: 110, img: noga },
     { id: 4, name: "سمسمية", price: 160, img: semsem },
-    { id: 5, name: "سمسمية", price: 160, img: semsem },
+    { id: 5, name: "شريحه حمص", price: 135, img: null },
+    { id: 6, name: "شريحه سمسم", price: 135, img: null },
+    { id: 7, name: "نواعم", price: 150, img: null },
+    { id: 8, name: "بندق", price: 625, img: null },
+    { id: 9, name: "لوز", price: 550, img: null },
+    { id: 10, name: "فستق", price: 1400, img: null },
+    { id: 11, name: "كاجو", price: 550, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -48,8 +55,8 @@ const DryNuts = ({ id }) => {
             >
               <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
                 <img
-                  className=" w-full md:w-[80%] md:h-[90%] object-cover md:object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120 filter md:drop-shadow-2xl drop-shadow-gray-400"
-                  src={item.img}
+                  className=" w-full md:w-[80%] md:h-[90%] object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120 filter md:drop-shadow-2xl drop-shadow-gray-400"
+                  src={item.img ? item.img : logo}
                   alt="Cake"
                   loading="lazy"
                 />
@@ -62,19 +69,19 @@ const DryNuts = ({ id }) => {
                 <h2 className="text-start text-[16px] md:text-2xl font-bold text-cyan-700 transition duration-500 cursor-default group-hover:-translate-y-5">
                   {item.price} ج.م
                 </h2>
-                <div className="flex gap-2 transition duration-500 group-hover:-translate-y-5">
+                <div className="flex gap-2 items-center transition duration-500 group-hover:-translate-y-5">
                   <button
                     onClick={(e) => {
                       e.stopPropagation(), addToFavorite(item);
                     }}
-                    className="text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-3 rounded border  focus:scale-120 focus:border-amber-700"
+                    className="text-2xl md:text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-2 md:p-3 rounded border  focus:scale-120 focus:border-amber-700"
                   >
                     <MdOutlineFavoriteBorder />
                   </button>
                   <Link
                     onClick={(e) => e.stopPropagation()}
                     to={"/contact"}
-                    className="w-full text-center p-3 md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
+                    className="w-full text-center py-3  text-[14px] md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
                   >
                     للطلب والاستفسار
                   </Link>
@@ -104,7 +111,7 @@ const DryNuts = ({ id }) => {
 
             <img
               className=" w-60 lg:w-[90%] md:mb-7 filter transition-transform duration-300 group-hover:scale-120"
-              src={selectedItem.img}
+              src={selectedItem.img ? selectedItem.img : logo}
               alt="Cake"
               loading="lazy"
               decoding="async"

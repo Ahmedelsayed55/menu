@@ -1,23 +1,22 @@
 import React, { useEffect, useState } from "react";
 import zenab from "../../../assets/zeyot/zenab-removebg-preview.png";
 import bla7M from "../../../assets/zeyot/bla7M-removebg-preview.png";
-import asawer from "../../../assets/assetsRmadan/asawer.png";
-import forma from "../../../assets/assetsRmadan/forma.png";
-import kornehkrema from "../../../assets/assetsRmadan/kornehkrema.png";
-import kornehnotela from "../../../assets/assetsRmadan/kornehnotela.png";
 
+import logo from "../../../assets/logocart.png";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { favorites } from "../../../store/Favorites";
 const Zyout = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "اصابع زينب", price: 35, img: zenab },
-    { id: 2, name: "بلح محشي سيواريه", price: 35, img: bla7M },
-    { id: 3, name: " أساور", price: 35, img: asawer },
-    { id: 4, name: " فطيرة سوري", price: 35, img: forma },
-    { id: 5, name: " كورنيه كريما ", price: 35, img: kornehkrema },
-    { id: 6, name: " كورنيه نوتيلا ", price: 35, img: kornehnotela },
+    { id: 1, name: "اصابع زينب", price: 90, img: zenab },
+    { id: 2, name: "بلح محشي سيواريه", price: 110, img: bla7M },
+    { id: 3, name: "بلح شام ساده", price: 100, img: null },
+    { id: 4, name: "بلح شام محشي", price: 110, img: null },
+    { id: 5, name: "زلابيه", price: 95, img: null },
+    { id: 6, name: "مشبك لبناني", price: 100, img: null },
+    { id: 7, name: "علبه مشبك دمياطي", price: 60, img: null },
+    { id: 8, name: "رموش ساده", price: 80, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -52,8 +51,8 @@ const Zyout = ({ id }) => {
             >
               <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
                 <img
-                  className=" w-full md:w-[80%] md:h-[90%] object-cover md:object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120 filter md:drop-shadow-2xl drop-shadow-gray-400"
-                  src={item.img}
+                  className=" w-full md:w-[80%] md:h-[90%] object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120 filter md:drop-shadow-2xl drop-shadow-gray-400"
+                  src={item.img ? item.img : logo}
                   alt="Cake"
                   loading="lazy"
                 />
@@ -66,19 +65,19 @@ const Zyout = ({ id }) => {
                 <h2 className="text-start text-[16px] md:text-2xl font-bold text-cyan-700 transition duration-500 cursor-default group-hover:-translate-y-5">
                   {item.price} ج.م
                 </h2>
-                <div className="flex gap-2 transition duration-500 group-hover:-translate-y-5">
+                <div className="flex gap-2 items-center transition duration-500 group-hover:-translate-y-5">
                   <button
                     onClick={(e) => {
                       e.stopPropagation(), addToFavorite(item);
                     }}
-                    className="text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-3 rounded border  focus:scale-120 focus:border-amber-700"
+                    className="text-2xl md:text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-2 md:p-3 rounded border  focus:scale-120 focus:border-amber-700"
                   >
                     <MdOutlineFavoriteBorder />
                   </button>
                   <Link
                     onClick={(e) => e.stopPropagation()}
                     to={"/contact"}
-                    className="w-full text-center p-3 md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
+                    className="w-full text-center py-3  text-[14px] md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
                   >
                     للطلب والاستفسار
                   </Link>
@@ -108,7 +107,7 @@ const Zyout = ({ id }) => {
 
             <img
               className=" w-60 lg:w-[90%] md:mb-7 filter transition-transform duration-300 group-hover:scale-120"
-              src={selectedItem.img}
+              src={selectedItem.img ? selectedItem.img : logo}
               alt="Cake"
               loading="lazy"
               decoding="async"

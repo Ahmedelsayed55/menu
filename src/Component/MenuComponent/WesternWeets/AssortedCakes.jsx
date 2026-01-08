@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Cake from "../../../assets/rndomimg/cake.png";
 import forsesson from "../../../assets/rndomimg/forsesson.png";
+import logo from "../../../assets/logocart.png";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { favorites } from "../../../store/Favorites";
@@ -9,6 +10,21 @@ const AssortedCakes = ({ id }) => {
   const prduct = [
     { id: 1, name: "30*30  هاف فاكهه", price: 550, img: Cake },
     { id: 2, name: "25*25 فور سيزون ", price: 450, img: forsesson },
+    { id: 3, name: "25*25 هاف ", price: 450, img: null },
+    { id: 4, name: "25*25 فاكهة ", price: 500, img: null },
+    { id: 5, name: "25*25 شيكولاته ", price: 450, img: null },
+    { id: 6, name: "25*25 نوتيلا فاكهة ", price: 500, img: null },
+    { id: 7, name: "25*25  جلاكسي ", price: 475, img: null },
+    { id: 8, name: "30*30  فور سيزون ", price: 600, img: null },
+    { id: 9, name: "30*30  عجينة سكر", price: 750, img: null },
+    { id: 10, name: "30*30 شيكولاتة", price: 550, img: null },
+    { id: 11, name: "30*30 جلاكسي", price: 650, img: null },
+    { id: 12, name: "40*40 فورسيزون", price: 900, img: null },
+    { id: 13, name: "40*40 عجينة سكر", price: 1000, img: null },
+    { id: 14, name: "40*40 كلها فاكهة", price: 1000, img: null },
+    { id: 15, name: "60*40 عجينة سكر", price: 2000, img: null },
+    { id: 16, name: "60*40 فور سيزون", price: 1400, img: null },
+    { id: 17, name: "60*40 هاف", price: 1400, img: "" },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -44,8 +60,8 @@ const AssortedCakes = ({ id }) => {
             >
               <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
                 <img
-                  className=" w-full md:w-[80%] md:h-[90%] object-cover md:object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120 filter md:drop-shadow-2xl drop-shadow-gray-400"
-                  src={item.img}
+                  className=" w-full md:w-[80%] md:h-[90%] object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120 filter md:drop-shadow-2xl drop-shadow-gray-400"
+                  src={item.img ? item.img : logo}
                   alt="Cake"
                   loading="lazy"
                 />
@@ -58,19 +74,19 @@ const AssortedCakes = ({ id }) => {
                 <h2 className="text-start text-[16px] md:text-2xl font-bold text-cyan-700 transition duration-500 cursor-default group-hover:-translate-y-5">
                   {item.price} ج.م
                 </h2>
-                <div className="flex gap-2 transition duration-500 group-hover:-translate-y-5">
+                <div className="flex gap-2 items-center transition duration-500 group-hover:-translate-y-5">
                   <button
                     onClick={(e) => {
                       e.stopPropagation(), addToFavorite(item);
                     }}
-                    className="text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-3 rounded border  focus:scale-120 focus:border-amber-700"
+                    className="text-2xl md:text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-2 md:p-3 rounded border  focus:scale-120 focus:border-amber-700"
                   >
                     <MdOutlineFavoriteBorder />
                   </button>
                   <Link
                     onClick={(e) => e.stopPropagation()}
                     to={"/contact"}
-                    className="w-full text-center p-3 md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
+                    className="w-full text-center py-3  text-[14px] md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
                   >
                     للطلب والاستفسار
                   </Link>
@@ -100,7 +116,7 @@ const AssortedCakes = ({ id }) => {
 
             <img
               className=" w-60 lg:w-[90%] md:mb-7 filter transition-transform duration-300 group-hover:scale-120"
-              src={selectedItem.img}
+              src={selectedItem.img ? selectedItem.img : logo}
               alt="Cake"
               loading="lazy"
               decoding="async"
