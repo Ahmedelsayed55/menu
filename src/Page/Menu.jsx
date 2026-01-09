@@ -24,8 +24,12 @@ import Coconut from "../Component/MenuComponent/Dry&/Coconut";
 import ReadyPackages from "../Component/MenuComponent/Dry&/ReadyPackages";
 import HartCake from "../Component/MenuComponent/WesternWeets/HartCake";
 import Nawaem from "../Component/MenuComponent/Nawaem/Nawaem";
+import { NavLink } from "react-router-dom";
+import { MdOutlineFavoriteBorder } from "react-icons/md";
+import { favorites } from "../store/Favorites";
 
 const Menu = () => {
+  const { favoritsItem } = favorites();
   let idCake26 = "idCake26";
   let idCake20 = "idCake20";
   let idCake18 = "idCake18";
@@ -144,12 +148,25 @@ const Menu = () => {
       </section>
 
       {show && (
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="fixed bottom-6 cursor-pointer right-6 bg-cyan-600 text-white p-5 rounded-full"
-        >
-          <IoArrowUp />
-        </button>
+        <div className="flex flex-col gap-7 fixed bottom-6 right-6">
+          <NavLink
+            className="cursor-pointer  bg-yellow-600 text-white p-5 rounded-full"
+            to="/favorites"
+          >
+            <MdOutlineFavoriteBorder />
+            {favoritsItem.length > 0 && (
+              <span className="absolute text-[15px] md:text-[20px] -top-1 -right-1 text-white rounded-full px-2 bg-yellow-800">
+                {favoritsItem.length}
+              </span>
+            )}
+          </NavLink>
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="cursor-pointer  bg-cyan-600 text-white p-5 rounded-full"
+          >
+            <IoArrowUp />
+          </button>
+        </div>
       )}
     </div>
   );
