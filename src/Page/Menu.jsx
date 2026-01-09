@@ -150,7 +150,7 @@ const Menu = () => {
       {show && (
         <div className="flex flex-col gap-7 fixed bottom-6 right-6">
           <NavLink
-            className="cursor-pointer  bg-yellow-600 text-white p-5 rounded-full"
+            className="cursor-pointer  bg-yellow-600 text-white p-3 text-3xl rounded-full"
             to="/favorites"
           >
             <MdOutlineFavoriteBorder />

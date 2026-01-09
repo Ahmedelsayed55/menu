@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import logo from "../../../assets/logocart.png";
 import Cake from "../../../assets/assetsGato/ecklear.png";
 import Cake2 from "../../../assets/assetsGato/hols.png";
