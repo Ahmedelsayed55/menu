@@ -21,7 +21,6 @@ const Nawaem = ({ id }) => {
     { id: 7, name: " بيتي فور", price: 190, img: betefor },
     { id: 8, name: " بسكويت", price: 180, img: bskwet },
     { id: 9, name: "سابلية", price: 190, img: sableh },
-    { id: 10, name: "علبه مشكل جامبو", price: 450, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
