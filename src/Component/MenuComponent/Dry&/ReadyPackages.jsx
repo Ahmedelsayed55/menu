@@ -7,16 +7,15 @@ import { favorites } from "../../../store/Favorites";
 const ReadyPackages = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "B علبة نواشف مشكل", price: 110, img: null },
+    { id: 1, name: " علبة نواشف Bronze", price: 110, img: null },
     { id: 2, name: "كيس حلاوة شعر", price: 30, img: null },
-    { id: 3, name: "S علبة نواشف مشكل", price: 125, img: null },
-    { id: 4, name: "G علبة نواشف مشكل", price: 150, img: null },
-    { id: 5, name: "K علبة نواشف مشكل", price: 155, img: null },
-    { id: 6, name: "R علبة نواشف مشكل", price: 210, img: null },
-    { id: 7, name: "Gr علبة نواشف مشكل", price: 275, img: null },
-    { id: 7, name: "علبة نواشف مشكل ك", price: 200, img: null },
-    { id: 8, name: "علبة نواشف مشكل د", price: 450, img: null },
-    { id: 9, name: "علبة نواشف مشكل ب", price: 500, img: null },
+    { id: 3, name: " علبة نواشف  Selver", price: 125, img: null },
+    { id: 4, name: "علبة نواشف  Gold", price: 150, img: null },
+    { id: 5, name: "علبة نواشف  Krokan", price: 155, img: null },
+    { id: 6, name: "علبة نواشف  Super", price: 210, img: null },
+    { id: 7, name: "علبة نواشف  Grand", price: 275, img: null },
+    { id: 8, name: "علبة نواشف مشكل Daimond", price: 450, img: null },
+    { id: 9, name: " علبة نواشف Platin", price: 500, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

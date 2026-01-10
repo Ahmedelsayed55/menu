@@ -12,16 +12,16 @@ import { favorites } from "../../../store/Favorites";
 const Nawaem = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: " كحك سادة", price: 85, img: kahk },
-    { id: 2, name: "كحك ملبن", price: 75, img: null },
-    { id: 3, name: "كحك عجوة", price: 75, img: null },
-    { id: 4, name: "كحك مكسرات", price: 87.5, img: null },
-    { id: 5, name: "كحك عين جمل", price: 85, img: null },
-    { id: 6, name: " غريبه", price: 95, img: ghreba },
-    { id: 7, name: " بيتي فور", price: 95, img: betefor },
-    { id: 8, name: " بسكويت", price: 90, img: bskwet },
-    { id: 9, name: "سابلية", price: 95, img: sableh },
-    { id: 9, name: "علبه مشكل جامبو", price: 200, img: null },
+    { id: 1, name: " كحك سادة", price: 170, img: kahk },
+    { id: 2, name: "كحك ملبن", price: 150, img: null },
+    { id: 3, name: "كحك عجوة", price: 150, img: null },
+    { id: 4, name: "كحك مكسرات", price: 175, img: null },
+    { id: 5, name: "كحك عين جمل", price: 170, img: null },
+    { id: 6, name: " غريبه", price: 190, img: ghreba },
+    { id: 7, name: " بيتي فور", price: 190, img: betefor },
+    { id: 8, name: " بسكويت", price: 180, img: bskwet },
+    { id: 9, name: "سابلية", price: 190, img: sableh },
+    { id: 10, name: "علبه مشكل جامبو", price: 450, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

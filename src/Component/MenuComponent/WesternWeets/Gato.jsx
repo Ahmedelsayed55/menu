@@ -73,9 +73,9 @@ const Gato = ({ id }) => {
                 setSelectedItem(item);
                 setOpen(true);
               }}
-              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between md:gap-10 transition hover:shadow-lg bg-gray-100   "
+              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between lg:gap-10 transition hover:shadow-lg bg-gray-100   "
             >
-              <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
+              <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full xl:h-100  flex justify-center overflow-hidden rounded-2xl">
                 <img
                   className=" w-full md:w-[80%] md:h-[90%] object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120 filter md:drop-shadow-2xl drop-shadow-gray-400"
                   src={item.img ? item.img : logo}
@@ -95,14 +95,14 @@ const Gato = ({ id }) => {
                     onClick={(e) => {
                       e.stopPropagation(), addToFavorite(item);
                     }}
-                    className="text-2xl md:text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-2 md:p-3 rounded border  focus:scale-120 focus:border-amber-700"
+                    className="text-2xl md:text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-2 md:p-3 rounded-2xl border  focus:scale-120 focus:border-amber-700"
                   >
                     <MdOutlineFavoriteBorder />
                   </button>
                   <Link
                     onClick={(e) => e.stopPropagation()}
                     to={"/contact"}
-                    className="w-full text-center py-3  text-[14px] md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
+                    className="w-full text-center py-3  text-[14px] md:text-[17px] xl:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
                   >
                     للطلب والاستفسار
                   </Link>
