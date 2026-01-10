@@ -32,7 +32,7 @@ const Cake26 = ({ id }) => {
     { id: 3, name: "تورته هاف لوتس & شيكولاته ", price: 350, img: Cake2 },
     { id: 4, name: "تورته جلاكسي ", price: 350, img: Cake3 },
     { id: 5, name: "تورته نوتيلا فراوله ", price: 350, img: Cake4 },
-    { id: 6, name: "تورته هاف كارميل & شيكولاته ", price: 300, img: Cake7 },
+    { id: 6, name: "تورته هاف كراميل & شيكولاته ", price: 300, img: Cake7 },
     { id: 7, name: "تورته نوتيلا اوريو ", price: 350, img: notelaOrio },
     { id: 8, name: "تورته ايت سيزون اسبونج ", price: 400, img: Cake11 },
     { id: 9, name: "تورته شيكولاته ", price: 300, img: chocolate },

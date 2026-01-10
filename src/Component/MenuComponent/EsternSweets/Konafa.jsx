@@ -27,7 +27,7 @@ const Konafa = ({ id }) => {
     { id: 7, name: "كنافه عثمانلي", price: 150, img: konafa3osmanle },
     { id: 8, name: "كنافه مانجو", price: 150, img: konafamanga },
     { id: 9, name: "كنافه مخصوص", price: 125, img: makhsos },
-    { id: 10, name: "كنافه رافيلو", price: 150, img: rafaielo },
+    { id: 10, name: "كنافه رفايلو", price: 150, img: rafaielo },
     { id: 11, name: "كنافه شهرزاد", price: 180, img: shhrzad },
     { id: 12, name: "كنافه تمريه ", price: 150, img: tamrea },
     { id: 13, name: "كنافه فواكه ", price: 150, img: null },

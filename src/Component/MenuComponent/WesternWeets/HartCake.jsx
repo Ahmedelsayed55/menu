@@ -14,7 +14,7 @@ import { MdOutlineFavoriteBorder } from "react-icons/md";
 const HartCake = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "تورته قلب ريد فلفيد ", price: 300, img: redvalved },
+    { id: 1, name: "تورته قلب ريد فالفيت ", price: 300, img: redvalved },
     { id: 2, name: "تورته قلب بلاك فورست ", price: 300, img: blackForst },
     { id: 3, name: "تورته قلب فاكهه ", price: 300, img: frot },
     { id: 4, name: "تورته قلب شيكولاتة ", price: 275, img: chocolate },
@@ -22,7 +22,7 @@ const HartCake = ({ id }) => {
     { id: 6, name: "قلب كراميل & شيكولاته", price: 275, img: karamelchocolate },
     {
       id: 7,
-      name: "تورته قلب كارميل & بلاك فورست ",
+      name: "تورته قلب كراميل & بلاك فورست ",
       price: 275,
       img: karamilBlackHart,
     },
