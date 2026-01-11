@@ -29,15 +29,7 @@ const Elborsa = () => {
           <FaWhatsapp /> تواصل معنا عبر الواتساب
         </a>
       </div>
-      <div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d714.5297098105715!2d30.98698648545377!3d31.581920014098234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f72174cb0e07f5%3A0x82d0da19c197102c!2z2K3ZhNmI2KfZhtmKINix2YrYqtin2KwgLSBSZXRhaiBQYXN0cnk!5e0!3m2!1sen!2seg!4v1764509599891!5m2!1sen!2seg"
-          width="100%"
-          height="450"
-          style={{ border: 0 }}
-          loading="lazy"
-        ></iframe>
-      </div>
+      <div className=" h-full w-full bg-gray-200"> </div>
     </div>
   );
 };
