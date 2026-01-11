@@ -11,7 +11,7 @@ const NavBar = () => {
     <div className="">
       <header className="max-w-[1920px] mx-auto flex justify-between items-center px-3 border-b border-gray-300 md:px-10 py-2 md:py-5 ">
         <nav className="flex gap-5 md:gap-20">
-          <div className="relative flex justify-center items-center">
+          <div className="relative flex justify-center -ml-4 items-center">
             <NavLink
               className={({ isActive }) =>
                 "text-2xl md:text-4xl transition duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 " +
@@ -21,7 +21,7 @@ const NavBar = () => {
             >
               <MdOutlineFavoriteBorder />
               {favoritsItem.length > 0 && (
-                <span className="absolute text-[15px] md:text-[20px] -top-1 -right-1 text-white rounded-full px-1 bg-yellow-800">
+                <span className="absolute text-[15px] md:text-[20px] -top-1 -right-1 rounded-full px-1 border border-yellow-600">
                   {favoritsItem.length}
                 </span>
               )}

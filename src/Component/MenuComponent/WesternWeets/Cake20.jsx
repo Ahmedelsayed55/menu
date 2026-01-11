@@ -15,17 +15,17 @@ import { MdOutlineFavoriteBorder } from "react-icons/md";
 const Cake20 = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "تورته بلاك فورست (20)", price: 210, img: blackForst },
-    { id: 2, name: "تورته شيكولاتة (20)", price: 210, img: chocolate },
-    { id: 3, name: "تورته هاف فاكهة (20)", price: 210, img: hacFrot },
-    { id: 4, name: "تورته هاف تاج (20)", price: 210, img: havTap },
-    { id: 5, name: "تورته 4*4 فادجات   (20)", price: 230, img: vadg },
-    { id: 6, name: "تورته 20سم فلاور", price: 210, img: flower },
-    { id: 7, name: "تورته 20سم نوتيلا", price: 230, img: notela },
-    { id: 8, name: "تورته 20سم وايت فورست", price: 230, img: whitefourest },
-    { id: 9, name: "تورته 20سم هاف بدون ", price: 210, img: null },
-    { id: 10, name: "تورته 20سم كلها فاكهة ", price: 230, img: null },
-    { id: 11, name: "تورته 20سم ريد فالفيت ", price: 210, img: null },
+    { id: 1, name: "تورته بلاك فورست ", price: 210, img: blackForst },
+    { id: 2, name: "تورته شيكولاتة ", price: 210, img: chocolate },
+    { id: 3, name: "تورته هاف فاكهة ", price: 210, img: hacFrot },
+    { id: 4, name: "تورته هاف تاج ", price: 210, img: havTap },
+    { id: 5, name: "تورته 4*4 فادجات   ", price: 230, img: vadg },
+    { id: 6, name: "تورته فلاور", price: 210, img: flower },
+    { id: 7, name: "تورته نوتيلا", price: 230, img: notela },
+    { id: 8, name: "تورته وايت فورست", price: 230, img: whitefourest },
+    { id: 9, name: "تورته هاف بدون ", price: 210, img: null },
+    { id: 10, name: "تورته كلها فاكهة ", price: 230, img: null },
+    { id: 11, name: "تورته ريد فالفيت ", price: 210, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
