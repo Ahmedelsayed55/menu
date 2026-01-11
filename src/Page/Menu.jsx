@@ -1,35 +1,67 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, lazy, Suspense } from "react";
 import Hero from "../Component/MenuComponent/Hero";
 import NavItem from "../Component/MenuComponent/NavItem";
 import { IoArrowUp } from "react-icons/io5";
 
-// components normal import
-import Gato from "../Component/MenuComponent/WesternWeets/Gato";
-import Cake26 from "../Component/MenuComponent/WesternWeets/Cake26";
-import Cake20 from "../Component/MenuComponent/WesternWeets/Cake20";
-import Cake18 from "../Component/MenuComponent/WesternWeets/Cake18";
-import AssortedCakes from "../Component/MenuComponent/WesternWeets/AssortedCakes";
-import Chocolate from "../Component/MenuComponent/Chocolate/Chocolate";
-import CakeLayers from "../Component/MenuComponent/WesternWeets/CakeLayers";
-import RamadanSweets from "../Component/MenuComponent/EsternSweets/RamadanSweets";
-import Konafa from "../Component/MenuComponent/EsternSweets/Konafa";
-import Tary from "../Component/MenuComponent/EsternSweets/Tary";
-import Bogasha from "../Component/MenuComponent/EsternSweets/Bogasha";
-import Zyout from "../Component/MenuComponent/EsternSweets/Zyout";
-import Foram from "../Component/MenuComponent/EsternSweets/Foram";
-import Sewareh from "../Component/MenuComponent/EsternSweets/Sewareh";
-import DryNuts from "../Component/MenuComponent/Dry&/DryNuts";
-import DollMillk from "../Component/MenuComponent/Dry&/DollMillk";
-import Coconut from "../Component/MenuComponent/Dry&/Coconut";
-import ReadyPackages from "../Component/MenuComponent/Dry&/ReadyPackages";
-import HartCake from "../Component/MenuComponent/WesternWeets/HartCake";
-import Nawaem from "../Component/MenuComponent/Nawaem/Nawaem";
 import { NavLink } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { favorites } from "../store/Favorites";
 
+// 🔥 lazy imports بدل imports العادية
+const Gato = lazy(() => import("../Component/MenuComponent/WesternWeets/Gato"));
+const Cake26 = lazy(() =>
+  import("../Component/MenuComponent/WesternWeets/Cake26")
+);
+const Cake20 = lazy(() =>
+  import("../Component/MenuComponent/WesternWeets/Cake20")
+);
+const Cake18 = lazy(() =>
+  import("../Component/MenuComponent/WesternWeets/Cake18")
+);
+const AssortedCakes = lazy(() =>
+  import("../Component/MenuComponent/WesternWeets/AssortedCakes")
+);
+const Chocolate = lazy(() =>
+  import("../Component/MenuComponent/Chocolate/Chocolate")
+);
+const CakeLayers = lazy(() =>
+  import("../Component/MenuComponent/WesternWeets/CakeLayers")
+);
+const RamadanSweets = lazy(() =>
+  import("../Component/MenuComponent/EsternSweets/RamadanSweets")
+);
+const Konafa = lazy(() =>
+  import("../Component/MenuComponent/EsternSweets/Konafa")
+);
+const Tary = lazy(() => import("../Component/MenuComponent/EsternSweets/Tary"));
+const Bogasha = lazy(() =>
+  import("../Component/MenuComponent/EsternSweets/Bogasha")
+);
+const Zyout = lazy(() =>
+  import("../Component/MenuComponent/EsternSweets/Zyout")
+);
+const Foram = lazy(() =>
+  import("../Component/MenuComponent/EsternSweets/Foram")
+);
+const Sewareh = lazy(() =>
+  import("../Component/MenuComponent/EsternSweets/Sewareh")
+);
+const DryNuts = lazy(() => import("../Component/MenuComponent/Dry&/DryNuts"));
+const DollMillk = lazy(() =>
+  import("../Component/MenuComponent/Dry&/DollMillk")
+);
+const Coconut = lazy(() => import("../Component/MenuComponent/Dry&/Coconut"));
+const ReadyPackages = lazy(() =>
+  import("../Component/MenuComponent/Dry&/ReadyPackages")
+);
+const HartCake = lazy(() =>
+  import("../Component/MenuComponent/WesternWeets/HartCake")
+);
+const Nawaem = lazy(() => import("../Component/MenuComponent/Nawaem/Nawaem"));
+
 const Menu = () => {
   const { favoritsItem } = favorites();
+
   let idCake26 = "idCake26";
   let idCake20 = "idCake20";
   let idCake18 = "idCake18";
@@ -86,83 +118,128 @@ const Menu = () => {
         idNawaem={idNawaem}
       />
 
-      <section className="max-w-[1920px] mx-auto scroll-mt-24 " id={idGato}>
-        <Gato />
+      {/* 👇 نفس الترتيب ونفس الشكل */}
+      <section id={idGato}>
+        <Suspense fallback={null}>
+          <Gato />
+        </Suspense>
       </section>
-      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idCake26}>
-        <Cake26 />
+      <section id={idCake26}>
+        <Suspense fallback={null}>
+          <Cake26 />
+        </Suspense>
       </section>
-      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idCake20}>
-        <Cake20 />
+      <section id={idCake20}>
+        <Suspense fallback={null}>
+          <Cake20 />
+        </Suspense>
       </section>
-      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idCake18}>
-        <Cake18 />
+      <section id={idCake18}>
+        <Suspense fallback={null}>
+          <Cake18 />
+        </Suspense>
       </section>
-      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idHartCake}>
-        <HartCake />
+      <section id={idHartCake}>
+        <Suspense fallback={null}>
+          <HartCake />
+        </Suspense>
       </section>
-      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idMixed}>
-        <AssortedCakes />
+      <section id={idMixed}>
+        <Suspense fallback={null}>
+          <AssortedCakes />
+        </Suspense>
       </section>
-      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idLayers}>
-        <CakeLayers />
+      <section id={idLayers}>
+        <Suspense fallback={null}>
+          <CakeLayers />
+        </Suspense>
       </section>
-      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idRamadan}>
-        <RamadanSweets />
+
+      <section id={idRamadan}>
+        <Suspense fallback={null}>
+          <RamadanSweets />
+        </Suspense>
       </section>
-      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idKonafa}>
-        <Konafa />
+      <section id={idKonafa}>
+        <Suspense fallback={null}>
+          <Konafa />
+        </Suspense>
       </section>
-      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idTary}>
-        <Tary />
+      <section id={idTary}>
+        <Suspense fallback={null}>
+          <Tary />
+        </Suspense>
       </section>
-      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idBogasha}>
-        <Bogasha />
+      <section id={idBogasha}>
+        <Suspense fallback={null}>
+          <Bogasha />
+        </Suspense>
       </section>
-      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idZyout}>
-        <Zyout />
+      <section id={idZyout}>
+        <Suspense fallback={null}>
+          <Zyout />
+        </Suspense>
       </section>
-      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idForam}>
-        <Foram />
+      <section id={idForam}>
+        <Suspense fallback={null}>
+          <Foram />
+        </Suspense>
       </section>
-      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idSewareh}>
-        <Sewareh />
+      <section id={idSewareh}>
+        <Suspense fallback={null}>
+          <Sewareh />
+        </Suspense>
       </section>
-      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idDryNuts}>
-        <DryNuts />
+
+      <section id={idDryNuts}>
+        <Suspense fallback={null}>
+          <DryNuts />
+        </Suspense>
       </section>
-      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idDollMillk}>
-        <DollMillk />
+      <section id={idDollMillk}>
+        <Suspense fallback={null}>
+          <DollMillk />
+        </Suspense>
       </section>
-      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idCoconut}>
-        <Coconut />
+      <section id={idCoconut}>
+        <Suspense fallback={null}>
+          <Coconut />
+        </Suspense>
       </section>
-      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idReadyPack}>
-        <ReadyPackages />
+      <section id={idReadyPack}>
+        <Suspense fallback={null}>
+          <ReadyPackages />
+        </Suspense>
       </section>
-      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idNawaem}>
-        <Nawaem />
+
+      <section id={idNawaem}>
+        <Suspense fallback={null}>
+          <Nawaem />
+        </Suspense>
       </section>
-      <section className="max-w-[1920px] mx-auto scroll-mt-24" id={idChocolate}>
-        <Chocolate />
+      <section id={idChocolate}>
+        <Suspense fallback={null}>
+          <Chocolate />
+        </Suspense>
       </section>
 
       {show && (
-        <div className="flex flex-col gap-7 fixed bottom-6 right-6">
+        <div className="fixed bottom-6 right-6 flex flex-col gap-7">
           <NavLink
-            className="cursor-pointer  bg-yellow-600 text-white p-3 text-3xl rounded-full"
             to="/favorites"
+            className="relative bg-yellow-600 p-3 text-3xl text-white rounded-full"
           >
             <MdOutlineFavoriteBorder />
             {favoritsItem.length > 0 && (
-              <span className="absolute text-[15px] md:text-[20px] -top-1 -right-1 text-white rounded-full px-2 bg-yellow-800">
+              <span className="absolute -top-1 -right-1 bg-yellow-800 text-white px-2 rounded-full text-sm">
                 {favoritsItem.length}
               </span>
             )}
           </NavLink>
+
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="cursor-pointer  bg-cyan-600 text-white p-5 rounded-full"
+            className="bg-cyan-600 text-white p-5 rounded-full"
           >
             <IoArrowUp />
           </button>
