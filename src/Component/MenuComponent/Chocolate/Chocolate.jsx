@@ -7,13 +7,13 @@ import { favorites } from "../../../store/Favorites";
 const Chocolate = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "طبق شيكولاته", price: 225, img: null },
-    { id: 2, name: " طبق شيكولاته", price: 275, img: null },
+    { id: 1, name: "طبق شيكولاتة", price: 225, img: null },
+    { id: 2, name: "طبق شيكولاته", price: 275, img: null },
     { id: 3, name: " طبق شيكولاته", price: 375, img: null },
-    { id: 4, name: " طبق شيكولاته", price: 300, img: null },
+    { id: 4, name: " طبق شيكولاتة", price: 300, img: null },
     { id: 5, name: " علبة شيكولاته", price: 350, img: null },
-    { id: 6, name: " علبة شيكولاته", price: 450, img: null },
-    { id: 7, name: " صنية شيكولاته ", price: 350, img: null },
+    { id: 6, name: " علبة شيكولاته ", price: 450, img: null },
+    { id: 7, name: " صنية شيكولاتة", price: 350, img: null },
     { id: 8, name: " صنية شيكولاته ", price: 650, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
