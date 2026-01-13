@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import zenab from "../../../assets/zeyot/zenab-removebg-preview.png";
 import bla7M from "../../../assets/zeyot/bla7M-removebg-preview.png";
+import shamsada from "../../../assets/zeyot/shamsada.png";
 
 import logo from "../../../assets/logocart.png";
 import { Link } from "react-router-dom";
@@ -11,7 +12,7 @@ const Zyout = ({ id }) => {
   const prduct = [
     { id: 1, name: "اصابع زينب", price: 90, img: zenab },
     { id: 2, name: "بلح محشي سيواريه", price: 110, img: bla7M },
-    { id: 3, name: "بلح شام ساده", price: 100, img: null },
+    { id: 3, name: "بلح شام ساده", price: 100, img: shamsada },
     { id: 4, name: "بلح شام محشي", price: 110, img: null },
     { id: 5, name: "زلابيه", price: 95, img: null },
     { id: 6, name: "مشبك لبناني", price: 100, img: null },
@@ -37,7 +38,9 @@ const Zyout = ({ id }) => {
   }, [open]);
   return (
     <div className="border-b border-gray-300 py-20 md:py-30 mb-10 shadow-lg shadow-gray-300">
-      <h1 className="text-[16px] font-bold md:text-3xl mb-5">الزيوت</h1>
+      <h1 className="text-3xl font-bold md:text-5xl mb-10 md:mb-20 underline text-center">
+        الزيوت
+      </h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-2 md:gap-10"
         id={id}

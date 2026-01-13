@@ -2,6 +2,7 @@ import { FaStar } from "react-icons/fa6";
 import { MdFavorite } from "react-icons/md";
 import { favorites } from "../store/Favorites";
 import { useState } from "react";
+import img from "../assets/logo.png";
 const Favorites = () => {
   const [search, setSearch] = useState("");
   const { favoritsItem, removeFromFavorites } = favorites();
@@ -33,7 +34,7 @@ const Favorites = () => {
         {filteredFavorites.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-7 py-40">
             {filteredFavorites.map((item) => (
-              <div key={item.id} className="shadow-md rounded p-4 ">
+              <div key={item.id} className="shadow-md rounded p-4 bg-gray-100 ">
                 <button
                   onClick={() => removeFromFavorites(item)}
                   className="px-3 py-1 text-red-800 cursor-pointer rounded text-4xl"
@@ -84,7 +85,7 @@ const Favorites = () => {
                 </div>
                 <div className="w-full h-44 overflow-hidden rounded-md">
                   <img
-                    src={item.img}
+                    src={item.img ? item.img : img}
                     alt="product"
                     className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
                   />

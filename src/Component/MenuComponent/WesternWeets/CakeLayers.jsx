@@ -30,7 +30,9 @@ const CakeLayers = ({ id }) => {
   }, [open]);
   return (
     <div className="border-b border-gray-300 py-20 md:py-30 mb-10 shadow-lg shadow-gray-300">
-      <h1 className="text-[16px] font-bold md:text-3xl mb-5">تورته ادوار</h1>
+      <h1 className="text-3xl font-bold md:text-5xl mb-10 md:mb-20 underline text-center">
+        تورت طبقات
+      </h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-2 md:gap-10"
         id={id}

@@ -22,7 +22,7 @@ const Konafa = ({ id }) => {
     { id: 2, name: "كنافة كريمة", price: 125, img: konafaKrema },
     { id: 3, name: " كنافة نوتيلا", price: 165, img: konafaN },
     { id: 4, name: " مدلعه", price: 150, img: medl3a1 },
-    { id: 5, name: "مدلعة", price: 150, img: medl3a2 },
+    { id: 5, name: "بسبوسه تركي لوتس", price: 150, img: medl3a2 },
     { id: 6, name: "مدلعه", price: 150, img: medl3a3 },
     { id: 7, name: "كنافه عثمانلي", price: 150, img: konafa3osmanle },
     { id: 8, name: "كنافه مانجو", price: 150, img: konafamanga },
@@ -49,7 +49,9 @@ const Konafa = ({ id }) => {
   }, [open]);
   return (
     <div className="border-b border-gray-300 py-20 md:py-30 mb-10 shadow-lg shadow-gray-300">
-      <h1 className="text-[16px] font-bold md:text-3xl mb-5">كنافات</h1>
+      <h1 className="text-3xl font-bold md:text-5xl mb-10 md:mb-20 underline text-center">
+        كنافات
+      </h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-2 md:gap-10"
         id={id}

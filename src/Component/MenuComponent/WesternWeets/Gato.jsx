@@ -37,7 +37,7 @@ const Gato = ({ id }) => {
     { id: 12, name: "كوب موس ", price: 16, img: kopmos },
     { id: 13, name: "مولتون كيك ", price: 35, img: molton },
     { id: 14, name: " رويال", price: 17.5, img: roya2 },
-    { id: 15, name: "لوكس ", price: 12.5, img: royal },
+    { id: 15, name: "رويال ", price: 12.5, img: royal },
     { id: 16, name: "سبشيال", price: 30, img: spsheal },
     { id: 17, name: "ترايفول", price: 11, img: traiovl },
     { id: 18, name: "ميني ديسباسيتو ", price: 25, img: despaseto },
@@ -60,7 +60,9 @@ const Gato = ({ id }) => {
   }, [open]);
   return (
     <div className="border-b border-gray-300 py-20 md:py-30 mb-10 shadow-lg shadow-gray-300">
-      <h1 className="text-[16px] font-bold md:text-3xl mb-5">جاتوة</h1>
+      <h1 className="text-3xl font-bold md:text-5xl mb-10 md:mb-20 underline text-center">
+        جاتوه
+      </h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-2 md:gap-10"
         id={id}

@@ -14,6 +14,7 @@ import Cake17 from "../../../assets/assets26/a17.png";
 import snecars from "../../../assets/assets26/a18.png";
 import karamilBlack from "../../../assets/assets26/karamilBlack-removebg-preview.png";
 import whiteMillk from "../../../assets/assets26/whiteMillk-removebg-preview.png";
+import flwar from "../../../assets/assets26/flwar.png";
 import logo from "../../../assets/logocart.png";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -50,6 +51,7 @@ const Cake26 = ({ id }) => {
     { id: 16, name: "تورته وايت فورست & حليب", price: 350, img: whiteMillk },
     { id: 17, name: "تورته ريد فالفيت", price: 350, img: "" },
     { id: 18, name: "تورته تشيز كيك", price: 350, img: "" },
+    { id: 18, name: " تورته فلاور  ", price: 350, img: flwar },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -66,7 +68,9 @@ const Cake26 = ({ id }) => {
   }, [open]);
   return (
     <div className="border-b border-gray-300 py-20 md:py-30 mb-10 shadow-lg shadow-gray-300">
-      <h1 className="text-[16px] font-bold md:text-3xl mb-5">تورته 26سم</h1>
+      <h1 className="text-3xl font-bold md:text-5xl mb-10 md:mb-20 underline text-center">
+        تورته 26سم
+      </h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-2 md:gap-10"
         id={id}

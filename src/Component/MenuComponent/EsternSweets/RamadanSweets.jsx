@@ -1,25 +1,57 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../../assets/logocart.png";
+import ram1 from "../../../assets/assetsRmadan/ram1.png";
+import ram2 from "../../../assets/assetsRmadan/ram2.png";
+import ram3 from "../../../assets/assetsRmadan/ram3.png";
+import ram4 from "../../../assets/assetsRmadan/ram4.png";
+import ram5 from "../../../assets/assetsRmadan/ram5.png";
+import ram22 from "../../../assets/assetsRmadan/ram22.png";
+import ram7 from "../../../assets/assetsRmadan/ram7.png";
+import ram8 from "../../../assets/assetsRmadan/ram8.png";
+import ram9 from "../../../assets/assetsRmadan/ram9.png";
+import ram10 from "../../../assets/assetsRmadan/ram10.png";
+import ram11 from "../../../assets/assetsRmadan/ram11.png";
+import ram12 from "../../../assets/assetsRmadan/ram12.png";
+import ram13 from "../../../assets/assetsRmadan/ram13.png";
+import ram14 from "../../../assets/assetsRmadan/ram14.png";
+import ram15 from "../../../assets/assetsRmadan/ram15.png";
+import ram16 from "../../../assets/assetsRmadan/ram16.png";
+import ram17 from "../../../assets/assetsRmadan/ram17.png";
+import ram18 from "../../../assets/assetsRmadan/ram18.png";
+import ram19 from "../../../assets/assetsRmadan/ram19.png";
+import ram20 from "../../../assets/assetsRmadan/ram20.png";
+import ram21 from "../../../assets/assetsRmadan/ram21.png";
+import ram23 from "../../../assets/assetsRmadan/ram23.png";
+import ram25 from "../../../assets/assetsRmadan/ram25.png";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { favorites } from "../../../store/Favorites";
 const RamadanSweets = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "بولة هاف مدورة", price: 0, img: null },
-    { id: 2, name: "بولة فورسيزون مدورة", price: 0, img: null },
-    { id: 3, name: "بولة كنافة بيضاوى كبيرة", price: 0, img: null },
-    { id: 4, name: "بولة هاف مربعة كبيرة", price: 0, img: null },
-    { id: 5, name: "بولة فورسيزون مربعة كبيرة", price: 0, img: null },
-    { id: 6, name: "بولة مضلعة بيضاوى صغيرة", price: 0, img: null },
-    { id: 7, name: "كوب كنافة ميك", price: 0, img: null },
-    { id: 8, name: "تورتة كنافة مشكل", price: 0, img: null },
-    { id: 9, name: "طبق كنافات مشكل", price: 0, img: null },
-    { id: 10, name: "بولة عميقة مانجو", price: 0, img: null },
-    { id: 11, name: "كوب موجة كنافة", price: 0, img: null },
-    { id: 12, name: "طواجن شرقي مشكل", price: 0, img: null },
-    { id: 13, name: "فانوس كنافة مشكل", price: 0, img: null },
-    { id: 14, name: "طبق كنافة مشكل مدور", price: 0, img: null },
+    { id: 1, name: "بولة هاف مدورة", price: 0, img: ram1 },
+    { id: 2, name: "بولة فورسيزون مدورة", price: 0, img: ram2 },
+    { id: 3, name: "بولة كنافة بيضاوى كبيرة", price: 0, img: ram3 },
+    { id: 4, name: "بولة هاف مربعة كبيرة", price: 0, img: ram4 },
+    { id: 5, name: "بولة فورسيزون مربعة كبيرة", price: 0, img: ram5 },
+    { id: 6, name: "بولة مضلعة بيضاوى صغيرة", price: 0, img: ram22 },
+    { id: 7, name: "كوب كنافة ميك", price: 0, img: ram7 },
+    { id: 8, name: "تورتة كنافة مشكل", price: 0, img: ram8 },
+    { id: 9, name: "طبق كنافات مشكل", price: 0, img: ram9 },
+    { id: 10, name: "بولة عميقة مانجو", price: 0, img: ram10 },
+    { id: 11, name: "كوب موجة كنافة", price: 0, img: ram11 },
+    { id: 12, name: "طواجن شرقي مشكل", price: 0, img: ram12 },
+    { id: 13, name: "فانوس كنافة مشكل", price: 0, img: ram13 },
+    { id: 14, name: "طبق كنافة مشكل مدور", price: 0, img: ram14 },
+    { id: 15, name: "طبق كنافة مشكل مدور", price: 0, img: ram15 },
+    { id: 16, name: "طبق كنافة مشكل مدور", price: 0, img: ram16 },
+    { id: 17, name: "طبق كنافة مشكل مدور", price: 0, img: ram17 },
+    { id: 18, name: "طبق كنافة مشكل مدور", price: 0, img: ram18 },
+    { id: 19, name: "طبق كنافة مشكل مدور", price: 0, img: ram19 },
+    { id: 20, name: "طبق كنافة مشكل مدور", price: 0, img: ram20 },
+    { id: 21, name: "طبق كنافة مشكل مدور", price: 0, img: ram21 },
+    { id: 22, name: "طبق كنافة مشكل مدور", price: 0, img: ram23 },
+    { id: 23, name: "طبق كنافة مشكل مدور", price: 0, img: ram25 },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -37,7 +69,9 @@ const RamadanSweets = ({ id }) => {
   }, [open]);
   return (
     <div className="border-b border-gray-300 py-20 md:py-30 mb-10 shadow-lg shadow-gray-300">
-      <h1 className="text-[16px] font-bold md:text-3xl mb-5">رمضانيات</h1>
+      <h1 className="text-3xl font-bold md:text-5xl mb-10 md:mb-20 underline text-center">
+        رمضانيات
+      </h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-2 md:gap-10"
         id={id}

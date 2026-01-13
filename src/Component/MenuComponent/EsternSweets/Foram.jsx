@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-import forma from "../../../assets/assetsRmadan/forma.png";
-
 import logo from "../../../assets/logocart.png";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
@@ -11,7 +9,7 @@ const Foram = ({ id }) => {
   const prduct = [
     { id: 1, name: "فورمة كنافه رفايلو", price: 125, img: null },
     { id: 2, name: " فورمة كنافه لوتس", price: 125, img: null },
-    { id: 3, name: " فطيره سوري", price: 200, img: forma },
+    { id: 3, name: " فطيره سوري", price: 200, img: null },
     { id: 4, name: " فورمه عزيزة صغير ", price: 100, img: null },
     { id: 5, name: " فورمه عزيزة كبير ", price: 200, img: null },
     { id: 6, name: " فورمه عزيزة وسط ", price: 150, img: null },
@@ -37,7 +35,9 @@ const Foram = ({ id }) => {
   }, [open]);
   return (
     <div className="border-b border-gray-300 py-20 md:py-30 mb-10 shadow-lg shadow-gray-300">
-      <h1 className="text-[16px] font-bold md:text-3xl mb-5">الفورم</h1>
+      <h1 className="text-3xl font-bold md:text-5xl mb-10 md:mb-20 underline text-center">
+        الفورم
+      </h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-2 md:gap-10"
         id={id}

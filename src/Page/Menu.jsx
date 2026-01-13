@@ -119,105 +119,105 @@ const Menu = () => {
       />
 
       {/* 👇 نفس الترتيب ونفس الشكل */}
-      <section id={idGato}>
+      <section className="max-w-[1920px] mx-auto" id={idGato}>
         <Suspense fallback={null}>
           <Gato />
         </Suspense>
       </section>
-      <section id={idCake26}>
+      <section className="max-w-[1920px] mx-auto" id={idCake26}>
         <Suspense fallback={null}>
           <Cake26 />
         </Suspense>
       </section>
-      <section id={idCake20}>
+      <section className="max-w-[1920px] mx-auto" id={idCake20}>
         <Suspense fallback={null}>
           <Cake20 />
         </Suspense>
       </section>
-      <section id={idCake18}>
+      <section className="max-w-[1920px] mx-auto" id={idCake18}>
         <Suspense fallback={null}>
           <Cake18 />
         </Suspense>
       </section>
-      <section id={idHartCake}>
+      <section className="max-w-[1920px] mx-auto" id={idHartCake}>
         <Suspense fallback={null}>
           <HartCake />
         </Suspense>
       </section>
-      <section id={idMixed}>
+      <section className="max-w-[1920px] mx-auto" id={idMixed}>
         <Suspense fallback={null}>
           <AssortedCakes />
         </Suspense>
       </section>
-      <section id={idLayers}>
+      <section className="max-w-[1920px] mx-auto" id={idLayers}>
         <Suspense fallback={null}>
           <CakeLayers />
         </Suspense>
       </section>
 
-      <section id={idRamadan}>
+      <section className="max-w-[1920px] mx-auto" id={idRamadan}>
         <Suspense fallback={null}>
           <RamadanSweets />
         </Suspense>
       </section>
-      <section id={idKonafa}>
+      <section className="max-w-[1920px] mx-auto" id={idKonafa}>
         <Suspense fallback={null}>
           <Konafa />
         </Suspense>
       </section>
-      <section id={idTary}>
+      <section className="max-w-[1920px] mx-auto" id={idTary}>
         <Suspense fallback={null}>
           <Tary />
         </Suspense>
       </section>
-      <section id={idBogasha}>
+      <section className="max-w-[1920px] mx-auto" id={idBogasha}>
         <Suspense fallback={null}>
           <Bogasha />
         </Suspense>
       </section>
-      <section id={idZyout}>
+      <section className="max-w-[1920px] mx-auto" id={idZyout}>
         <Suspense fallback={null}>
           <Zyout />
         </Suspense>
       </section>
-      <section id={idForam}>
+      <section className="max-w-[1920px] mx-auto" id={idForam}>
         <Suspense fallback={null}>
           <Foram />
         </Suspense>
       </section>
-      <section id={idSewareh}>
+      <section className="max-w-[1920px] mx-auto" id={idSewareh}>
         <Suspense fallback={null}>
           <Sewareh />
         </Suspense>
       </section>
 
-      <section id={idDryNuts}>
+      <section className="max-w-[1920px] mx-auto" id={idDryNuts}>
         <Suspense fallback={null}>
           <DryNuts />
         </Suspense>
       </section>
-      <section id={idDollMillk}>
+      <section className="max-w-[1920px] mx-auto" id={idDollMillk}>
         <Suspense fallback={null}>
           <DollMillk />
         </Suspense>
       </section>
-      <section id={idCoconut}>
+      <section className="max-w-[1920px] mx-auto" id={idCoconut}>
         <Suspense fallback={null}>
           <Coconut />
         </Suspense>
       </section>
-      <section id={idReadyPack}>
+      <section className="max-w-[1920px] mx-auto" id={idReadyPack}>
         <Suspense fallback={null}>
           <ReadyPackages />
         </Suspense>
       </section>
 
-      <section id={idNawaem}>
+      <section className="max-w-[1920px] mx-auto" id={idNawaem}>
         <Suspense fallback={null}>
           <Nawaem />
         </Suspense>
       </section>
-      <section id={idChocolate}>
+      <section className="max-w-[1920px] mx-auto" id={idChocolate}>
         <Suspense fallback={null}>
           <Chocolate />
         </Suspense>

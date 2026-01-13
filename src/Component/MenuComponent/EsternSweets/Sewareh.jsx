@@ -12,6 +12,7 @@ import shaklma from "../../../assets/sewarehat/shaklma.png";
 import konafaTorkyMex from "../../../assets/sewarehat/konafaTorkyMex-removebg-preview.png";
 import segarmexrat from "../../../assets/sewarehat/segarmexrat-removebg-preview.png";
 import egazea from "../../../assets/sewarehat/egazea.png";
+import kapp from "../../../assets/sewarehat/kapp.png";
 import logo from "../../../assets/logocart.png";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
@@ -32,7 +33,7 @@ const Sewareh = ({ id }) => {
     { id: 11, name: "كنافه تركي مكسرات", price: 250, img: konafaTorkyMex },
     { id: 12, name: "سيجار مكسرات", price: 350, img: segarmexrat },
     { id: 13, name: " حجازيه", price: 100, img: egazea },
-    { id: 13, name: " كب كنافة تمر", price: 15, img: egazea },
+    { id: 13, name: " كب كنافة تمر", price: 15, img: kapp },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -50,7 +51,9 @@ const Sewareh = ({ id }) => {
   }, [open]);
   return (
     <div className="border-b border-gray-300 py-20 md:py-30 mb-10 shadow-lg shadow-gray-300">
-      <h1 className="text-[16px] font-bold md:text-3xl mb-5">سواريهات</h1>
+      <h1 className="text-3xl font-bold md:text-5xl mb-10 md:mb-20 underline text-center">
+        سواريهات
+      </h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-2 md:gap-10"
         id={id}

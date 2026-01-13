@@ -33,7 +33,7 @@ const ReadyPackages = ({ id }) => {
 
   return (
     <div className="border-b border-gray-300 py-20 md:py-30 mb-10 shadow-lg shadow-gray-300">
-      <h1 className="text-[16px] font-bold md:text-3xl mb-5">
+      <h1 className="text-3xl font-bold md:text-5xl mb-10 md:mb-20 underline text-center">
         العبوات الجاهزة
       </h1>
       <div
