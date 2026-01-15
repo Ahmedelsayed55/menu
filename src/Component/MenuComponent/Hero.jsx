@@ -5,7 +5,7 @@ import hero from "../../assets/hero22.jpg";
 import "swiper/css";
 const Hero = () => {
   return (
-    <div className="h-[30vh] md:h-auto w-full ">
+    <div className="h-auto w-full ">
       <Swiper
         className="h-full"
         modules={[Pagination, Scrollbar, A11y, Autoplay]}
