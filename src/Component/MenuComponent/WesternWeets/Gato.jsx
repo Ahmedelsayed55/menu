@@ -29,7 +29,7 @@ const Gato = ({ id }) => {
     { id: 4, name: "سويسرول ", price: 15, img: swesrol },
     { id: 5, name: "ملفاي", price: 16, img: melfay },
     { id: 6, name: "ملفاي شيكولاته", price: 16, img: melfaych },
-    { id: 7, name: "سويسرول ", price: 15, img: swesroul },
+    { id: 7, name: "سويسرول", price: 15, img: swesroul },
     { id: 8, name: "انديال ", price: 17.5, img: andeal },
     { id: 9, name: "ديسباسيتو ", price: 60, img: despaseto },
     { id: 10, name: "تشيز كيك ", price: 25, img: cheascake },
