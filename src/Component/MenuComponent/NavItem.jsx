@@ -33,6 +33,8 @@ const NavItem = ({
 
     const observer = new IntersectionObserver(
       (entries) => {
+        if (window.scrollY <= 100) return; // 👈 مهم
+
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setActive(entry.target.id);
@@ -45,7 +47,7 @@ const NavItem = ({
     sections.forEach((sec) => observer.observe(sec));
 
     const onScroll = () => {
-      if (window.scrollY === 0) {
+      if (window.scrollY <= 100) {
         setActive(idGato); // ترجع لأول section لما تكون في أول الصفحة
       }
     };
@@ -100,7 +102,7 @@ const NavItem = ({
     }
   }, [active]);
   return (
-    <div className="sticky top-3 md:px-7  shadow bg-gray-200 rounded-b my-3 z-50">
+    <div className="sticky top-3 md:px-7  shadow filter backdrop-blur-md bg-white/20 rounded-b my-3 z-50">
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         className="h-13 md:h-16"
@@ -117,7 +119,7 @@ const NavItem = ({
           >
             <a
               href={`#${item.id}`}
-              className={`h-full flex items-center px-5 rounded-md transition whitespace-nowrap text-[12px] md:text-[14px] lg:text-[16px] ${
+              className={`h-full flex items-center px-5 rounded-md transition whitespace-nowrap font-black text-[12px] md:text-[14px] lg:text-[16px] ${
                 active === item.id ? "bg-cyan-950 text-white" : "text-black"
               }`}
             >
