@@ -7,7 +7,7 @@ import Elborsa from "../Component/contactComponent/Elborsa";
 import Salm from "../Component/contactComponent/Salm";
 const Contact = () => {
   return (
-    <div className="bg-gray-100 py-10 md:py-20">
+    <div className="bg-gray-100 py-20 md:py-30">
       <div className="container mx-auto  shadow-xl shadow-cyan-100 bg-gray-50 ">
         {/*  المصنع  */}
         {/* <div className="collapse collapse-arrow border border-gray-300 text-black">

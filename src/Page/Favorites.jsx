@@ -13,9 +13,9 @@ const Favorites = () => {
     );
   });
   return (
-    <div className="w-full  py-5 bg-white">
-      <div className="container mx-auto ">
-        <div className="flex items-center justify-between">
+    <div className="w-full  py-30 bg-white  ">
+      <div className=" max-w-[1420px] mx-auto">
+        <div className="flex flex-col md:flex-row gap-5 items-center justify-between">
           <div className="flex gap-5 items-center ">
             <FaStar className="text-yellow-500 text-4xl" />
             <h1 className="text-2xl md:text-5xl font-bold">المفضله</h1>

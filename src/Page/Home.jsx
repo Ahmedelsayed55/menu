@@ -6,7 +6,7 @@ import { MdOutlineMenuBook } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 const Home = () => {
   return (
-    <div className="bg-gray-200  py-10 text-white flex items-center justify-center ">
+    <div className="bg-gray-200  py-30 text-white flex items-center justify-center ">
       <div className="container mx-auto ">
         <div className=" flex items-center justify-center rounded-2xl">
           <div className="flex flex-col items-center  gap-10">
