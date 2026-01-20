@@ -37,7 +37,7 @@ const Gato = ({ id }) => {
     { id: 12, name: "كوب موس ", price: 16, img: kopmos },
     { id: 13, name: "مولتون كيك ", price: 35, img: molton },
     { id: 14, name: " رويال", price: 17.5, img: roya2 },
-    { id: 15, name: "رويال ", price: 12.5, img: royal },
+    { id: 15, name: "رويال ", price: 17.5, img: royal },
     { id: 16, name: "سبشيال", price: 30, img: spsheal },
     { id: 17, name: "ترايفول", price: 11, img: traiovl },
     { id: 18, name: "ميني ديسباسيتو ", price: 25, img: despaseto },
@@ -96,7 +96,7 @@ const Gato = ({ id }) => {
                 <div className="flex gap-2 items-center transition duration-500 group-hover:-translate-y-5">
                   <button
                     onClick={(e) => {
-                      e.stopPropagation(), addToFavorite(item);
+                      (e.stopPropagation(), addToFavorite(item));
                     }}
                     className="text-2xl md:text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-2 md:p-3 rounded-2xl border  focus:scale-120 focus:border-amber-700"
                   >
@@ -148,7 +148,7 @@ const Gato = ({ id }) => {
               <div className="flex gap-2 transition duration-500 group-hover:-translate-y-5">
                 <button
                   onClick={(e) => {
-                    e.stopPropagation(), addToFavorite(selectedItem);
+                    (e.stopPropagation(), addToFavorite(selectedItem));
                   }}
                   className="text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-3 rounded"
                 >
