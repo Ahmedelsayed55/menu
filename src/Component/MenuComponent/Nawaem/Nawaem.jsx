@@ -12,15 +12,15 @@ import { favorites } from "../../../store/Favorites";
 const Nawaem = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: " كحك سادة", price: 170, img: kahk },
-    { id: 2, name: "كحك ملبن", price: 150, img: null },
-    { id: 3, name: "كحك عجوة", price: 150, img: null },
-    { id: 4, name: "كحك مكسرات", price: 175, img: null },
-    { id: 5, name: "كحك عين جمل", price: 170, img: null },
-    { id: 6, name: " غريبه", price: 190, img: ghreba },
-    { id: 7, name: " بيتي فور", price: 190, img: betefor },
-    { id: 8, name: " بسكويت", price: 180, img: bskwet },
-    { id: 9, name: "سابلية", price: 190, img: sableh },
+    { id: 1, name: " كحك سادة نص كيلو", price: 100, img: kahk },
+    { id: 2, name: "كحك ملبن نص كيلو", price: 90, img: null },
+    { id: 3, name: "كحك عجوة نص كيلو", price: 90, img: null },
+    { id: 4, name: "كحك مكسرات نص كيلو", price: 100, img: null },
+    { id: 5, name: "كحك عين جمل نص كيلو", price: 100, img: null },
+    { id: 6, name: " غريبه نص كيلو", price: 100, img: ghreba },
+    { id: 7, name: " بيتي فور نص كيلو", price: 100, img: betefor },
+    { id: 8, name: " بسكويت نص كيلو", price: 90, img: bskwet },
+    { id: 9, name: "سابلية نص كيلو", price: 100, img: sableh },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
@@ -74,7 +74,7 @@ const Nawaem = ({ id }) => {
                 <div className="flex gap-2 items-center transition duration-500 group-hover:-translate-y-5">
                   <button
                     onClick={(e) => {
-                      e.stopPropagation(), addToFavorite(item);
+                      (e.stopPropagation(), addToFavorite(item));
                     }}
                     className="text-2xl md:text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-2 md:p-3 rounded border  focus:scale-120 focus:border-amber-700"
                   >
@@ -128,7 +128,7 @@ const Nawaem = ({ id }) => {
               <div className="flex gap-2 transition duration-500 group-hover:-translate-y-5">
                 <button
                   onClick={(e) => {
-                    e.stopPropagation(), addToFavorite(selectedItem);
+                    (e.stopPropagation(), addToFavorite(selectedItem));
                   }}
                   className="text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-3 rounded"
                 >
