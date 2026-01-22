@@ -3,6 +3,7 @@ import { MdFavorite } from "react-icons/md";
 import { favorites } from "../store/Favorites";
 import { useState } from "react";
 import img from "../assets/logo.png";
+import { Link } from "react-router-dom";
 const Favorites = () => {
   const [search, setSearch] = useState("");
   const { favoritsItem, removeFromFavorites } = favorites();
@@ -13,14 +14,14 @@ const Favorites = () => {
     );
   });
   return (
-    <div className="w-full  py-30 bg-white  ">
+    <div className="w-full  py-30 px-5 bg-white  ">
       <div className=" max-w-[1420px] mx-auto">
         <div className="flex flex-col md:flex-row gap-5 items-center justify-between">
           <div className="flex gap-5 items-center ">
             <FaStar className="text-yellow-500 text-4xl" />
             <h1 className="text-2xl md:text-5xl font-bold">المفضله</h1>
           </div>
-          <div className="w-1/2">
+          <div className="w-full md:w-1/2">
             <input
               type="text"
               placeholder="بحث"
@@ -34,7 +35,10 @@ const Favorites = () => {
         {filteredFavorites.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-7 py-40">
             {filteredFavorites.map((item) => (
-              <div key={item.id} className="shadow-md rounded p-4 bg-gray-100 ">
+              <div
+                key={item.id}
+                className="shadow-md flex flex-col gap-7 rounded p-4 bg-gray-100 "
+              >
                 <button
                   onClick={() => removeFromFavorites(item)}
                   className="px-3 py-1 text-red-800 cursor-pointer rounded text-4xl"
@@ -90,6 +94,13 @@ const Favorites = () => {
                     className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
                   />
                 </div>
+                <Link
+                  onClick={(e) => e.stopPropagation()}
+                  to={"/contact"}
+                  className="w-full text-center py-3  text-[14px] md:text-[17px] xl:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
+                >
+                  للطلب والاستفسار
+                </Link>
               </div>
             ))}
           </div>

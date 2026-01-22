@@ -41,7 +41,7 @@ const NavItem = ({
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     sections.forEach((sec) => observer.observe(sec));

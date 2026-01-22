@@ -14,7 +14,7 @@ const NavBar = () => {
           <div className="relative flex justify-center  items-center">
             <NavLink
               className={({ isActive }) =>
-                "text-2xl md:text-4xl transition duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 " +
+                "text-2xl md:text-4xl transition border border-yellow-600 duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 " +
                 (isActive
                   ? "bg-white text-yellow-600"
                   : "text-white bg-yellow-600")
@@ -23,7 +23,7 @@ const NavBar = () => {
             >
               <MdOutlineFavoriteBorder />
               {favoritsItem.length > 0 && (
-                <span className="absolute text-[15px] md:text-[20px] -top-2 -right-2 bg-yellow-800 rounded-full w-5 h-5 md:w-7 md:h-7 flex items-center justify-center border border-yellow-600">
+                <span className="absolute text-[15px] md:text-[20px] text-white -top-2 -right-2 bg-yellow-800 rounded-full w-5 h-5 md:w-7 md:h-7 flex items-center justify-center border border-yellow-600">
                   {favoritsItem.length}
                 </span>
               )}
@@ -31,7 +31,7 @@ const NavBar = () => {
           </div>
           <NavLink
             className={({ isActive }) =>
-              "text-2xl md:text-4xl text-white transition duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 " +
+              "text-2xl md:text-4xl border border-yellow-600 text-white transition duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 " +
               (isActive ? " bg-white  text-yellow-600" : "bg-yellow-600")
             }
             to="/contact"
@@ -40,7 +40,7 @@ const NavBar = () => {
           </NavLink>
           <NavLink
             className={({ isActive }) =>
-              "text-2xl md:text-4xl text-white transition duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 " +
+              "text-2xl md:text-4xl text-white border border-yellow-600 transition duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 " +
               (isActive ? " bg-white  text-yellow-600" : "bg-yellow-600")
             }
             to="/"
@@ -50,7 +50,7 @@ const NavBar = () => {
 
           <NavLink
             className={({ isActive }) =>
-              "text-2xl md:text-4xl text-white transition duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 " +
+              "text-2xl md:text-4xl text-white transition border border-yellow-600 duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 " +
               (isActive ? " bg-white  text-yellow-600" : "bg-yellow-600")
             }
             to="/menu"
