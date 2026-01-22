@@ -23,7 +23,7 @@ const NavBar = () => {
             >
               <MdOutlineFavoriteBorder />
               {favoritsItem.length > 0 && (
-                <span className="absolute text-[15px] md:text-[20px] -top-1 -right-1 bg-yellow-800 rounded-full px-1 border border-yellow-600">
+                <span className="absolute text-[15px] md:text-[20px] -top-2 -right-2 bg-yellow-800 rounded-full w-5 h-5 md:w-7 md:h-7 flex items-center justify-center border border-yellow-600">
                   {favoritsItem.length}
                 </span>
               )}
