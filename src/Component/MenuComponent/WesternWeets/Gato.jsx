@@ -59,7 +59,7 @@ const Gato = ({ id }) => {
     };
   }, [open]);
   return (
-    <div className="border-b border-gray-300 py-20 md:py-30 mb-10 shadow-lg shadow-gray-300">
+    <div className="border-b border-gray-300 pb-20 pt-5 md:pb-30 mb-10 shadow-lg shadow-gray-300">
       <h1 className="text-3xl font-bold md:text-5xl mb-10 md:mb-20 underline text-center">
         جاتوه
       </h1>
