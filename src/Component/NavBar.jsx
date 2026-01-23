@@ -8,8 +8,8 @@ import { favorites } from "../store/Favorites";
 const NavBar = () => {
   const { favoritsItem } = favorites();
   return (
-    <div className="relative max-w-[1420px] mx-auto ">
-      <header className="absolute top-0 z-50 w-full rounded-b-2xl flex justify-between items-center px-3 shadow filter backdrop-blur-md bg-white/1 md:px-10 py-2 md:py-5 ">
+    <div className="absolute w-full  filter backdrop-blur-md bg-white/2 z-50 rounded-b-2xl  shadow ">
+      <header className="w-full max-w-[1420px] mx-auto flex justify-between items-center px-3 md:px-10 py-2 md:py-5 ">
         <nav className="flex gap-3 md:gap-10">
           <div className="relative flex justify-center  items-center">
             <NavLink

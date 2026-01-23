@@ -58,7 +58,7 @@ const NavItem = ({
       observer.disconnect();
       window.removeEventListener("scroll", onScroll);
     };
-  }, []);
+  }, [idGato]);
 
   const sizes = [
     { id: idGato, label: "جاتوة" },
@@ -115,7 +115,7 @@ const NavItem = ({
             key={item.id}
             data-id={item.id}
             data-index={index}
-            className="!w-auto flex items-stretch"
+            className="w-auto! flex items-stretch"
           >
             <a
               href={`#${item.id}`}
