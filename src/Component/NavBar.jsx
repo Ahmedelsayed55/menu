@@ -14,7 +14,7 @@ const NavBar = () => {
           <div className="relative flex justify-center  items-center">
             <NavLink
               className={({ isActive }) =>
-                "text-2xl md:text-4xl transition border border-yellow-600 duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 " +
+                "text-2xl md:text-4xl transition border-2 border-yellow-600 duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 " +
                 (isActive
                   ? "bg-white text-yellow-600"
                   : "text-white bg-yellow-600")
@@ -31,7 +31,7 @@ const NavBar = () => {
           </div>
           <NavLink
             className={({ isActive }) =>
-              "text-2xl md:text-4xl border border-yellow-600 text-white transition duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 " +
+              "text-2xl md:text-4xl border-2 border-yellow-600 text-white transition duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 " +
               (isActive ? " bg-white  text-yellow-600" : "bg-yellow-600")
             }
             to="/contact"
@@ -40,7 +40,7 @@ const NavBar = () => {
           </NavLink>
           <NavLink
             className={({ isActive }) =>
-              "text-2xl md:text-4xl text-white border border-yellow-600 transition duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 " +
+              "text-2xl md:text-4xl text-white border-2 border-yellow-600 transition duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 " +
               (isActive ? " bg-white  text-yellow-600" : "bg-yellow-600")
             }
             to="/"
@@ -50,7 +50,7 @@ const NavBar = () => {
 
           <NavLink
             className={({ isActive }) =>
-              "text-2xl md:text-4xl text-white transition border border-yellow-600 duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 " +
+              "text-2xl md:text-4xl text-white transition border-2 border-yellow-600 duration-300 hover:bg-white hover:text-yellow-600 rounded-2xl p-2 " +
               (isActive ? " bg-white  text-yellow-600" : "bg-yellow-600")
             }
             to="/menu"
