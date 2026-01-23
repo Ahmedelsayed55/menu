@@ -88,7 +88,7 @@ const RamadanSweets = ({ id }) => {
             >
               <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
                 <img
-                  className=" w-full md:w-[80%] md:h-[90%] object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120 filter md:drop-shadow-2xl drop-shadow-gray-400"
+                  className=" w-full md:w-[80%] md:h-[90%] object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120  "
                   src={item.img ? item.img : logo}
                   alt="Cake"
                   loading="lazy"
@@ -105,7 +105,7 @@ const RamadanSweets = ({ id }) => {
                 <div className="flex gap-2 items-center transition duration-500 group-hover:-translate-y-5">
                   <button
                     onClick={(e) => {
-                      e.stopPropagation(), addToFavorite(item);
+                      (e.stopPropagation(), addToFavorite(item));
                     }}
                     className="text-2xl md:text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-2 md:p-3 rounded border  focus:scale-120 focus:border-amber-700"
                   >
@@ -159,7 +159,7 @@ const RamadanSweets = ({ id }) => {
               <div className="flex gap-2 transition duration-500 group-hover:-translate-y-5">
                 <button
                   onClick={(e) => {
-                    e.stopPropagation(), addToFavorite(selectedItem);
+                    (e.stopPropagation(), addToFavorite(selectedItem));
                   }}
                   className="text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-3 rounded"
                 >
