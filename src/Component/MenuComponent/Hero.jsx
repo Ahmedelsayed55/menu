@@ -5,7 +5,7 @@ import hero from "../../assets/hero22.jpg";
 import "swiper/css";
 const Hero = () => {
   return (
-    <div className=" w-full h-[40vh] md:h-[85vh] overflow-hidden bg-gray-100">
+    <div className="py-10 w-full h-fit md:h-fit overflow-hidden bg-gray-100">
       <Swiper
         className="h-full"
         modules={[Pagination, Scrollbar, A11y, Autoplay]}
@@ -18,10 +18,10 @@ const Hero = () => {
           disableOnInteraction: false,
         }}
       >
-        <SwiperSlide className="flex justify-center h-full">
+        <SwiperSlide className="flex justify-center h-fit">
           <img className="w-full h-full object-contain" src={logo} alt="" />
         </SwiperSlide>
-        <SwiperSlide className="flex justify-center h-full">
+        <SwiperSlide className="flex justify-center h-fit">
           <img className="w-full h-full object-contain" src={hero} alt="" />
         </SwiperSlide>
       </Swiper>
