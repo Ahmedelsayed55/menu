@@ -9,7 +9,7 @@ const Footer = () => {
       </p>
       <a
         className="flex text-2xl mb-3 md:mb-0 md:text-3xl  p-5 rounded-2xl w-fit font-bold gap-1 transition text-green-700 hover:text-green-800 hover:scale-105"
-        href="https://wa.me/201003204998?text=Hello"
+        href="https://wa.me/201016223981?text=Hello"
         target="_blank"
         rel="noopener noreferrer"
       >
