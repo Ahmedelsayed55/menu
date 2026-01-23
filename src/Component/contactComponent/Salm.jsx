@@ -1,29 +1,29 @@
 import React from "react";
-import { FaWhatsapp, FaPhone, FaMapMarkerAlt, FaClock } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 const Salm = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
       <div className="flex flex-col gap-5">
         <h3 className="flex text-2xl md:text-3xl font-bold gap-1 items-center">
-          <FaMapMarkerAlt /> العنوان
+          📍 العنوان
         </h3>
         <p className="text-gray-600 text-2xl">
           ‌سيدي سالم - موقف كفر الشيخ الجديد بجوار مسجد عباس عبيدي
         </p>
 
         <h3 className="flex text-2xl md:text-3xl font-bold gap-1 items-center">
-          <FaClock /> ساعات العمل
+          ⏰ ساعات العمل
         </h3>
         <p className="text-gray-600 text-2xl">من 8 صباحاً حتى 11 مساءً</p>
         <h3 className="flex text-2xl md:text-3xl font-bold gap-3 items-center">
-          <FaPhone /> للتواصل
+          📞 للتواصل
         </h3>
         <p className="flex text-2xl md:text-3xl font-bold gap-3 items-center">
-          <FaPhone /> 01003204998
+          01003204998
         </p>
 
         <a
-          className="flex text-2xl mb-3 md:mb-0 md:text-3xl font-bold gap-1 items-center transition hover:text-cyan-800 hover:scale-102"
+          className="flex text-2xl mb-3 md:mb-0 md:text-3xl bg-green-300 p-3 rounded-2xl w-fit font-bold gap-1 items-center transition text-green-700 hover:text-green-800 hover:scale-105"
           href="https://wa.me/201003204998?text=Hello"
           target="_blank"
           rel="noopener noreferrer"
