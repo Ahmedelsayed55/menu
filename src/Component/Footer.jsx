@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className=" flex flex-col justify-center h-20 md:h-52 items-center bg-gray-200">
+    <div className=" flex flex-col justify-center h-fit md:h-fit pt-5 items-center bg-gray-200">
       <p className="text-[22px] text-center md:text-[28px] font-bold text-cyan-900 ">
         Created by Ahmed Elsayed © 2025
       </p>

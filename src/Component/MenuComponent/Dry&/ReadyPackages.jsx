@@ -106,13 +106,15 @@ const ReadyPackages = ({ id }) => {
               ✖
             </button>
 
-            <img
-              className=" w-60 lg:w-[90%] md:mb-7 filter transition-transform duration-300 group-hover:scale-120"
-              src={selectedItem.img ? selectedItem.img : logo}
-              alt="Cake"
-              loading="lazy"
-              decoding="async"
-            />
+            <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full md:h-96  flex justify-center overflow-hidden rounded-2xl">
+              <img
+                className=" w-[90%] md:mb-7 filter transition-transform duration-300 group-hover:scale-120"
+                src={selectedItem.img ? selectedItem.img : logo}
+                alt="Cake"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
             <div className="w-full flex flex-col gap-7 md:gap-12 py-3 px-3">
               <h2 className="text-start text-[20px] md:text-[24px] font-bold text-cyan-950">
                 {selectedItem.name}
