@@ -102,7 +102,7 @@ const NavItem = ({
     }
   }, [active]);
   return (
-    <div className="sticky top-3 px-2 md:px-7  shadow filter backdrop-blur-md bg-white/20 rounded-b  z-50">
+    <div className="sticky top-3 px-2 my-2 md:px-7  shadow filter backdrop-blur-md bg-white/20 rounded-b  z-50">
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         className="h-13 md:h-16"
