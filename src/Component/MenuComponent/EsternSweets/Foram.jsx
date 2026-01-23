@@ -16,8 +16,8 @@ const Foram = ({ id }) => {
     { id: 7, name: " فورمه كنافه مخصوص ", price: 180, img: null },
     { id: 8, name: " فورمه مدلعة ", price: 160, img: null },
     { id: 9, name: "فورمه بسبوسه شاميه ساده ", price: 140, img: null },
-    { id: 9, name: "فورمه بسبوسه شاميه مكسرات ", price: 190, img: null },
-    { id: 9, name: "طبق قشطوطة", price: 40, img: null },
+    { id: 10, name: "فورمه بسبوسه شاميه مكسرات ", price: 190, img: null },
+    { id: 11, name: "طبق قشطوطة", price: 40, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

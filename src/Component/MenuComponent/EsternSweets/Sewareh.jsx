@@ -33,7 +33,7 @@ const Sewareh = ({ id }) => {
     { id: 11, name: "كنافه تركي مكسرات", price: 250, img: konafaTorkyMex },
     { id: 12, name: "سيجار مكسرات", price: 350, img: segarmexrat },
     { id: 13, name: " حجازيه", price: 100, img: egazea },
-    { id: 13, name: " كب كنافة تمر", price: 15, img: kapp },
+    { id: 14, name: " كب كنافة تمر", price: 15, img: kapp },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

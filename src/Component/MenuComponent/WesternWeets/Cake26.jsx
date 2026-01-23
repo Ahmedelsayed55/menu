@@ -51,7 +51,7 @@ const Cake26 = ({ id }) => {
     { id: 16, name: "تورته وايت فورست & حليب", price: 350, img: whiteMillk },
     { id: 17, name: "تورته ريد فالفيت", price: 350, img: "" },
     { id: 18, name: "تورته تشيز كيك", price: 350, img: "" },
-    { id: 18, name: " تورته فلاور  ", price: 350, img: flwar },
+    { id: 19, name: " تورته فلاور  ", price: 350, img: flwar },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
