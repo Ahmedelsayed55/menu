@@ -6,56 +6,57 @@ import { IoArrowUp } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { favorites } from "../store/Favorites";
+import SectionLoader from "../Component/MenuComponent/LoderSec";
 
 // 🔥 lazy imports بدل imports العادية
 const Gato = lazy(() => import("../Component/MenuComponent/WesternWeets/Gato"));
-const Cake26 = lazy(() =>
-  import("../Component/MenuComponent/WesternWeets/Cake26")
+const Cake26 = lazy(
+  () => import("../Component/MenuComponent/WesternWeets/Cake26"),
 );
-const Cake20 = lazy(() =>
-  import("../Component/MenuComponent/WesternWeets/Cake20")
+const Cake20 = lazy(
+  () => import("../Component/MenuComponent/WesternWeets/Cake20"),
 );
-const Cake18 = lazy(() =>
-  import("../Component/MenuComponent/WesternWeets/Cake18")
+const Cake18 = lazy(
+  () => import("../Component/MenuComponent/WesternWeets/Cake18"),
 );
-const AssortedCakes = lazy(() =>
-  import("../Component/MenuComponent/WesternWeets/AssortedCakes")
+const AssortedCakes = lazy(
+  () => import("../Component/MenuComponent/WesternWeets/AssortedCakes"),
 );
-const Chocolate = lazy(() =>
-  import("../Component/MenuComponent/Chocolate/Chocolate")
+const Chocolate = lazy(
+  () => import("../Component/MenuComponent/Chocolate/Chocolate"),
 );
-const CakeLayers = lazy(() =>
-  import("../Component/MenuComponent/WesternWeets/CakeLayers")
+const CakeLayers = lazy(
+  () => import("../Component/MenuComponent/WesternWeets/CakeLayers"),
 );
-const RamadanSweets = lazy(() =>
-  import("../Component/MenuComponent/EsternSweets/RamadanSweets")
+const RamadanSweets = lazy(
+  () => import("../Component/MenuComponent/EsternSweets/RamadanSweets"),
 );
-const Konafa = lazy(() =>
-  import("../Component/MenuComponent/EsternSweets/Konafa")
+const Konafa = lazy(
+  () => import("../Component/MenuComponent/EsternSweets/Konafa"),
 );
 const Tary = lazy(() => import("../Component/MenuComponent/EsternSweets/Tary"));
-const Bogasha = lazy(() =>
-  import("../Component/MenuComponent/EsternSweets/Bogasha")
+const Bogasha = lazy(
+  () => import("../Component/MenuComponent/EsternSweets/Bogasha"),
 );
-const Zyout = lazy(() =>
-  import("../Component/MenuComponent/EsternSweets/Zyout")
+const Zyout = lazy(
+  () => import("../Component/MenuComponent/EsternSweets/Zyout"),
 );
-const Foram = lazy(() =>
-  import("../Component/MenuComponent/EsternSweets/Foram")
+const Foram = lazy(
+  () => import("../Component/MenuComponent/EsternSweets/Foram"),
 );
-const Sewareh = lazy(() =>
-  import("../Component/MenuComponent/EsternSweets/Sewareh")
+const Sewareh = lazy(
+  () => import("../Component/MenuComponent/EsternSweets/Sewareh"),
 );
 const DryNuts = lazy(() => import("../Component/MenuComponent/Dry&/DryNuts"));
-const DollMillk = lazy(() =>
-  import("../Component/MenuComponent/Dry&/DollMillk")
+const DollMillk = lazy(
+  () => import("../Component/MenuComponent/Dry&/DollMillk"),
 );
 const Coconut = lazy(() => import("../Component/MenuComponent/Dry&/Coconut"));
-const ReadyPackages = lazy(() =>
-  import("../Component/MenuComponent/Dry&/ReadyPackages")
+const ReadyPackages = lazy(
+  () => import("../Component/MenuComponent/Dry&/ReadyPackages"),
 );
-const HartCake = lazy(() =>
-  import("../Component/MenuComponent/WesternWeets/HartCake")
+const HartCake = lazy(
+  () => import("../Component/MenuComponent/WesternWeets/HartCake"),
 );
 const Nawaem = lazy(() => import("../Component/MenuComponent/Nawaem/Nawaem"));
 
@@ -120,105 +121,105 @@ const Menu = () => {
 
       {/* 👇 نفس الترتيب ونفس الشكل */}
       <section className="max-w-[1920px] mx-auto" id={idGato}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<SectionLoader />}>
           <Gato />
         </Suspense>
       </section>
       <section className="max-w-[1920px] mx-auto" id={idCake26}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<SectionLoader />}>
           <Cake26 />
         </Suspense>
       </section>
       <section className="max-w-[1920px] mx-auto" id={idCake20}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<SectionLoader />}>
           <Cake20 />
         </Suspense>
       </section>
       <section className="max-w-[1920px] mx-auto" id={idCake18}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<SectionLoader />}>
           <Cake18 />
         </Suspense>
       </section>
       <section className="max-w-[1920px] mx-auto" id={idHartCake}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<SectionLoader />}>
           <HartCake />
         </Suspense>
       </section>
       <section className="max-w-[1920px] mx-auto" id={idMixed}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<SectionLoader />}>
           <AssortedCakes />
         </Suspense>
       </section>
       <section className="max-w-[1920px] mx-auto" id={idLayers}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<SectionLoader />}>
           <CakeLayers />
         </Suspense>
       </section>
 
       <section className="max-w-[1920px] mx-auto" id={idRamadan}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<SectionLoader />}>
           <RamadanSweets />
         </Suspense>
       </section>
       <section className="max-w-[1920px] mx-auto" id={idKonafa}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<SectionLoader />}>
           <Konafa />
         </Suspense>
       </section>
       <section className="max-w-[1920px] mx-auto" id={idTary}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<SectionLoader />}>
           <Tary />
         </Suspense>
       </section>
       <section className="max-w-[1920px] mx-auto" id={idBogasha}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<SectionLoader />}>
           <Bogasha />
         </Suspense>
       </section>
       <section className="max-w-[1920px] mx-auto" id={idZyout}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<SectionLoader />}>
           <Zyout />
         </Suspense>
       </section>
       <section className="max-w-[1920px] mx-auto" id={idForam}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<SectionLoader />}>
           <Foram />
         </Suspense>
       </section>
       <section className="max-w-[1920px] mx-auto" id={idSewareh}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<SectionLoader />}>
           <Sewareh />
         </Suspense>
       </section>
 
       <section className="max-w-[1920px] mx-auto" id={idDryNuts}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<SectionLoader />}>
           <DryNuts />
         </Suspense>
       </section>
       <section className="max-w-[1920px] mx-auto" id={idDollMillk}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<SectionLoader />}>
           <DollMillk />
         </Suspense>
       </section>
       <section className="max-w-[1920px] mx-auto" id={idCoconut}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<SectionLoader />}>
           <Coconut />
         </Suspense>
       </section>
       <section className="max-w-[1920px] mx-auto" id={idReadyPack}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<SectionLoader />}>
           <ReadyPackages />
         </Suspense>
       </section>
 
       <section className="max-w-[1920px] mx-auto" id={idNawaem}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<SectionLoader />}>
           <Nawaem />
         </Suspense>
       </section>
       <section className="max-w-[1920px] mx-auto" id={idChocolate}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<SectionLoader />}>
           <Chocolate />
         </Suspense>
       </section>
