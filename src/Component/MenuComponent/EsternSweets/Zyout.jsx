@@ -72,8 +72,8 @@ const Zyout = ({ id }) => {
                     setLoadedImages((prev) => ({ ...prev, [item.id]: true }))
                   }
                   className={`w-full md:w-[80%] md:h-[90%] object-contain rounded-xl transition-all duration-500
-      ${loadedImages[item.id] ? "opacity-100 blur-0" : "opacity-0 blur-sm"}
-    `}
+                      ${loadedImages[item.id] ? "opacity-100 blur-0" : "opacity-0 blur-sm"}
+                   `}
                 />
               </div>
 

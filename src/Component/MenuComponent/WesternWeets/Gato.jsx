@@ -47,6 +47,7 @@ const Gato = ({ id }) => {
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
+  const [loadedImages, setLoadedImages] = useState({});
   useEffect(() => {
     if (open) {
       document.body.style.overflow = "hidden";
@@ -78,11 +79,24 @@ const Gato = ({ id }) => {
               className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between lg:gap-10 transition hover:shadow-lg bg-gray-100   "
             >
               <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full xl:h-100  flex justify-center overflow-hidden rounded-2xl">
+                {/* اللودر */}
+                {!loadedImages[item.id] && (
+                  <div className="absolute inset-0 flex items-center justify-center bg-gray-200 animate-pulse">
+                    <div className="h-8 w-8 animate-spin rounded-full border-4 border-cyan-600 border-t-transparent"></div>
+                  </div>
+                )}
+
+                {/* الصورة */}
                 <img
-                  className=" w-full md:w-[80%] md:h-[90%] object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120 "
                   src={item.img ? item.img : logo}
                   alt="Cake"
                   loading="lazy"
+                  onLoad={() =>
+                    setLoadedImages((prev) => ({ ...prev, [item.id]: true }))
+                  }
+                  className={`w-full md:w-[80%] md:h-[90%] object-contain rounded-xl transition-all duration-500
+                      ${loadedImages[item.id] ? "opacity-100 blur-0" : "opacity-0 blur-sm"}
+                   `}
                 />
               </div>
 
