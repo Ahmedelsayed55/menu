@@ -31,7 +31,3 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #305264; /* sky-700 */
 }
-
-.loaded {
-  filter: blur(0);
-}

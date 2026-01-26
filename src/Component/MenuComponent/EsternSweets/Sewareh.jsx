@@ -72,7 +72,6 @@ const Sewareh = ({ id }) => {
                 <img
                   className=" w-full md:w-[80%] md:h-[90%] object-contain rounded-xl transition-transform  duration-300 group-active:scale-120  group-hover:scale-120  "
                   src={item.img ? item.img : logo}
-                  onLoad={(e) => e.target.classList.add("loaded")}
                   alt="Cake"
                   loading="lazy"
                 />
