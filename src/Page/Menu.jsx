@@ -120,78 +120,106 @@ const Menu = () => {
       />
 
       {/* 👇 نفس الترتيب ونفس الشكل */}
+
+      {/* رمضانيات */}
+      <section className="max-w-[1920px] mx-auto" id={idRamadan}>
+        <Suspense fallback={<SectionLoader />}>
+          <RamadanSweets />
+        </Suspense>
+      </section>
+
+      {/* جاتو */}
       <section className="max-w-[1920px] mx-auto" id={idGato}>
         <Suspense fallback={<SectionLoader />}>
           <Gato />
         </Suspense>
       </section>
+
+      {/* تورته مقاس 26 */}
       <section className="max-w-[1920px] mx-auto" id={idCake26}>
         <Suspense fallback={<SectionLoader />}>
           <Cake26 />
         </Suspense>
       </section>
+
+      {/* تورته مقاس 20 */}
       <section className="max-w-[1920px] mx-auto" id={idCake20}>
         <Suspense fallback={<SectionLoader />}>
           <Cake20 />
         </Suspense>
       </section>
+
+      {/* تورته مقاس 18 */}
       <section className="max-w-[1920px] mx-auto" id={idCake18}>
         <Suspense fallback={<SectionLoader />}>
           <Cake18 />
         </Suspense>
       </section>
+
+      {/* تورت قلب */}
       <section className="max-w-[1920px] mx-auto" id={idHartCake}>
         <Suspense fallback={<SectionLoader />}>
           <HartCake />
         </Suspense>
       </section>
+
+      {/* تورت مقاسات  */}
       <section className="max-w-[1920px] mx-auto" id={idMixed}>
         <Suspense fallback={<SectionLoader />}>
           <AssortedCakes />
         </Suspense>
       </section>
+
+      {/* تورت ادوار */}
       <section className="max-w-[1920px] mx-auto" id={idLayers}>
         <Suspense fallback={<SectionLoader />}>
           <CakeLayers />
         </Suspense>
       </section>
 
-      <section className="max-w-[1920px] mx-auto" id={idRamadan}>
-        <Suspense fallback={<SectionLoader />}>
-          <RamadanSweets />
-        </Suspense>
-      </section>
+      {/* كنافات */}
       <section className="max-w-[1920px] mx-auto" id={idKonafa}>
         <Suspense fallback={<SectionLoader />}>
           <Konafa />
         </Suspense>
       </section>
+
+      {/* طري */}
       <section className="max-w-[1920px] mx-auto" id={idTary}>
         <Suspense fallback={<SectionLoader />}>
           <Tary />
         </Suspense>
       </section>
+
+      {/* بغاشه */}
       <section className="max-w-[1920px] mx-auto" id={idBogasha}>
         <Suspense fallback={<SectionLoader />}>
           <Bogasha />
         </Suspense>
       </section>
+
+      {/* زيوت */}
       <section className="max-w-[1920px] mx-auto" id={idZyout}>
         <Suspense fallback={<SectionLoader />}>
           <Zyout />
         </Suspense>
       </section>
+
+      {/* فورم */}
       <section className="max-w-[1920px] mx-auto" id={idForam}>
         <Suspense fallback={<SectionLoader />}>
           <Foram />
         </Suspense>
       </section>
+
+      {/* سواريهات */}
       <section className="max-w-[1920px] mx-auto" id={idSewareh}>
         <Suspense fallback={<SectionLoader />}>
           <Sewareh />
         </Suspense>
       </section>
 
+      {/*  */}
       <section className="max-w-[1920px] mx-auto" id={idDryNuts}>
         <Suspense fallback={<SectionLoader />}>
           <DryNuts />

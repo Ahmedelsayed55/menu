@@ -26,7 +26,7 @@ const NavItem = ({
   idNawaem,
 }) => {
   const swiperRef = useRef(null);
-  const [active, setActive] = useState(idGato);
+  const [active, setActive] = useState(idRamadan);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
@@ -48,7 +48,7 @@ const NavItem = ({
 
     const onScroll = () => {
       if (window.scrollY <= 100) {
-        setActive(idGato); // ترجع لأول section لما تكون في أول الصفحة
+        setActive(idRamadan); // ترجع لأول section لما تكون في أول الصفحة
       }
     };
 
@@ -58,9 +58,10 @@ const NavItem = ({
       observer.disconnect();
       window.removeEventListener("scroll", onScroll);
     };
-  }, [idGato]);
+  }, [idRamadan]);
 
   const sizes = [
+    { id: idRamadan, label: "رمضانيات" },
     { id: idGato, label: "جاتوة" },
     { id: id26, label: "تورته مقاس (26)" },
     { id: id20, label: "تورته مقاس (20)" },
@@ -68,7 +69,6 @@ const NavItem = ({
     { id: idHartCake, label: "تورت قلب" },
     { id: idMixed, label: "تورت مقاسات متنوعة" },
     { id: idLayers, label: "تورت أدوار" },
-    { id: idRamadan, label: "رمضانيات" },
     { id: idKonafa, label: "كنافات" },
     { id: idTary, label: "الطري" },
     { id: idBogasha, label: "البغاشه" },

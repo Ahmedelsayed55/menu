@@ -1,57 +1,222 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../../assets/logocart.png";
-import ram1 from "../../../assets/assetsRmadan/ram1.png";
-import ram2 from "../../../assets/assetsRmadan/ram2.png";
-import ram3 from "../../../assets/assetsRmadan/ram3.png";
-import ram4 from "../../../assets/assetsRmadan/ram4.png";
-import ram5 from "../../../assets/assetsRmadan/ram5.png";
-import ram22 from "../../../assets/assetsRmadan/ram22.png";
-import ram7 from "../../../assets/assetsRmadan/ram7.png";
 import ram8 from "../../../assets/assetsRmadan/ram8.png";
-import ram9 from "../../../assets/assetsRmadan/ram9.png";
-import ram10 from "../../../assets/assetsRmadan/ram10.png";
-import ram11 from "../../../assets/assetsRmadan/ram11.png";
-import ram12 from "../../../assets/assetsRmadan/ram12.png";
-import ram13 from "../../../assets/assetsRmadan/ram13.png";
-import ram14 from "../../../assets/assetsRmadan/ram14.png";
-import ram15 from "../../../assets/assetsRmadan/ram15.png";
-import ram16 from "../../../assets/assetsRmadan/ram16.png";
-import ram17 from "../../../assets/assetsRmadan/ram17.png";
-import ram18 from "../../../assets/assetsRmadan/ram18.png";
-import ram19 from "../../../assets/assetsRmadan/ram19.png";
-import ram20 from "../../../assets/assetsRmadan/ram20.png";
 import ram21 from "../../../assets/assetsRmadan/ram21.png";
-import ram23 from "../../../assets/assetsRmadan/ram23.png";
-import ram25 from "../../../assets/assetsRmadan/ram25.png";
+
+// بول رمضان
+import lmetRamdanThree from "../../../assets/assetsRmadan/polaLmetElfetarThreeSesson.jpeg";
+import elnanosaLotos from "../../../assets/assetsRmadan/elnanosaLotos.jpeg";
+import elnanosaBestatio from "../../../assets/assetsRmadan/elnanosaBestatio.jpeg";
+import elnanosaNotela from "../../../assets/assetsRmadan/elnanosaNotela.jpeg";
+import elnanosaMango from "../../../assets/assetsRmadan/elnanosaMango.jpeg";
+import elnanosaTot from "../../../assets/assetsRmadan/elnanosaTot.jpeg";
+import polaLmetElfetarFourSesson from "../../../assets/assetsRmadan/polaLmetElfetarFourSesson.jpeg";
+import lmetElfetarNotelaLotos from "../../../assets/assetsRmadan/lmetElfetarNotelaLotos.jpeg";
+import elbarkaMango from "../../../assets/assetsRmadan/elbarkaMango.jpeg";
+import elbarkaLotos from "../../../assets/assetsRmadan/elbarkaLotos.jpeg";
+import eldalo3aMango from "../../../assets/assetsRmadan/eldalo3aMango.jpeg";
+import eldlo3aBestatio from "../../../assets/assetsRmadan/eldlo3aBestatio.jpeg";
+import lmetElfetarMangoNotela from "../../../assets/assetsRmadan/lmetElfetarMangoNotela.jpeg";
+import lmetElfetarMangoLotos from "../../../assets/assetsRmadan/lmetElfetarMangoLotos.jpeg";
+import eldlo3aNotela from "../../../assets/assetsRmadan/eldlo3aNotela.jpeg";
+import eldlo3aLotos from "../../../assets/assetsRmadan/eldlo3aLotos.jpeg";
+import kobKonafaMango from "../../../assets/assetsRmadan/kobKonafaMango.jpeg";
+import kobKonafaNotela from "../../../assets/assetsRmadan/kobKonafaNotela.jpeg";
+import PolaLmetEl3elaNotela from "../../../assets/assetsRmadan/PolaLmetEl3elaNotela.jpeg";
+import polaLmetEl3elaTot from "../../../assets/assetsRmadan/polaLmetEl3elaTot.jpeg";
+import polaLmetEl3elaMango from "../../../assets/assetsRmadan/polaLmetEl3elaMango.jpeg";
+import PolaLmetEl3elaLotos from "../../../assets/assetsRmadan/PolaLmetEl3elaLotos.jpeg";
+import polaLmetEl3elaBestatio from "../../../assets/assetsRmadan/polaLmetEl3elaBestatio.jpeg";
+import polaHavLmetEl3elaMangoLotos from "../../../assets/assetsRmadan/polaHavLmetEl3elaMangoLotos.jpeg";
+import polaHavLmetEl3elaMangoNotela from "../../../assets/assetsRmadan/polaHavLmetEl3elaMangoNotela.jpeg";
+import polaHavLmetEl3elaNotelaLotos from "../../../assets/assetsRmadan/polaHavLmetEl3elaNotelaLotos.jpeg";
+import polaElkarmMangoLotos from "../../../assets/assetsRmadan/polaElkarmMangoLotos.jpeg";
+import polaElkarmMangoNotela from "../../../assets/assetsRmadan/polaElkarmMangoNotela.jpeg";
+import polaElkarmBestio from "../../../assets/assetsRmadan/polaElkarmBestio.jpeg";
+import polaElkarmNotela from "../../../assets/assetsRmadan/polaElkarmNotela.jpeg";
+import polaElkarmTot from "../../../assets/assetsRmadan/polaElkarmTot.jpeg";
+import polaElkarmMango from "../../../assets/assetsRmadan/polaElkarmMango.jpeg";
+import polaElkarmLotos from "../../../assets/assetsRmadan/polaElkarmLotos.jpeg";
+import polaElkarmLotosNotela from "../../../assets/assetsRmadan/polaElkarmLotosNotela.jpeg";
+import eldlo3aTot from "../../../assets/assetsRmadan/eldlo3aTot.jpeg";
+import fanosKonafaNotelaMango from "../../../assets/assetsRmadan/fanosKonafaNotelaMango.jpeg";
+
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { favorites } from "../../../store/Favorites";
 const RamadanSweets = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "         ", price: 0, img: ram1 },
-    { id: 2, name: "            ", price: 0, img: ram2 },
-    { id: 3, name: "              ", price: 0, img: ram3 },
-    { id: 4, name: "                    ", price: 0, img: ram4 },
-    { id: 5, name: "             ", price: 0, img: ram5 },
-    { id: 6, name: "            ", price: 0, img: ram22 },
-    { id: 7, name: "                ", price: 0, img: ram7 },
-    { id: 8, name: "                  ", price: 0, img: ram8 },
-    { id: 9, name: "                         ", price: 0, img: ram9 },
-    { id: 10, name: "                        ", price: 0, img: ram10 },
-    { id: 11, name: "                  ", price: 0, img: ram11 },
-    { id: 12, name: "                  ", price: 0, img: ram12 },
-    { id: 13, name: "          ", price: 0, img: ram13 },
-    { id: 14, name: "              ", price: 0, img: ram14 },
-    { id: 15, name: "           ", price: 0, img: ram15 },
-    { id: 16, name: "       ", price: 0, img: ram16 },
-    { id: 17, name: "      ", price: 0, img: ram17 },
-    { id: 18, name: "    ", price: 0, img: ram18 },
-    { id: 19, name: "     ", price: 0, img: ram19 },
-    { id: 20, name: "", price: 0, img: ram20 },
-    { id: 21, name: "   ", price: 0, img: ram21 },
-    { id: 22, name: "  ", price: 0, img: ram23 },
-    { id: 23, name: " ", price: 0, img: ram25 },
+    {
+      id: 2,
+      name: "فانوس كنافة مانجو و نوتيلا",
+      price: 30,
+      img: fanosKonafaNotelaMango,
+    },
+    { id: 3, name: "كوب كنافة مانجو", price: 25, img: kobKonafaMango },
+    { id: 4, name: "كوب كنافة نوتيلا", price: 25, img: kobKonafaNotela },
+    { id: 5, name: "بوله الننوسه(1فرد)نوتيلا", price: 35, img: elnanosaNotela },
+    { id: 6, name: "بوله الننوسه(1فرد)مانجو", price: 35, img: elnanosaMango },
+    { id: 7, name: "بوله الننوسه(1فرد)لوتس", price: 35, img: elnanosaLotos },
+    { id: 8, name: "بوله الننوسه(1فرد)توت", price: 35, img: elnanosaTot },
+    {
+      id: 9,
+      name: "بوله الننوسه(1فرد)بستاشيو",
+      price: 50,
+      img: elnanosaBestatio,
+    },
+    { id: 10, name: "بوله الدلوعه(2فرد)مانجو", price: 70, img: eldalo3aMango },
+    { id: 11, name: "بوله الدلوعه(2فرد)نوتيلا", price: 70, img: eldlo3aNotela },
+    { id: 12, name: "بوله الدلوعه(2فرد)لوتس", price: 70, img: eldlo3aLotos },
+    { id: 13, name: "بوله الدلوعه(2فرد)توت", price: 70, img: eldlo3aTot },
+    {
+      id: 14,
+      name: "بوله الدلوعه(2فرد)بستاشيو",
+      price: 90,
+      img: eldlo3aBestatio,
+    },
+    { id: 15, name: "بوله الكرم(4فرد)مانجو", price: 100, img: polaElkarmMango },
+    {
+      id: 16,
+      name: "بوله الكرم(4فرد)نوتيلا",
+      price: 100,
+      img: polaElkarmNotela,
+    },
+    { id: 17, name: "بوله الكرم(4فرد)لوتس", price: 100, img: polaElkarmLotos },
+    { id: 18, name: "بوله الكرم(4فرد)توت", price: 100, img: polaElkarmTot },
+    {
+      id: 19,
+      name: "بوله الكرم(4فرد)بستاشيو",
+      price: 145,
+      img: polaElkarmBestio,
+    },
+    {
+      id: 20,
+      name: "بوله الكرم هاف(4فرد)مانجو*نوتيلا",
+      price: 100,
+      img: polaElkarmMangoNotela,
+    },
+    {
+      id: 21,
+      name: "بوله الكرم هاف(4فرد) لوتس*نوتيلا",
+      price: 100,
+      img: polaElkarmLotosNotela,
+    },
+    {
+      id: 22,
+      name: "بوله الكرم هاف(4فرد) مانجو*لوتس",
+      price: 100,
+      img: polaElkarmMangoLotos,
+    },
+    { id: 23, name: "بوله الكرم هاف(4فرد) بستاشيو", price: 145, img: "" },
+    {
+      id: 24,
+      name: "بوله لمة العيله(6فرد) مانجو",
+      price: 150,
+      img: polaLmetEl3elaMango,
+    },
+    {
+      id: 25,
+      name: "بوله لمة العيله(6فرد) نوتيلا",
+      price: 150,
+      img: PolaLmetEl3elaNotela,
+    },
+    {
+      id: 26,
+      name: "بوله لمة العيله(6فرد) لوتس",
+      price: 150,
+      img: PolaLmetEl3elaLotos,
+    },
+    {
+      id: 27,
+      name: "بوله لمة العيله(6فرد) توت",
+      price: 150,
+      img: polaLmetEl3elaTot,
+    },
+    {
+      id: 28,
+      name: "بوله لمة العيله(6فرد) بستاشيو",
+      price: 175,
+      img: polaLmetEl3elaBestatio,
+    },
+    {
+      id: 29,
+      name: "بوله لمة العيله هاف(6فرد) مانجو*نوتيلا",
+      price: 150,
+      img: polaHavLmetEl3elaMangoNotela,
+    },
+    {
+      id: 30,
+      name: "بوله لمة العيله هاف(6فرد) لوتس*نوتيلا",
+      price: 150,
+      img: polaHavLmetEl3elaNotelaLotos,
+    },
+    {
+      id: 31,
+      name: "بوله لمة العيله هاف(6فرد) مانجو*لوتس",
+      price: 150,
+      img: polaHavLmetEl3elaMangoLotos,
+    },
+    {
+      id: 32,
+      name: "بوله لمة العيله هاف(6فرد)بستاشيو",
+      price: 175,
+      img: "",
+    },
+    {
+      id: 33,
+      name: "بوله لمة الفطار هاف(8فرد)مانجو*نوتيلا",
+      price: 175,
+      img: lmetElfetarMangoNotela,
+    },
+    {
+      id: 34,
+      name: "بوله لمة الفطار هاف(8فرد)لوتس*نوتيلا",
+      price: 175,
+      img: lmetElfetarNotelaLotos,
+    },
+    {
+      id: 35,
+      name: "بوله لمة الفطار هاف(8فرد)مانجو*لوتس",
+      price: 175,
+      img: lmetElfetarMangoLotos,
+    },
+    {
+      id: 36,
+      name: "بوله لمة الفطار فورسيزون(8فرد)مانجو*نوتيلا*لوتس*توت",
+      price: 175,
+      img: polaLmetElfetarFourSesson,
+    },
+    {
+      id: 37,
+      name: "بوله لمة الفطار ثري سيزون(8فرد)مانجو*نوتيلا*لوتس",
+      price: 175,
+      img: lmetRamdanThree,
+    },
+    { id: 38, name: "بوله البركة(10فرد)مانجو", price: 200, img: elbarkaMango },
+    { id: 39, name: "بوله البركة(10فرد)لوتس", price: 200, img: elbarkaLotos },
+    { id: 40, name: "بوله البركة(10فرد)نوتيلا", price: 200, img: "" },
+    { id: 41, name: "فورمة بسبوسه شاميه مكسرات صغيرة", price: 125, img: "" },
+    { id: 42, name: "فورمة كنافه مخصوص صغيرة", price: 125, img: "" },
+    { id: 43, name: "فورمة كنافة كريمة", price: 125, img: "" },
+    { id: 44, name: "فورمه كنافة مانجو", price: 150, img: "" },
+    { id: 45, name: "فورمة كنافه تمريه", price: 150, img: ram21 },
+    { id: 46, name: "فورمه كنافة نوتيلا", price: 175, img: "" },
+    { id: 47, name: "فورمه كنافة فواكه", price: 150, img: ram8 },
+    { id: 48, name: "فورمه كنافه عثمالية", price: 150, img: "" },
+    { id: 49, name: "كنافه كورنيه قشطه", price: 180, img: "" },
+    { id: 50, name: "فطيرة سوري", price: 200, img: "" },
+    { id: 51, name: "اصابع زينب", price: 90, img: "" },
+    { id: 52, name: "زلابيه", price: 95, img: "" },
+    { id: 53, name: "بلح شام ساده", price: 100, img: "" },
+    { id: 54, name: "بلح الشام محشي", price: 110, img: "" },
+    { id: 55, name: "بلح الشام محشي سيواريه", price: 110, img: "" },
+    { id: 56, name: "قطايف مكسرات", price: 120, img: "" },
+    { id: 57, name: "قطايف كريمة", price: 120, img: "" },
+    { id: 58, name: "علبة زلابيه", price: 30, img: "" },
+    { id: 59, name: "طاجن ام علي", price: 30, img: "" },
+    { id: 60, name: "كنافه كورنية نوتيلا", price: 180, img: "" },
+    { id: 61, name: "بلح الشام محشي نوتيلا", price: 125, img: "" },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
