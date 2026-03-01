@@ -239,7 +239,7 @@ const RamadanSweets = ({ id }) => {
         رمضانيات
       </h1>
       <div
-        className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-2 md:gap-10"
+        className=" grid grid-cols-2 md:grid-cols-3  xl:grid-cols-4 gap-2 md:gap-10"
         id={id}
       >
         {prduct.map((item) => {
@@ -250,9 +250,9 @@ const RamadanSweets = ({ id }) => {
                 setSelectedItem(item);
                 setOpen(true);
               }}
-              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between md:gap-10 transition hover:shadow-lg bg-gray-100   "
+              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between md:gap-5 transition hover:shadow-lg bg-gray-100   "
             >
-              <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
+              <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200  transition duration-300  shadow group w-full md:h-70 lg:h-100 flex justify-center overflow-hidden rounded-2xl">
                 {/* اللودر */}
                 {!loadedImages[item.id] && (
                   <div className="absolute inset-0 flex items-center justify-center bg-gray-200 animate-pulse">
@@ -275,7 +275,7 @@ const RamadanSweets = ({ id }) => {
               </div>
 
               <div className="w-full flex flex-col gap-4 md:gap-7 py-3 px-3">
-                <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950 transition duration-500 cursor-default group-hover:-translate-y-5">
+                <h2 className="text-start text-[14px] md:text-[18px] lg:text-2xl font-bold text-cyan-950 transition duration-500 cursor-default group-hover:-translate-y-5">
                   {item.name}
                 </h2>
                 <h2 className="text-start text-[16px] md:text-2xl font-bold text-cyan-700 transition duration-500 cursor-default group-hover:-translate-y-5">
@@ -286,14 +286,14 @@ const RamadanSweets = ({ id }) => {
                     onClick={(e) => {
                       (e.stopPropagation(), addToFavorite(item));
                     }}
-                    className="text-2xl md:text-3xl cursor-pointer hover:bg-red-500 hover:text-white p-2 md:p-3 rounded border  focus:scale-120 focus:border-amber-700"
+                    className="text-[16px] md:text-[20px] cursor-pointer hover:bg-red-500 hover:text-white p-2 md:p-3 rounded border  focus:scale-120 focus:border-amber-700"
                   >
                     <MdOutlineFavoriteBorder />
                   </button>
                   <Link
                     onClick={(e) => e.stopPropagation()}
                     to={"/contact"}
-                    className="w-full text-center py-3  text-[14px] md:text-2xl hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
+                    className="w-full text-center py-3  text-[16px] md:text-[20px] hover:bg-white hover:text-black border bg-cyan-950 text-white rounded-2xl cursor-pointer "
                   >
                     للطلب والاستفسار
                   </Link>
