@@ -250,9 +250,9 @@ const RamadanSweets = ({ id }) => {
                 setSelectedItem(item);
                 setOpen(true);
               }}
-              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between md:gap-5 transition hover:shadow-lg bg-gray-100   "
+              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2  flex flex-col items-center justify-between md:gap-5 transition hover:shadow-lg bg-gray-100   "
             >
-              <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200  transition duration-300  shadow group w-full md:h-70 lg:h-100 flex justify-center overflow-hidden rounded-2xl">
+              <div className="relative group-hover:shadow-2xl group-hover:shadow-gray-200  transition duration-300  shadow group w-full h-52 md:h-70 lg:h-100 flex justify-center overflow-hidden rounded-2xl">
                 {/* اللودر */}
                 {!loadedImages[item.id] && (
                   <div className="absolute inset-0 flex items-center justify-center bg-gray-200 animate-pulse">
