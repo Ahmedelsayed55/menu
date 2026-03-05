@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import baklawaGambry from "../../../assets/baklawa/baklawaGambry.png";
-import baklawakolwashkor from "../../../assets/baklawa/baklawakolwashkor.png";
-import krema from "../../../assets/baklawa/krema-removebg-preview.png";
-import meksrat from "../../../assets/baklawa/meksrat-removebg-preview.png";
-import sadf from "../../../assets/baklawa/sadf-removebg-preview.png";
-import bklawamstra from "../../../assets/baklawa/bklawamstra.png";
-import bklawanegma from "../../../assets/baklawa/bklawanegma.png";
-import glashB from "../../../assets/baklawa/glashB-removebg-preview.png";
-import glashsada from "../../../assets/baklawa/glashsada.png";
+import baklawaGambry from "../../../assets/baklawa/baklawaGambry.jpg";
+import baklawakolwashkor from "../../../assets/baklawa/baklawakolwashkor.jpg";
+import krema from "../../../assets/baklawa/krema-removebg-preview.jpg";
+import meksrat from "../../../assets/baklawa/meksrat-removebg-preview.jpg";
+import sadf from "../../../assets/baklawa/sadf-removebg-preview.jpg";
+import bklawamstra from "../../../assets/baklawa/bklawamstra.jpg";
+import bklawanegma from "../../../assets/baklawa/bklawanegma.jpg";
+import glashB from "../../../assets/baklawa/glashB-removebg-preview.jpg";
+import glashsada from "../../../assets/baklawa/glashsada.jpg";
 import logo from "../../../assets/logocart.png";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
@@ -58,7 +58,7 @@ const Bogasha = ({ id }) => {
                 setSelectedItem(item);
                 setOpen(true);
               }}
-              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between md:gap-10 transition hover:shadow-lg bg-gray-100   "
+              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between md:gap-10 transition hover:shadow-lg bg-whjpg "
             >
               <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
                 {/* اللودر */}

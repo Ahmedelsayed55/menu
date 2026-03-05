@@ -1,22 +1,22 @@
 import { useEffect, useState } from "react";
 import logo from "../../../assets/logocart.png";
-import Cake from "../../../assets/assetsGato/ecklear.png";
-import Cake2 from "../../../assets/assetsGato/hols.png";
-import cheesCake from "../../../assets/assetsGato/cheesCake.png";
-import melfay from "../../../assets/assetsGato/melfay.png";
-import melfaych from "../../../assets/assetsGato/melfaych.png";
-import swesrol from "../../../assets/assetsGato/swesrol.png";
-import swesroul from "../../../assets/assetsGato/swesroul.png";
-import andeal from "../../../assets/assetsGato/andeal.png";
-import despaseto from "../../../assets/assetsGato/despaseto.png";
-import cheascake from "../../../assets/assetsGato/cheascake.png";
-import fnwar from "../../../assets/assetsGato/fnwar.png";
-import kopmos from "../../../assets/assetsGato/kopmos.png";
-import molton from "../../../assets/assetsGato/molton.png";
-import roya2 from "../../../assets/assetsGato/roya2.png";
-import royal from "../../../assets/assetsGato/royal.png";
-import spsheal from "../../../assets/assetsGato/spsheal.png";
-import traiovl from "../../../assets/assetsGato/traiovl.png";
+import Cake from "../../../assets/assetsGato/ecklear.jpg";
+import Cake2 from "../../../assets/assetsGato/hols.jpg";
+import cheesCake from "../../../assets/assetsGato/cheesCake.jpg";
+import melfay from "../../../assets/assetsGato/melfay.jpg";
+import melfaych from "../../../assets/assetsGato/melfaych.jpg";
+import swesrol from "../../../assets/assetsGato/swesrol.jpg";
+import swesroul from "../../../assets/assetsGato/swesroul.jpg";
+import andeal from "../../../assets/assetsGato/andeal.jpg";
+import despaseto from "../../../assets/assetsGato/despaseto.jpg";
+import cheascake from "../../../assets/assetsGato/cheascake.jpg";
+import fnwar from "../../../assets/assetsGato/fnwar.jpg";
+import kopmos from "../../../assets/assetsGato/kopmos.jpg";
+import molton from "../../../assets/assetsGato/molton.jpg";
+import roya2 from "../../../assets/assetsGato/roya2.jpg";
+import royal from "../../../assets/assetsGato/royal.jpg";
+import spsheal from "../../../assets/assetsGato/spsheal.jpg";
+import traiovl from "../../../assets/assetsGato/traiovl.jpg";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { favorites } from "../../../store/Favorites";
@@ -76,7 +76,7 @@ const Gato = ({ id }) => {
                 setSelectedItem(item);
                 setOpen(true);
               }}
-              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between lg:gap-10 transition hover:shadow-lg bg-gray-100   "
+              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between lg:gap-10 transition hover:shadow-lg bg-white  "
             >
               <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full xl:h-100  flex justify-center overflow-hidden rounded-2xl">
                 {/* اللودر */}

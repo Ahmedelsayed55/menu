@@ -1,20 +1,20 @@
-import havGlaxyChocolata from "../../../assets/assets26/havGlaxyChocolata.png";
-import Cake1 from "../../../assets/assets26/a1.png";
-import Cake2 from "../../../assets/assets26/a2.png";
-import Cake3 from "../../../assets/assets26/a3.png";
-import Cake4 from "../../../assets/assets26/a4.png";
-import Cake7 from "../../../assets/assets26/a7.png";
-import notelaOrio from "../../../assets/assets26/a10.png";
-import Cake11 from "../../../assets/assets26/a11.png";
-import chocolate from "../../../assets/assets26/a12.png";
-import havTag from "../../../assets/assets26/a14.png";
-import Cake15 from "../../../assets/assets26/a15.png";
-import Cake16 from "../../../assets/assets26/a16.png";
-import Cake17 from "../../../assets/assets26/a17.png";
-import snecars from "../../../assets/assets26/a18.png";
-import karamilBlack from "../../../assets/assets26/karamilBlack-removebg-preview.png";
-import whiteMillk from "../../../assets/assets26/whiteMillk-removebg-preview.png";
-import flwar from "../../../assets/assets26/flwar.png";
+import havGlaxyChocolata from "../../../assets/assets26/havGlaxyChocolata.jpg";
+import Cake1 from "../../../assets/assets26/a1.jpg";
+import Cake2 from "../../../assets/assets26/a2.jpg";
+import Cake3 from "../../../assets/assets26/a3.jpg";
+import Cake4 from "../../../assets/assets26/a4.jpg";
+import Cake7 from "../../../assets/assets26/a7.jpg";
+import notelaOrio from "../../../assets/assets26/a10.jpg";
+import Cake11 from "../../../assets/assets26/a11.jpg";
+import chocolate from "../../../assets/assets26/a12.jpg";
+import havTag from "../../../assets/assets26/a14.jpg";
+import Cake15 from "../../../assets/assets26/a15.jpg";
+import Cake16 from "../../../assets/assets26/a16.jpg";
+import Cake17 from "../../../assets/assets26/a17.jpg";
+import snecars from "../../../assets/assets26/a18.jpg";
+import karamilBlack from "../../../assets/assets26/karamilBlack-removebg-preview.jpg";
+import whiteMillk from "../../../assets/assets26/whiteMillk-removebg-preview.jpg";
+import flwar from "../../../assets/assets26/flwar.jpg";
 import logo from "../../../assets/logocart.png";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -84,9 +84,9 @@ const Cake26 = ({ id }) => {
                 setSelectedItem(item);
                 setOpen(true);
               }}
-              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between md:gap-10 transition hover:shadow-lg bg-gray-100   "
+              className="rounded-2xl group shadow-lg bg-white shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between md:gap-10 transition hover:shadow-lg   "
             >
-              <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
+              <div className="relative h-1/2  group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
                 {/* اللودر */}
                 {!loadedImages[item.id] && (
                   <div className="absolute inset-0 flex items-center justify-center bg-gray-200 animate-pulse">
@@ -102,7 +102,7 @@ const Cake26 = ({ id }) => {
                   onLoad={() =>
                     setLoadedImages((prev) => ({ ...prev, [item.id]: true }))
                   }
-                  className={`w-full md:w-[80%] md:h-[90%] object-contain rounded-xl transition-all duration-500
+                  className={`w-full md:w-[80%]  md:h-[90%] object-contain rounded-xl transition-all duration-500
                       ${loadedImages[item.id] ? "opacity-100 blur-0" : "opacity-0 blur-sm"}
                    `}
                 />

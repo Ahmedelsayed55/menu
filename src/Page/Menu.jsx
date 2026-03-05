@@ -127,6 +127,12 @@ const Menu = () => {
           <RamadanSweets />
         </Suspense>
       </section>
+      {/* النواعم */}
+      <section className="max-w-[1920px] mx-auto" id={idNawaem}>
+        <Suspense fallback={<SectionLoader />}>
+          <Nawaem />
+        </Suspense>
+      </section>
 
       {/* جاتو */}
       <section className="max-w-[1920px] mx-auto" id={idGato}>
@@ -238,12 +244,6 @@ const Menu = () => {
       <section className="max-w-[1920px] mx-auto" id={idReadyPack}>
         <Suspense fallback={<SectionLoader />}>
           <ReadyPackages />
-        </Suspense>
-      </section>
-
-      <section className="max-w-[1920px] mx-auto" id={idNawaem}>
-        <Suspense fallback={<SectionLoader />}>
-          <Nawaem />
         </Suspense>
       </section>
       <section className="max-w-[1920px] mx-auto" id={idChocolate}>

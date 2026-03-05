@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
-import lenza from "../../../assets/tary/lenza.png";
-import lokma from "../../../assets/tary/lokma-removebg-preview.png";
-import basbosaN from "../../../assets/tary/basbosaN-removebg-preview.png";
-import zeza from "../../../assets/tary/3zeza.png";
-import basbosaloz from "../../../assets/tary/basbosaloz.png";
-import basbosamx from "../../../assets/tary/basbosamx.png";
-import basbosatorkykeshta from "../../../assets/tary/basbosatorkykeshta.png";
-import bsemamx from "../../../assets/tary/bsemamx.png";
-import defr from "../../../assets/tary/defr.png";
-import hresasada from "../../../assets/tary/hresasada.png";
-import swarehtakte3 from "../../../assets/tary/swarehtakte3.png";
+import lenza from "../../../assets/tary/lenza.jpg";
+import lokma from "../../../assets/tary/lokma-removebg-preview.jpg";
+import basbosaN from "../../../assets/tary/basbosaN-removebg-preview.jpg";
+import zeza from "../../../assets/tary/3zeza.jpg";
+import basbosaloz from "../../../assets/tary/basbosaloz.jpg";
+import basbosamx from "../../../assets/tary/basbosamx.jpg";
+import basbosatorkykeshta from "../../../assets/tary/basbosatorkykeshta.jpg";
+import bsemamx from "../../../assets/tary/bsemamx.jpg";
+import defr from "../../../assets/tary/defr.jpg";
+import hresasada from "../../../assets/tary/hresasada.jpg";
+import swarehtakte3 from "../../../assets/tary/swarehtakte3.jpg";
 import logo from "../../../assets/logocart.png";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
@@ -63,7 +63,7 @@ const Tary = ({ id }) => {
                 setSelectedItem(item);
                 setOpen(true);
               }}
-              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between md:gap-10 transition hover:shadow-lg bg-gray-100   "
+              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between md:gap-10 transition hover:shadow-lg bg-white "
             >
               <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
                 {/* اللودر */}

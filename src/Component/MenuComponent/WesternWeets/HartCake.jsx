@@ -1,11 +1,11 @@
-import chocolate from "../../../assets/assetsHart/a5.png";
-import blackForst from "../../../assets/assetsHart/a6.png";
-import frot from "../../../assets/assetsHart/a8.png";
-import redvalved from "../../../assets/assetsHart/a9.png";
-import karamilBlackHart from "../../../assets/assetsHart/karamilBlackHart-removebg-preview.png";
-import havTagHart from "../../../assets/assetsHart/havTagHart-removebg-preview.png";
-import havFrout from "../../../assets/assetsHart/havFrout.png";
-import karamelchocolate from "../../../assets/assetsHart/karamelchocolate.png";
+import chocolate from "../../../assets/assetsHart/a5.jpg";
+import blackForst from "../../../assets/assetsHart/a6.jpg";
+import frot from "../../../assets/assetsHart/a8.jpg";
+import redvalved from "../../../assets/assetsHart/a9.jpg";
+import karamilBlackHart from "../../../assets/assetsHart/karamilBlackHart-removebg-preview.jpg";
+import havTagHart from "../../../assets/assetsHart/havTagHart-removebg-preview.jpg";
+import havFrout from "../../../assets/assetsHart/havFrout.jpg";
+import karamelchocolate from "../../../assets/assetsHart/karamelchocolate.jpg";
 import logo from "../../../assets/logocart.png";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -59,7 +59,7 @@ const HartCake = ({ id }) => {
                 setSelectedItem(item);
                 setOpen(true);
               }}
-              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between md:gap-10 transition hover:shadow-lg bg-gray-100   "
+              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between md:gap-10 transition hover:shadow-lg bg-white   "
             >
               <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
                 {/* اللودر */}

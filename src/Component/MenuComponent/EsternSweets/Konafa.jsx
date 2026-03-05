@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
-import konafa3othmanly from "../../../assets/konafa/konafa3othmanly.png";
-import konafaKrema from "../../../assets/konafa/konafaKrema.png";
-import konafaN from "../../../assets/konafa/konafaN.png";
-import medl3a1 from "../../../assets/konafa/medl3a1-removebg-preview.png";
-import medl3a2 from "../../../assets/konafa/medl3a2-removebg-preview.png";
-import medl3a3 from "../../../assets/konafa/medl3a3-removebg-preview.png";
-import konafa3osmanle from "../../../assets/konafa/konafa3osmanle.png";
-import konafamanga from "../../../assets/konafa/konafamanga.png";
-import makhsos from "../../../assets/konafa/makhsos.png";
-import rafaielo from "../../../assets/konafa/rafaielo.png";
-import shhrzad from "../../../assets/konafa/shhrzad.png";
-import tamrea from "../../../assets/konafa/tamrea.png";
+import konafa3othmanly from "../../../assets/konafa/konafa3othmanly.jpg";
+import konafaKrema from "../../../assets/konafa/konafaKrema.jpg";
+import konafaN from "../../../assets/konafa/konafaN.jpg";
+import medl3a1 from "../../../assets/konafa/medl3a1-removebg-preview.jpg";
+import medl3a2 from "../../../assets/konafa/medl3a2-removebg-preview.jpg";
+import medl3a3 from "../../../assets/konafa/medl3a3-removebg-preview.jpg";
+import konafa3osmanle from "../../../assets/konafa/konafa3osmanle.jpg";
+import konafamanga from "../../../assets/konafa/konafamanga.jpg";
+import makhsos from "../../../assets/konafa/makhsos.jpg";
+import rafaielo from "../../../assets/konafa/rafaielo.jpg";
+import shhrzad from "../../../assets/konafa/shhrzad.jpg";
+import tamrea from "../../../assets/konafa/tamrea.jpg";
 import logo from "../../../assets/logocart.png";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
@@ -65,7 +65,7 @@ const Konafa = ({ id }) => {
                 setSelectedItem(item);
                 setOpen(true);
               }}
-              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between md:gap-10 transition hover:shadow-lg bg-gray-100   "
+              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between md:gap-10 transition hover:shadow-lg bg-white "
             >
               <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
                 {/* اللودر */}

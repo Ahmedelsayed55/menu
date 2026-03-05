@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
-import assawerMeksrat from "../../../assets/sewarehat/assawerMeksrat.png";
-import asawersewareh from "../../../assets/sewarehat/asawersewareh-removebg-preview.png";
-import bassma3gwa from "../../../assets/sewarehat/bassma3gwa.png";
-import bassmaChocolata from "../../../assets/sewarehat/bassmaChocolata.png";
-import bormaMeksrat from "../../../assets/sewarehat/bormaMeksrat.png";
-import habeba from "../../../assets/sewarehat/habeba.png";
-import hamamBorma from "../../../assets/sewarehat/hamamBorma.png";
-import hamamSharky from "../../../assets/sewarehat/hamamSharky.png";
-import segarSada from "../../../assets/sewarehat/segarSada.png";
-import shaklma from "../../../assets/sewarehat/shaklma.png";
-import konafaTorkyMex from "../../../assets/sewarehat/konafaTorkyMex-removebg-preview.png";
-import segarmexrat from "../../../assets/sewarehat/segarmexrat-removebg-preview.png";
-import egazea from "../../../assets/sewarehat/egazea.png";
-import kapp from "../../../assets/sewarehat/kapp.png";
+import assawerMeksrat from "../../../assets/sewarehat/assawerMeksrat.jpg";
+import asawersewareh from "../../../assets/sewarehat/asawersewareh-removebg-preview.jpg";
+import bassma3gwa from "../../../assets/sewarehat/bassma3gwa.jpg";
+import bassmaChocolata from "../../../assets/sewarehat/bassmaChocolata.jpg";
+import bormaMeksrat from "../../../assets/sewarehat/bormaMeksrat.jpg";
+import habeba from "../../../assets/sewarehat/habeba.jpg";
+import hamamBorma from "../../../assets/sewarehat/hamamBorma.jpg";
+import hamamSharky from "../../../assets/sewarehat/hamamSharky.jpg";
+import segarSada from "../../../assets/sewarehat/segarSada.jpg";
+import shaklma from "../../../assets/sewarehat/shaklma.jpg";
+import konafaTorkyMex from "../../../assets/sewarehat/konafaTorkyMex-removebg-preview.jpg";
+import segarmexrat from "../../../assets/sewarehat/segarmexrat-removebg-preview.jpg";
+import egazea from "../../../assets/sewarehat/egazea.jpg";
+import kapp from "../../../assets/sewarehat/kapp.jpg";
 import logo from "../../../assets/logocart.png";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
@@ -67,7 +67,7 @@ const Sewareh = ({ id }) => {
                 setSelectedItem(item);
                 setOpen(true);
               }}
-              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between md:gap-10 transition hover:shadow-lg bg-gray-100   "
+              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between md:gap-10 transition hover:shadow-lg bg-white"
             >
               <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
                 {/* اللودر */}

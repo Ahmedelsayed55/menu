@@ -62,6 +62,7 @@ const NavItem = ({
 
   const sizes = [
     { id: idRamadan, label: "رمضانيات" },
+    { id: idNawaem, label: "النواعم" },
     { id: idGato, label: "جاتوة" },
     { id: id26, label: "تورته مقاس (26)" },
     { id: id20, label: "تورته مقاس (20)" },
@@ -79,7 +80,6 @@ const NavItem = ({
     { id: idDollMillk, label: "الملابن والجزريه" },
     { id: idCoconut, label: "جوز الهند واللديدة" },
     { id: idReadyPack, label: "العبوات الجاهزة" },
-    { id: idNawaem, label: "النواعم" },
     { id: idChocolate, label: "شيكولاتة" },
   ];
   useEffect(() => {

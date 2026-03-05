@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import blackForst from "../../../assets/cake20/blackForst-removebg-preview.png";
-import chocolate from "../../../assets/cake20/chocolate-removebg-preview.png";
-import hacFrot from "../../../assets/cake20/hacFrot-removebg-preview.png";
-import havTap from "../../../assets/cake20/havTap-removebg-preview.png";
-import vadg from "../../../assets/cake20/vadg-removebg-preview.png";
-import flower from "../../../assets/cake20/flower.png";
-import notela from "../../../assets/cake20/notela.png";
-import whitefourest from "../../../assets/cake20/whitefourest.png";
+import blackForst from "../../../assets/cake20/blackForst-removebg-preview.jpg";
+import chocolate from "../../../assets/cake20/chocolate-removebg-preview.jpg";
+import hacFrot from "../../../assets/cake20/hacFrot-removebg-preview.jpg";
+import havTap from "../../../assets/cake20/havTap-removebg-preview.jpg";
+import vadg from "../../../assets/cake20/vadg-removebg-preview.jpg";
+import flower from "../../../assets/cake20/flower.jpg";
+import notela from "../../../assets/cake20/notela.jpg";
+import whitefourest from "../../../assets/cake20/whitefourest.jpg";
 import logo from "../../../assets/logocart.png";
 import { Link } from "react-router-dom";
 import { favorites } from "../../../store/Favorites";
@@ -58,7 +58,7 @@ const Cake20 = ({ id }) => {
                 setSelectedItem(item);
                 setOpen(true);
               }}
-              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between md:gap-10 transition hover:shadow-lg bg-gray-100   "
+              className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between md:gap-10 transition hover:shadow-lg bg-white "
             >
               <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full md:h-100  flex justify-center overflow-hidden rounded-2xl">
                 {/* اللودر */}
