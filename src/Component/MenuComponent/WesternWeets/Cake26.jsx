@@ -44,7 +44,7 @@ const Cake26 = ({ id }) => {
     { id: 14, name: "تورته سنيكرز ", price: 350, img: snecars },
     {
       id: 15,
-      name: "تورته هاف كارميل & بلاك فورست",
+      name: "تورته هاف كراميل & بلاك فورست",
       price: 300,
       img: karamilBlack,
     },
