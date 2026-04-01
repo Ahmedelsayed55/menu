@@ -17,12 +17,12 @@ const Borg3 = () => {
           📞 للتواصل
         </h3>
         <p className="flex text-2xl md:text-3xl font-bold gap-3 items-center">
-          01022204910
+          01022204916
         </p>
 
         <a
           className="flex text-2xl mb-3 md:mb-0 md:text-3xl bg-green-300 p-3 rounded-2xl w-fit font-bold gap-1 items-center transition text-green-700 hover:text-green-800 hover:scale-105"
-          href="https://wa.me/201022204910?text=Hello"
+          href="https://wa.me/201022204916?text=Hello"
           target="_blank"
           rel="noopener noreferrer"
         >
