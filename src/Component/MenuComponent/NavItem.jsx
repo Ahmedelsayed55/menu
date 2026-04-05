@@ -11,7 +11,7 @@ const NavItem = ({
   idGato,
   idChocolate,
   idLayers,
-  idRamadan,
+  // idRamadan,
   idKonafa,
   idTary,
   idBogasha,
@@ -26,7 +26,7 @@ const NavItem = ({
   idNawaem,
 }) => {
   const swiperRef = useRef(null);
-  const [active, setActive] = useState(idRamadan);
+  const [active, setActive] = useState(idNawaem);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
@@ -48,7 +48,7 @@ const NavItem = ({
 
     const onScroll = () => {
       if (window.scrollY <= 100) {
-        setActive(idRamadan); // ترجع لأول section لما تكون في أول الصفحة
+        setActive(idNawaem); // ترجع لأول section لما تكون في أول الصفحة
       }
     };
 
@@ -58,10 +58,10 @@ const NavItem = ({
       observer.disconnect();
       window.removeEventListener("scroll", onScroll);
     };
-  }, [idRamadan]);
+  }, [idNawaem]);
 
   const sizes = [
-    { id: idRamadan, label: "رمضانيات" },
+    // { id: idRamadan, label: "رمضانيات" },
     { id: idNawaem, label: "النواعم" },
     { id: idGato, label: "جاتوة" },
     { id: id26, label: "تورته مقاس (26)" },

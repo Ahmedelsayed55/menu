@@ -70,7 +70,7 @@ const Menu = () => {
   let idGato = "idGato";
   let idChocolate = "idChocolate";
   let idLayers = "idLayers";
-  let idRamadan = "idRamadan";
+  // let idRamadan = "idRamadan";
   let idKonafa = "idKonafa";
   let idTary = "idTary";
   let idBogasha = "idBogasha";
@@ -104,7 +104,7 @@ const Menu = () => {
         idGato={idGato}
         idChocolate={idChocolate}
         idLayers={idLayers}
-        idRamadan={idRamadan}
+        // idRamadan={idRamadan}
         idKonafa={idKonafa}
         idTary={idTary}
         idBogasha={idBogasha}
@@ -122,11 +122,11 @@ const Menu = () => {
       {/* 👇 نفس الترتيب ونفس الشكل */}
 
       {/* رمضانيات */}
-      <section className="max-w-[1920px] mx-auto" id={idRamadan}>
+      {/* <section className="max-w-[1920px] mx-auto" id={idRamadan}>
         <Suspense fallback={<SectionLoader />}>
           <RamadanSweets />
         </Suspense>
-      </section>
+      </section> */}
       {/* النواعم */}
       <section className="max-w-[1920px] mx-auto" id={idNawaem}>
         <Suspense fallback={<SectionLoader />}>
