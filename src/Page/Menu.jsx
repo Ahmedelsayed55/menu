@@ -28,9 +28,9 @@ const Chocolate = lazy(
 const CakeLayers = lazy(
   () => import("../Component/MenuComponent/WesternWeets/CakeLayers"),
 );
-const RamadanSweets = lazy(
-  () => import("../Component/MenuComponent/EsternSweets/RamadanSweets"),
-);
+// const RamadanSweets = lazy(
+//   () => import("../Component/MenuComponent/EsternSweets/RamadanSweets"),
+// );
 const Konafa = lazy(
   () => import("../Component/MenuComponent/EsternSweets/Konafa"),
 );
