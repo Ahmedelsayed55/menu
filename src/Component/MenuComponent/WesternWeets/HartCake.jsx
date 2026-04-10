@@ -14,19 +14,19 @@ import { MdOutlineFavoriteBorder } from "react-icons/md";
 const HartCake = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "تورته قلب ريد فالفيت ", price: 300, img: redvalved },
-    { id: 2, name: "تورته قلب بلاك فورست ", price: 300, img: blackForst },
+    { id: 1, name: "تورته قلب ريد فالفيت ", price: 375, img: redvalved },
+    { id: 2, name: "تورته قلب بلاك فورست ", price: 325, img: blackForst },
     { id: 3, name: "تورته قلب فاكهه ", price: 300, img: frot },
-    { id: 4, name: "تورته قلب شيكولاتة ", price: 275, img: chocolate },
-    { id: 5, name: "قلب هاف فاكهه", price: 275, img: havFrout },
-    { id: 6, name: "قلب كراميل & شيكولاته", price: 275, img: karamelchocolate },
+    { id: 4, name: "تورته قلب شيكولاتة ", price: 300, img: chocolate },
+    { id: 5, name: "قلب هاف فاكهه", price: 300, img: havFrout },
+    { id: 6, name: "قلب كراميل & شيكولاته", price: 300, img: karamelchocolate },
     {
       id: 7,
       name: "تورته قلب كراميل & بلاك فورست ",
-      price: 275,
+      price: 300,
       img: karamilBlackHart,
     },
-    { id: 8, name: "تورته قلب هاف تاج ", price: 275, img: havTagHart },
+    { id: 8, name: "تورته قلب هاف تاج ", price: 300, img: havTagHart },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

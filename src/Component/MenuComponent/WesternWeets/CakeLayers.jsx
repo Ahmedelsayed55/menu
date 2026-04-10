@@ -7,13 +7,13 @@ import logo from "../../../assets/logocart.png";
 const CakeLayers = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "تورته 2 دور هاف تاج", price: 1450, img: null },
-    { id: 2, name: " تورته 3 دور تاج", price: 1550, img: null },
-    { id: 3, name: " تورته 5 دور سلم فلاور", price: 1500, img: null },
-    { id: 4, name: " تورته 3 دور هاف فاكهة", price: 1550, img: null },
-    { id: 5, name: " تورته 4 دور هاف تاج معدن", price: 1750, img: null },
-    { id: 6, name: " تورته 2 دور عجينة سكر فاكهة", price: 1450, img: null },
-    { id: 7, name: " تورته 2 دور هاف فاكهة", price: 1450, img: null },
+    { id: 1, name: "تورته 2 دور هاف تاج", price: 1600, img: null },
+    { id: 2, name: " تورته 3 دور تاج", price: 2000, img: null },
+    { id: 3, name: " تورته 5 دور فورسيزون", price: 2500, img: null },
+    { id: 4, name: " تورته 4 دور شيكولاته", price: 2250, img: null },
+    { id: 5, name: " تورته 4 دور هاف بدون", price: 2250, img: null },
+    { id: 6, name: " تورته 2 دور عجينة سكر ", price: 1600, img: null },
+    { id: 7, name: " تورته 5 دور هاف بدون", price: 2500, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
