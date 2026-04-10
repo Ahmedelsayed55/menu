@@ -17,6 +17,7 @@ import roya2 from "../../../assets/assetsGato/roya2.jpg";
 import royal from "../../../assets/assetsGato/royal.jpg";
 import spsheal from "../../../assets/assetsGato/spsheal.jpg";
 import traiovl from "../../../assets/assetsGato/traiovl.jpg";
+import superLoux from "../../../assets/assetsGato/superLoux.jpg";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { favorites } from "../../../store/Favorites";
@@ -39,11 +40,12 @@ const Gato = ({ id }) => {
     { id: 14, name: " رويال", price: 20, img: roya2 },
     { id: 15, name: "رويال ", price: 20, img: royal },
     { id: 16, name: "سبشيال", price: 35, img: spsheal },
-    { id: 17, name: "ترايفول", price: 12, img: traiovl },
-    { id: 18, name: "ميني ديسباسيتو ", price: 25, img: despaseto },
-    { id: 19, name: "ميني لوكس ", price: 11, img: null },
-    { id: 20, name: "شيكولاته دبي صغير ", price: 30, img: null },
-    { id: 21, name: "شيكولاته دبي كبيرة ", price: 40, img: null },
+    { id: 17, name: "سوبر لوكس", price: 16, img: superLoux },
+    { id: 18, name: "ترايفول", price: 12, img: traiovl },
+    { id: 19, name: "ميني ديسباسيتو ", price: 25, img: despaseto },
+    { id: 20, name: "ميني لوكس ", price: 11, img: null },
+    { id: 21, name: "شيكولاته دبي صغير ", price: 30, img: null },
+    { id: 22, name: "شيكولاته دبي كبيرة ", price: 40, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
