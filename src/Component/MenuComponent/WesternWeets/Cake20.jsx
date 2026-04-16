@@ -7,6 +7,7 @@ import vadg from "../../../assets/cake20/vadg-removebg-preview.jpg";
 import flower from "../../../assets/cake20/flower.jpg";
 import notela from "../../../assets/cake20/notela.jpg";
 import whitefourest from "../../../assets/cake20/whitefourest.jpg";
+import flawer from "../../../assets/cake20/20flawer.png";
 import logo from "../../../assets/logocart.png";
 import { Link } from "react-router-dom";
 import { favorites } from "../../../store/Favorites";
@@ -26,6 +27,7 @@ const Cake20 = ({ id }) => {
     { id: 9, name: "تورته هاف بدون ", price: 250, img: null },
     { id: 10, name: "تورته كلها فاكهة ", price: 250, img: null },
     { id: 11, name: "تورته ريد فالفيت ", price: 250, img: null },
+    { id: 11, name: "تورته فلاور ", price: 250, img: flawer },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

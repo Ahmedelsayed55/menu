@@ -18,6 +18,7 @@ import royal from "../../../assets/assetsGato/royal.jpg";
 import spsheal from "../../../assets/assetsGato/spsheal.jpg";
 import traiovl from "../../../assets/assetsGato/traiovl.jpg";
 import superLoux from "../../../assets/assetsGato/superLoux.jpg";
+// import begRoul from "../../../assets/assetsGato/begRoul.jpg";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { favorites } from "../../../store/Favorites";
@@ -40,6 +41,7 @@ const Gato = ({ id }) => {
     { id: 14, name: " رويال", price: 20, img: roya2 },
     { id: 15, name: "رويال ", price: 20, img: royal },
     { id: 16, name: "سبشيال", price: 35, img: spsheal },
+    // { id: 16, name: "بيج رول", price: 35, img: begRoul },
     { id: 17, name: "سوبر لوكس", price: 16, img: superLoux },
     { id: 18, name: "ترايفول", price: 12, img: traiovl },
     { id: 19, name: "ميني ديسباسيتو ", price: 25, img: despaseto },
