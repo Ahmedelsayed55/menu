@@ -4,7 +4,6 @@ import chocolate from "../../../assets/cake20/chocolate-removebg-preview.jpg";
 import hacFrot from "../../../assets/cake20/hacFrot-removebg-preview.jpg";
 import havTap from "../../../assets/cake20/havTap-removebg-preview.jpg";
 import vadg from "../../../assets/cake20/vadg-removebg-preview.jpg";
-import flower from "../../../assets/cake20/flower.jpg";
 import notela from "../../../assets/cake20/notela.jpg";
 import whitefourest from "../../../assets/cake20/whitefourest.jpg";
 import flawer from "../../../assets/cake20/20flawer.png";
@@ -21,13 +20,12 @@ const Cake20 = ({ id }) => {
     { id: 3, name: "تورته هاف فاكهة ", price: 250, img: hacFrot },
     { id: 4, name: "تورته هاف تاج ", price: 250, img: havTap },
     { id: 5, name: "تورته 4*4 فادجات   ", price: 300, img: vadg },
-    { id: 6, name: "تورته فلاور", price: 250, img: flower },
+    { id: 6, name: "تورته فلاور", price: 250, img: flawer },
     { id: 7, name: "تورته نوتيلا", price: 250, img: notela },
     { id: 8, name: "تورته وايت فورست", price: 250, img: whitefourest },
     { id: 9, name: "تورته هاف بدون ", price: 250, img: null },
     { id: 10, name: "تورته كلها فاكهة ", price: 250, img: null },
     { id: 11, name: "تورته ريد فالفيت ", price: 250, img: null },
-    { id: 11, name: "تورته فلاور ", price: 250, img: flawer },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
