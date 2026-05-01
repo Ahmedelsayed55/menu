@@ -26,7 +26,7 @@ const Gato = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
     { id: 1, name: "اكلير", price: 20, img: Cake },
-    { id: 2, name: "هولز", price: 16, img: Cake2 },
+    { id: 2, name: "هولز", price: 20, img: Cake2 },
     { id: 3, name: "تشيز كيك", price: 30, img: cheesCake },
     { id: 4, name: "سويسرول ", price: 20, img: swesrol },
     { id: 5, name: "ملفاي", price: 20, img: melfay },
