@@ -12,12 +12,12 @@ import { favorites } from "../../../store/Favorites";
 const Cake18 = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "تورته(18)", price: 190, img: Cake1 },
-    { id: 2, name: " تورته  ( 18 )", price: 190, img: Cake2 },
-    { id: 3, name: " تورته ( 18 )", price: 190, img: Cake3 },
-    { id: 4, name: " تورته   (18)", price: 190, img: chocolate },
-    { id: 5, name: " تورته قلب ميني", price: 200, img: hartmenii },
-    { id: 6, name: " تورته قلب_ ميني", price: 200, img: hartmeni1 },
+    { id: 1, name: "تورته(18)", price: 200, img: Cake1 },
+    { id: 2, name: " تورته  ( 18 )", price: 200, img: Cake2 },
+    { id: 3, name: " تورته ( 18 )", price: 200, img: Cake3 },
+    { id: 4, name: " تورته   (18)", price: 200, img: chocolate },
+    { id: 5, name: " تورته قلب ميني", price: 225, img: hartmenii },
+    { id: 6, name: " تورته قلب_ ميني", price: 225, img: hartmeni1 },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
