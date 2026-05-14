@@ -8,10 +8,9 @@ import { favorites } from "../../../store/Favorites";
 const Coconut = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "قشطة", price: 150, img: keshta },
+    { id: 1, name: "قشطة", price: 160, img: keshta },
     { id: 2, name: "لديدة ", price: 275, img: ldeda },
-    { id: 3, name: "مسطرة جوز هند", price: 150, img: null },
-    { id: 4, name: "بسيمة مغلفة", price: 175, img: null },
+    { id: 4, name: "بسيمة مغلفة", price: 200, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

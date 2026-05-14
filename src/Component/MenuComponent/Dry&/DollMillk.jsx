@@ -10,19 +10,19 @@ import { favorites } from "../../../store/Favorites";
 const DollMillk = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "جزرية سوداني", price: 120, img: gzaareh },
-    { id: 2, name: "ملبن جيلي", price: 90, img: mlbnGele },
-    { id: 3, name: "ملبن رش سوداني", price: 110, img: mlbndsodany },
-    { id: 4, name: "ملبن سادة", price: 90, img: mlbnsada },
-    { id: 5, name: "ملبن رش جوزهند", price: 110, img: null },
-    { id: 6, name: "ملبن رش عين جمل", price: 150, img: null },
-    { id: 7, name: "ملبن حبل عين جمل", price: 250, img: null },
-    { id: 8, name: "ملبن رش بندق", price: 150, img: null },
-    { id: 9, name: "ملبن رش لوز", price: 150, img: null },
+    { id: 1, name: "جزرية سوداني", price: 125, img: gzaareh },
+    { id: 2, name: "ملبن جيلي", price: 100, img: mlbnGele },
+    { id: 3, name: "ملبن رش سوداني", price: 120, img: mlbndsodany },
+    { id: 4, name: "ملبن سادة", price: 100, img: mlbnsada },
+    { id: 5, name: "ملبن رش جوزهند", price: 100, img: null },
+    { id: 6, name: "ملبن رش عين جمل", price: 160, img: null },
+    { id: 7, name: "ملبن حبل عين جمل", price: 300, img: null },
+    { id: 8, name: "ملبن رش بندق", price: 200, img: null },
+    { id: 9, name: "ملبن رش لوز", price: 160, img: null },
     { id: 10, name: "ملبن رش فستق", price: 250, img: null },
-    { id: 11, name: "جزرية بندق", price: 200, img: null },
+    { id: 11, name: "جزرية بندق", price: 300, img: null },
     { id: 12, name: "ملبن رش زبيب", price: 120, img: null },
-    { id: 13, name: "ملبن حشو عين جمل", price: 180, img: null },
+    { id: 13, name: "ملبن حبل عين جمل مغلف", price: 320, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

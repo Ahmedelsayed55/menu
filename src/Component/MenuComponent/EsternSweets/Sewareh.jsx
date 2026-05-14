@@ -20,19 +20,19 @@ import { favorites } from "../../../store/Favorites";
 const Sewareh = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: " اساور لوز", price: 250, img: assawerMeksrat },
-    { id: 2, name: " بصمة عجوة", price: 120, img: bassma3gwa },
-    { id: 3, name: " بصمة شيكولاتة ", price: 150, img: bassmaChocolata },
-    { id: 4, name: " بورمة مكسرات", price: 350, img: bormaMeksrat },
-    { id: 5, name: "حبيبة", price: 175, img: habeba },
-    { id: 6, name: "حمام بوررمة ", price: 35, img: hamamBorma },
-    { id: 7, name: "حمام شرقي", price: 190, img: hamamSharky },
-    { id: 8, name: "سيجار سادة", price: 185, img: segarSada },
-    { id: 9, name: "شكلمة", price: 190, img: shaklma },
-    { id: 10, name: "اساور سيوارية", price: 175, img: asawersewareh },
-    { id: 11, name: "كنافه تركي مكسرات", price: 250, img: konafaTorkyMex },
-    { id: 12, name: "سيجار مكسرات", price: 350, img: segarmexrat },
-    { id: 13, name: " حجازيه", price: 100, img: egazea },
+    { id: 1, name: " اساور لوز", price: 270, img: assawerMeksrat },
+    { id: 2, name: " بصمة عجوة", price: 130, img: bassma3gwa },
+    { id: 3, name: " بصمة شيكولاتة ", price: 165, img: bassmaChocolata },
+    { id: 4, name: " بورمة مكسرات", price: 400, img: bormaMeksrat },
+    { id: 5, name: "حبيبة", price: 210, img: habeba },
+    { id: 6, name: "حمام بوررمة ", price: 200, img: hamamBorma },
+    { id: 7, name: "حمام شرقي", price: 200, img: hamamSharky },
+    { id: 8, name: "سيجار سادة", price: 225, img: segarSada },
+    { id: 9, name: "شكلمة", price: 210, img: shaklma },
+    { id: 10, name: "اساور سيوارية", price: 210, img: asawersewareh },
+    { id: 11, name: "كنافه تركي مكسرات", price: 300, img: konafaTorkyMex },
+    { id: 12, name: "سيجار مكسرات", price: 440, img: segarmexrat },
+    { id: 13, name: " حجازيه", price: 110, img: egazea },
     { id: 14, name: " كب كنافة تمر", price: 15, img: kapp },
   ];
   const [selectedItem, setSelectedItem] = useState(null);

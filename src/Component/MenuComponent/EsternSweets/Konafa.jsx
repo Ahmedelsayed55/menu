@@ -3,7 +3,6 @@ import konafa3othmanly from "../../../assets/konafa/konafa3othmanly.jpg";
 import konafaKrema from "../../../assets/konafa/konafaKrema.jpg";
 import konafaN from "../../../assets/konafa/konafaN.jpg";
 import medl3a1 from "../../../assets/konafa/medl3a1-removebg-preview.jpg";
-import medl3a2 from "../../../assets/konafa/medl3a2-removebg-preview.jpg";
 import medl3a3 from "../../../assets/konafa/medl3a3-removebg-preview.jpg";
 import konafa3osmanle from "../../../assets/konafa/konafa3osmanle.jpg";
 import konafamanga from "../../../assets/konafa/konafamanga.jpg";
@@ -19,19 +18,18 @@ const Konafa = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
     { id: 1, name: " كنافة عثمانلي", price: 150, img: konafa3othmanly },
-    { id: 2, name: "كنافة كريمة", price: 125, img: konafaKrema },
-    { id: 3, name: " كنافة نوتيلا", price: 165, img: konafaN },
-    { id: 4, name: " مدلعه", price: 150, img: medl3a1 },
-    { id: 5, name: "بسبوسه تركي لوتس", price: 150, img: medl3a2 },
-    { id: 6, name: "مدلعه", price: 150, img: medl3a3 },
+    { id: 2, name: "كنافة كريمة", price: 130, img: konafaKrema },
+    { id: 3, name: " كنافة نوتيلا", price: 180, img: konafaN },
+    { id: 4, name: " مدلعه", price: 160, img: medl3a1 },
+    { id: 6, name: "مدلعه", price: 160, img: medl3a3 },
     { id: 7, name: "كنافه عثمانلي", price: 150, img: konafa3osmanle },
     { id: 8, name: "كنافه مانجو", price: 150, img: konafamanga },
-    { id: 9, name: "كنافه مخصوص", price: 125, img: makhsos },
-    { id: 10, name: "كنافه رفايلو", price: 150, img: rafaielo },
-    { id: 11, name: "كنافه شهرزاد", price: 180, img: shhrzad },
-    { id: 12, name: "كنافه تمريه ", price: 150, img: tamrea },
-    { id: 13, name: "كنافه فواكه ", price: 150, img: null },
-    { id: 14, name: "كنافة قشطة سيواريه", price: 125, img: null },
+    { id: 9, name: "كنافه مخصوص", price: 130, img: makhsos },
+    { id: 10, name: "كنافه رفايلو", price: 170, img: rafaielo },
+    { id: 11, name: "كنافه شهرزاد", price: 185, img: shhrzad },
+    { id: 12, name: "كنافه تمريه ", price: 160, img: tamrea },
+    { id: 13, name: "كنافه فواكه ", price: 160, img: null },
+    { id: 14, name: "كنافة قشطة سيواريه", price: 150, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

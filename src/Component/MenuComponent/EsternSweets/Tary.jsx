@@ -19,16 +19,16 @@ const Tary = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
     { id: 1, name: "لينزا", price: 150, img: lenza },
-    { id: 2, name: "لقمة الباشا", price: 130, img: lokma },
+    { id: 2, name: "لقمة الباشا", price: 150, img: lokma },
     { id: 3, name: "بسبوسة نوتيلا ", price: 160, img: basbosaN },
     { id: 4, name: " عزيزه ", price: 100, img: zeza },
     { id: 5, name: " بسبوسه لوز ", price: 100, img: basbosaloz },
     { id: 6, name: " بسبوسه مكسرات ", price: 125, img: basbosamx },
     { id: 7, name: " بسبوسه تركي قشطة ", price: 125, img: basbosatorkykeshta },
     { id: 8, name: "بسيمة مكسرات", price: 185, img: bsemamx },
-    { id: 9, name: "بسيمة دفر", price: 175, img: defr },
-    { id: 10, name: "هريسه ريتاج ساده", price: 80, img: hresasada },
-    { id: 11, name: "بسبوسه سيواريه تقطيع", price: 130, img: swarehtakte3 },
+    { id: 9, name: "بسيمة سادة", price: 175, img: defr },
+    { id: 10, name: "هريسه ريتاج ساده", price: 85, img: hresasada },
+    { id: 11, name: "بسبوسه سيواريه تقطيع", price: 150, img: swarehtakte3 },
     { id: 12, name: "هريسه ريتاج مكسرات", price: 100, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
