@@ -62,6 +62,10 @@ const NavItem = ({
 
   const sizes = [
     // { id: idRamadan, label: "رمضانيات" },
+    { id: idDryNuts, label: "نواشف ومكسرات" },
+    { id: idDollMillk, label: "الملابن والجزريه" },
+    { id: idCoconut, label: "جوز الهند واللديدة" },
+    { id: idReadyPack, label: "العبوات الجاهزة" },
     { id: idNawaem, label: "النواعم" },
     { id: idGato, label: "جاتوة" },
     { id: id26, label: "تورته مقاس (26)" },
@@ -76,10 +80,6 @@ const NavItem = ({
     { id: idZyout, label: "الزيوت" },
     { id: idForam, label: "الفورم" },
     { id: idSewareh, label: "سيواريهات" },
-    { id: idDryNuts, label: "نواشف ومكسرات" },
-    { id: idDollMillk, label: "الملابن والجزريه" },
-    { id: idCoconut, label: "جوز الهند واللديدة" },
-    { id: idReadyPack, label: "العبوات الجاهزة" },
     { id: idChocolate, label: "شيكولاتة" },
   ];
   useEffect(() => {

@@ -127,6 +127,32 @@ const Menu = () => {
           <RamadanSweets />
         </Suspense>
       </section> */}
+
+      {/* نواشف  */}
+      {/* نواشف  */}
+      {/*  */}
+      <section className="max-w-[1920px] mx-auto" id={idDryNuts}>
+        <Suspense fallback={<SectionLoader />}>
+          <DryNuts />
+        </Suspense>
+      </section>
+      <section className="max-w-[1920px] mx-auto" id={idDollMillk}>
+        <Suspense fallback={<SectionLoader />}>
+          <DollMillk />
+        </Suspense>
+      </section>
+      <section className="max-w-[1920px] mx-auto" id={idCoconut}>
+        <Suspense fallback={<SectionLoader />}>
+          <Coconut />
+        </Suspense>
+      </section>
+      <section className="max-w-[1920px] mx-auto" id={idReadyPack}>
+        <Suspense fallback={<SectionLoader />}>
+          <ReadyPackages />
+        </Suspense>
+      </section>
+      {/* نهايه نواشف */}
+
       {/* النواعم */}
       <section className="max-w-[1920px] mx-auto" id={idNawaem}>
         <Suspense fallback={<SectionLoader />}>
@@ -225,27 +251,6 @@ const Menu = () => {
         </Suspense>
       </section>
 
-      {/*  */}
-      <section className="max-w-[1920px] mx-auto" id={idDryNuts}>
-        <Suspense fallback={<SectionLoader />}>
-          <DryNuts />
-        </Suspense>
-      </section>
-      <section className="max-w-[1920px] mx-auto" id={idDollMillk}>
-        <Suspense fallback={<SectionLoader />}>
-          <DollMillk />
-        </Suspense>
-      </section>
-      <section className="max-w-[1920px] mx-auto" id={idCoconut}>
-        <Suspense fallback={<SectionLoader />}>
-          <Coconut />
-        </Suspense>
-      </section>
-      <section className="max-w-[1920px] mx-auto" id={idReadyPack}>
-        <Suspense fallback={<SectionLoader />}>
-          <ReadyPackages />
-        </Suspense>
-      </section>
       <section className="max-w-[1920px] mx-auto" id={idChocolate}>
         <Suspense fallback={<SectionLoader />}>
           <Chocolate />
