@@ -16,11 +16,11 @@ const DryNuts = ({ id }) => {
     { id: 4, name: "سمسمية", price: 165, img: semsem },
     { id: 5, name: "شريحه حمص", price: 140, img: null },
     { id: 6, name: "شريحه سمسم", price: 140, img: null },
-    { id: 7, name: "نواعم", price: 140, img: null },
-    { id: 8, name: "بندق", price: 850, img: null },
+    { id: 7, name: "نواعم", price: 150, img: null },
+    { id: 8, name: "بندق", price: 900, img: null },
     { id: 9, name: "لوز", price: 625, img: null },
     { id: 10, name: "فستق", price: 1600, img: null },
-    { id: 11, name: "كاجو", price: 700, img: null },
+    { id: 11, name: "كاجو", price: 625, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

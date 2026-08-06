@@ -10,7 +10,7 @@ import { favorites } from "../../../store/Favorites";
 const DollMillk = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "جزرية سوداني", price: 125, img: gzaareh },
+    { id: 1, name: "جزرية سوداني", price: 130, img: gzaareh },
     { id: 2, name: "ملبن جيلي", price: 100, img: mlbnGele },
     { id: 3, name: "ملبن رش سوداني", price: 120, img: mlbndsodany },
     { id: 4, name: "ملبن سادة", price: 100, img: mlbnsada },
