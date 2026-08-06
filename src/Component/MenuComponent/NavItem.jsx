@@ -26,7 +26,7 @@ const NavItem = ({
   idNawaem,
 }) => {
   const swiperRef = useRef(null);
-  const [active, setActive] = useState(idNawaem);
+  const [active, setActive] = useState(idDryNuts);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
@@ -117,14 +117,28 @@ const NavItem = ({
             data-index={index}
             className="w-auto! flex items-stretch"
           >
-            <a
+            <button
+              type="button"
+              onClick={() => {
+                document.getElementById(item.id)?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }}
+              className={`h-full flex items-center px-5 rounded-md transition whitespace-nowrap font-black text-[12px] md:text-[14px] lg:text-[16px] ${
+                active === item.id ? "bg-cyan-950 text-white" : "text-black"
+              }`}
+            >
+              {item.label}
+            </button>
+            {/* <a
               href={`#${item.id}`}
               className={`h-full flex items-center px-5 rounded-md transition whitespace-nowrap font-black text-[12px] md:text-[14px] lg:text-[16px] ${
                 active === item.id ? "bg-cyan-950 text-white" : "text-black"
               }`}
             >
               {item.label}
-            </a>
+            </a> */}
           </SwiperSlide>
         ))}
       </Swiper>
