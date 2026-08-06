@@ -48,7 +48,7 @@ const NavItem = ({
 
     const onScroll = () => {
       if (window.scrollY <= 100) {
-        setActive(idNawaem); // ترجع لأول section لما تكون في أول الصفحة
+        setActive(idDryNuts); // ترجع لأول section لما تكون في أول الصفحة
       }
     };
 
