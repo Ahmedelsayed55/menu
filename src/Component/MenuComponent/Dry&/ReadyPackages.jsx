@@ -1,19 +1,24 @@
 import React, { useEffect, useState } from "react";
 
 import logo from "../../../assets/logocart.png";
+import selver from "../../../assets/readyPackges/selver.png";
+import bronz from "../../../assets/readyPackges/bronz.png";
+import grand from "../../../assets/readyPackges/grand.png";
+import gold from "../../../assets/readyPackges/gold.png";
+import super1 from "../../../assets/readyPackges/super.png";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { favorites } from "../../../store/Favorites";
 const ReadyPackages = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: " علبة نواشف Bronze", price: 110, img: null },
+    { id: 1, name: " علبة نواشف Bronze", price: 110, img: bronz },
     { id: 2, name: "كيس حلاوة شعر", price: 30, img: null },
-    { id: 3, name: " علبة نواشف  Selver", price: 150, img: null },
-    { id: 4, name: "علبة نواشف  Gold", price: 160, img: null },
+    { id: 3, name: " علبة نواشف  Selver", price: 150, img: selver },
+    { id: 4, name: "علبة نواشف  Gold", price: 160, img: gold },
     { id: 5, name: "علبة نواشف  Krokan", price: 165, img: null },
-    { id: 6, name: "علبة نواشف  Super", price: 220, img: null },
-    { id: 7, name: "علبة نواشف  Grand", price: 300, img: null },
+    { id: 6, name: "علبة نواشف  Super", price: 220, img: super1 },
+    { id: 7, name: "علبة نواشف  Grand", price: 300, img: grand },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
