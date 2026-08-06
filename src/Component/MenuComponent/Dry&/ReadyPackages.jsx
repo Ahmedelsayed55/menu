@@ -7,15 +7,13 @@ import { favorites } from "../../../store/Favorites";
 const ReadyPackages = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: " علبة نواشف Bronze", price: 0, img: null },
-    { id: 2, name: "كيس حلاوة شعر", price: 0, img: null },
-    { id: 3, name: " علبة نواشف  Selver", price: 0, img: null },
-    { id: 4, name: "علبة نواشف  Gold", price: 0, img: null },
-    { id: 5, name: "علبة نواشف  Krokan", price: 0, img: null },
-    { id: 6, name: "علبة نواشف  Super", price: 0, img: null },
-    { id: 7, name: "علبة نواشف  Grand", price: 0, img: null },
-    { id: 8, name: "علبة نواشف مشكل Daimond", price: 0, img: null },
-    { id: 9, name: " علبة نواشف Platin", price: 0, img: null },
+    { id: 1, name: " علبة نواشف Bronze", price: 110, img: null },
+    { id: 2, name: "كيس حلاوة شعر", price: 30, img: null },
+    { id: 3, name: " علبة نواشف  Selver", price: 150, img: null },
+    { id: 4, name: "علبة نواشف  Gold", price: 160, img: null },
+    { id: 5, name: "علبة نواشف  Krokan", price: 165, img: null },
+    { id: 6, name: "علبة نواشف  Super", price: 220, img: null },
+    { id: 7, name: "علبة نواشف  Grand", price: 300, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
