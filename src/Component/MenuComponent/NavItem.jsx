@@ -58,7 +58,7 @@ const NavItem = ({
       observer.disconnect();
       window.removeEventListener("scroll", onScroll);
     };
-  }, [idNawaem]);
+  }, [idDryNuts]);
 
   const sizes = [
     // { id: idRamadan, label: "رمضانيات" },
