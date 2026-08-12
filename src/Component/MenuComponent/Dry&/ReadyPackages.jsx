@@ -14,7 +14,7 @@ const ReadyPackages = ({ id }) => {
   const prduct = [
     { id: 1, name: " علبة نواشف Bronze", price: 110, img: bronz },
     { id: 2, name: "كيس حلاوة شعر", price: 30, img: null },
-    { id: 3, name: " علبة نواشف  Selver", price: 150, img: selver },
+    { id: 3, name: " علبة نواشف  Silver", price: 150, img: selver },
     { id: 4, name: "علبة نواشف  Gold", price: 160, img: gold },
     { id: 5, name: "علبة نواشف  Krokan", price: 165, img: null },
     { id: 6, name: "علبة نواشف  Super", price: 220, img: super1 },
