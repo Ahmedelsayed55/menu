@@ -17,6 +17,7 @@ import whiteMillk from "../../../assets/assets26/whiteMillk-removebg-preview.jpg
 import flwar from "../../../assets/assets26/flwar.jpg";
 import redvalv from "../../../assets/assets26/redvalvjpg.jpg";
 import cheeseCake from "../../../assets/assets26/downloaسيd.jpg.png";
+import havGlaxywhite from "../../../assets/assets26/havGlaxywhite.jpg";
 import logo from "../../../assets/logocart.png";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -54,6 +55,7 @@ const Cake26 = ({ id }) => {
     { id: 17, name: "تورته ريد فالفيت", price: 425, img: redvalv },
     { id: 18, name: "تورته تشيز كيك", price: 400, img: cheeseCake },
     { id: 19, name: " تورته فلاور  ", price: 350, img: flwar },
+    { id: 20, name: " تورته ابيض * جلاكسي  ", price: 350, img: havGlaxywhite },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
