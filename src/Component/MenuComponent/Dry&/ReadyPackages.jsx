@@ -6,19 +6,23 @@ import bronz from "../../../assets/readyPackges/bronz.png";
 import grand from "../../../assets/readyPackges/grand.png";
 import gold from "../../../assets/readyPackges/gold.png";
 import super1 from "../../../assets/readyPackges/super.png";
+import plat from "../../../assets/readyPackges/plat.png";
+import daimond from "../../../assets/readyPackges/daimond.png";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { favorites } from "../../../store/Favorites";
 const ReadyPackages = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: " علبة نواشف Bronze", price: 110, img: bronz },
-    { id: 2, name: "كيس حلاوة شعر", price: 30, img: null },
-    { id: 3, name: " علبة نواشف  Silver", price: 150, img: selver },
-    { id: 4, name: "علبة نواشف  Gold", price: 160, img: gold },
-    { id: 5, name: "علبة نواشف  Krokan", price: 165, img: null },
-    { id: 6, name: "علبة نواشف  Super", price: 220, img: super1 },
-    { id: 7, name: "علبة نواشف  Grand", price: 300, img: grand },
+    { id: 1, name: " علبة نواشف Platinum", price: 700, img: plat },
+    { id: 2, name: " علبة نواشف Diamond", price: 500, img: daimond },
+    { id: 3, name: " علبة نواشف Bronze", price: 110, img: bronz },
+    { id: 4, name: "كيس حلاوة شعر", price: 30, img: null },
+    { id: 5, name: " علبة نواشف  Silver", price: 150, img: selver },
+    { id: 6, name: "علبة نواشف  Gold", price: 160, img: gold },
+    { id: 7, name: "علبة نواشف  Krokan", price: 165, img: null },
+    { id: 8, name: "علبة نواشف  Super", price: 220, img: super1 },
+    { id: 9, name: "علبة نواشف  Grand", price: 300, img: grand },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
