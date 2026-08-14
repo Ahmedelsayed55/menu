@@ -10,17 +10,17 @@ import { favorites } from "../../../store/Favorites";
 const DryNuts = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "سودانية", price: 165, img: sodani },
-    { id: 2, name: "حمصية", price: 165, img: homs },
-    { id: 3, name: "نوجا", price: 110, img: noga },
-    { id: 4, name: "سمسمية", price: 165, img: semsem },
-    { id: 5, name: "شريحه حمص", price: 140, img: null },
-    { id: 6, name: "شريحه سمسم", price: 140, img: null },
-    { id: 7, name: "نواعم", price: 150, img: null },
-    { id: 8, name: "بندق", price: 900, img: null },
-    { id: 9, name: "لوز", price: 625, img: null },
-    { id: 10, name: "فستق", price: 1600, img: null },
-    { id: 11, name: "كاجو", price: 625, img: null },
+    { id: 1, name: "لوز", price: 625, img: null },
+    { id: 2, name: "فستق", price: 1600, img: null },
+    { id: 3, name: "كاجو", price: 625, img: null },
+    { id: 4, name: "بندق", price: 900, img: null },
+    { id: 5, name: "سودانية", price: 165, img: sodani },
+    { id: 6, name: "حمصية", price: 165, img: homs },
+    { id: 7, name: "نوجا", price: 110, img: noga },
+    { id: 8, name: "سمسمية", price: 165, img: semsem },
+    { id: 9, name: "شريحه حمص", price: 140, img: null },
+    { id: 10, name: "شريحه سمسم", price: 140, img: null },
+    { id: 11, name: "نواعم", price: 150, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
