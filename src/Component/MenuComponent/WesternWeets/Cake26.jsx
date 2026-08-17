@@ -18,6 +18,10 @@ import flwar from "../../../assets/assets26/flwar.jpg";
 import redvalv from "../../../assets/assets26/redvalvjpg.jpg";
 import cheeseCake from "../../../assets/assets26/downloaسيd.jpg.png";
 import havGlaxywhite from "../../../assets/assets26/havGlaxywhite.jpg";
+import redvalvetnotela from "../../../assets/assets26/redvalvetnotela.png";
+import notelachocolate from "../../../assets/assets26/notelachocolate.png";
+import galaxyorio from "../../../assets/assets26/galaxyorio.png";
+import chocolatenotelaorio from "../../../assets/assets26/chocolatenotelaorio.png";
 import logo from "../../../assets/logocart.png";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -56,6 +60,30 @@ const Cake26 = ({ id }) => {
     { id: 18, name: "تورته تشيز كيك", price: 400, img: cheeseCake },
     { id: 19, name: " تورته فلاور  ", price: 350, img: flwar },
     { id: 20, name: " تورته ابيض * جلاكسي  ", price: 350, img: havGlaxywhite },
+    {
+      id: 21,
+      name: " تورته ريد فيلفيت * نوتيلا  ",
+      price: 350,
+      img: redvalvetnotela,
+    },
+    {
+      id: 22,
+      name: " تورته نوتيلا * شيكولاته  ",
+      price: 350,
+      img: notelachocolate,
+    },
+    {
+      id: 23,
+      name: " تورته اوريو نوتيلا * جلاكسي  ",
+      price: 350,
+      img: galaxyorio,
+    },
+    {
+      id: 24,
+      name: " تورته اوريو نوتيلا * شيكولاته  ",
+      price: 350,
+      img: chocolatenotelaorio,
+    },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
