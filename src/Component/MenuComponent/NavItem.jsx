@@ -26,7 +26,7 @@ const NavItem = ({
   idNawaem,
 }) => {
   const swiperRef = useRef(null);
-  const [active, setActive] = useState(idDryNuts);
+  const [active, setActive] = useState(idGato);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
@@ -48,7 +48,7 @@ const NavItem = ({
 
     const onScroll = () => {
       if (window.scrollY <= 100) {
-        setActive(idDryNuts); // ترجع لأول section لما تكون في أول الصفحة
+        setActive(idGato); // ترجع لأول section لما تكون في أول الصفحة
       }
     };
 
@@ -58,15 +58,10 @@ const NavItem = ({
       observer.disconnect();
       window.removeEventListener("scroll", onScroll);
     };
-  }, [idDryNuts]);
+  }, [idGato]);
 
   const sizes = [
     // { id: idRamadan, label: "رمضانيات" },
-    { id: idDryNuts, label: "نواشف ومكسرات" },
-    { id: idDollMillk, label: "الملابن والجزريه" },
-    { id: idCoconut, label: "جوز الهند واللديدة" },
-    { id: idReadyPack, label: "العبوات الجاهزة" },
-    { id: idNawaem, label: "النواعم" },
     { id: idGato, label: "جاتوة" },
     { id: id26, label: "تورته مقاس (26)" },
     { id: id20, label: "تورته مقاس (20)" },
@@ -74,12 +69,17 @@ const NavItem = ({
     { id: idHartCake, label: "تورت قلب" },
     { id: idMixed, label: "تورت مقاسات متنوعة" },
     { id: idLayers, label: "تورت أدوار" },
+    { id: idNawaem, label: "النواعم" },
     { id: idKonafa, label: "كنافات" },
     { id: idTary, label: "الطري" },
     { id: idBogasha, label: "البغاشه" },
     { id: idZyout, label: "الزيوت" },
     { id: idForam, label: "الفورم" },
     { id: idSewareh, label: "سيواريهات" },
+    { id: idDryNuts, label: "نواشف ومكسرات" },
+    { id: idDollMillk, label: "الملابن والجزريه" },
+    { id: idCoconut, label: "جوز الهند واللديدة" },
+    { id: idReadyPack, label: "العبوات الجاهزة" },
     { id: idChocolate, label: "شيكولاتة" },
   ];
   useEffect(() => {
