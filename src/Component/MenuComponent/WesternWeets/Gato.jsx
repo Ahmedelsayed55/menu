@@ -46,15 +46,34 @@ const Gato = ({ id }) => {
         andeal,
       ],
     },
-    { id: 2, name: "هولز", price: 20, img: Cake2 },
-    { id: 3, name: "تشيز كيك", price: 30, img: cheesCake },
+    {
+      id: 2,
+      name: "هولز",
+      price: 20,
+      img: Cake2,
+      images: [Cake2, cheesCake, melfay, melfaych, swesrol, swesroul, andeal],
+    },
+    {
+      id: 3,
+      name: "تشيز كيك",
+      price: 30,
+      img: cheesCake,
+      images: [
+        cheascake,
+        cheesCake,
+        melfay,
+        melfaych,
+        swesrol,
+        swesroul,
+        andeal,
+      ],
+    },
     { id: 4, name: "سويسرول ", price: 20, img: swesrol },
     { id: 5, name: "ملفاي", price: 20, img: melfay },
     { id: 6, name: "ملفاي شيكولاته", price: 20, img: melfaych },
     { id: 7, name: "سويسرول", price: 20, img: swesroul },
     { id: 8, name: "انديال ", price: 20, img: andeal },
     { id: 9, name: "ديسباسيتو ", price: 60, img: despaseto },
-    { id: 10, name: "تشيز كيك ", price: 30, img: cheascake },
     { id: 11, name: "فنوار ", price: 20, img: fnwar },
     { id: 12, name: "كوب موس ", price: 20, img: kopmos },
     { id: 13, name: "مولتون كيك ", price: 35, img: molton },
@@ -203,7 +222,7 @@ const Gato = ({ id }) => {
               ✖
             </button>
 
-            <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300 shadow group w-full md:h-96 flex justify-center overflow-hidden rounded-2xl">
+            <div className="relative w-full h-60 md:h-96 flex justify-center overflow-hidden rounded-2xl">
               <Swiper
                 modules={[Autoplay, Pagination]}
                 slidesPerView={1}
@@ -211,26 +230,32 @@ const Gato = ({ id }) => {
                   (selectedItem.images || [selectedItem.img || logo]).length > 1
                 }
                 speed={500}
-                autoplay={{
-                  delay: 2500,
-                  disableOnInteraction: false,
-                }}
-                pagination={{
-                  clickable: true,
-                }}
+                autoplay={
+                  (selectedItem.images || [selectedItem.img || logo]).length > 1
+                    ? {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                      }
+                    : false
+                }
+                pagination={
+                  (selectedItem.images || [selectedItem.img || logo]).length > 1
+                    ? { clickable: true }
+                    : false
+                }
                 className="w-full h-full"
               >
                 {(selectedItem.images || [selectedItem.img || logo]).map(
                   (image, index) => (
                     <SwiperSlide
                       key={index}
-                      className="flex items-center justify-center"
+                      className="!flex !items-center !justify-center"
                     >
                       <img
                         src={image}
                         alt={selectedItem.name}
                         draggable={false}
-                        className="w-[90%] md:mb-7 object-contain"
+                        className="w-[90%] h-full object-contain"
                       />
                     </SwiperSlide>
                   ),
