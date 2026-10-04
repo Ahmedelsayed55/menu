@@ -222,7 +222,7 @@ const Gato = ({ id }) => {
               ✖
             </button>
 
-            <div className="relative w-full h-60 md:h-96 flex justify-center overflow-hidden rounded-2xl">
+            <div className="relative w-full h-60 md:h-96 overflow-hidden rounded-2xl">
               <Swiper
                 modules={[Autoplay, Pagination]}
                 slidesPerView={1}
@@ -243,19 +243,21 @@ const Gato = ({ id }) => {
                     ? { clickable: true }
                     : false
                 }
-                className="w-full h-full"
+                observer={true}
+                observeParents={true}
+                className="!w-full !h-full"
               >
                 {(selectedItem.images || [selectedItem.img || logo]).map(
                   (image, index) => (
                     <SwiperSlide
                       key={index}
-                      className="!flex !items-center !justify-center"
+                      className="!flex !w-full !h-full !items-center !justify-center"
                     >
                       <img
                         src={image}
                         alt={selectedItem.name}
                         draggable={false}
-                        className="w-[90%] h-full object-contain"
+                        className="block w-[90%] max-h-[90%] object-contain"
                       />
                     </SwiperSlide>
                   ),
