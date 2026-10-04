@@ -1,4 +1,9 @@
 import { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
 import logo from "../../../assets/logocart.png";
 import Cake from "../../../assets/assetsGato/ecklear.jpg";
 import Cake2 from "../../../assets/assetsGato/hols.jpg";
@@ -25,7 +30,22 @@ import { favorites } from "../../../store/Favorites";
 const Gato = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "اكلير", price: 20, img: Cake },
+    {
+      id: 1,
+      name: "اكلير",
+      price: 20,
+      img: Cake,
+      images: [
+        Cake,
+        Cake2,
+        cheesCake,
+        melfay,
+        melfaych,
+        swesrol,
+        swesroul,
+        andeal,
+      ],
+    },
     { id: 2, name: "هولز", price: 20, img: Cake2 },
     { id: 3, name: "تشيز كيك", price: 30, img: cheesCake },
     { id: 4, name: "سويسرول ", price: 20, img: swesrol },
@@ -82,26 +102,58 @@ const Gato = ({ id }) => {
               }}
               className="rounded-2xl group shadow-lg shadow-gray-400 pt-5 md:p-2 px-1 flex flex-col items-center justify-between lg:gap-10 transition hover:shadow-lg bg-white  "
             >
-              <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full xl:h-100  flex justify-center overflow-hidden rounded-2xl">
-                {/* اللودر */}
+              <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300 shadow group w-full xl:h-100 flex justify-center overflow-hidden rounded-2xl">
                 {!loadedImages[item.id] && (
-                  <div className="absolute inset-0 flex items-center justify-center bg-gray-200 animate-pulse">
+                  <div className="absolute inset-0 z-10 flex items-center justify-center bg-gray-200 animate-pulse">
                     <div className="h-8 w-8 animate-spin rounded-full border-4 border-cyan-600 border-t-transparent"></div>
                   </div>
                 )}
 
-                {/* الصورة */}
-                <img
-                  src={item.img ? item.img : logo}
-                  alt="Cake"
-                  loading="lazy"
-                  onLoad={() =>
-                    setLoadedImages((prev) => ({ ...prev, [item.id]: true }))
+                <Swiper
+                  modules={[Autoplay, Pagination]}
+                  slidesPerView={1}
+                  loop={(item.images || [item.img || logo]).length > 1}
+                  speed={500}
+                  autoplay={
+                    (item.images || [item.img || logo]).length > 1
+                      ? {
+                          delay: 2500,
+                          disableOnInteraction: false,
+                        }
+                      : false
                   }
-                  className={`w-full md:w-[80%] md:h-[90%] object-contain rounded-xl transition-all duration-500
-                      ${loadedImages[item.id] ? "opacity-100 blur-0" : "opacity-0 blur-sm"}
-                   `}
-                />
+                  pagination={
+                    (item.images || [item.img || logo]).length > 1
+                      ? { clickable: true }
+                      : false
+                  }
+                  className="w-full"
+                >
+                  {(item.images || [item.img || logo]).map((image, index) => (
+                    <SwiperSlide
+                      key={index}
+                      className="!flex !justify-center !items-center"
+                    >
+                      <img
+                        src={image}
+                        alt={item.name}
+                        loading="lazy"
+                        draggable={false}
+                        onLoad={() =>
+                          setLoadedImages((prev) => ({
+                            ...prev,
+                            [item.id]: true,
+                          }))
+                        }
+                        className={`w-full md:w-[80%] md:h-[90%] object-contain rounded-xl transition-all duration-500 ${
+                          loadedImages[item.id]
+                            ? "opacity-100 blur-0"
+                            : "opacity-0 blur-sm"
+                        }`}
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
               </div>
 
               <div className="w-full flex flex-col gap-4 md:gap-7 py-3 px-3">
@@ -151,12 +203,39 @@ const Gato = ({ id }) => {
               ✖
             </button>
 
-            <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300  shadow group w-full md:h-96  flex justify-center overflow-hidden rounded-2xl">
-              <img
-                className=" w-[90%] md:mb-7 filter transition-transform duration-300 group-hover:scale-120"
-                src={selectedItem.img ? selectedItem.img : logo}
-                alt="Cake"
-              />
+            <div className="relative h-1/2 group-hover:shadow-2xl group-hover:shadow-gray-200 transition duration-300 shadow group w-full md:h-96 flex justify-center overflow-hidden rounded-2xl">
+              <Swiper
+                modules={[Autoplay, Pagination]}
+                slidesPerView={1}
+                loop={
+                  (selectedItem.images || [selectedItem.img || logo]).length > 1
+                }
+                speed={500}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                pagination={{
+                  clickable: true,
+                }}
+                className="w-full h-full"
+              >
+                {(selectedItem.images || [selectedItem.img || logo]).map(
+                  (image, index) => (
+                    <SwiperSlide
+                      key={index}
+                      className="flex items-center justify-center"
+                    >
+                      <img
+                        src={image}
+                        alt={selectedItem.name}
+                        draggable={false}
+                        className="w-[90%] md:mb-7 object-contain"
+                      />
+                    </SwiperSlide>
+                  ),
+                )}
+              </Swiper>
             </div>
             <div className="w-full flex flex-col gap-7 md:gap-12 py-3 px-3">
               <h2 className="text-start text-[20px] md:text-[24px] font-bold text-cyan-950">
