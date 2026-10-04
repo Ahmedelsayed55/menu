@@ -256,7 +256,7 @@ const Menu = () => {
       </section>
 
       {show && (
-        <div className="fixed bottom-6 right-6 flex flex-col gap-7">
+        <div className="fixed bottom-6 right-6 flex flex-col gap-7 z-50">
           <NavLink
             to="/favorites"
             className="relative bg-yellow-600 p-3 text-3xl text-white rounded-full"
