@@ -124,10 +124,15 @@ const Menu = () => {
       {/* رمضانيات */}
       {/* <section className="max-w-[1920px] mx-auto" id={idRamadan}>
         <Suspense fallback={<SectionLoader />}>
-          <RamadanSweets />
+        <RamadanSweets />
         </Suspense>
-      </section> */}
+        </section> */}
 
+      <section className="max-w-[1920px] mx-auto" id={idChocolate}>
+        <Suspense fallback={<SectionLoader />}>
+          <Chocolate />
+        </Suspense>
+      </section>
       {/* جاتو */}
       <section className="max-w-[1920px] mx-auto" id={idGato}>
         <Suspense fallback={<SectionLoader />}>
@@ -248,12 +253,6 @@ const Menu = () => {
         </Suspense>
       </section>
       {/* نهايه نواشف */}
-
-      <section className="max-w-[1920px] mx-auto" id={idChocolate}>
-        <Suspense fallback={<SectionLoader />}>
-          <Chocolate />
-        </Suspense>
-      </section>
 
       {show && (
         <div className="fixed bottom-6 right-6 flex flex-col gap-7 z-50">

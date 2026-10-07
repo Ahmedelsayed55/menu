@@ -26,7 +26,7 @@ const NavItem = ({
   idNawaem,
 }) => {
   const swiperRef = useRef(null);
-  const [active, setActive] = useState(idGato);
+  const [active, setActive] = useState(idChocolate);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
@@ -48,7 +48,7 @@ const NavItem = ({
 
     const onScroll = () => {
       if (window.scrollY <= 100) {
-        setActive(idGato); // ترجع لأول section لما تكون في أول الصفحة
+        setActive(idChocolate); // ترجع لأول section لما تكون في أول الصفحة
       }
     };
 
@@ -58,10 +58,11 @@ const NavItem = ({
       observer.disconnect();
       window.removeEventListener("scroll", onScroll);
     };
-  }, [idGato]);
+  }, [idChocolate]);
 
   const sizes = [
     // { id: idRamadan, label: "رمضانيات" },
+    { id: idChocolate, label: "شيكولاتة" },
     { id: idGato, label: "جاتوة" },
     { id: id26, label: "تورته مقاس (26)" },
     { id: id20, label: "تورته مقاس (20)" },
@@ -80,7 +81,6 @@ const NavItem = ({
     { id: idDollMillk, label: "الملابن والجزريه" },
     { id: idCoconut, label: "جوز الهند واللديدة" },
     { id: idReadyPack, label: "العبوات الجاهزة" },
-    { id: idChocolate, label: "شيكولاتة" },
   ];
   useEffect(() => {
     if (!swiperRef.current) return;

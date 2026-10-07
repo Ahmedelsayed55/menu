@@ -4,7 +4,31 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import React, { useEffect, useState } from "react";
-import Cake from "../../../assets/logocart.png";
+// طبق 275 جنيه
+import tbk2751 from "../../../assets/chocolateAssets/tbk2751.jpeg";
+import tbk2752 from "../../../assets/chocolateAssets/tbk2752.jpeg";
+import tbk2753 from "../../../assets/chocolateAssets/tbk2753.jpeg";
+import tbk2754 from "../../../assets/chocolateAssets/tbk2754.jpeg";
+import tbk2755 from "../../../assets/chocolateAssets/tbk2755.jpeg";
+// طبق 350 جنيه
+import tbk3501 from "../../../assets/chocolateAssets/tbk3501.jpeg";
+import tbk3502 from "../../../assets/chocolateAssets/tbk3502.jpeg";
+import tbk3503 from "../../../assets/chocolateAssets/tbk3503.jpeg";
+import tbk3504 from "../../../assets/chocolateAssets/tbk3504.jpeg";
+import tbk3505 from "../../../assets/chocolateAssets/tbk3505.jpeg";
+// طبق 375 جنيه
+import tbk3751 from "../../../assets/chocolateAssets/tbk3751.jpeg";
+import tbk3752 from "../../../assets/chocolateAssets/tbk3752.jpeg";
+import tbk3753 from "../../../assets/chocolateAssets/tbk3753.jpeg";
+import tbk3754 from "../../../assets/chocolateAssets/tbk3754.jpeg";
+import tbk3755 from "../../../assets/chocolateAssets/tbk3755.jpeg";
+// طبق 400 جنيه
+import tbk4001 from "../../../assets/chocolateAssets/tbk4001.jpeg";
+import tbk4002 from "../../../assets/chocolateAssets/tbk4002.jpeg";
+import tbk4003 from "../../../assets/chocolateAssets/tbk4003.jpeg";
+import tbk4004 from "../../../assets/chocolateAssets/tbk4004.jpeg";
+import tbk4005 from "../../../assets/chocolateAssets/tbk4005.jpeg";
+import tbk4006 from "../../../assets/chocolateAssets/tbk4006.jpeg";
 import logo from "../../../assets/logocart.png";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
@@ -12,13 +36,36 @@ import { favorites } from "../../../store/Favorites";
 const Chocolate = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "طبق شيكولاتة", price: 225, img: null },
-    { id: 2, name: "طبق شيكولاته", price: 275, img: null },
-    { id: 3, name: " طبق شيكولاته", price: 375, img: null },
-    { id: 4, name: " طبق شيكولاتة", price: 300, img: null },
+    {
+      id: 1,
+      name: "طبق شيكولاتة",
+      price: 275,
+      img: tbk2751,
+      images: [tbk2751, tbk2752, tbk2753, tbk2754, tbk2755],
+    },
+    {
+      id: 7,
+      name: " طبق شيكولاتة",
+      price: 350,
+      img: tbk3505,
+      images: [tbk3501, tbk3502, tbk3503, tbk3504, tbk3505],
+    },
+    {
+      id: 3,
+      name: " طبق شيكولاته",
+      price: 375,
+      img: tbk3755,
+      images: [tbk3751, tbk3752, tbk3753, tbk3754, tbk3755],
+    },
+    {
+      id: 4,
+      name: " طبق شيكولاتة",
+      price: 400,
+      img: tbk4001,
+      images: [tbk4001, tbk4002, tbk4003, tbk4004, tbk4005, tbk4006],
+    },
     { id: 5, name: " علبة شيكولاته", price: 350, img: null },
     { id: 6, name: " علبة شيكولاته ", price: 450, img: null },
-    { id: 7, name: " صنية شيكولاتة", price: 350, img: null },
     { id: 8, name: " صنية شيكولاته ", price: 650, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
