@@ -23,6 +23,15 @@ import royal from "../../../assets/assetsGato/royal.jpg";
 import spsheal from "../../../assets/assetsGato/spsheal.jpg";
 import traiovl from "../../../assets/assetsGato/traiovl.jpg";
 import superLoux from "../../../assets/assetsGato/superLoux.jpg";
+import superLoux2 from "../../../assets/assetsGato/superLoux2.jpg";
+import superLoux3 from "../../../assets/assetsGato/superLoux3.jpg";
+import superLoux4 from "../../../assets/assetsGato/superLoux4.jpg";
+import superLoux5 from "../../../assets/assetsGato/superLoux5.jpg";
+import superLoux6 from "../../../assets/assetsGato/superLoux6.jpg";
+import superLoux7 from "../../../assets/assetsGato/superLoux7.jpg";
+import superLoux8 from "../../../assets/assetsGato/superLoux8.jpg";
+import superLoux9 from "../../../assets/assetsGato/superLoux9.jpg";
+import superLoux10 from "../../../assets/assetsGato/superLoux10.jpg";
 // import begRoul from "../../../assets/assetsGato/begRoul.jpg";
 import { Link } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
@@ -74,7 +83,24 @@ const Gato = ({ id }) => {
 
     { id: 16, name: "سبشيال", price: 35, img: spsheal },
     // { id: 16, name: "بيج رول", price: 35, img: begRoul },
-    { id: 17, name: "سوبر لوكس", price: 16, img: superLoux },
+    {
+      id: 17,
+      name: "سوبر لوكس",
+      price: 16,
+      img: superLoux,
+      images: [
+        superLoux,
+        superLoux2,
+        superLoux3,
+        superLoux4,
+        superLoux5,
+        superLoux6,
+        superLoux7,
+        superLoux8,
+        superLoux9,
+        superLoux10,
+      ],
+    },
     { id: 18, name: "ترايفول", price: 12, img: traiovl },
     { id: 19, name: "ميني ديسباسيتو ", price: 25, img: despaseto },
     { id: 20, name: "ميني لوكس ", price: 11, img: null },

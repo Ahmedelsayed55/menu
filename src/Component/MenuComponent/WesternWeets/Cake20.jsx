@@ -12,6 +12,10 @@ import vadg from "../../../assets/cake20/vadg-removebg-preview.jpg";
 import notela from "../../../assets/cake20/notela.jpg";
 import whitefourest from "../../../assets/cake20/whitefourest.jpg";
 import flawer from "../../../assets/cake20/20flawer.png";
+import flawer2 from "../../../assets/cake20/20flawer2.png";
+import flawer3 from "../../../assets/cake20/20flawer3.png";
+import flawer4 from "../../../assets/cake20/20flawer4.png";
+import flawer5 from "../../../assets/cake20/20flawer5.png";
 import logo from "../../../assets/logocart.png";
 import { Link } from "react-router-dom";
 import { favorites } from "../../../store/Favorites";
@@ -37,7 +41,13 @@ const Cake20 = ({ id }) => {
     { id: 3, name: "تورته هاف فاكهة ", price: 250, img: hacFrot },
     { id: 4, name: "تورته هاف تاج ", price: 250, img: havTap },
     { id: 5, name: "تورته 4*4 فادجات   ", price: 300, img: vadg },
-    { id: 6, name: "تورته فلاور", price: 250, img: flawer },
+    {
+      id: 6,
+      name: "تورته فلاور",
+      price: 0,
+      img: flawer,
+      images: [flawer, flawer2, flawer3, flawer4, flawer5],
+    },
     { id: 7, name: "تورته نوتيلا", price: 250, img: notela },
     { id: 8, name: "تورته وايت فورست", price: 250, img: whitefourest },
     { id: 9, name: "تورته هاف بدون ", price: 250, img: null },

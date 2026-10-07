@@ -4,7 +4,6 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import havGlaxyChocolata from "../../../assets/assets26/havGlaxyChocolata.jpg";
-import Cake1 from "../../../assets/assets26/a1.jpg";
 import Cake2 from "../../../assets/assets26/a2.jpg";
 import Cake3 from "../../../assets/assets26/a3.jpg";
 import Cake4 from "../../../assets/assets26/a4.jpg";
@@ -19,7 +18,6 @@ import Cake17 from "../../../assets/assets26/a17.jpg";
 import snecars from "../../../assets/assets26/a18.jpg";
 import karamilBlack from "../../../assets/assets26/karamilBlack-removebg-preview.jpg";
 import whiteMillk from "../../../assets/assets26/whiteMillk-removebg-preview.jpg";
-import flwar from "../../../assets/assets26/flwar.jpg";
 import redvalv from "../../../assets/assets26/redvalvjpg.jpg";
 import cheeseCake from "../../../assets/assets26/downloaسيd.jpg.png";
 import havGlaxywhite from "../../../assets/assets26/havGlaxywhite.jpg";
@@ -27,6 +25,13 @@ import redvalvetnotela from "../../../assets/assets26/redvalvetnotela.png";
 import notelachocolate from "../../../assets/assets26/notelachocolate.png";
 import galaxyorio from "../../../assets/assets26/galaxyorio.png";
 import chocolatenotelaorio from "../../../assets/assets26/chocolatenotelaorio.png";
+import flwar from "../../../assets/assets26/flwar.jpg";
+import flwar2 from "../../../assets/assets26/flawer2.jpg";
+import flwar3 from "../../../assets/assets26/flawer3.jpg";
+import flwar4 from "../../../assets/assets26/flawer4.jpg";
+import flwar5 from "../../../assets/assets26/flawer5.jpg";
+import Cake1 from "../../../assets/assets26/a1.jpg";
+
 import logo from "../../../assets/logocart.png";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -41,7 +46,13 @@ const Cake26 = ({ id }) => {
       price: 350,
       img: havGlaxyChocolata,
     },
-    { id: 2, name: "تورته فلاور ", price: 350, img: Cake1 },
+    {
+      id: 2,
+      name: "تورته فلاور ",
+      price: 0,
+      img: Cake1,
+      images: [flwar, flwar2, Cake1, flwar3, flwar4, flwar5],
+    },
     { id: 3, name: "تورته هاف لوتس & شيكولاته ", price: 350, img: Cake2 },
     { id: 4, name: "تورته جلاكسي ", price: 425, img: Cake3 },
     { id: 5, name: "تورته نوتيلا فراوله ", price: 350, img: Cake4 },
@@ -63,7 +74,7 @@ const Cake26 = ({ id }) => {
     { id: 16, name: "تورته وايت فورست & حليب", price: 350, img: whiteMillk },
     { id: 17, name: "تورته ريد فالفيت", price: 425, img: redvalv },
     { id: 18, name: "تورته تشيز كيك", price: 400, img: cheeseCake },
-    { id: 19, name: " تورته فلاور  ", price: 350, img: flwar },
+
     { id: 20, name: " تورته ابيض * جلاكسي  ", price: 350, img: havGlaxywhite },
     {
       id: 21,
