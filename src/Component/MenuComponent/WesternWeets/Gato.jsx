@@ -7,14 +7,19 @@ import "swiper/css/pagination";
 import logo from "../../../assets/logocart.png";
 import Cake from "../../../assets/assetsGato/ecklear.jpg";
 import Cake2 from "../../../assets/assetsGato/hols.jpg";
-import cheesCake from "../../../assets/assetsGato/cheesCake.jpg";
 import melfay from "../../../assets/assetsGato/melfay.jpg";
 import melfaych from "../../../assets/assetsGato/melfaych.jpg";
 import swesrol from "../../../assets/assetsGato/swesrol.jpg";
 import swesroul from "../../../assets/assetsGato/swesroul.jpg";
 import andeal from "../../../assets/assetsGato/andeal.jpg";
 import despaseto from "../../../assets/assetsGato/despaseto.jpg";
+// صور ال تشيز
+import cheesCake from "../../../assets/assetsGato/cheesCake.jpg";
 import cheascake from "../../../assets/assetsGato/cheascake.jpg";
+import cheascake2 from "../../../assets/assetsGato/cheascake2.jpg";
+import cheascake3 from "../../../assets/assetsGato/cheascake3.jpg";
+import cheascake4 from "../../../assets/assetsGato/cheascake4.jpg";
+// اخر صور ال تشيز
 import fnwar from "../../../assets/assetsGato/fnwar.jpg";
 import kopmos from "../../../assets/assetsGato/kopmos.jpg";
 import molton from "../../../assets/assetsGato/molton.jpg";
@@ -64,7 +69,7 @@ const Gato = ({ id }) => {
       name: "تشيز كيك",
       price: 30,
       img: cheesCake,
-      images: [cheascake, cheesCake],
+      images: [cheascake, cheesCake, cheascake2, cheascake3, cheascake4],
     },
     {
       id: 4,
