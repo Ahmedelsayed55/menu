@@ -18,8 +18,14 @@ import cheascake from "../../../assets/assetsGato/cheascake.jpg";
 import fnwar from "../../../assets/assetsGato/fnwar.jpg";
 import kopmos from "../../../assets/assetsGato/kopmos.jpg";
 import molton from "../../../assets/assetsGato/molton.jpg";
-import roya2 from "../../../assets/assetsGato/roya2.jpg";
+// صور الرويال
+import roya1 from "../../../assets/assetsGato/roya1.jpg";
 import royal from "../../../assets/assetsGato/royal.jpg";
+import royal2 from "../../../assets/assetsGato/royal2.png";
+import royal3 from "../../../assets/assetsGato/royal3.png";
+import royal4 from "../../../assets/assetsGato/royal4.png";
+import royal5 from "../../../assets/assetsGato/royal5.png";
+// اخر صور الرويال
 import spsheal from "../../../assets/assetsGato/spsheal.jpg";
 import traiovl from "../../../assets/assetsGato/traiovl.jpg";
 import superLoux from "../../../assets/assetsGato/superLoux.jpg";
@@ -79,7 +85,13 @@ const Gato = ({ id }) => {
     { id: 11, name: "فنوار ", price: 20, img: fnwar },
     { id: 12, name: "كوب موس ", price: 20, img: kopmos },
     { id: 13, name: "مولتون كيك ", price: 35, img: molton },
-    { id: 14, name: " رويال", price: 20, img: roya2, images: [royal, roya2] },
+    {
+      id: 14,
+      name: " رويال",
+      price: 20,
+      img: roya1,
+      images: [royal, roya1, royal2, royal3, royal4, royal5],
+    },
 
     { id: 16, name: "سبشيال", price: 35, img: spsheal },
     // { id: 16, name: "بيج رول", price: 35, img: begRoul },
