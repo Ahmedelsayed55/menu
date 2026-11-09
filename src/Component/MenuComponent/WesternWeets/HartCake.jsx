@@ -21,7 +21,7 @@ const HartCake = ({ id }) => {
   const prduct = [
     { id: 1, name: "تورته قلب ريد فالفيت ", price: 375, img: redvalved },
     { id: 2, name: "تورته قلب بلاك فورست ", price: 325, img: blackForst },
-    { id: 3, name: "تورته قلب فاكهه ", price: 300, img: frot },
+    { id: 3, name: "تورته قلب فاكهه ", price: 325, img: frot },
     { id: 4, name: "تورته قلب شيكولاتة ", price: 300, img: chocolate },
     { id: 5, name: "قلب هاف فاكهه", price: 300, img: havFrout },
     { id: 6, name: "قلب كراميل & شيكولاته", price: 300, img: karamelchocolate },
