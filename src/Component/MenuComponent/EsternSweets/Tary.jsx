@@ -28,7 +28,7 @@ const Tary = ({ id }) => {
     { id: 3, name: "بسبوسة نوتيلا ", price: 160, img: basbosaN },
     { id: 4, name: " عزيزه ", price: 100, img: zeza },
     { id: 5, name: " بسبوسه لوز ", price: 100, img: basbosaloz },
-    { id: 6, name: " بسبوسه مكسرات ", price: 125, img: basbosamx },
+    { id: 6, name: " بسبوسه مكسرات ", price: 140, img: basbosamx },
     { id: 7, name: " بسبوسه تركي قشطة ", price: 125, img: basbosatorkykeshta },
     { id: 8, name: "بسيمة مكسرات", price: 185, img: bsemamx },
     { id: 9, name: "بسيمة سادة", price: 175, img: defr },

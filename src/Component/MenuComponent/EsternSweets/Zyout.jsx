@@ -21,7 +21,7 @@ const Zyout = ({ id }) => {
     { id: 4, name: "بلح شام محشي", price: 110, img: null },
     { id: 5, name: "زلابيه", price: 95, img: null },
     { id: 6, name: "مشبك لبناني", price: 100, img: null },
-    { id: 7, name: "علبه مشبك دمياطي", price: 60, img: null },
+    { id: 7, name: "علبه مشبك دمياطي", price: 70, img: null },
     { id: 8, name: "رموش ساده", price: 80, img: null },
     { id: 9, name: "علبة زلابية", price: 30, img: null },
     { id: 10, name: "علبة مشبك لبناني", price: 35, img: null },
