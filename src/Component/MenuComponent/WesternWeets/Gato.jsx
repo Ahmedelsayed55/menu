@@ -60,14 +60,14 @@ const Gato = ({ id }) => {
     {
       id: 2,
       name: "هولز",
-      price: 20,
+      price: 18,
       img: Cake2,
       images: [Cake2],
     },
     {
       id: 3,
       name: "تشيز كيك",
-      price: 30,
+      price: 35,
       img: cheesCake,
       images: [cheascake, cheesCake, cheascake2, cheascake3, cheascake4],
     },
@@ -86,7 +86,8 @@ const Gato = ({ id }) => {
       images: [melfay, melfaych],
     },
     { id: 8, name: "انديال ", price: 20, img: andeal },
-    { id: 9, name: "ديسباسيتو ", price: 60, img: despaseto },
+    { id: 9, name: "ديسباسيتو ", price: 70, img: despaseto },
+    { id: 10, name: "مينى ديسباسيتو  ", price: 30, img: despaseto },
     { id: 11, name: "فنوار ", price: 20, img: fnwar },
     { id: 12, name: "كوب موس ", price: 20, img: kopmos },
     { id: 13, name: "مولتون كيك ", price: 35, img: molton },
@@ -103,7 +104,7 @@ const Gato = ({ id }) => {
     {
       id: 17,
       name: "سوبر لوكس",
-      price: 16,
+      price: 18,
       img: superLoux,
       images: [
         superLoux,
@@ -119,10 +120,7 @@ const Gato = ({ id }) => {
       ],
     },
     { id: 18, name: "ترايفول", price: 12, img: traiovl },
-    { id: 19, name: "ميني ديسباسيتو ", price: 25, img: despaseto },
-    { id: 20, name: "ميني لوكس ", price: 11, img: null },
-    { id: 21, name: "شيكولاته دبي صغير ", price: 30, img: null },
-    { id: 22, name: "شيكولاته دبي كبيرة ", price: 40, img: null },
+    { id: 20, name: "ميني لوكس ", price: 12, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
