@@ -13,17 +13,17 @@ import { favorites } from "../../../store/Favorites";
 const AssortedCakes = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "30*30  هاف فاكهه", price: 650, img: Cake },
+    { id: 1, name: "30*30  هاف فاكهه", price: 700, img: Cake },
     { id: 2, name: "25*25 فور سيزون ", price: 550, img: forsesson },
     { id: 3, name: "25*25 هاف ", price: 550, img: null },
-    { id: 4, name: "25*25 فاكهة ", price: 600, img: null },
+    { id: 4, name: "25*25 فاكهة نوتيلا", price: 550, img: null },
     { id: 5, name: "25*25 شيكولاته ", price: 550, img: null },
     { id: 6, name: "25*25 هاف بدون ", price: 550, img: null },
     { id: 7, name: "25*25  فادج ", price: 600, img: null },
-    { id: 8, name: "30*30  فور سيزون ", price: 650, img: null },
-    { id: 9, name: "30*30  عجينة سكر", price: 800, img: null },
-    { id: 10, name: "30*30 شيكولاتة", price: 700, img: null },
-    { id: 11, name: "30*30 هاف بدون", price: 650, img: null },
+    { id: 8, name: "30*30  فور سيزون ", price: 700, img: null },
+    { id: 9, name: "30*30  عجينة سكر", price: 850, img: null },
+    { id: 10, name: "30*30 شيكولاته", price: 700, img: null },
+    { id: 11, name: "30*30 هاف بدون", price: 700, img: null },
     { id: 12, name: "40*40 فورسيزون", price: 1150, img: null },
     { id: 13, name: "40*40 عجينة سكر", price: 1400, img: null },
     { id: 14, name: "40*40 كلها فاكهة", price: 1400, img: null },

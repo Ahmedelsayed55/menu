@@ -16,7 +16,7 @@ const CakeLayers = ({ id }) => {
     { id: 3, name: " تورته 5 دور فورسيزون", price: 2500, img: null },
     { id: 4, name: " تورته 4 دور شيكولاته", price: 2250, img: null },
     { id: 5, name: " تورته 4 دور هاف بدون", price: 2250, img: null },
-    { id: 6, name: " تورته 2 دور عجينة سكر ", price: 1600, img: null },
+    { id: 6, name: " تورته 2 دور عجينة سكر ", price: 1750, img: null },
     { id: 7, name: " تورته 5 دور هاف بدون", price: 2500, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
