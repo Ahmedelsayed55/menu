@@ -29,7 +29,7 @@ const Bogasha = ({ id }) => {
     { id: 6, name: "بقلاوة مسطره", price: 220, img: bklawamstra },
     { id: 7, name: "بقلاوة نجمة", price: 220, img: bklawanegma },
     { id: 8, name: "جلاش بستاشيو", price: 200, img: glashB },
-    { id: 9, name: "جلاش ساده", price: 175, img: glashsada },
+    { id: 9, name: "جلاش ساده", price: 200, img: glashsada },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
