@@ -25,7 +25,7 @@ const Zyout = ({ id }) => {
     { id: 8, name: "رموش ساده", price: 80, img: null },
     { id: 9, name: "علبة زلابية", price: 30, img: null },
     { id: 10, name: "علبة مشبك لبناني", price: 35, img: null },
-    { id: 11, name: "قرص مشبك دمياطي", price: 12, img: null },
+    { id: 11, name: "قرص مشبك دمياطي", price: 15, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
