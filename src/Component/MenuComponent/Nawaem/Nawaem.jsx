@@ -18,14 +18,14 @@ const Nawaem = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
     { id: 1, name: " كحك سادة نص كيلو", price: 110, img: kahk },
-    { id: 2, name: "كحك ملبن نص كيلو", price: 100, img: null },
-    { id: 3, name: "كحك عجوة نص كيلو", price: 100, img: null },
-    { id: 4, name: "كحك مكسرات نص كيلو", price: 110, img: null },
-    { id: 6, name: " علبه مشكل جامبو", price: 475, img: null },
-    { id: 7, name: " غريبه نص كيلو", price: 100, img: ghreba },
-    { id: 8, name: " بيتي فور نص كيلو", price: 100, img: betefor },
-    { id: 9, name: " بسكويت نص كيلو", price: 100, img: bskwet },
-    { id: 10, name: "سابلية نص كيلو", price: 110, img: sableh },
+    { id: 2, name: "كحك ملبن نص كيلو", price: 105, img: null },
+    { id: 3, name: "كحك عجوة نص كيلو", price: 105, img: null },
+    { id: 4, name: "كحك مكسرات نص كيلو", price: 125, img: null },
+    { id: 6, name: " علبه مشكل جامبو", price: 525, img: null },
+    { id: 7, name: " غريبه نص كيلو", price: 105, img: ghreba },
+    { id: 8, name: " بيتي فور نص كيلو", price: 125, img: betefor },
+    { id: 9, name: " بسكويت نص كيلو", price: 105, img: bskwet },
+    { id: 10, name: "سابلية نص كيلو", price: 125, img: sableh },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
