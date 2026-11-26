@@ -35,7 +35,7 @@ const Tary = ({ id }) => {
     { id: 11, name: "بسبوسه سيواريه تقطيع", price: 175, img: swarehtakte3 },
     { id: 12, name: "هريسه ريتاج مكسرات", price: 120, img: null },
     { id: 13, name: "بسبوسه شاميه ساده", price: 150, img: null },
-    { id: 14, name: "بسبوسه شاميه مكسرات", price: 175, img: null },
+    { id: 14, name: "بسبوسه شاميه مكسرات", price: 175, img: basbosamx },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
