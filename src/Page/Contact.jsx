@@ -81,7 +81,7 @@ const Contact = () => {
 
         {/* سالم */}
 
-        <div className="collapse collapse-arrow  border border-gray-300  text-black">
+        {/* <div className="collapse collapse-arrow  border border-gray-300  text-black">
           <input type="checkbox" name="my-accordion-2" />
           <div className="collapse-title font-semibold text-[24px] pb-10 text-center md:text-3xl text-cyan-900 mb-2">
             ☎️ سيدي سالم بجوار مسجد عباس عبيدي
@@ -89,7 +89,7 @@ const Contact = () => {
           <div className="collapse-content text-sm">
             <Salm />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
