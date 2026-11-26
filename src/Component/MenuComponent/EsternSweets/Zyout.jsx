@@ -15,15 +15,15 @@ import { favorites } from "../../../store/Favorites";
 const Zyout = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "اصابع زينب", price: 90, img: zenab },
-    { id: 2, name: "بلح محشي سيواريه", price: 110, img: bla7M },
-    { id: 3, name: "بلح شام ساده", price: 100, img: shamsada },
-    { id: 4, name: "بلح شام محشي", price: 110, img: null },
-    { id: 5, name: "زلابيه", price: 95, img: null },
-    { id: 6, name: "مشبك لبناني", price: 100, img: null },
+    { id: 1, name: "اصابع زينب", price: 120, img: zenab },
+    { id: 2, name: "بلح محشي سيواريه", price: 130, img: bla7M },
+    { id: 3, name: "بلح شام ساده", price: 120, img: shamsada },
+    { id: 4, name: "بلح شام محشي", price: 130, img: null },
+    { id: 5, name: "زلابيه", price: 120, img: null },
+    { id: 6, name: "مشبك لبناني", price: 110, img: null },
     { id: 7, name: "علبه مشبك دمياطي", price: 70, img: null },
     { id: 8, name: "رموش ساده", price: 80, img: null },
-    { id: 9, name: "علبة زلابية", price: 30, img: null },
+    { id: 9, name: "علبة زلابية", price: 35, img: null },
     { id: 10, name: "علبة مشبك لبناني", price: 35, img: null },
     { id: 11, name: "قرص مشبك دمياطي", price: 15, img: null },
   ];
