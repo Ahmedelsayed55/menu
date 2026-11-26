@@ -23,22 +23,22 @@ const Konafa = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
     { id: 1, name: " كنافة عثمانلي", price: 150, img: konafa3othmanly },
-    { id: 2, name: "كنافة كريمة", price: 130, img: konafaKrema },
-    { id: 3, name: " كنافة نوتيلا", price: 180, img: konafaN },
+    { id: 2, name: "كنافة كريمة", price: 150, img: konafaKrema },
+    { id: 3, name: " كنافة نوتيلا", price: 200, img: konafaN },
     {
       id: 4,
       name: " مدلعه",
-      price: 160,
+      price: 200,
       img: medl3a1,
       images: [medl3a1, medl3a3],
     },
-    { id: 7, name: "كنافه عثمانلي", price: 150, img: konafa3osmanle },
-    { id: 8, name: "كنافه مانجو", price: 150, img: konafamanga },
-    { id: 9, name: "كنافه مخصوص", price: 130, img: makhsos },
-    { id: 10, name: "كنافه رفايلو", price: 170, img: rafaielo },
-    { id: 11, name: "كنافه شهرزاد", price: 185, img: shhrzad },
-    { id: 12, name: "كنافه تمريه ", price: 160, img: tamrea },
-    { id: 13, name: "كنافه فواكه ", price: 160, img: null },
+    { id: 7, name: "كنافه عثمانلي", price: 175, img: konafa3osmanle },
+    { id: 8, name: "كنافه مانجو", price: 175, img: konafamanga },
+    { id: 9, name: "كنافه مخصوص", price: 150, img: makhsos },
+    { id: 10, name: "كنافه رفايلو", price: 200, img: rafaielo },
+    { id: 11, name: "كنافه شهرزاد", price: 210, img: shhrzad },
+    { id: 12, name: "كنافه تمريه ", price: 175, img: tamrea },
+    { id: 13, name: "كنافه فواكه ", price: 175, img: null },
     { id: 14, name: "كنافة قشطة سيواريه", price: 150, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
