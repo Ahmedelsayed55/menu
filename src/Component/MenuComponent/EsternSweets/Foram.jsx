@@ -11,16 +11,13 @@ import { favorites } from "../../../store/Favorites";
 const Foram = ({ id }) => {
   const { addToFavorite } = favorites();
   const prduct = [
-    { id: 1, name: "فورمة كنافه رفايلو", price: 150, img: null },
-    { id: 2, name: " فورمة كنافه لوتس", price: 150, img: null },
+    { id: 1, name: "فورمة كنافه رفايلو", price: 200, img: null },
+    { id: 2, name: " فورمة كنافه لوتس", price: 200, img: null },
     { id: 3, name: " فطيره سوري", price: 180, img: null },
-    { id: 4, name: " فورمه عزيزة صغير ", price: 100, img: null },
-    { id: 5, name: " فورمه عزيزة كبير ", price: 200, img: null },
-    { id: 6, name: " فورمه عزيزة وسط ", price: 150, img: null },
-    { id: 7, name: " فورمه كنافه مخصوص ", price: 180, img: null },
-    { id: 8, name: " فورمه مدلعة ", price: 190, img: null },
-    { id: 9, name: "فورمه بسبوسه شاميه ساده ", price: 150, img: null },
-    { id: 10, name: "طبق قشطوطة", price: 45, img: null },
+    { id: 7, name: " فورمه كنافه مخصوص صغيره", price: 150, img: null },
+    { id: 8, name: " فورمه مدلعة ", price: 200, img: null },
+    { id: 9, name: "فورمه بسبوسه شاميه ساده صغيره", price: 125, img: null },
+    { id: 10, name: "طبق قشطوطة", price: 50, img: null },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
